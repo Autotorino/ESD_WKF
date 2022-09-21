@@ -1,0 +1,248 @@
+package routines;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class ProductFinance {
+	
+	   public static String family_auto = "veicoli_AUTO";
+	   public static String family_moto = "veicoli_MOTO";
+	   public static String family_lcv = "veicoli_COMMERCIALI";
+		
+	   public static String category_auto = "auto";
+	   public static String category_moto = "moto";
+	   public static String category_lcv = "veicoli_commerciali";
+	    
+	   public ProductFinance() {
+		   ValuesFinance values = new ValuesFinance();
+		   setValues(values);
+	   }
+	
+	   public ProductFinance(JSONObject jsonObjValues) {
+	    	setIdentifier(jsonObjValues);
+	    	//setCategories(jsonObjValues);
+	    	setFamily(jsonObjValues);
+	    	
+	    	ValuesFinance values = new ValuesFinance(jsonObjValues);
+			setValues(values);
+		}
+	
+	    private String identifier;
+	    
+	    private String family;
+	    
+	    //private List<String> categories;
+	    
+	    private ValuesFinance values;
+
+	    public void setIdentifier(String identifier){
+	        this.identifier = identifier;
+	    }
+	    
+	    public void setIdentifier(JSONObject jsonObjBody){
+	    	
+	    	if(jsonObjBody!=null){
+	    	  Object returnValue = jsonObjBody.get("identifier");
+	          this.identifier = (returnValue instanceof String) ? (String)returnValue : null;
+	    	}
+	    	else
+	    	  this.identifier = null;
+	    }
+	    
+	    public String getIdentifier(){
+	        return this.identifier;
+	    }
+	    
+	    public void setFamily(String family){
+	        this.family = family;
+	    }
+	    
+	    public void setFamily(JSONObject jsonObjBody){
+	    	
+	    	if(jsonObjBody!=null){
+	    	  Object returnValue = jsonObjBody.get("family");
+	          this.family = (returnValue instanceof String) ? (String)returnValue : null;
+	    	}
+	    	else
+	    	  this.family = null;
+	    }
+	    
+	    public String getFamily(){
+	        return this.family;
+	    }
+	    
+	    public void setValues(ValuesFinance values){
+	        this.values = values;
+	    }
+	    public ValuesFinance getValues(){
+	        return this.values;
+	    }
+	    /*
+	    public void setCategories(List<String> categories){
+	        this.categories = categories;
+	    }
+	    
+	    public void setCategories(String categories){
+	        this.categories = new ArrayList<String>(Arrays.asList(categories));
+	    }	
+
+	    public void setCategories(JSONObject jsonObjBody){
+			this.categories = null;
+			
+			if(jsonObjBody!= null) {
+		    	
+				JSONArray jsonArray = (JSONArray)jsonObjBody.get("categories");
+		    	
+				if(jsonArray!= null && jsonArray.length()>0){
+		    	
+					ArrayList<String> arrayList = new ArrayList<String>();
+					
+					for (int i=0;i<jsonArray.length();i++)
+						arrayList.add((String)jsonArray.get(i));
+					
+			        this.categories = arrayList;
+				}
+			}
+	    }
+	    
+	    public List<String> getCategories(){
+	        return this.categories;
+	    }
+	    */
+	    
+	    /*
+	     * CUSTOM GET
+	     */
+	    @JsonIgnore
+	    public String getCategoria(){
+	        
+	       	if(this.family!=null)
+	    	    if(family.equals(family_auto))
+	    		   return category_auto;
+	    	    else if(family.equals(family_moto))
+				   return category_moto;
+	    	    else if(family.equals(family_lcv))
+				   return category_lcv;
+	    	    else
+	    	       return null;
+	    	else
+	    	   return null;
+	    }
+	    @JsonIgnore
+	    public String getPrezzo_vendita_manuale(){
+	    	
+	    	try {
+	    		return this.getValues().getPrezzo_vendita_manuale().get(0).getData().get(0).getAmount();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    @JsonIgnore
+	    public String getFin_finanziaria(){
+	    	
+	    	try {
+	    		return this.getValues().getFin_finanziaria().get(0).getData();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    @JsonIgnore
+	    public String getFin_configurazione_finanziamento_default(){
+	    	
+	    	try {
+	    		return this.getValues().getFin_configurazione_finanziamento_default().get(0).getData();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    @JsonIgnore
+        public String getFin_durata(){
+	    	
+	    	try {
+	    		return this.getValues().getFin_durata().get(0).getData();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    @JsonIgnore
+	    public String getFin_anticipo(){
+	    	
+	    	try {
+	    		return this.getValues().getFin_anticipo().get(0).getData().get(0).getAmount();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    @JsonIgnore
+	    public String getImmatricolazione_data(){
+	    	
+	    	try {
+	    		return this.getValues().getImmatricolazione_data().get(0).getData();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    
+	    @JsonIgnore
+	    public String getFin_data_inserimento_finanziamento(){
+	    	
+	    	try {
+	    		return this.getValues().getFin_data_inserimento_finanziamento().get(0).getData();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    
+	    @JsonIgnore
+	    public String getPiano_finanziario(){
+	    	
+	    	try {
+	    		return this.getValues().getPiano_finanziario().get(0).getData();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    
+	    @JsonIgnore
+	    public String getDurata_totale_maxi_rata(){
+	    	
+	    	try {
+	    		return this.getValues().getDurata_totale_maxi_rata().get(0).getData();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    
+	    @JsonIgnore
+	    public String getMaxi_rata_percentuale(){
+	    	
+	    	try {
+	    		return this.getValues().getMaxi_rata_percentuale().get(0).getData();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    
+	    @JsonIgnore
+	    public String getTipo_maxi_rata(){
+	    	
+	    	try {
+	    		return this.getValues().getTipo_maxi_rata().get(0).getData();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+
+}

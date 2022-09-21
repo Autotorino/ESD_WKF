@@ -1,0 +1,817 @@
+package routines;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+
+
+public class Vehicle {
+	
+	public Vehicle(String dealerId) {
+    	this.setDealer_id(dealerId);
+	}
+	
+
+    /*
+     * Property XML   
+     */
+	public String dealer_id;
+	public String ownersvehicle_id;
+	public String status;
+	public String visibility;
+	public String codice_eurotax;
+	public String vin;
+	public String type;
+	public String category;
+	public String body;
+	public String brand;
+	public String model;
+	public String version;
+	public String body_colorgroup;
+	public String body_color;
+	public String interior_color;
+	public String covering;
+	public String doors;
+	public String body_painting;
+	public String gear_type;
+	public String fuel_type;
+	public String transmission;
+	public String capacity;
+	public String kilowatt;
+	public String emission;
+	public String mileage;
+	public String initial_registration;
+	public String licence_number;
+	public String warranty_duration;
+	public List<Price> prices;
+	public String previous_owner;
+	public String seats;
+	public List<String> seals;
+	public String notes;
+	public List<Equipment> equipments;
+	public Media media;
+
+
+	
+    /*
+     * Getter and Setter + method custom return XML
+     */
+
+	public String getDealer_id() {
+		return this.dealer_id;
+	}
+	public void setDealer_id(String dealer_id) {
+		this.dealer_id = dealer_id;
+	}
+	public String getDealer_idXML() {
+		if (UtilString.isEmptyTrim(this.dealer_id))
+			return "        <dealer_id/>";			
+		return "        <dealer_id>"+this.dealer_id+"</dealer_id>";
+	}
+	
+	public String getOwnersvehicle_id() {
+		return this.ownersvehicle_id;
+	}
+	public void setOwnersvehicle_id(String ownersvehicle_id) {
+		this.ownersvehicle_id = ownersvehicle_id;
+	}
+	public String getOwnersvehicle_idXML() {
+		if (UtilString.isEmptyTrim(this.ownersvehicle_id))
+			return "        <ownersvehicle_id/>";		
+		return "        <ownersvehicle_id>"+this.ownersvehicle_id+"</ownersvehicle_id>";
+	}
+	
+	public String getStatus() {
+		return this.status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public String getStatusXML() {
+		if (UtilString.isEmptyTrim(this.status))
+			return "        <status/>";			
+		return "        <status>"+this.status+"</status>";
+	}
+	
+	
+	public String getVisibility() {
+		return this.visibility;
+	}
+	public void setVisibility(String visibility) {
+		this.visibility = visibility;
+	}
+	public String getVisibilityXML() {
+		if (UtilString.isEmptyTrim(this.visibility))
+			return "        <visibility/>";			
+		return "        <visibility>"+this.visibility+"</visibility>";
+	}
+	
+	public String getCodice_eurotax() {
+		return this.codice_eurotax;
+	}
+	public void setCodice_eurotax(String codice_eurotax) {
+		this.codice_eurotax = codice_eurotax;
+	}
+	public String getCodice_eurotaxXML() {
+		if (UtilString.isEmptyTrim(this.codice_eurotax))
+			return "        <codice_eurotax/>";			
+		return "        <codice_eurotax>"+this.codice_eurotax+"</codice_eurotax>";
+	}
+	
+	public String getVin() {
+		return this.vin;
+	}
+	public void setVin(String vin) {
+		this.vin = vin;
+	}
+	public String getVinXML() {
+		if (UtilString.isEmptyTrim(this.vin))
+			return "        <vin/>";			
+		return "        <vin>"+this.vin+"</vin>";
+	}
+	
+	
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}	
+	public void setTypeFromCategory(String category) {
+		try{
+			if (category.equals(Product.category_moto))
+				this.type = "byke";
+			else
+				this.type = "car";
+		}  
+		catch (Exception e){
+			this.type = null;
+		}
+		
+	}
+	public String getTypeXML() {
+		if (UtilString.isEmptyTrim(this.type))
+			return "        <type/>";			
+		return "        <type>"+this.type+"</type>";
+	}
+	
+	
+	public String getCategory() {
+		return this.category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	public void setCategoryFromMap(String tipo,Map<String,String> mapCategory) {
+		if(!UtilString.isEmptyTrim(tipo) && mapCategory!=null){
+		   this.category = mapCategory.get(tipo);
+		}
+		else{
+			this.category = null;
+		}
+	}
+	public String getCategoryXML() {
+		if (UtilString.isEmptyTrim(this.category))
+			return "        <category/>";		
+		return "        <category>"+this.category+"</category>";
+	}	
+	
+	
+	public String getBody() {
+		return this.body;
+	}
+	public void setBody(String body) {
+		this.body = body;
+	}
+	public String getBodyXML() {
+		if (UtilString.isEmptyTrim(this.body))
+			return "        <body/>";			
+		return "        <body>"+this.body+"</body>";
+	}	
+	
+	
+	public String getBrand() {
+		return this.brand;
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	public String getBrandXML() {
+		if (UtilString.isEmptyTrim(this.brand))
+			return "        <brand/>";				
+		return "        <brand>"+this.brand+"</brand>";
+	}		
+	
+	public String getModel() {
+		return this.model;
+	}
+	public void setModel(String model) {
+		this.model = model;
+	}
+	public String getModelXML() {
+		if (UtilString.isEmptyTrim(this.model))
+			return "        <model/>";			
+		return "        <model>"+this.model+"</model>";
+	}		
+	
+	
+	public String getVersion() {
+		return this.version;
+	}
+	public void setVersion(String version) {
+		this.version = version;
+	}
+	public String getVersionXML() {
+		if (UtilString.isEmptyTrim(this.version))
+			return "        <version/>";		
+		return "        <version>\n          <![CDATA["+this.version+"]]>\n        </version>";
+	}	
+	
+	public String getBody_colorgroup() {
+		return this.body_colorgroup;
+	}
+	public void setBody_colorgroup(String body_colorgroup) {
+		this.body_colorgroup = body_colorgroup;
+	}
+	public void setBody_colorgroupFromMap(String coloreEsterno,Map<String,String> mapColore) {
+		if(!UtilString.isEmptyTrim(coloreEsterno) && mapColore!=null){
+		   this.body_colorgroup = mapColore.get(coloreEsterno);
+		}
+		else{
+			this.body_colorgroup = null;
+		}
+	}	
+	public String getBody_colorgroupXML() {
+		if (UtilString.isEmptyTrim(this.body_colorgroup))
+			return "        <body_colorgroup/>";		
+		return "        <body_colorgroup>"+this.body_colorgroup+"</body_colorgroup>";
+	}		
+	
+	public String getBody_color() {
+		return body_color;
+	}
+	public void setBody_color(String body_color) {
+		this.body_color = body_color;
+	}
+	public String getBody_colorXML() {
+		if (UtilString.isEmptyTrim(this.body_color))
+			return "        <body_color/>";			
+		return "        <body_color>"+this.body_color+"</body_color>";
+	}	
+	
+	
+	public String getInterior_color() {
+		return this.interior_color;
+	}
+	public void setInterior_color(String interior_color) {
+		this.interior_color = interior_color;
+	}
+	public void setInterior_ColorFromMap(String coloreInterno,Map<String,String> mapColoreInterni) {
+		if(!UtilString.isEmptyTrim(coloreInterno) && mapColoreInterni!=null){
+			   this.interior_color = mapColoreInterni.get(coloreInterno);
+		}
+		else{
+			this.interior_color = null;
+		}
+	}
+	public String getInterior_colorXML() {
+		if (UtilString.isEmptyTrim(this.interior_color))
+			return "        <interior_color/>";			
+		return "        <interior_color>"+this.interior_color+"</interior_color>";
+	}		
+	
+	public String getCovering() {
+		return this.covering;
+	}
+	public void setCovering(String covering) {
+		this.covering = covering;
+	}
+	public String getCoveringXML() {
+		if (UtilString.isEmptyTrim(this.covering))
+			return "        <covering/>";			
+		return "        <covering>"+this.covering+"</covering>";
+	}	
+	
+	public String getDoors() {
+		return this.doors;
+	}
+	public void setDoors(String doors) {
+		if(UtilString.stringIsNumber(doors))
+		   this.doors = new BigDecimal(doors).intValue()+"";
+		else
+		   this.doors=null;
+	}
+	public String getDoorsXML() {
+		if (UtilString.isEmptyTrim(this.doors))
+			return "        <doors/>";		
+		return "        <doors>"+this.doors+"</doors>";
+	}	
+	
+	
+	public String getBody_painting() {
+		return this.body_painting;
+	}
+	public void setBody_painting(String body_painting) {
+		this.body_painting = body_painting;
+	}
+	public void setBody_paintingFromMap(String verniceEsterno,Map<String,String> mapVernice) {
+		if(!UtilString.isEmptyTrim(verniceEsterno) && mapVernice!=null){
+			   this.body_painting = mapVernice.get(verniceEsterno);
+		}
+		else{
+			this.body_painting = null;
+		}
+	}
+	public String getBody_paintingXML() {
+		if (UtilString.isEmptyTrim(this.body_painting))
+			return "        <body_painting/>";			
+		return "        <body_painting>"+this.body_painting+"</body_painting>";
+	}	
+	
+	
+	public String getGear_type() {
+		return this.gear_type;
+	}
+	public void setGear_type(String gear_type) {
+		this.gear_type = gear_type;
+	}
+	public void setGear_typeFromMap(String cambio,Map<String,String> mapCambio) {
+		if(!UtilString.isEmptyTrim(cambio) && mapCambio!=null){
+		   this.gear_type = mapCambio.get(cambio);
+		}
+		else{
+			this.gear_type = null;
+		}
+	}		
+	public String getGear_typeXML() {
+		if (UtilString.isEmptyTrim(this.gear_type))
+			return "        <gear_type/>";				
+		return "        <gear_type>"+this.gear_type+"</gear_type>";
+	}	
+	
+	
+	public String getFuel_type() {
+		return this.fuel_type;
+	}
+	public void setFuel_type(String fuel_type) {
+		this.fuel_type = fuel_type;
+	}
+	public void setFuel_typeFromMap(String alimentazione,Map<String,String> mapAlimentazione) {
+		if(!UtilString.isEmptyTrim(alimentazione) && mapAlimentazione!=null){
+			   this.fuel_type = mapAlimentazione.get(alimentazione);
+		}
+		else{
+			this.fuel_type = null;
+		}
+	}	
+	public String getFuel_typeXML() {
+		if (UtilString.isEmptyTrim(this.fuel_type))
+			return "        <fuel_type/>";		
+		return "        <fuel_type>"+this.fuel_type+"</fuel_type>";
+	}	
+	
+	
+	public String getTransmission() {
+		return this.transmission;
+	}
+	public void setTransmission(String transmission) {
+		this.transmission = transmission;
+	}
+	public void setTransmissionFromMap(String trazione,Map<String,String> mapTrazione) {
+		if(!UtilString.isEmptyTrim(trazione) && mapTrazione!=null){
+			   this.transmission = mapTrazione.get(trazione);
+		}
+		else{
+			this.transmission = null;
+		}
+	}		
+	public String getTransmissionXML() {
+		if (UtilString.isEmptyTrim(this.transmission))
+			return "        <transmission/>";		
+		return "        <transmission>"+this.transmission+"</transmission>";
+	}	
+	
+	
+	public String getCapacity() {
+		return this.capacity;
+	}
+	public void setCapacity(String capacity) {
+		if(UtilString.stringIsNumber(capacity))
+			   this.capacity = new BigDecimal(capacity).intValue()+"";
+			else
+			   this.capacity=null;		
+	}
+	public String getCapacityXML() {
+		if (UtilString.isEmptyTrim(this.capacity))
+			return "        <capacity/>";			
+		return "        <capacity>"+this.capacity+"</capacity>";
+	}
+	
+	
+	public String getKilowatt() {
+		return this.kilowatt;
+	}
+	public void setKilowatt(String kilowatt) {
+		if(UtilString.stringIsNumber(kilowatt))
+			   this.kilowatt = new BigDecimal(kilowatt).intValue()+"";
+			else
+			   this.kilowatt=null;			
+	}
+	public String getKilowattXML() {
+		if (UtilString.isEmptyTrim(this.kilowatt))
+			return "        <kilowatt/>";		
+		return "        <kilowatt>"+this.kilowatt+"</kilowatt>";
+	}
+	
+	
+	public String getEmission() {
+		return this.emission;
+	}
+	public void setEmission(String emission) {
+		this.emission = emission;
+	}
+	public void setEmissionFromMap(String classeEmissioni,Map<String,String> mapClasseEmissioni) {
+		if(!UtilString.isEmptyTrim(classeEmissioni) && mapClasseEmissioni!=null){
+			   this.emission = mapClasseEmissioni.get(classeEmissioni);
+		}
+		else{
+			this.emission = null;
+		}
+	}			
+	public String getEmissionXML() {
+		if (UtilString.isEmptyTrim(this.emission))
+			return "        <emission/>";
+		return "        <emission>\n          <class>"+this.emission+"</class>\n        </emission>";
+	}
+	
+	
+	public String getMileage() {
+		return this.mileage;
+	}
+	public void setMileage(String mileage) {
+		if(UtilString.stringIsNumber(mileage))
+			   this.mileage = new BigDecimal(mileage).intValue()+"";
+			else
+			   this.mileage=null;			
+	}
+	public String getMileageXML() {
+		if (UtilString.isEmptyTrim(this.mileage))
+			return "        <mileage/>";
+		return "        <mileage>"+this.mileage+"</mileage>";
+	}	
+	
+	public String getInitial_registration() {
+		return this.initial_registration;
+	}
+	public void setInitial_registration(String initial_registration) {
+		this.initial_registration = initial_registration;
+	}
+	public String getInitial_registrationXML() {
+		if (UtilString.isEmptyTrim(this.initial_registration))
+			return "        <initial_registration/>";
+		return "        <initial_registration>"+this.initial_registration+"</initial_registration>";
+	}		
+	
+	public String getLicence_number() {
+		return this.licence_number;
+	}
+	public void setLicence_number(String licence_number) {
+		this.licence_number = licence_number;
+	}
+	public String getLicence_numberXML() {
+		if (UtilString.isEmptyTrim(this.licence_number))
+			return "        <licence_number/>";
+		return "        <licence_number>"+this.licence_number+"</licence_number>";
+	}		
+	
+	public String getWarranty_duration() {
+		return this.warranty_duration;
+	}
+	public void setWarranty_duration(String warranty_duration) {
+		this.warranty_duration = warranty_duration;
+	}
+	public void setWarranty_durationFromMap(String garanzia,Map<String,Garanzia> mapGaranzia) {
+		if(!UtilString.isEmptyTrim(garanzia) && mapGaranzia!=null && mapGaranzia.get(garanzia)!= null){
+			   this.warranty_duration = mapGaranzia.get(garanzia).getDurataMesi();
+		}
+		else{
+			this.warranty_duration = null;
+		}
+	}	
+	public String getWarranty_durationXML() {
+		if (UtilString.isEmptyTrim(this.warranty_duration))
+			return "        <warranty_duration/>";
+		return "        <warranty_duration>"+this.warranty_duration+"</warranty_duration>";
+	} 	
+	
+	public List<Price> getPrices() {
+		return this.prices;
+	}
+	public void setPrices(List<Price> prices) {
+		this.prices = prices;
+	}
+	public void addPrice(Price price){
+		if (this.prices==null){
+			this.prices = new ArrayList<Price>();
+		}
+		
+		this.prices.add(price);
+	}
+	public String getPricesXML() {
+		
+		String returnXML = "        <prices>\n";
+		
+		if (this.prices!=null && this.prices.size()>0){
+			for(Price price : prices){
+				returnXML+=price.toXML();
+			}
+			returnXML+="        </prices>";
+			return returnXML;
+		}
+		else {
+			returnXML = "        <prices/>";
+			return returnXML;
+		}
+	}		
+	
+	public String getPrevious_owner() {
+		return this.previous_owner;
+	}
+	public void setPrevious_owner(String previous_owner) {
+		this.previous_owner = previous_owner;
+	}
+	public String getPrevious_ownerXML() {	
+		if (UtilString.isEmptyTrim(this.previous_owner))
+			this.previous_owner = "0";
+		return "        <previous_owner>\n          <count>"+this.previous_owner+"</count>\n        </previous_owner>";	
+	}	
+	
+	public String getSeats() {
+		return this.seats;
+	}
+	public void setSeats(String seats) {
+		if(UtilString.stringIsNumber(seats))
+			   this.seats = new BigDecimal(seats).intValue()+"";
+			else
+			   this.seats=null;		
+	}
+	public String getSeatsXML() {
+		if (UtilString.isEmptyTrim(this.seats))
+			return "        <seats/>";
+		return "        <seats>"+this.seats+"</seats>";
+	}	
+	
+	public List<String> getSeals() {
+		return this.seals;
+	}
+	public void setSeals(List<String> seals) {
+ 	    this.seals=seals;		
+	}
+	public void setSealsFromMap(String garanzia,Map<String,Garanzia> mapGaranzia,Map<String,String> mapPremiumSelection) {
+		if(!UtilString.isEmptyTrim(garanzia) && mapGaranzia!=null && mapGaranzia.get(garanzia)!= null
+				 && mapGaranzia.get(garanzia).getPremiumSelection()!= null && mapGaranzia.get(garanzia).getPremiumSelection().equals("si")
+				  && mapPremiumSelection!= null && mapPremiumSelection.size()>0)
+		{
+			for (Map.Entry<String,String> entry : mapPremiumSelection.entrySet())
+		    {
+				String brand = entry.getKey();
+				if (mapGaranzia.get(garanzia).getCode().contains(brand)) {
+		            
+		            this.seals = new ArrayList<String>(Arrays.asList( entry.getValue()));
+		            break;
+				}
+		    }
+			   
+		}
+		else{
+			this.seals = null;
+		}
+	}
+	public String getSealsXML() {
+		if (this.seals==null || this.seals.size()==0)
+			return "        <seals/>";
+		return "        <seals>\n          <seal>"+this.seals.get(0)+"</seal>\n        </seals>";
+	}	
+	
+	
+	public String getNotes() {
+		return this.notes;
+	}
+	public void setNotes(String notes) {
+		this.notes = notes;
+	}
+	public void setNotesComplex(Product product,Map<String,Garanzia> mapGaranzia,Map<String,String> mapGarOptsDesPortali,EntitiesCampagneList entitiesCampagne,Date current) {
+		
+		StringBuilder stringNote = new StringBuilder();
+		
+		String codDescrizionePortaleEsterni = 
+				!UtilString.isEmptyTrim(product.getGaranzia()) && mapGaranzia!=null && mapGaranzia.get(product.getGaranzia())!= null ? 
+						mapGaranzia.get(product.getGaranzia()).getDescrizionePortaliEsterni() : null;
+						
+		String descrizionePortaliEsterni = 
+				!UtilString.isEmptyTrim(codDescrizionePortaleEsterni) && mapGarOptsDesPortali.get(codDescrizionePortaleEsterni) != null ? 
+						mapGarOptsDesPortali.get(codDescrizionePortaleEsterni) : null;
+						
+		List<Campagna> campagneAttive = entitiesCampagne.getCampagneOrderedsActive(product.getCampagneMl(),current);
+		
+		String descrizioneCampagne = "";
+		
+		if (campagneAttive!= null && campagneAttive.size()>0){
+			for (Campagna campagna:campagneAttive){
+				descrizioneCampagne += campagna.getDescrizioneCampagna() + "\\\\";
+			}
+		}
+		
+		if (!UtilString.isEmptyTrim(product.getPrefissoDescrizioneEstesaDealerk()))
+			stringNote.append(product.getPrefissoDescrizioneEstesaDealerk()+"\\\\");
+		if (!UtilString.isEmptyTrim(product.getDescrizioneEstesaDealerk()))
+			stringNote.append(product.getDescrizioneEstesaDealerk()+"\\\\");	
+		if (!UtilString.isEmptyTrim(descrizionePortaliEsterni))
+			stringNote.append(descrizionePortaliEsterni+"\\\\");
+		if (!UtilString.isEmptyTrim(product.getCondizioniValiditaOfferta()))
+			stringNote.append(product.getCondizioniValiditaOfferta()+"\\\\");		
+		if (!UtilString.isEmptyTrim(descrizioneCampagne))
+			stringNote.append(descrizioneCampagne);	
+		
+		this.notes = stringNote.toString();
+	}
+	public String getNotesXML() {
+		if (UtilString.isEmptyTrim(this.notes))
+			return "        <notes/>";		
+		return "        <notes>\n          <![CDATA["+this.notes+"]]>\n        </notes>";
+	}		
+	
+	public List<Equipment> getEquipments() {
+		return this.equipments;
+	}
+	public void setEquipments(List<Equipment> equipments) {
+		this.equipments = equipments;
+	}
+	public String getEquipmentsXML() {
+		
+		String returnXML = "        <equipments>\n";
+		
+		if (this.equipments!=null && this.equipments.size()>0){
+			for(Equipment equipment : equipments){
+				returnXML+=equipment.toXML();
+			}
+			returnXML+="        </equipments>";
+			return returnXML;
+		}
+		else {
+			returnXML = "        <equipments/>";
+			return returnXML;
+		}
+	}			
+	
+	
+	public Media getMedia() {
+		return this.media;
+	}
+	public void setMedia(Media media) {
+		this.media = media;
+	}
+	public void setMediaComplex(Product product,Map<String,FotoExtra> mapFotoExtra,String cloudinaryStaticPath,String cloudinaryFolder,Map<String,Filigrana> mapFiligrana,
+			                         Map<String,Garanzia> mapGaranzia,String cloudinaryDimension) {
+		
+		Media media = null;
+		int countImg=0;
+		if(product.getCloudinaryImage()!= null && product.getCloudinaryImage().size()>0){
+			
+			List<Image> images = new ArrayList<Image>();
+			
+			for (String cloudinaryImage:product.getCloudinaryImage()){
+				
+				if (cloudinaryImage!= null && cloudinaryImage.indexOf("_")>0 && cloudinaryImage.indexOf("_")+1 > cloudinaryImage.length())	{ // Valido finchè il code sarà version+"_"+(folder)+"_"+image
+					
+
+				        String folderAsset = !UtilString.isEmptyTrim(cloudinaryFolder) ? cloudinaryFolder.replace("/","_")+"_" : null;
+						
+						String pathImage = null;
+						
+						String pathImageVersion = cloudinaryImage.substring(0, cloudinaryImage.indexOf("_"));
+						
+						String pathImageFile =null;
+						
+						if (folderAsset!=null && cloudinaryImage.contains(folderAsset)){
+							
+							pathImageFile = cloudinaryImage.replaceFirst(folderAsset,"").substring(cloudinaryImage.indexOf("_")+1);
+							pathImage = pathImageVersion+"/"+cloudinaryFolder+"/"+pathImageFile;
+						}
+						else{
+							pathImageFile = cloudinaryImage.substring(cloudinaryImage.indexOf("_")+1);
+							pathImage = pathImageVersion+"/"+pathImageFile;
+						}
+						
+						if(countImg==1){
+							if (!UtilString.isEmptyTrim(product.getSecondaFoto()) && mapFotoExtra!= null && mapFotoExtra.get(product.getSecondaFoto())!= null 
+									 && !UtilString.isEmptyTrim(mapFotoExtra.get(product.getSecondaFoto()).getUrl())){
+								Image imageSeconda = new Image();
+								imageSeconda.setUri(mapFotoExtra.get(product.getSecondaFoto()).getUrl());
+								images.add(imageSeconda);
+							}
+						}
+						
+						
+						 Image image = new Image();
+						 
+						 String uri = cloudinaryStaticPath;
+						 
+						 if (product.getFiligraneDealerk()!= null && product.getFiligraneDealerk().size()>0){
+							 for (String filigrana:product.getFiligraneDealerk()){
+								 if (!UtilString.isEmptyTrim(filigrana) && mapFiligrana!= null && mapFiligrana.get(filigrana)!= null 
+										 && !UtilString.isEmptyTrim(mapFiligrana.get(filigrana).getUrl()))
+								     uri+= mapFiligrana.get(filigrana).getUrl()+"/";
+							 }
+						 }
+						 
+						 if (product.getGaranzia()!=null && mapGaranzia != null 
+								  && mapGaranzia.get(product.getGaranzia())!=null && mapGaranzia.get(product.getGaranzia()).getUrlLogo()!=null)
+						    uri+=mapGaranzia.get(product.getGaranzia()).getUrlLogo()+"/";
+						 
+						 uri+= cloudinaryDimension + pathImage.toLowerCase();
+						 image.setUri(uri);
+						 
+						 images.add(image);
+				         countImg+=1;
+				}				         
+			}
+			
+			if (!UtilString.isEmptyTrim(product.getUltimaFoto()) && mapFotoExtra!= null && mapFotoExtra.get(product.getUltimaFoto())!= null 
+					 && !UtilString.isEmptyTrim(mapFotoExtra.get(product.getUltimaFoto()).getUrl())){
+				Image imageUltima = new Image();
+				imageUltima.setUri(mapFotoExtra.get(product.getUltimaFoto()).getUrl());
+				images.add(imageUltima);
+			}
+			
+			media = new Media();
+			media.setImages(images);
+		}
+		
+		if(!UtilString.isEmptyTrim(product.getIdYoutube())){
+			
+			List<Video> videos = new ArrayList<Video>();
+			Video video = new Video();
+			video.setUri(product.getIdYoutube());
+			videos.add(video);
+			
+			if(media==null)
+				media = new Media();
+			
+			media.setVideos(videos);
+			
+		}
+		
+		this.media = media;
+	}
+	public String getMediaXML() {
+		if (this.media==null)
+			return "        <media/>";				
+		return this.media.toXML();
+	}	
+	
+	public String toXML() {
+		return 
+          "      <vehicle>\n"+
+            this.getDealer_idXML()+"\n"+
+            this.getOwnersvehicle_idXML()+"\n"+
+            this.getStatusXML()+"\n"+
+            this.getVisibilityXML()+"\n"+
+            this.getCodice_eurotaxXML()+"\n"+
+            this.getVinXML()+"\n"+
+            this.getTypeXML()+"\n"+
+            this.getCategoryXML()+"\n"+
+            this.getBodyXML()+"\n"+
+            this.getBrandXML()+"\n"+
+            this.getModelXML()+"\n"+
+            this.getVersionXML()+"\n"+
+            this.getBody_colorgroupXML()+"\n"+
+            this.getBody_colorXML()+"\n"+
+            this.getInterior_colorXML()+"\n"+
+            this.getCoveringXML()+"\n"+
+            this.getDoorsXML()+"\n"+
+            this.getBody_paintingXML()+"\n"+
+            this.getGear_typeXML()+"\n"+
+            this.getFuel_typeXML()+"\n"+
+            this.getTransmissionXML()+"\n"+
+            this.getCapacityXML()+"\n"+
+            this.getKilowattXML()+"\n"+
+            this.getEmissionXML()+"\n"+
+            this.getMileageXML()+"\n"+
+            this.getInitial_registrationXML()+"\n"+
+            this.getLicence_numberXML()+"\n"+
+            this.getWarranty_durationXML()+"\n"+
+            this.getPricesXML()+"\n"+
+            this.getPrevious_ownerXML()+"\n"+
+            this.getSeatsXML()+"\n"+
+            this.getNotesXML()+"\n"+
+            this.getEquipmentsXML()+"\n"+
+            this.getSealsXML()+"\n"+
+            this.getMediaXML()+"\n"+
+           "      </vehicle>\n";
+	}
+	
+}

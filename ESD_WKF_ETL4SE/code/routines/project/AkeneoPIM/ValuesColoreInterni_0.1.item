@@ -1,0 +1,90 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ValuesColoreInterni {
+	
+	
+	    public ValuesColoreInterni() {
+		}	    
+	    
+	    public ValuesColoreInterni(JSONObject jsonObjBody) {
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("values");
+	    	
+	    	setLabel(jsonObjValues);
+	    	setColore_export(jsonObjValues);
+	    	
+		}
+	    
+	    private List<DataValue> label;
+	    
+	    private List<DataValue> codice_export;
+	    
+
+
+
+	    
+	    /**
+	     * 
+	     * Metodi GET\SET per Lettura dal PIM
+	     */
+	    public void setLabel(List<DataValue> label){
+	        this.label = label;
+	    }
+	    
+        public void setLabel(JSONObject jsonObjValues){
+	    	
+	    	this.label = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("label");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.label = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getLabel(){
+	        return this.label;
+	    }
+	    
+	    public void setColore_export(List<DataValue> codice_export){
+	        this.codice_export = codice_export;
+	    }
+	    
+        public void setColore_export(JSONObject jsonObjValues){
+	    	
+	    	this.codice_export = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("codice_export");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.codice_export = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getColore_export(){
+	        return this.codice_export;
+	    }
+	    
+
+}

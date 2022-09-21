@@ -1,0 +1,66 @@
+package routines;
+
+import routines.JSONObject;
+
+
+public class BooleanValue {
+	
+	    public BooleanValue(String locale,String scope,Boolean data) {
+			this.locale = locale;
+			this.scope = scope;
+			this.data = data;
+		}
+	    
+	    public BooleanValue(JSONObject jsonObj) {
+	    	if(jsonObj!= null){
+				setLocale(jsonObj);
+				setScope(jsonObj);
+				setData(jsonObj);
+            }
+		}
+	
+	    private String locale;
+
+	    private String scope;
+
+	    private Boolean data;
+
+	    public void setLocale(String locale){
+	        this.locale = locale;
+	    }
+	    
+	    public void setLocale(JSONObject jsonObj){
+	    	if(jsonObj.get("locale")!=null && jsonObj.get("locale") instanceof String)
+	           this.locale = (String)jsonObj.get("locale");
+	    }
+	    
+	    public String getLocale(){
+	        return this.locale;
+	    }
+	    
+	    public void setScope(String scope){
+	        this.scope = scope;
+	    }
+	    
+	    public void setScope(JSONObject jsonObj){
+	    	if(jsonObj.get("scope")!=null && jsonObj.get("scope") instanceof String)
+	           this.scope = (String)jsonObj.get("scope");
+	    }	   
+	    
+	    public String getScope(){
+	        return this.scope;
+	    }
+	    
+	    public void setData(Boolean data){
+	        this.data = data;
+	    }
+	    
+	    public void setData(JSONObject jsonObj){
+	    	if(jsonObj.get("data")!=null && jsonObj.get("data") instanceof Boolean)
+	           this.data = (Boolean)jsonObj.get("data");
+	    }	   
+	    
+	    public Boolean getData(){
+	        return this.data;
+	    }
+}

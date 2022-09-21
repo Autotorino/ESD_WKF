@@ -1,0 +1,135 @@
+package routines;
+
+import java.util.HashMap;
+import java.util.List;
+
+
+
+
+public class EntitiesFiligranaList {
+	
+	public EntitiesFiligranaList() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public EntitiesFiligranaList(String jsonObject) {
+		
+		JSONObject jsonObjBody = new JSONObject(jsonObject);
+		
+	
+		//setNext(jsonObjBody);
+		//setCurrent_page(jsonObjBody);
+		
+		EmbeddedFiligrana _embedded = new EmbeddedFiligrana(jsonObjBody);
+		setEmbedded(_embedded);
+		
+		
+		
+	}
+
+	//private String next;
+	
+	//private String current_page;
+	
+    private EmbeddedFiligrana _embedded;
+    
+    /*
+    public void setNext(String next){
+        this.next = next;
+    }
+    
+    public void setNext(JSONObject jsonObjBody){
+    	this.next = UtilJson.getValueStringFrom_JObject_3Level(jsonObjBody, "_links", "next","href");
+    	
+    }
+    
+    public String getNext(){
+        return this.next;
+    }  
+    
+    public void setCurrent_page(String current_page){
+        this.current_page = current_page;
+    }
+    
+    public void setCurrent_page(JSONObject jsonObjBody){
+    	this.current_page = UtilJson.getValueStringFrom_JObject_1Level(jsonObjBody, "current_page");
+    	
+    }
+    
+    public String getCurrent_page(String current_page){
+        return this.current_page;
+    }
+    */
+    
+    public void setEmbedded(EmbeddedFiligrana _embedded){
+        this._embedded = _embedded; 
+    }
+    
+    public EmbeddedFiligrana getEmbedded(){
+        return this._embedded;
+    }
+    
+    /**
+     * Custom methods
+     */
+    
+    public Filigrana getFiligrana(String codFiligrana){
+    	
+    	if(UtilString.isEmptyTrim(codFiligrana))
+    	   return null;
+    	
+    	Filigrana returnFiligrana = null;
+    	
+    	if (this._embedded!=null) {
+    	    
+    		List<Filigrana> filigrane = this._embedded.getItems();
+    	    
+    		if (filigrane!= null && filigrane.size()>0){
+    			for(Filigrana filigrana:filigrane){
+    				if (filigrana.getCode().equals(codFiligrana)){
+    					returnFiligrana =  filigrana;
+    					break;
+    				}
+    			}
+    		}
+    	}
+    	
+    	return returnFiligrana;
+    }
+    
+    public HashMap<String,Filigrana> getFiligrane(){
+    	
+    	HashMap<String,Filigrana> mapFiligrane = new HashMap<String,Filigrana>();
+    	
+   	    if (this._embedded!=null) {
+    	    
+    		List<Filigrana> filigrane = this._embedded.getItems();
+    	    
+    		if (filigrane!= null && filigrane.size()>0){
+    			for(Filigrana filigrana:filigrane)
+    				mapFiligrane.put(filigrana.getCode(),filigrana);
+
+    		}
+    	}
+
+        return mapFiligrane;
+    }
+    
+    public boolean isValidEntities(){
+        if (this._embedded!=null) {
+     	    
+        	List<Filigrana> filigrane = this._embedded.getItems();
+     	    
+     		if (filigrane!= null && filigrane.size()>0)
+     			return true;
+     		else
+     			return false;
+        }
+        else return false;
+     }    
+    
+
+
+   
+}

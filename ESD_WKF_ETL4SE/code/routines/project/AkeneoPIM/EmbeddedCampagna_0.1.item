@@ -1,0 +1,44 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import routines.JSONArray;
+import routines.JSONObject;
+
+
+
+public class EmbeddedCampagna { 
+	
+	    public EmbeddedCampagna(JSONObject jsonObjBody) {
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("_embedded");
+	    	setItems(jsonObjValues);
+	    }
+	    
+	    private List<Campagna> items;
+	    
+        public void setItems(JSONObject jsonObjValues){
+	    	
+	    	this.items = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("items");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<Campagna> arrayList = new ArrayList<Campagna>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new Campagna((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.items = arrayList;
+	    		}
+	    	}
+	    }
+        
+        public List<Campagna> getItems(){
+        	return items;
+        }
+}

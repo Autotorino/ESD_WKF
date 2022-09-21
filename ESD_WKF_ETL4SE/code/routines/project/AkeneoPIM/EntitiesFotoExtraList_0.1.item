@@ -1,0 +1,135 @@
+package routines;
+
+import java.util.HashMap;
+import java.util.List;
+
+
+
+
+public class EntitiesFotoExtraList {
+	
+	public EntitiesFotoExtraList() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public EntitiesFotoExtraList(String jsonObject) {
+		
+		JSONObject jsonObjBody = new JSONObject(jsonObject);
+		
+	
+		//setNext(jsonObjBody);
+		//setCurrent_page(jsonObjBody);
+		
+		EmbeddedFotoExtra _embedded = new EmbeddedFotoExtra(jsonObjBody);
+		setEmbedded(_embedded);
+		
+		
+		
+	}
+
+	//private String next;
+	
+	//private String current_page;
+	
+    private EmbeddedFotoExtra _embedded;
+    
+    /*
+    public void setNext(String next){
+        this.next = next;
+    }
+    
+    public void setNext(JSONObject jsonObjBody){
+    	this.next = UtilJson.getValueStringFrom_JObject_3Level(jsonObjBody, "_links", "next","href");
+    	
+    }
+    
+    public String getNext(){
+        return this.next;
+    }  
+    
+    public void setCurrent_page(String current_page){
+        this.current_page = current_page;
+    }
+    
+    public void setCurrent_page(JSONObject jsonObjBody){
+    	this.current_page = UtilJson.getValueStringFrom_JObject_1Level(jsonObjBody, "current_page");
+    	
+    }
+    
+    public String getCurrent_page(String current_page){
+        return this.current_page;
+    }
+    */
+    
+    public void setEmbedded(EmbeddedFotoExtra _embedded){
+        this._embedded = _embedded; 
+    }
+    
+    public EmbeddedFotoExtra getEmbedded(){
+        return this._embedded;
+    }
+    
+    /**
+     * Custom methods
+     */
+    
+    public FotoExtra getFotoExtra(String codFotoExtra){
+    	
+    	if(UtilString.isEmptyTrim(codFotoExtra))
+    	   return null;
+    	
+    	FotoExtra returnFotoExtra = null;
+    	
+    	if (this._embedded!=null) {
+    	    
+    		List<FotoExtra> fotoExtra = this._embedded.getItems();
+    	    
+    		if (fotoExtra!= null && fotoExtra.size()>0){
+    			for(FotoExtra foto:fotoExtra){
+    				if (foto.getCode().equals(codFotoExtra)){
+    					returnFotoExtra =  foto;
+    					break;
+    				}
+    			}
+    		}
+    	}
+    	
+    	return returnFotoExtra;
+    }
+    
+    public HashMap<String,FotoExtra> getFotoExtra(){
+    	
+    	HashMap<String,FotoExtra> mapFotoExtra = new HashMap<String,FotoExtra>();
+    	
+   	    if (this._embedded!=null) {
+    	    
+    		List<FotoExtra> fotoExtra = this._embedded.getItems();
+    	    
+    		if (fotoExtra!= null && fotoExtra.size()>0){
+    			for(FotoExtra foto:fotoExtra)
+    				mapFotoExtra.put(foto.getCode(),foto);
+
+    		}
+    	}
+
+        return mapFotoExtra;
+    }
+    
+    public boolean isValidEntities(){
+        if (this._embedded!=null) {
+     	    
+        	List<FotoExtra> fotoExtra = this._embedded.getItems();
+     	    
+     		if (fotoExtra!= null && fotoExtra.size()>0)
+     			return true;
+     		else
+     			return false;
+        }
+        else return false;
+     }    
+    
+
+
+   
+}

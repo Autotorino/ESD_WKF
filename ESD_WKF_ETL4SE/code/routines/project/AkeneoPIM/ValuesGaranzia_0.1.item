@@ -1,0 +1,177 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ValuesGaranzia {
+	
+	
+	    public ValuesGaranzia() {
+		}	    
+	    
+	    public ValuesGaranzia(JSONObject jsonObjBody) {
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("values");
+	    	
+	    	setLabel(jsonObjValues);
+	    	setDurata_mesi(jsonObjValues);
+	    	setPremium_selection(jsonObjValues);
+	    	setDescrizione_portali_esterni(jsonObjValues);
+	    	setUrl_logo(jsonObjValues);
+	    	
+		}
+	    
+	    private List<DataValue> label;
+	    
+	    private List<DataValue> durata_mesi;
+	    
+	    private List<DataValue> premium_selection;
+	    
+	    private List<DataValue> descrizione_portali_esterni;
+
+	    private List<DataValue> url_logo;
+	    
+	    /**
+	     * 
+	     * Metodi GET\SET per Lettura dal PIM
+	     */
+	    public void setLabel(List<DataValue> label){
+	        this.label = label;
+	    }
+	    
+        public void setLabel(JSONObject jsonObjValues){
+	    	
+	    	this.label = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("label");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.label = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getLabel(){
+	        return this.label;
+	    }
+	    
+	    public void setDurata_mesi(List<DataValue> durata_mesi){
+	        this.durata_mesi = durata_mesi;
+	    }
+	    
+        public void setDurata_mesi(JSONObject jsonObjValues){
+	    	
+	    	this.durata_mesi = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("durata_mesi");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.durata_mesi = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getDurata_mesi(){
+	        return this.durata_mesi;
+	    }
+	    
+	    public void setPremium_selection(List<DataValue> premium_selection){
+	        this.premium_selection = premium_selection;
+	    }
+	    
+        public void setPremium_selection(JSONObject jsonObjValues){
+	    	
+	    	this.premium_selection = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("premium_selection");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.premium_selection = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getPremium_selection(){
+	        return this.premium_selection;
+	    }
+	    
+	    public void setDescrizione_portali_esterni(List<DataValue> descrizione_portali_esterni){
+	        this.descrizione_portali_esterni = descrizione_portali_esterni;
+	    }
+	    
+        public void setDescrizione_portali_esterni(JSONObject jsonObjValues){
+	    	
+	    	this.descrizione_portali_esterni = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("descrizione_portali_esterni");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.descrizione_portali_esterni = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getDescrizione_portali_esterni(){
+	        return this.descrizione_portali_esterni;
+	    }
+	    
+	    public void setUrl_logo(List<DataValue> url_logo){
+	        this.url_logo = url_logo;
+	    }
+	    
+        public void setUrl_logo(JSONObject jsonObjValues){
+	    	
+	    	this.url_logo = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("url_logo");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.url_logo = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getUrl_logo(){
+	        return this.url_logo;
+	    }
+}

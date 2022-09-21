@@ -1,0 +1,26 @@
+package routines;
+
+
+
+public class Label {
+	
+	    public Label(JSONObject jsonObj) {
+			setIT_IT(jsonObj);
+		} 
+	
+	    private String it_IT;
+
+
+	    public void setIT_IT(String it_IT){
+	        this.it_IT = it_IT;
+	    }
+	    
+	    public void setIT_IT(JSONObject jsonObj){
+	    	if(jsonObj.get("it_IT")!=null && jsonObj.get("it_IT") instanceof String)
+		           this.it_IT = (String)jsonObj.get("it_IT");
+	    }
+	    
+	    public String getIT_IT(){
+	        return this.it_IT;
+	    }
+}

@@ -1,0 +1,45 @@
+package routines;
+
+import routines.JSONObject;
+
+
+public class ImpValue {
+	
+	    public ImpValue() {
+		}
+	
+	    public ImpValue(JSONObject jsonObj) {
+			setAmount(jsonObj);
+			setCurrency(jsonObj);
+		}
+	
+	    private String amount;
+
+	    private String currency;
+
+	    public void setAmount(String amount){
+	        this.amount = amount;
+	    }
+	    
+	    public void setAmount(JSONObject jsonObj){
+	    	if(jsonObj.get("amount")!=null && jsonObj.get("amount") instanceof String)
+		           this.amount = (String)jsonObj.get("amount");
+	    }
+	    
+	    public String getAmount(){
+	        return this.amount;
+	    }
+	    
+	    public void setCurrency(String currency){
+	        this.currency = currency;
+	    }
+	    
+	    public void setCurrency(JSONObject jsonObj){
+	    	if(jsonObj.get("currency")!=null && jsonObj.get("currency") instanceof String)
+		           this.currency = (String)jsonObj.get("currency");
+	    }
+	    
+	    public String getCurrency(){
+	        return this.currency;
+	    }
+}

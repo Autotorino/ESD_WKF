@@ -1,0 +1,64 @@
+package routines;
+
+import java.util.List;
+
+
+public class Media {
+
+	public List<Image> images;
+	
+	public List<Video> videos;
+
+	public List<Image> getImages() {
+		return this.images;
+	}
+
+	public void setImages(List<Image> images) {
+		this.images = images;
+	}
+	
+	public List<Video> getVideos() {
+		return this.videos;
+	}
+
+	public void setVideos(List<Video> videos) {
+		this.videos = videos;
+	}
+	
+	
+	public String toXML() {
+		
+		String returnXML = "        <media>\n";
+		
+		if (this.images!=null && this.images.size()>0){
+			
+			returnXML += "          <images>\n";
+			
+			for(Image image : images){
+				returnXML+=image.toXML();
+			}
+			
+			returnXML+="          </images>\n";
+		}
+		else returnXML+="          <images/>\n";
+		
+		if (this.videos!=null && this.videos.size()>0){
+			
+			returnXML += "          <videos>\n";
+			
+			for(Video video : videos){
+				returnXML+=video.toXML();
+			}
+			
+			returnXML+="          </videos>\n";
+		}
+		else returnXML+="          <videos/>\n";
+
+		
+		returnXML += "        </media>";
+		
+		return returnXML;
+	}
+	
+	
+}

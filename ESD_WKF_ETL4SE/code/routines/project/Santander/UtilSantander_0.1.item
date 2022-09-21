@@ -1,0 +1,129 @@
+package routines;
+
+import java.math.BigDecimal;
+import java.util.Date;
+
+
+public class UtilSantander {
+
+	  public static String getCodiceBene(String tipoVeicolo,String categoria,String dataImmatricolazione){
+		  
+		    String codiceBene = null;
+		    
+		    tipoVeicolo = UtilString.isEmptyTrim(tipoVeicolo) ? "":tipoVeicolo;
+		    categoria = UtilString.isEmptyTrim(categoria) ? "":categoria;
+		    
+		    Date dImmatricolazione = null;
+  	  
+			if (tipoVeicolo.equals("U") 
+				  && (categoria.equals("auto") || categoria.equals("veicoli_commerciali"))
+					 && !UtilString.isEmptyTrim(dataImmatricolazione) && dataImmatricolazione.length()>=10  && 
+					   (dImmatricolazione = UtilDate.parseDateWithMultiplePattern(dataImmatricolazione.substring(0,10),"yyyy-MM-dd")) != null)
+			{
+				
+			   Date dConfronto12 = UtilDate.subtractsYearMonDaysZeroTime(new Date(),12, "M");
+				
+	           if (dImmatricolazione.compareTo(dConfronto12)>=0)
+	        	   codiceBene="C";
+      		   else 
+      		       codiceBene="D"; 
+			} 
+			else if ((tipoVeicolo.equals("N") || tipoVeicolo.equals("Z"))
+					   && (categoria.equals("auto") || categoria.equals("veicoli_commerciali"))){
+				codiceBene="C";
+			}
+			else if (tipoVeicolo.equals("N") && categoria.equals("moto")){
+				codiceBene="MTN";
+			}
+			else if (tipoVeicolo.equals("U") && categoria.equals("moto"))
+				codiceBene="MTU";
+		  
+
+		    return codiceBene;
+		
+	  }
+	  
+	  public static String getCodiceProdotto(String tipoVeicolo,String categoria,String dataImmatricolazione){
+		  
+		  String codiceProdotto = null;
+		    
+		    tipoVeicolo = UtilString.isEmptyTrim(tipoVeicolo) ? "":tipoVeicolo;
+		    categoria = UtilString.isEmptyTrim(categoria) ? "":categoria;
+		    
+		    Date dImmatricolazione = null;
+	  
+			if (tipoVeicolo.equals("U") 
+				  && (categoria.equals("auto") || categoria.equals("veicoli_commerciali"))
+					 && !UtilString.isEmptyTrim(dataImmatricolazione) && dataImmatricolazione.length()>=10  && 
+					   (dImmatricolazione = UtilDate.parseDateWithMultiplePattern(dataImmatricolazione.substring(0,10),"yyyy-MM-dd")) != null)
+			{
+				
+			   Date dConfronto12 = UtilDate.subtractsYearMonDaysZeroTime(new Date(),12, "M");
+			   Date dConfronto24 = UtilDate.subtractsYearMonDaysZeroTime(new Date(),24, "M");
+			   Date dConfronto36 = UtilDate.subtractsYearMonDaysZeroTime(new Date(),36, "M");
+			   
+			   if (dImmatricolazione.compareTo(dConfronto36)<0)
+				   codiceProdotto="12";
+			   else{
+				   if (dImmatricolazione.compareTo(dConfronto36)>=0 && dImmatricolazione.compareTo(dConfronto24)<0)
+					   codiceProdotto="10";
+			        else {
+			           if (dImmatricolazione.compareTo(dConfronto24)>=0 && dImmatricolazione.compareTo(dConfronto12)<0)
+			        	   codiceProdotto="9";
+       		       else 
+       		    	codiceProdotto="11"; 
+			        }
+			   }
+			} 
+			else if ((tipoVeicolo.equals("N") || tipoVeicolo.equals("Z"))
+					   && (categoria.equals("auto") || categoria.equals("veicoli_commerciali"))){
+				codiceProdotto="11";
+			}
+			else if (categoria.equals("moto")){
+				codiceProdotto="15";
+			}
+		  
+
+		    return codiceProdotto;
+		
+	  }
+	  
+	  public static BigDecimal getFinanziato(String prezzoVendita,String anticipo){
+		  
+		   try {
+			   
+				BigDecimal bdd = new BigDecimal(prezzoVendita);
+				BigDecimal bdd2 = new BigDecimal(anticipo);
+				
+				return bdd.subtract(bdd2);
+			
+			} catch (Exception e) {
+				// TODO: handle exception
+				return new BigDecimal(0);
+			}
+		
+	  }
+	  
+	  public static String requestPostPreventivo(String intermediarioId,String codiceBene,String codiceProdotto,String prezzoVenditaManuale,String finanziato,
+			                                     String anticipo,String descFinanziamento,String tabellaFinanziaria,String durata,String capitaleResiduo){
+		  
+		  return   "{ \"intermediario\": "+intermediarioId+
+				    ",\"codiceBene\": \""+codiceBene+"\""+
+				    ",\"codiceProdotto\": \""+codiceProdotto+"\""+
+				    ",\"prezzoVendita\": "+prezzoVenditaManuale+
+				    ",\"finanziato\": "+finanziato+
+				    ",\"acconto\": "+anticipo+
+				    ",\"commissioni\": 400"+
+				    ",\"descrizioneFinanziamento\": \""+descFinanziamento+"\""+
+				    ",\"tabellaFinanziaria\": \""+tabellaFinanziaria+"\""+
+				    ",\"durata\": "+durata +  
+				    (!UtilString.isEmptyTrim(capitaleResiduo) ?  
+				    		 ", \"percentualeCapitaleResiduo\" : " +capitaleResiduo : "") + 
+				    "}";
+		
+	  }
+	  
+	  
+	  
+	
+}

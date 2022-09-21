@@ -1,0 +1,81 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class MultiDataValue {
+	
+	    public MultiDataValue(String locale,String scope,List<String> data) {
+			this.locale = locale;
+			this.scope = scope;
+			this.data = data;
+		}
+	    
+	    public MultiDataValue(JSONObject jsonObj) {
+	    	if(jsonObj!= null){
+				setLocale(jsonObj);
+				setScope(jsonObj);
+				setData(jsonObj);
+            }
+		}
+	
+	    private String locale;
+
+	    private String scope;
+
+	    private List<String> data;
+
+	    public void setLocale(String locale){
+	        this.locale = locale;
+	    }
+	    
+	    public void setLocale(JSONObject jsonObj){
+	    	if(jsonObj.get("locale")!=null && jsonObj.get("locale") instanceof String)
+	           this.locale = (String)jsonObj.get("locale");
+	    }
+	    
+	    public String getLocale(){
+	        return this.locale;
+	    }
+	    
+	    public void setScope(String scope){
+	        this.scope = scope;
+	    }
+	    
+	    public void setScope(JSONObject jsonObj){
+	    	if(jsonObj.get("scope")!=null && jsonObj.get("scope") instanceof String)
+	           this.scope = (String)jsonObj.get("scope");
+	    }	   
+	    
+	    public String getScope(){
+	        return this.scope;
+	    }
+	    
+	    public void setData(List<String> data){
+	        this.data = data;
+	    }
+	    
+	    public void setData(JSONObject jsonObj){
+	    	
+	    	if(jsonObj.get("data")!=null && jsonObj.get("data") instanceof JSONArray)
+	    	{
+		    	JSONArray jsonArray = (JSONArray)jsonObj.get("data");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<String> arrayList = new ArrayList<String>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add((String)jsonArray.getString(i));
+	    			
+			        this.data = arrayList;
+	    		}
+	        }
+	    	
+	    }	   
+	    
+	    public List<String> getData(){
+	        return this.data;
+	    }
+}

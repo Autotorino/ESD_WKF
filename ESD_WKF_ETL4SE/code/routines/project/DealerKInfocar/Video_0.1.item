@@ -1,0 +1,30 @@
+package routines;
+
+
+public class Video {
+
+	public String uri;
+
+	
+	
+	public String getUri() {
+		return uri;
+	}
+	public void setUri(String uri) {
+		this.uri = uri;
+	}
+	public String getUriXML() {
+		return "              <uri>"+this.uri+"</uri>";
+	}
+	
+
+
+	public String toXML() {
+		return 
+          "            <video>\n"+
+            this.getUriXML()+"\n"+
+          "            </video>\n";
+	}
+	
+	
+}

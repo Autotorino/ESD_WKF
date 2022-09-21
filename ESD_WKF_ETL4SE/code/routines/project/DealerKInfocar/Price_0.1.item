@@ -1,0 +1,86 @@
+package routines;
+
+import java.math.BigDecimal;
+import java.util.Map;
+
+
+public class Price {
+
+	public String type;
+	public String vat_type;
+	public String currency;
+	public String value;
+	
+	
+	public String getType() {
+		return this.type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getTypeXML() {
+		if (UtilString.isEmptyTrim(this.type))
+			return "            <type/>";		
+		return "            <type>"+this.type+"</type>";
+	}
+	
+	public String getVat_type() {
+		return this.vat_type;
+	}
+	public void setVat_type(String vat_type) {
+		this.vat_type = vat_type;
+	}
+	public void setVat_typeFromMap(Boolean ivaEsposta,Map<String,String> mapIvaExp) {
+		if(mapIvaExp!=null){
+			   this.vat_type = mapIvaExp.get(ivaEsposta == null || !ivaEsposta ? "false":"true");
+		}
+		else{
+			this.vat_type = null;
+		}
+	}		
+	public String getVat_typeXML() {
+		if (UtilString.isEmptyTrim(this.vat_type))
+			return "            <vat_type/>";		
+		return "            <vat_type>"+this.vat_type+"</vat_type>";
+	}
+	
+	public String getCurrency() {
+		return this.currency;
+	}
+	public void setCurrency(String currency) {
+		this.currency = currency;
+	}
+	public String getCurrencyXML() {
+		if (UtilString.isEmptyTrim(this.currency))
+			return "            <currency/>";			
+		return "            <currency>"+this.currency+"</currency>";
+	}
+	
+	public String getValue() {
+		return this.value;
+	}
+	public void setValue(String value) {
+		if(UtilString.stringIsNumber(value))
+			   this.value = new BigDecimal(value).intValue()+"";
+			else
+			   this.value=null;			
+	}
+	public String getValueXML() {
+		if (UtilString.isEmptyTrim(this.value))
+			return "            <value/>";			
+		return "            <value>"+this.value+"</value>";
+	}
+	
+
+	public String toXML() {
+		return 
+          "          <price>\n"+
+            this.getTypeXML()+"\n"+
+            this.getVat_typeXML()+"\n"+
+            this.getCurrencyXML()+"\n"+
+            this.getValueXML()+"\n"+
+          "          </price>\n";
+	}
+	
+	
+}

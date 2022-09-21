@@ -1,0 +1,28 @@
+package routines;
+
+import java.util.regex.Pattern;
+
+
+public class TargaUtil {
+
+
+	
+	  static String REGEXP_TARGA_AUTO = "^[a-zA-Z]{2}[0-9]{3}[a-zA-Z]{2}$";
+	  static String REGEXP_TARGA_MOTO = "^[a-zA-Z]{2}[0-9]{5}$";
+	  
+	  
+	  public static boolean matchRegExpTarga(String textTarga){
+		  try {
+			  Pattern ptrTargaAuto = Pattern.compile(REGEXP_TARGA_AUTO);
+			  Pattern ptrTargaMoto = Pattern.compile(REGEXP_TARGA_MOTO);
+			  
+			  if (ptrTargaAuto.matcher(textTarga).matches() || ptrTargaMoto.matcher(textTarga).matches())
+				  return true;
+			  
+		    } catch (Exception ex) {
+		        return false;
+		    }
+		  
+		  return false;
+	  }
+}

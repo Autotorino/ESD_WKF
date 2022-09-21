@@ -1,0 +1,249 @@
+package routines;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Date;
+import java.util.List;
+
+
+public class PricingUtil {
+
+
+	  public enum TipoVeicolo { USATO, KM0, NUOVO, OTHER};
+
+	  public static String prezzoListinoManuale(TipoVeicolo tipoVeicolo,
+			  String price,
+			  String codArrotondamento,
+			  String codSpeseTrapasso,
+			  EntitiesArrotondamentiList eArr,
+			  EntitiesSpeseTrapassoList eST)
+	  {
+
+		  Double priceCalc = null;
+
+		  if(!UtilString.stringIsNumber(price))
+			  return null;
+		  else
+			  priceCalc = new Double(price);
+
+    	  if (tipoVeicolo == TipoVeicolo.USATO || tipoVeicolo == TipoVeicolo.NUOVO || tipoVeicolo == TipoVeicolo.KM0) {
+    		  
+    		  if (tipoVeicolo == TipoVeicolo.KM0){
+	    		  SpeseTrapasso speseTrapasso = eST.getSpeseTrapasso(codSpeseTrapasso);
+	
+				  if(speseTrapasso!= null && speseTrapasso.getSpesaTrapasso()!=null)
+					  priceCalc = priceCalc + speseTrapasso.getSpesaTrapasso();
+    		  }
+			  
+    		  Arrotondamento arrotondamento = eArr.getArrotondamento(codArrotondamento);			  
+
+			  if(arrotondamento!=null && arrotondamento.getArrotondamento()!=null){
+				  Integer arrValue = arrotondamento.getArrotondamento();
+				  Integer priceCalcInt = new BigDecimal(priceCalc).setScale(0, RoundingMode.UP).intValue();
+				  priceCalcInt = priceCalcInt - (priceCalcInt%arrValue !=0 ? (priceCalcInt%arrValue) : 0) + (priceCalcInt % arrValue != 0 ? arrValue:0);
+				  priceCalc = new Double(priceCalcInt.toString());
+			  }
+			  else
+				  priceCalc = new Double(new BigDecimal(priceCalc).setScale(0, RoundingMode.UP).doubleValue());
+		  }
+    	  else 
+    		  priceCalc = new Double(new BigDecimal(priceCalc).setScale(0, RoundingMode.UP).doubleValue());
+    	  
+
+		  return priceCalc.toString();
+	  }	
+	  
+	  public static String prezzoVenditaManuale(TipoVeicolo tipoVeicolo,
+			                                    String price,
+			                                    List<String> codsCampagne,
+			                                    String codArrotondamento,
+			                                    String codSpeseTrapasso,
+	        		                            EntitiesCampagneList eCampagne,
+	        		                            EntitiesArrotondamentiList eArr,
+	        		                            EntitiesSpeseTrapassoList eST,
+	        		                            Date current)
+	  {
+		 
+		  Double priceCalc = null;
+	      
+		  if(!UtilString.stringIsNumber(price))
+			  return null;
+		  else
+			  priceCalc = new Double(price);
+  
+		  
+		  if (tipoVeicolo == TipoVeicolo.USATO || tipoVeicolo == TipoVeicolo.NUOVO || tipoVeicolo == TipoVeicolo.KM0) {
+			  
+			  List<Campagna> campagne = eCampagne!= null ? eCampagne.getCampagneOrderedsActive(codsCampagne, current) : null;
+			  Arrotondamento arrotondamento = eArr != null ? eArr.getArrotondamento(codArrotondamento) : null;	
+			  
+			  if (tipoVeicolo == TipoVeicolo.KM0) {
+				  SpeseTrapasso speseTrapasso = eST != null ? eST.getSpeseTrapasso(codSpeseTrapasso) : null;
+				  
+				  if(speseTrapasso!= null && speseTrapasso.getSpesaTrapasso()!=null)
+					  priceCalc = priceCalc - speseTrapasso.getSpesaTrapasso();			  
+			  }
+	
+			  if (campagne!= null && campagne.size()>0)
+			  {
+			  
+				  for (Campagna campagna:campagne){
+
+					    if (campagna.isTipoScontoPercentuale() && campagna.getSconto()!= null)
+					    	priceCalc = priceCalc + (priceCalc * campagna.getSconto() / 100);
+	
+	                    if (campagna.isTipoScontoAssoluto() && campagna.getSconto()!= null)
+	                    	priceCalc = priceCalc + campagna.getSconto();
+
+	                    if (campagna.getStop())
+	                    	break;
+				  }
+			  }
+			  
+			  if(arrotondamento!=null && arrotondamento.getArrotondamento()!=null){
+				 Integer arrValue = arrotondamento.getArrotondamento();
+			     Integer priceCalcInt = new BigDecimal(priceCalc).setScale(0, RoundingMode.UP).intValue();
+			     priceCalcInt = priceCalcInt - (priceCalcInt%arrValue !=0 ? (priceCalcInt%arrValue) : 0) + (priceCalcInt % arrValue != 0 ? arrValue:0);
+				 priceCalc = new Double(priceCalcInt.toString());
+			  }
+			  else
+				  priceCalc = new Double(new BigDecimal(priceCalc).setScale(0, RoundingMode.UP).doubleValue());
+				  
+		  }
+		  else
+			  priceCalc = new Double(new BigDecimal(priceCalc).setScale(0, RoundingMode.UP).intValue());
+		  
+
+		  
+		  return priceCalc.toString();
+	  }
+	  
+	  public static String prezzoListinoNoIva(TipoVeicolo tipoVeicolo,
+						  String price,
+						  String codArrotondamento,
+						  String codSpeseTrapasso,
+						  EntitiesArrotondamentiList eArr,
+						  EntitiesSpeseTrapassoList eST,
+						  Integer iva)
+	  {
+
+		  Double ivaCalc = new Double("1."+ (iva!=null ? iva.toString():"0"));
+
+		  Double priceCalc = null;
+
+		  if(!UtilString.stringIsNumber(price))
+			  return null;
+		  else
+			  priceCalc = new Double(price);
+
+		  //Togliamo prima l'iva senza nessun arrotondamento
+		  priceCalc = priceCalc/ivaCalc;
+
+		  if (tipoVeicolo == TipoVeicolo.USATO || tipoVeicolo == TipoVeicolo.NUOVO || tipoVeicolo == TipoVeicolo.KM0) {
+			  
+			  Arrotondamento arrotondamento = eArr != null ? eArr.getArrotondamento(codArrotondamento) : null;	
+
+			  if(arrotondamento!=null && arrotondamento.getArrotondamento()!=null){
+				  Integer arrValue = arrotondamento.getArrotondamento();
+				  Integer priceCalcInt = new BigDecimal(priceCalc).setScale(0, RoundingMode.UP).intValue();
+				  priceCalcInt = priceCalcInt - (priceCalcInt%arrValue !=0 ? (priceCalcInt%arrValue) : 0) + (priceCalcInt % arrValue != 0 ? arrValue:0);
+				  priceCalc = new Double(priceCalcInt.toString());
+			  }
+			  else
+			     priceCalc = new Double(new BigDecimal(priceCalc).setScale(0, RoundingMode.UP).intValue());
+			  
+			  if (tipoVeicolo == TipoVeicolo.KM0) {
+				  
+				  SpeseTrapasso speseTrapasso = eST != null ? eST.getSpeseTrapasso(codSpeseTrapasso) : null;			  
+
+				  if(speseTrapasso!= null && speseTrapasso.getSpesaTrapasso()!=null)
+					  priceCalc = priceCalc + speseTrapasso.getSpesaTrapasso();
+			  }
+		  }
+		  else
+			  priceCalc = new Double(new BigDecimal(priceCalc).setScale(0, RoundingMode.UP).intValue());
+
+		  return priceCalc.toString();
+	  }	  
+	  
+	  
+	  public static String prezzoVenditaNoIva(TipoVeicolo tipoVeicolo,
+											  String price,
+											  List<String> codsCampagne,
+											  String codArrotondamento,
+											  String codSpeseTrapasso,
+											  EntitiesCampagneList eCampagne,
+											  EntitiesArrotondamentiList eArr,
+											  EntitiesSpeseTrapassoList eST,
+											  Date current,
+											  Integer iva)
+	  {
+		  
+		  Double ivaCalc = new Double("1."+ (iva!=null ? iva.toString():"0"));
+
+		  Double priceCalc = null;
+
+		  if(!UtilString.stringIsNumber(price))
+			  return null;
+		  else
+			  priceCalc = new Double(price);
+		  
+		  //Togliamo prima l'iva senza nessun arrotondamento
+		  priceCalc = priceCalc/ivaCalc;
+	  
+
+		  if (tipoVeicolo == TipoVeicolo.USATO || tipoVeicolo == TipoVeicolo.NUOVO || tipoVeicolo == TipoVeicolo.KM0) {
+
+			  List<Campagna> campagne = eCampagne != null ? eCampagne.getCampagneOrderedsActive(codsCampagne, current) : null;
+			  Arrotondamento arrotondamento = eArr != null ? eArr.getArrotondamento(codArrotondamento) : null;	
+
+			  if(arrotondamento!=null && arrotondamento.getArrotondamento()!=null){
+				  Integer arrValue = arrotondamento.getArrotondamento();
+				  Integer priceCalcInt = new BigDecimal(priceCalc).setScale(0, RoundingMode.UP).intValue();
+				  priceCalcInt = priceCalcInt - (priceCalcInt%arrValue !=0 ? (priceCalcInt%arrValue) : 0) + (priceCalcInt % arrValue != 0 ? arrValue:0);
+				  priceCalc = new Double(priceCalcInt.toString());
+			  }	
+			  else
+				  priceCalc = new Double(new BigDecimal(priceCalc).setScale(0, RoundingMode.UP).intValue());
+			  
+			  if (tipoVeicolo == TipoVeicolo.KM0){
+				  SpeseTrapasso speseTrapasso = eST != null ? eST.getSpeseTrapasso(codSpeseTrapasso) : null;
+				  if(speseTrapasso!= null && speseTrapasso.getSpesaTrapasso()!=null)
+					  priceCalc = priceCalc - speseTrapasso.getSpesaTrapasso();						  
+			  }
+ 
+			  
+			  if (campagne!= null && campagne.size()>0)
+			  {
+				  for (Campagna campagna:campagne){
+					  if (campagna.isTipoScontoPercentuale() && campagna.getSconto()!= null)
+						  priceCalc = priceCalc + (priceCalc * campagna.getSconto() / 100);
+
+					  if (campagna.isTipoScontoAssoluto() && campagna.getSconto()!= null)
+						  priceCalc = priceCalc + campagna.getSconto();
+
+					  if (campagna.getStop())
+						  break;
+				  }
+			  }
+
+			  if(arrotondamento!=null && arrotondamento.getArrotondamento()!=null){
+				  Integer arrValue = arrotondamento.getArrotondamento();
+				  Integer priceCalcInt = priceCalc.intValue();
+				  priceCalcInt = priceCalcInt - (priceCalcInt%arrValue !=0 ? (priceCalcInt%arrValue) : 0) + (priceCalcInt % arrValue != 0 ? arrValue:0);
+				  priceCalc = new Double(priceCalcInt.toString());
+			  }
+			  else
+				  priceCalc = new Double(new BigDecimal(priceCalc).setScale(0, RoundingMode.UP).intValue());  
+			  
+			  
+		  }
+		  else
+		      priceCalc = new Double(new BigDecimal(priceCalc).setScale(0, RoundingMode.UP).intValue());
+
+
+		  return priceCalc.toString();
+	  }	  
+	  
+
+}

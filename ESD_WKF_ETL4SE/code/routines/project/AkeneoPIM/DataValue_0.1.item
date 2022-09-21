@@ -1,0 +1,66 @@
+package routines;
+
+import routines.JSONObject;
+
+
+public class DataValue {
+	
+	    public DataValue(String locale,String scope,String data) {
+			this.locale = locale;
+			this.scope = scope;
+			this.data = data;
+		}
+	    
+	    public DataValue(JSONObject jsonObj) {
+	    	if(jsonObj!= null){
+				setLocale(jsonObj);
+				setScope(jsonObj);
+				setData(jsonObj);
+            }
+		}
+	
+	    private String locale;
+
+	    private String scope;
+
+	    private String data;
+
+	    public void setLocale(String locale){
+	        this.locale = locale;
+	    }
+	    
+	    public void setLocale(JSONObject jsonObj){
+	    	if(jsonObj.get("locale")!=null && jsonObj.get("locale") instanceof String)
+	           this.locale = (String)jsonObj.get("locale");
+	    }
+	    
+	    public String getLocale(){
+	        return this.locale;
+	    }
+	    
+	    public void setScope(String scope){
+	        this.scope = scope;
+	    }
+	    
+	    public void setScope(JSONObject jsonObj){
+	    	if(jsonObj.get("scope")!=null && jsonObj.get("scope") instanceof String)
+	           this.scope = (String)jsonObj.get("scope");
+	    }	   
+	    
+	    public String getScope(){
+	        return this.scope;
+	    }
+	    
+	    public void setData(String data){
+	        this.data = data;
+	    }
+	    
+	    public void setData(JSONObject jsonObj){
+	    	if(jsonObj.get("data")!=null && jsonObj.get("data") instanceof String)
+	           this.data = (String)jsonObj.get("data");
+	    }	   
+	    
+	    public String getData(){
+	        return this.data;
+	    }
+}

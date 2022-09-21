@@ -1,0 +1,295 @@
+package routines;
+
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+public class ProductPricing {
+	
+	    
+	   public ProductPricing() { 
+		   ValuesPricing values = new ValuesPricing();
+		   setValues(values);
+	   }
+	
+	   public ProductPricing(JSONObject jsonObjValues) {
+	    	
+		    setIdentifier(jsonObjValues);
+	    	setFamily(jsonObjValues);
+	    	
+	    	ValuesPricing values = new ValuesPricing(jsonObjValues);
+			setValues(values);
+		}
+	
+	    private String identifier;
+	    
+	    private String family;
+	    
+	    private ValuesPricing values;
+
+	    public void setIdentifier(String identifier){
+	        this.identifier = identifier;
+	    }
+	    
+	    public void setIdentifier(JSONObject jsonObjBody){
+	    	
+	    	if(jsonObjBody!=null){
+	    	  Object returnValue = jsonObjBody.get("identifier");
+	          this.identifier = (returnValue instanceof String) ? (String)returnValue : null;
+	    	}
+	    	else
+	    	  this.identifier = null;
+	    }
+	    
+	    public String getIdentifier(){
+	        return this.identifier;
+	    }
+	    
+	    public void setFamily(String family){
+	        this.family = family;
+	    }
+	    
+	    public void setFamily(JSONObject jsonObjBody){
+	    	
+	    	if(jsonObjBody!=null){
+	    	  Object returnValue = jsonObjBody.get("family");
+	          this.family = (returnValue instanceof String) ? (String)returnValue : null;
+	    	}
+	    	else
+	    	  this.family = null;
+	    }
+	    
+	    public String getFamily(){
+	        return this.family;
+	    }
+	    
+	    public void setValues(ValuesPricing values){
+	        this.values = values;
+	    }
+	    public ValuesPricing getValues(){
+	        return this.values;
+	    }
+	    
+	    
+	    
+	    /*
+	     * CUSTOM GET
+	     */
+
+	    @JsonIgnore
+	    public String getPrezzoListino(){
+	    	
+	    	try {
+	    		return this.getValues().getPrezzo_listino().get(0).getData().get(0).getAmount();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    @JsonIgnore	    
+	    public String getPrezzoListinoManuale(){
+	    	
+	    	try {
+	    		return this.getValues().getPrezzo_listino_manuale().get(0).getData().get(0).getAmount();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    @JsonIgnore	    
+	    public String getPrezzoListinoEsclusoIva(){
+	    	
+	    	try {
+	    		return this.getValues().getPrezzo_listino_escluso_iva().get(0).getData().get(0).getAmount();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    
+	    @JsonIgnore
+	    public String getPrezzoVendita(){
+	    	
+	    	try {
+	    		return this.getValues().getPrezzo_vendita().get(0).getData().get(0).getAmount();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    @JsonIgnore	    
+	    public String getPrezzoVenditaManuale(){
+	    	
+	    	try {
+	    		return this.getValues().getPrezzo_vendita_manuale().get(0).getData().get(0).getAmount();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    @JsonIgnore	    
+	    public String getPrezzoVenditaSenzaIvaEs(){
+	    	
+	    	try {
+	    		return this.getValues().getPrezzo_vendita_senza_iva_es().get(0).getData().get(0).getAmount();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    
+	    @JsonIgnore
+	    public String getTipo(){
+	    	
+	    	try {
+	    		return this.getValues().getTipo().get(0).getData();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    
+	    @JsonIgnore
+	    public String getTipoText(){
+	    	
+	    	try {
+	    		return this.getValues().getTipo_text().get(0).getData();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }
+	    
+	    @JsonIgnore
+	    public String getSpeseTrapassoSl(){
+	    	
+	    	try {
+	    		return this.getValues().getSpese_trapasso_sl().get(0).getData();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }	    
+	    
+	    @JsonIgnore
+	    public String getArrotondamentoSl(){
+	    	
+	    	try {
+	    		return this.getValues().getArrotondamento_sl().get(0).getData();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }	 
+	    
+	    
+	    @JsonIgnore
+	    public List<String> getCampagneMl(){
+	    	
+	    	try {
+	    		return this.getValues().getCampagne_ml().get(0).getData();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }	
+	    
+	    @JsonIgnore
+	    public String getFinFinaziaria(){
+	    	
+	    	try {
+	    		return this.getValues().getFin_finanziaria().get(0).getData();
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    }	 
+	    
+	    @JsonIgnore	    
+	    public String getCampagneMlStringPiped(){
+	    	
+	    	String campagnePiped = "";
+	    	
+	    	try {
+	    		
+	    		if(this.getValues().getCampagne_ml()!= null && this.getValues().getCampagne_ml().size()>0 
+	    				&& this.getValues().getCampagne_ml().get(0)!= null && this.getValues().getCampagne_ml().get(0).getData()!=null 
+	    				   && this.getValues().getCampagne_ml().get(0).getData().size()>0)
+	    			
+	    		           for (String campagna : this.getValues().getCampagne_ml().get(0).getData())	{
+	    		        	   campagnePiped += (campagnePiped.length()>0 ?  " | " : "") + campagna ;
+	    		           }
+
+	    	}
+	    	catch (Exception e){
+		    	return null;
+	    	}
+	    	
+	    	return campagnePiped;
+	    }	
+	    
+	    @JsonIgnore
+	    public boolean isValidPrices() {
+            
+	    	if (this.identifier.startsWith("Z"))
+		    	return UtilString.stringIsNumber(this.getPrezzoListino());
+	    	else
+	    	    return UtilString.stringIsNumber(this.getPrezzoListino()) 
+	                  && UtilString.stringIsNumber(this.getPrezzoVendita());
+	    }
+	    @JsonIgnore
+	    public boolean isChangePricesCalc(String prezzoListinoManuale,String prezzoVenditaManuale,
+	    		                      String prezzoListinoNoIva,String prezzoVenditaNoIva){
+
+	    	if ( (UtilString.stringIsNumber(this.getPrezzoListinoManuale()) &&
+	    			           !UtilString.stringIsNumber(prezzoListinoManuale))                          ||
+	    		 (!UtilString.stringIsNumber(this.getPrezzoListinoManuale()) &&
+	    	    			    UtilString.stringIsNumber(prezzoListinoManuale))                          ||
+	    		 (UtilString.stringIsNumber(this.getPrezzoListinoManuale()) &&
+	    	    			    UtilString.stringIsNumber(prezzoListinoManuale) &&
+	    	    	!new Double(this.getPrezzoListinoManuale()).equals(new Double(prezzoListinoManuale))) ||	
+	    	     (UtilString.stringIsNumber(this.getPrezzoVenditaManuale()) &&
+	    			           !UtilString.stringIsNumber(prezzoVenditaManuale))                          ||
+	    		 (!UtilString.stringIsNumber(this.getPrezzoVenditaManuale()) &&
+	    	    			    UtilString.stringIsNumber(prezzoVenditaManuale))                          ||
+	    		 (UtilString.stringIsNumber(this.getPrezzoVenditaManuale()) &&
+	    	    			    UtilString.stringIsNumber(prezzoVenditaManuale) &&
+	    	    	!new Double(this.getPrezzoVenditaManuale()).equals(new Double(prezzoVenditaManuale))) ||	
+		    	 (UtilString.stringIsNumber(this.getPrezzoListinoEsclusoIva()) &&
+	    			           !UtilString.stringIsNumber(prezzoListinoNoIva))                            ||
+	    		 (!UtilString.stringIsNumber(this.getPrezzoListinoEsclusoIva()) &&
+	    	    			    UtilString.stringIsNumber(prezzoListinoNoIva))                            ||
+	    		 (UtilString.stringIsNumber(this.getPrezzoListinoEsclusoIva()) &&
+	    	    			    UtilString.stringIsNumber(prezzoListinoNoIva) &&
+	    	    	!new Double(this.getPrezzoListinoEsclusoIva()).equals(new Double(prezzoListinoNoIva)))||
+			     (UtilString.stringIsNumber(this.getPrezzoVenditaSenzaIvaEs()) &&
+	    			           !UtilString.stringIsNumber(prezzoVenditaNoIva))                            ||
+	    		 (!UtilString.stringIsNumber(this.getPrezzoVenditaSenzaIvaEs()) &&
+	    	    			    UtilString.stringIsNumber(prezzoVenditaNoIva))                            ||
+	    		 (UtilString.stringIsNumber(this.getPrezzoVenditaSenzaIvaEs()) &&
+	    	    			    UtilString.stringIsNumber(prezzoVenditaNoIva) &&
+	    	    	!new Double(this.getPrezzoVenditaSenzaIvaEs()).equals(new Double(prezzoVenditaNoIva)))	    	    	
+	    	     )
+	    	
+	    	     return true;
+	    	else
+	    		return false;
+	    }
+	    
+	    @JsonIgnore
+	    public boolean isValidPricesCalc(String prezzoListinoManuale,
+			String prezzoVenditaManuale, String prezzoListinoNoIva,
+			String prezzoVenditaNoIva) {
+
+		   if ((UtilString.stringIsNumber(prezzoListinoManuale) && Double.valueOf(prezzoListinoManuale)<0)||
+			   (UtilString.stringIsNumber(prezzoVenditaManuale) && Double.valueOf(prezzoVenditaManuale)<0)|| 
+			   (UtilString.stringIsNumber(prezzoListinoNoIva) && Double.valueOf(prezzoListinoNoIva)<0)||
+			   (UtilString.stringIsNumber(prezzoVenditaNoIva) && Double.valueOf(prezzoVenditaNoIva)<0))
+
+			return false;
+		else
+			return true;
+	    }
+
+
+}

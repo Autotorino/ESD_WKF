@@ -1,0 +1,89 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ValuesSpeseTrapasso {
+	
+	
+	    public ValuesSpeseTrapasso() {
+		}	    
+	    
+	    public ValuesSpeseTrapasso(JSONObject jsonObjBody) {
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("values");
+	    	
+	    	setLabel(jsonObjValues);
+	    	setSpesa_trapasso(jsonObjValues);
+		}
+	    
+	    private List<DataValue> label;
+	    
+	    private List<DataValue> spesa_trapasso;
+	    
+	  
+
+	    
+	    /**
+	     * 
+	     * Metodi GET\SET per Lettura dal PIM
+	     */
+	    public void setLabel(List<DataValue> label){
+	        this.label = label;
+	    }
+	    
+        public void setLabel(JSONObject jsonObjValues){
+	    	
+	    	this.label = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("label");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.label = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getLabel(){
+	        return this.label;
+	    }
+	    
+	    public void setSpesa_trapasso(List<DataValue> spesa_trapasso){
+	        this.spesa_trapasso = spesa_trapasso;
+	    }
+	    
+        public void setSpesa_trapasso(JSONObject jsonObjValues){
+	    	
+	    	this.spesa_trapasso = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("spesa_trapasso");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.spesa_trapasso = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getSpesa_trapasso(){
+	        return this.spesa_trapasso;
+	    }
+	    
+	 
+
+}

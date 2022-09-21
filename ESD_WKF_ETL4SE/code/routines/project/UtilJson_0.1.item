@@ -1,0 +1,285 @@
+package routines;
+
+import java.io.IOException;
+import java.math.BigDecimal;
+import java.util.Map;
+
+import routines.JSONArray;
+import routines.system.JSONException;
+import routines.JSONObject;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+
+public class UtilJson {
+
+	  /**
+	   * Retrive value keyString from path Json :{}\value
+	   * 
+	   **/ 
+	  public static String getValueStringFrom_Object_1Level(String jsonBody,String keyString){
+		  
+		  if (jsonBody==null || keyString==null)
+			  return null;
+		  
+		  JSONObject jsonObjBody = new JSONObject(jsonBody);
+		  
+		  try{
+		  	  Object returnValue = jsonObjBody.get(keyString);
+		  	  
+		  	  if (returnValue instanceof String)
+		  		  return (String)returnValue;
+		  	  else if (returnValue instanceof Integer)
+		  		return ((Integer)returnValue).toString();
+		  	  else
+		  		return null;
+		  }
+		  catch (JSONException e){
+			  return null;
+		  }
+	  }
+	  
+	  /**
+	   * Retrive value keyString from path JsonObject :{}\value
+	   * 
+	   **/ 
+	  public static String getValueStringFrom_JObject_1Level(JSONObject jsonBody,String keyString){
+		  
+		  if (jsonBody==null || keyString==null)
+			  return null;
+		  
+		  
+		  try{
+		  	  Object returnValue = jsonBody.get(keyString);
+		  	  
+		  	  if (returnValue instanceof String)
+		  		  return (String)returnValue;
+		  	  else if (returnValue instanceof Integer)
+		  		return ((Integer)returnValue).toString();
+		  	else if (returnValue instanceof Boolean)
+		  		return ((Boolean)returnValue).toString();
+		  	  else
+		  		return null;
+		  }
+		  catch (JSONException e){
+			  return null;
+		  }
+	  }	  
+	  
+	  
+	/**
+	 * Retrive value keyString from path Json :{}\[]{}\value
+	 * 
+	 **/
+	public static String getValueStringFrom_ObjectArrayObject_2Level(String jsonBody,String jsonArray,int index,String keyString){
+		  
+		  if (jsonBody==null || jsonArray==null || keyString==null)
+			  return null;
+		  
+		  
+		  JSONObject jsonObjBody = new JSONObject(jsonBody);
+		  
+		  try{
+			  Object jsonReturn = jsonObjBody.get(jsonArray);
+			  
+			  if(jsonReturn instanceof JSONArray ){
+				  Object returnValue = ((JSONArray)jsonReturn).getJSONObject(index).get(keyString);
+			  	  
+			  	  if (returnValue instanceof String)
+			  		  return (String)returnValue;
+			  	  else if (returnValue instanceof Integer)
+			  		  return ((Integer)returnValue).toString();
+			  	else if (returnValue instanceof Double)
+			  		  return ((Double)returnValue).toString();
+			  	  else
+			  		  return null;
+			  }
+			  
+			  
+			  return null;
+			  
+
+		  }
+		  catch (JSONException e){
+			  return null;
+		  }
+	  }
+
+	/**
+	 * Retrive value keyString from path Json :{}\{}\value
+	 **/
+	public static String getValueStringFrom_Object_2Level(String jsonBody,String jsonObject1,String keyString){
+		  
+		  if (jsonBody==null || jsonObject1==null || keyString==null)
+			  return null;
+		  
+		  JSONObject jsonObjBody = new JSONObject(jsonBody);
+		  
+		  try{
+		  	  Object jsonObj1 = jsonObjBody.getJSONObject(jsonObject1);
+		  	  
+		  	  if(jsonObj1 instanceof JSONObject ){
+
+			  	  Object returnValue = ((JSONObject)jsonObj1).get(keyString);
+				  	  
+			  	  if (returnValue instanceof String)
+			  		  return (String)returnValue;
+			  	  else if (returnValue instanceof Integer)
+			  		  return ((Integer)returnValue).toString();
+			  	else if (returnValue instanceof BigDecimal)
+			  		  return ((BigDecimal)returnValue).toString();
+			  	else if (returnValue instanceof Double)
+			  		  return ((Double)returnValue).toString();
+			  	  else
+			  		  return null;
+
+			  }
+		  	  
+		  	  return null;
+		  	  
+		  }
+		  catch (JSONException e){
+			  return null;
+		  }
+	}
+	
+	/**
+	 * Retrive value keyString from path Json :{}\{}\{}\value
+	 **/
+	public static String getValueStringFrom_Object_3Level(String jsonBody,String jsonObject1,String jsonObject2,String keyString){
+		  
+		  if (jsonBody==null || jsonObject1==null || jsonObject2==null || keyString==null)
+			  return null;
+		  
+		  JSONObject jsonObjBody = new JSONObject(jsonBody);
+		  
+		  try{
+		  	  Object jsonObj1 = jsonObjBody.getJSONObject(jsonObject1);
+		  	  
+		  	  if(jsonObj1 instanceof JSONObject ){
+
+		  		  Object jsonObj2 = ((JSONObject)jsonObj1).getJSONObject(jsonObject2);
+		  		  
+		  		  if(jsonObj2 instanceof JSONObject ){
+
+			  		  Object returnValue = ((JSONObject)jsonObj2).get(keyString);
+				  	  
+				  	  if (returnValue instanceof String)
+				  		  return (String)returnValue;
+				  	  else if (returnValue instanceof Integer)
+				  		  return ((Integer)returnValue).toString();
+				  	  else
+				  		  return null;
+				  }
+			  }
+		  	  
+		  	  return null;
+		  	  
+		  }
+		  catch (JSONException e){
+			  return null;
+		  }
+	}
+	
+	/**
+	 * Retrive value keyString from path Json :{}\{}\{}\value
+	 **/
+	public static String getValueStringFrom_JObject_3Level(JSONObject jsonBody,String jsonObject1,String jsonObject2,String keyString){
+		  
+		  if (jsonBody==null || jsonObject1==null || jsonObject2==null || keyString==null)
+			  return null;
+		  
+		  
+		  try{
+		  	  Object jsonObj1 = jsonBody.getJSONObject(jsonObject1);
+		  	  
+		  	  if(jsonObj1 instanceof JSONObject ){
+
+		  		  Object jsonObj2 = ((JSONObject)jsonObj1).getJSONObject(jsonObject2);
+		  		  
+		  		  if(jsonObj2 instanceof JSONObject ){
+
+			  		  Object returnValue = ((JSONObject)jsonObj2).get(keyString);
+				  	  
+				  	  if (returnValue instanceof String)
+				  		  return (String)returnValue;
+				  	  else if (returnValue instanceof Integer)
+				  		  return ((Integer)returnValue).toString();
+				  	  else
+				  		  return null;
+				  }
+			  }
+		  	  
+		  	  return null;
+		  	  
+		  }
+		  catch (JSONException e){
+			  return null;
+		  }
+	}	
+	
+	 public static String getJsonString(Product product){
+	    	
+	    	ObjectMapper mapper = new ObjectMapper();
+	    	
+	    	String json = null;
+	    	
+	    	try {
+	    	   json = mapper.writeValueAsString(product);
+	    	  
+	    	  //System.out.println(json);
+	    	} catch (JsonProcessingException e) {
+	    	   e.printStackTrace();
+	    	}
+	    	
+	    	return json;
+	    }
+	 
+	 public static String getJsonString(ProductFinance product){
+	    	
+	    	ObjectMapper mapper = new ObjectMapper();
+	    	
+	    	String json = null;
+	    	
+	    	try {
+	    	   json = mapper.writeValueAsString(product);
+	    	  
+	    	  //System.out.println(json);
+	    	} catch (JsonProcessingException e) {
+	    	   e.printStackTrace();
+	    	}
+	    	
+	    	return json;
+	    }
+	 
+	 public static String getJsonString(ProductPricing product){
+	    	
+	    	ObjectMapper mapper = new ObjectMapper();
+	    	
+	    	String json = null;
+	    	
+	    	try {
+	    	   json = mapper.writeValueAsString(product);
+	    	  
+	    	  //System.out.println(json);
+	    	} catch (JsonProcessingException e) {
+	    	   e.printStackTrace();
+	    	}
+	    	
+	    	return json;
+	    }
+	 
+	 public static Map<String, String> convertJsonIntoMap(String jsonFile) {
+	        
+		    Map<String, String> map = null;
+	        try {
+	            ObjectMapper mapper = new ObjectMapper();
+	           
+	            map = mapper.readValue(jsonFile, Map.class);
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	        return map;
+	    }
+}

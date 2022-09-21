@@ -1,0 +1,64 @@
+package routines;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.text.SimpleDateFormat;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.DateUtil;
+
+
+public class UtilWorkBook {
+
+   public static String getCellValueCustom(Cell cell,Integer roundNumeric)
+   {
+    	
+   	 if (cell==null) return null;
+   	
+	 if(cell.getCellType() == CellType.FORMULA) 
+	 {
+			 
+			    if (cell.getCachedFormulaResultType() == CellType.NUMERIC )
+			    {
+			    	if(DateUtil.isCellDateFormatted(cell)){
+			    		  SimpleDateFormat sm = new SimpleDateFormat("yyyyMMdd");
+			    		  String strDate = sm.format(cell.getDateCellValue());
+			    		  return strDate;
+			    	}
+			    	else 
+			    	   return new String(new BigDecimal(cell.getNumericCellValue()).setScale(roundNumeric, RoundingMode.HALF_UP).toString());
+			    }
+			    else if (cell.getCachedFormulaResultType() == CellType.STRING) {
+			    	return new String(cell.getStringCellValue());
+				}
+			    else return null;
+		        
+	 }
+	 else if (cell.getCellType() == CellType.NUMERIC){
+		 if(DateUtil.isCellDateFormatted(cell)){
+	   		  SimpleDateFormat sm = new SimpleDateFormat("yyyyMMdd");
+	   		  String strDate = sm.format(cell.getDateCellValue());
+	   		  return strDate;
+	   	 }
+	   	 else 
+	   	      return new String(new BigDecimal(cell.getNumericCellValue()).setScale(roundNumeric, RoundingMode.HALF_UP).toString());
+	 }
+	 else if (cell.getCellType() == CellType.STRING) {
+	    	    return new String(cell.getStringCellValue());
+	 }
+	 else return null; 
+	 
+   }
+   
+   public static BigDecimal truncateDecimal(double x,int numberofDecimals)
+   {
+       if ( x > 0) {
+           return new BigDecimal(String.valueOf(x)).setScale(numberofDecimals, BigDecimal.ROUND_FLOOR);
+       } else {
+           return new BigDecimal(String.valueOf(x)).setScale(numberofDecimals, BigDecimal.ROUND_CEILING);
+       }
+   }
+    
+    
+}

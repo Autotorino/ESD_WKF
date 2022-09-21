@@ -1,0 +1,136 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+
+
+
+public class EntitiesColoreInterniList {
+	
+	public EntitiesColoreInterniList() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public EntitiesColoreInterniList(String jsonObject) {
+		
+		JSONObject jsonObjBody = new JSONObject(jsonObject);
+		
+	
+		//setNext(jsonObjBody);
+		//setCurrent_page(jsonObjBody);
+		
+		EmbeddedColoreInterni _embedded = new EmbeddedColoreInterni(jsonObjBody);
+		setEmbedded(_embedded);
+		
+		
+		
+	}
+
+	//private String next;
+	
+	//private String current_page;
+	
+    private EmbeddedColoreInterni _embedded;
+    
+    /*
+    public void setNext(String next){
+        this.next = next;
+    }
+    
+    public void setNext(JSONObject jsonObjBody){
+    	this.next = UtilJson.getValueStringFrom_JObject_3Level(jsonObjBody, "_links", "next","href");
+    	
+    }
+    
+    public String getNext(){
+        return this.next;
+    }  
+    
+    public void setCurrent_page(String current_page){
+        this.current_page = current_page;
+    }
+    
+    public void setCurrent_page(JSONObject jsonObjBody){
+    	this.current_page = UtilJson.getValueStringFrom_JObject_1Level(jsonObjBody, "current_page");
+    	
+    }
+    
+    public String getCurrent_page(String current_page){
+        return this.current_page;
+    }
+    */
+    
+    public void setEmbedded(EmbeddedColoreInterni _embedded){
+        this._embedded = _embedded; 
+    }
+    
+    public EmbeddedColoreInterni getEmbedded(){
+        return this._embedded;
+    }
+    
+    /**
+     * Custom methods
+     */
+    
+    public ColoreInterni getColoreInterni(String codColoreInterni){
+    	
+    	if(UtilString.isEmptyTrim(codColoreInterni))
+    	   return null;
+    	
+    	ColoreInterni returnColoreInterni = null;
+    	
+    	if (this._embedded!=null) {
+    	    
+    		List<ColoreInterni> colori = this._embedded.getItems();
+    	    
+    		if (colori!= null && colori.size()>0){
+    			for(ColoreInterni colore:colori){
+    				if (colore.getCode().equals(codColoreInterni)){
+    					returnColoreInterni =  colore;
+    					break;
+    				}
+    			}
+    		}
+    	}
+    	
+    	return returnColoreInterni;
+    }
+    
+    public HashMap<String,String> getColoreInterni(){
+    	
+    	HashMap<String,String> mapColoreInterni = new HashMap<String,String>();
+    	
+   	    if (this._embedded!=null) {
+    	    
+    		List<ColoreInterni> colori = this._embedded.getItems();
+    	    
+    		if (colori!= null && colori.size()>0){
+    			for(ColoreInterni colore:colori)
+    				mapColoreInterni.put(colore.getCode(), colore.getColoreExport());
+
+    		}
+    	}
+
+        return mapColoreInterni;
+    }
+    
+    public boolean isValidEntities(){
+        if (this._embedded!=null) {
+     	    
+     		List<ColoreInterni> coloreInterni = this._embedded.getItems();
+     	    
+     		if (coloreInterni!= null && coloreInterni.size()>0)
+     			return true;
+     		else
+     			return false;
+        }
+        else return false;
+     }    
+    
+
+
+   
+}

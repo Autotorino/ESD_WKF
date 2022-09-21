@@ -1,0 +1,93 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ValuesSede {
+	
+	    public static String unitaDiMisuraCurrency = "EUR";
+	
+	    public ValuesSede() {
+		}	    
+	    
+	    public ValuesSede(JSONObject jsonObjBody) {
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("values");
+	    	
+	    	setLabel(jsonObjValues);
+	    	setFilialedealerk(jsonObjValues);
+	    	
+	    	
+	    	
+		}
+	    
+	    private List<DataValue> label;
+	    
+	    private List<MultiDataValue> filialedealerk;
+	    
+
+
+
+	    
+	    /**
+	     * 
+	     * Metodi GET\SET per Lettura dal PIM
+	     */
+	    public void setLabel(List<DataValue> label){
+	        this.label = label;
+	    }
+	    
+        public void setLabel(JSONObject jsonObjValues){
+	    	
+	    	this.label = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("label");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.label = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getLabel(){
+	        return this.label;
+	    }
+	    
+	    public void setFilialedealerk(List<MultiDataValue> filialedealerk){
+	        this.filialedealerk = filialedealerk;
+	    }
+	    
+        public void setFilialedealerk(JSONObject jsonObjValues){
+	    	
+	    	this.filialedealerk = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("filialedealerk");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<MultiDataValue> arrayList = new ArrayList<MultiDataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new MultiDataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.filialedealerk = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<MultiDataValue> getFilialedealerk(){
+	        return this.filialedealerk;
+	    }
+	    
+
+}

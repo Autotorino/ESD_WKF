@@ -1,0 +1,46 @@
+package routines;
+
+public class Options {
+	
+
+	    
+	    public Options(JSONObject jsonObj) {   
+	    	if(jsonObj!= null){
+				setCode(jsonObj);
+				setLabels(jsonObj);
+            }
+		}
+	
+	    private String code;
+
+	    private Label labels;
+
+
+
+	    public void setCode(String code){
+	        this.code = code;
+	    }
+	    
+	    public void setCode(JSONObject jsonObj){
+	    	if(jsonObj.get("code")!=null && jsonObj.get("code") instanceof String)
+	           this.code = (String)jsonObj.get("code");
+	    }
+	    
+	    public String getCode(){
+	        return this.code;
+	    }
+	    
+	    public void setLabels(Label labels){
+	        this.labels = labels;
+	    }
+	    
+	    public void setLabels(JSONObject jsonObj){ 
+	    	if(jsonObj.get("labels")!=null && jsonObj.get("labels") instanceof JSONObject){
+	           this.labels =  new Label((JSONObject)jsonObj.get("labels")); 
+	    	}
+	    }	   
+	    
+	    public Label getLabels(){
+	        return this.labels;
+	    }
+}

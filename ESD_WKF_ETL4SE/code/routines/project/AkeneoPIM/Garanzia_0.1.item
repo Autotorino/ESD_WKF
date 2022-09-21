@@ -1,0 +1,100 @@
+package routines;
+
+
+public class Garanzia {
+	
+	    
+	   public Garanzia() {
+		   ValuesGaranzia values = new ValuesGaranzia(); 
+		   setValues(values);
+	   }
+	
+	   public Garanzia(JSONObject jsonObjValues) {
+	    	setCode(jsonObjValues);
+	    	
+	    	ValuesGaranzia values = new ValuesGaranzia(jsonObjValues);
+			setValues(values);
+		}
+	
+	    private String code;
+	    
+	    private ValuesGaranzia values;
+
+	    public void setCode(String code){
+	        this.code = code;
+	    }
+	    
+	    public void setCode(JSONObject jsonObjBody){
+	    	
+	    	if(jsonObjBody!=null){
+	    	  Object returnValue = jsonObjBody.get("code");
+	          this.code = (returnValue instanceof String) ? (String)returnValue : null;
+	    	}
+	    	else
+	    	  this.code = null;
+	    }
+	    
+	    public String getCode(){
+	        return this.code;
+	    }
+	    
+	    public void setValues(ValuesGaranzia values){
+	        this.values = values;
+	    }
+	    public ValuesGaranzia getValues(){
+	        return this.values;
+	    }
+	    
+	    /**
+	     * Custom methods
+	     */
+	    public String getLabel(){
+	    	
+	    	if (this.values!= null && this.values.getLabel()!= null && this.values.getLabel().size()> 0 && this.values.getLabel().get(0)!=null){
+	    		return this.values.getLabel().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }
+	    
+       public String getDurataMesi(){
+	    	
+	    	if (this.values!= null && this.values.getDurata_mesi()!= null && this.values.getDurata_mesi().size()> 0 && 
+	    			 this.values.getDurata_mesi().get(0)!=null && this.values.getDurata_mesi().get(0).getData()!= null){
+	    		return this.values.getDurata_mesi().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }
+       
+       public String getPremiumSelection(){
+	    	
+	    	if (this.values!= null && this.values.getPremium_selection()!= null && this.values.getPremium_selection().size()> 0 && 
+	    			 this.values.getPremium_selection().get(0)!=null && this.values.getPremium_selection().get(0).getData()!= null){
+	    		return this.values.getPremium_selection().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }
+       
+       public String getDescrizionePortaliEsterni(){
+	    	
+ 	    	if (this.values!= null && this.values.getDescrizione_portali_esterni()!= null && this.values.getDescrizione_portali_esterni().size()> 0 && 
+ 	    			 this.values.getDescrizione_portali_esterni().get(0)!=null && this.values.getDescrizione_portali_esterni().get(0).getData()!= null){
+ 	    		return this.values.getDescrizione_portali_esterni().get(0).getData();
+ 	    	}
+ 	    	else
+ 	    	   return null;
+ 	    }
+       
+       public String getUrlLogo(){
+	    	
+	    	if (this.values!= null && this.values.getUrl_logo()!= null && this.values.getUrl_logo().size()> 0 && 
+	    			 this.values.getUrl_logo().get(0)!=null && this.values.getUrl_logo().get(0).getData()!= null){
+	    		return this.values.getUrl_logo().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }
+
+}

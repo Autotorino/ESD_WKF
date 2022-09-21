@@ -1,0 +1,30 @@
+package routines;
+
+
+public class Equipment {
+
+	public String text;
+
+	
+	
+	public String getText() {
+		return this.text;
+	}
+	public void setText(String text) {
+		this.text = text;
+	}
+	public String getTextXML() {
+		return "            <text>"+this.text+"</text>";
+	}
+	
+
+
+	public String toXML() {
+		return 
+          "          <equipment>\n"+
+            this.getTextXML()+"\n"+
+          "          </equipment>\n";
+	}
+	
+	
+}

@@ -1,0 +1,190 @@
+package routines;
+
+import java.util.Date;
+
+
+public class Campagna {
+	
+	    
+	   public Campagna() {
+		   ValuesCampagna values = new ValuesCampagna();
+		   setValues(values);
+	   }
+	
+	   public Campagna(JSONObject jsonObjValues) {
+	    	setCode(jsonObjValues);
+	    	
+	    	ValuesCampagna values = new ValuesCampagna(jsonObjValues);
+			setValues(values);
+		}
+	
+	    private String code;
+	    
+	    private ValuesCampagna values;
+
+	    public void setCode(String code){
+	        this.code = code;
+	    }
+	    
+	    public void setCode(JSONObject jsonObjBody){
+	    	
+	    	if(jsonObjBody!=null){
+	    	  Object returnValue = jsonObjBody.get("code");
+	          this.code = (returnValue instanceof String) ? (String)returnValue : null;
+	    	}
+	    	else
+	    	  this.code = null;
+	    }
+	    
+	    public String getCode(){
+	        return this.code;
+	    }
+	    
+	    public void setValues(ValuesCampagna values){
+	        this.values = values;
+	    }
+	    public ValuesCampagna getValues(){
+	        return this.values;
+	    }
+	    
+	    /**
+	     * Custom methods
+	     */
+	    
+	    public Integer getPriorita(){
+	    	
+	    	if (this.values!= null && this.values.getPriorita()!= null && this.values.getPriorita().size()> 0 && 
+	    			 this.values.getPriorita().get(0)!=null&& UtilString.stringIsInteger(this.values.getPriorita().get(0).getData())){
+	    		return new Integer(this.values.getPriorita().get(0).getData());
+	    	}
+	    	else
+	    	   return null;
+	    }
+	    
+        public Boolean getStop(){
+	    	
+	    	if (this.values!= null && this.values.getStop()!= null && this.values.getStop().size()> 0 && 
+	    			 this.values.getStop().get(0)!=null && this.values.getStop().get(0).getData()!=null
+	    			   && this.values.getStop().get(0).getData().equals("yes")){
+	    		return true;
+	    	}
+	    	else
+	    	   return false;
+	    }
+        
+	    public Integer getSconto(){
+	    	
+	    	if (this.values!= null && this.values.getPriorita()!= null && this.values.getSconto().size()> 0 && 
+	    			 this.values.getSconto().get(0)!=null&& UtilString.stringIsInteger(this.values.getSconto().get(0).getData())){
+	    		return new Integer(this.values.getSconto().get(0).getData());
+	    	}
+	    	else
+	    	   return null;
+	    }
+	    
+	    public String getTipoSconto(){
+	    	
+	    	if (this.values!= null && this.values.getPriorita()!= null && this.values.getTipo_sconto().size()> 0 && 
+	    			 this.values.getTipo_sconto().get(0)!=null&& this.values.getTipo_sconto().get(0).getData()!=null
+	    			 && (this.values.getTipo_sconto().get(0).getData().equals("percentuale") ||
+	    					 this.values.getTipo_sconto().get(0).getData().equals("valore_assoluto"))){
+	    		return this.values.getTipo_sconto().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }
+	    
+	    public boolean isTipoScontoPercentuale(){
+	    	if (this.values!= null && this.values.getTipo_sconto()!= null && this.values.getTipo_sconto().size()> 0 && 
+	    			 this.values.getTipo_sconto().get(0)!=null&& this.values.getTipo_sconto().get(0).getData()!=null
+	    			 && this.values.getTipo_sconto().get(0).getData().equals("percentuale")){
+	    		return true;
+	    	}
+	    	else
+	    	   return false;
+	    }
+	    
+	    public boolean isTipoScontoAssoluto(){
+	    	if (this.values!= null && this.values.getTipo_sconto()!= null && this.values.getTipo_sconto().size()> 0 && 
+	    			 this.values.getTipo_sconto().get(0)!=null&& this.values.getTipo_sconto().get(0).getData()!=null
+	    			 && this.values.getTipo_sconto().get(0).getData().equals("valore_assoluto")){
+	    		return true;
+	    	}
+	    	else
+	    	   return false;
+	    }
+	    
+	    
+	    public boolean idValidDate(Date current){
+	    	
+	    	Date dataInizio = null;
+	    	Date dataFine = null;
+	    	
+	    	boolean diPresent=false;
+	    	boolean dfPresent=false;
+	    	
+	    	
+	    	if (this.values!= null && this.values.getData_inizio()!= null && this.values.getData_inizio().size()> 0 && 
+	    			 this.values.getData_inizio().get(0)!=null && this.values.getData_inizio().get(0).getData()!=null){
+	    		dataInizio = UtilDate.parseDateWithMultiplePattern(
+	    				this.values.getData_inizio().get(0).getData(),"dd/MM/yyyy");
+	    		diPresent=true;
+	    	}
+	    	
+	    	if (this.values!= null && this.values.getData_fine()!= null && this.values.getData_fine().size()> 0 && 
+	    			 this.values.getData_fine().get(0)!=null && this.values.getData_fine().get(0).getData()!=null){
+	    		dataFine = UtilDate.parseDateWithMultiplePattern(
+	    				this.values.getData_fine().get(0).getData(),"dd/MM/yyyy") ;
+	    		dfPresent=true;
+	    	}
+	    	
+	    	if ((dataInizio==null&&diPresent)||(dataFine==null&&dfPresent))
+	    		return false;
+	    	
+	    	if(dataInizio!=null && dataFine!= null && dataInizio.compareTo(dataFine)>0)
+	    		return false;
+	    	
+	    	if(dataInizio!=null && current.compareTo(dataInizio)<0)
+	    		return false;
+
+	    	if(dataFine!=null && current.compareTo(dataFine)>0)
+	    		return false;
+	    	
+	    	return true;
+	    }
+	    
+	    public String getDataInizio(){
+	    	
+	    	if (this.values!= null && this.values.getData_inizio()!= null && this.values.getData_inizio().size()> 0 && 
+	    			 this.values.getData_inizio().get(0)!=null&& this.values.getData_inizio().get(0).getData()!=null){
+	    		return this.values.getData_inizio().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }
+	    
+	    public String getDataFine(){
+	    	
+	    	if (this.values!= null && this.values.getData_fine()!= null && this.values.getData_fine().size()> 0 && 
+	    			 this.values.getData_fine().get(0)!=null&& this.values.getData_fine().get(0).getData()!=null){
+	    		return this.values.getData_fine().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }
+	    
+	    public String getDescrizioneCampagna(){
+	    	
+	    	if (this.values!= null && this.values.getDescrizione_campagna()!= null && this.values.getDescrizione_campagna().size()> 0 && 
+	    			 this.values.getDescrizione_campagna().get(0)!=null&& this.values.getDescrizione_campagna().get(0).getData()!=null){
+	    		return this.values.getDescrizione_campagna().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }
+	    
+	    
+	    
+
+
+}

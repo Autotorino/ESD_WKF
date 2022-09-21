@@ -1,0 +1,181 @@
+package routines;
+
+import java.math.BigDecimal;
+import java.util.Date;
+
+
+public class UtilFindomestic {
+
+	  public static String getValueTagXml(String xml,String tag , boolean include){
+		  
+		  if(xml==null||tag==null)
+			  return null;
+		  
+		  try {
+			  String start = "<"+tag+">";
+			  String end =   "</"+tag+">";
+			  int indexStart = xml.indexOf(start) + ((include) ? 0 : start.length());
+			  int indexEnd   = xml.indexOf(end) + ((include) ? start.length() : 0);
+			  
+			  return xml.substring(indexStart, indexEnd);
+		  }
+		  catch(Exception ex){
+			  return null;
+		  }
+		
+	  }
+	  
+      public static String getValueTagXml(String xml,String tag , boolean include,boolean divided100){
+		  
+		  if(xml==null||tag==null)
+			  return null;
+		  
+		  try {
+			  String start = "<"+tag+">";
+			  String end =   "</"+tag+">";
+			  int indexStart = xml.indexOf(start) + ((include) ? 0 : start.length());
+			  int indexEnd   = xml.indexOf(end) + ((include) ? start.length() : 0);
+			  
+			  if (divided100)
+			      return getAmountX001(xml.substring(indexStart, indexEnd));
+			  else
+				  return xml.substring(indexStart, indexEnd);
+		  }
+		  catch(Exception ex){
+			  return null;
+		  }
+		
+	  }
+	  
+      public static String getAmountX100(String amount){
+		  
+		  if(amount==null)
+			  return "";
+		  
+		  try {
+			  Integer amountX100 = BigDecimal.valueOf(Double.parseDouble(amount)).intValue()*100;
+			  return amountX100.toString();
+		  }
+		  catch(Exception ex){
+			  return "";
+		  }
+		
+	  }
+      
+      public static String getAmountX001(String amount){
+		  
+		  if(amount==null)
+			  return "";
+		  
+		  try {
+			  Double amountX100 = BigDecimal.valueOf(Double.parseDouble(amount)).doubleValue()/100;
+			  return amountX100.toString();
+		  }
+		  catch(Exception ex){
+			  return "";
+		  }
+		
+	  }
+      
+      public static String getMaterialeId(String tipoVeicolo,String categoria,String dataImmatricolazione){
+		  
+		    String materialeId = null;
+		    
+		    tipoVeicolo = UtilString.isEmptyTrim(tipoVeicolo) ? "":tipoVeicolo;
+		    categoria = UtilString.isEmptyTrim(categoria) ? "":categoria;
+		    
+		    Date dImmatricolazione = null;
+    	  
+			if (tipoVeicolo.equals("U") && (categoria.equals("auto") || categoria.equals("veicoli_commerciali"))
+					 && !UtilString.isEmptyTrim(dataImmatricolazione) && dataImmatricolazione.length()>=10  && 
+					   (dImmatricolazione = UtilDate.parseDateWithMultiplePattern(dataImmatricolazione.substring(0, 10),"yyyy-MM-dd")) != null)
+			{
+				
+			    Date dConfronto12 = UtilDate.subtractsYearMonDays(new Date(),12, "M");
+			    Date dConfronto24 = UtilDate.subtractsYearMonDays(new Date(),24, "M");
+			    Date dConfronto36 = UtilDate.subtractsYearMonDays(new Date(),36, "M");
+				
+			    if (dImmatricolazione.compareTo(dConfronto36)<0)
+			    	materialeId="514";
+			    else{
+			        if (dImmatricolazione.compareTo(dConfronto36)>=0 && dImmatricolazione.compareTo(dConfronto24)<0)
+			        	materialeId="524";
+			        else {
+			           if (dImmatricolazione.compareTo(dConfronto24)>=0 && dImmatricolazione.compareTo(dConfronto12)<0)
+			        	   materialeId="518";
+        		       else 
+        		    	   materialeId="517"; 
+			        }
+			    
+			    }
+			} 
+			else if (tipoVeicolo.equals("U") && categoria.equals("moto")){
+				materialeId="516";
+			}
+			else if ((tipoVeicolo.equals("N") || tipoVeicolo.equals("Z")) && categoria.equals("moto")){
+				materialeId="519";
+			}
+			else if (tipoVeicolo.equals("N") || tipoVeicolo.equals("Z"))
+				materialeId="511";
+		  
+		    return materialeId;
+		
+	  }
+      
+      
+      public static String getXMLPianoRimborso(String venditoreId,String materialeIdCod,String codiceFinanziamento,String tipoMaxiRata,
+    		                                             String codPianoFinanziario,String codTipoCredito,String marcaMaxiRata,
+    		                                              String prezzoVenditaX100,Integer finanziatoX100,String anticipoX100,Integer durataInt){
+    		
+    	  String xmlnsSoap = "xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"";
+    	  String xmlnsXsi  = "xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"";
+    	  String xmlnsTns  = "xmlns:tns=\"http://www.findomestic.com/PraticaBtoB/\"";
+    	  String xmlnsNs2  = "xmlns:ns2=\"http://www.findomestic.com/PraticaBtoB/types/v1\"";
+    	  String xmlnsNs1  = "xmlns:ns1=\"http://www.findomestic.com/PraticaBtoB/types\"";
+    	  String xmlnsNs3  = "xmlns:ns3=\"http://www.findomestic.com/PraticaBtoB/types/v2\"";
+    	  
+    	  return "<?xml version=\"1.0\" encoding=\"utf-8\"?>"+
+					"<soap:Envelope "+xmlnsSoap+" "+xmlnsXsi+" "+xmlnsTns+" "+xmlnsNs2+" "+xmlnsNs1+" "+xmlnsNs3+">"+
+					   "<soap:Body>"+
+						  "<ns3:IdentificativoPianoFinanziarioV2Element xmlns:ns3=\"http://www.findomestic.com/PraticaBtoB/types/v2\">"+
+							 "<venditoreId xsi:type=\"ns3:VenditoreIdV2\">"+
+							     "<codice>"+venditoreId+"</codice>"+
+							 "</venditoreId>"+
+							 "<materialeId xsi:type=\"ns3:MaterialeIdV2\">"+
+							     "<codice>"+materialeIdCod+"</codice>"+
+							 "</materialeId>"+
+							 "<tipoFinanziamentoId xsi:type=\"ns3:TipoFinanziamentoIdV2\">"+
+									"<codiceFinanziamento>"+codiceFinanziamento+"</codiceFinanziamento>"+
+									"<codiceMateriale>"+materialeIdCod+"</codiceMateriale>"+
+									(codiceFinanziamento.equals("MR") ? 
+									"<codiceMaxiRata>"+tipoMaxiRata+"</codiceMaxiRata>":"") + 
+							 "</tipoFinanziamentoId>"+
+							 "<tipoCreditoId xsi:type=\"ns3:TipoCreditoIdV2\">"+
+							       "<codice>"+codTipoCredito+"</codice>"+
+							 "</tipoCreditoId>"+ 
+							 "<pianoFinanziarioId xsi:type=\"ns3:PianoFinanziarioIdV2\">"+
+									"<codicePianoFinanziario>"+codPianoFinanziario+"</codicePianoFinanziario>"+ 
+									"<codiceTipoCredito>"+codTipoCredito+"</codiceTipoCredito>"+ 
+									"<codiceCompensato/>"+
+									(codiceFinanziamento.equals("MR") ?
+									"<maxiRataId xsi:type=\"ns3:MaxiRataIdV2\">"+
+									   "<codice>"+tipoMaxiRata+"</codice>"+  
+									   "<marca>"+marcaMaxiRata+"</marca>"+  
+									"</maxiRataId>":"")+											
+							 "</pianoFinanziarioId>"+
+							 (codiceFinanziamento.equals("MR") ? "<marcaMaxiRata>"+marcaMaxiRata+"</marcaMaxiRata>":"") + 
+							 "<tipoPagamento>BANCA</tipoPagamento>"+
+							 "<scadenza>CINQUE</scadenza>"+
+							 "<prezzo>"+prezzoVenditaX100+"</prezzo>"+
+							 "<finanziato>"+finanziatoX100+"</finanziato>"+
+							 "<anticipo>"+anticipoX100+"</anticipo>"+
+							 "<durata>"+durataInt+"</durata>"+
+							 "<assicurazionePerCalcoloTaegone>false</assicurazionePerCalcoloTaegone>"+
+							 "<spese>30000</spese>"+
+						  "</ns3:IdentificativoPianoFinanziarioV2Element>"+
+					   "</soap:Body>"+
+					 "</soap:Envelope>";
+		 
+      }
+      
+}

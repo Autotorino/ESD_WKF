@@ -1,0 +1,700 @@
+{
+  "itemId" : "_kPODEMJFEei12d6Nkg1q8Q",
+  "contextList" : [ {
+    "contextName" : "prod",
+    "repoId" : "_KL67QF0JEeyp-Nfllqv_Ag",
+    "parameterList" : [ {
+      "id" : "_RYxFbjnDEe2Bt5XBBSqOpg",
+      "name" : "RETENTION_BACKUP_FILE"
+    }, {
+      "id" : "_RYxFbznDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_Url"
+    }, {
+      "id" : "_RYxFcDnDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_Password"
+    }, {
+      "id" : "_RYxFcTnDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_Username"
+    }, {
+      "id" : "_RYxFcjnDEe2Bt5XBBSqOpg",
+      "name" : "TALEND_PATH_FILE_CSV"
+    }, {
+      "id" : "_RYxFcznDEe2Bt5XBBSqOpg",
+      "name" : "SIPADX_DB_Server"
+    }, {
+      "id" : "_RYxFdDnDEe2Bt5XBBSqOpg",
+      "name" : "SIPADX_DB_Port"
+    }, {
+      "id" : "_RYxFdTnDEe2Bt5XBBSqOpg",
+      "name" : "SIPADX_DB_Database"
+    }, {
+      "id" : "_RYxFdjnDEe2Bt5XBBSqOpg",
+      "name" : "SIPADX_DB_Login"
+    }, {
+      "id" : "_RYxFdznDEe2Bt5XBBSqOpg",
+      "name" : "SIPADX_DB_Password"
+    }, {
+      "id" : "_RYxFeDnDEe2Bt5XBBSqOpg",
+      "name" : "SIPADX_DB_Schema"
+    }, {
+      "id" : "_RYxFeTnDEe2Bt5XBBSqOpg",
+      "name" : "DWH_AT_MAIL_NOTIFY"
+    }, {
+      "id" : "_RYxFejnDEe2Bt5XBBSqOpg",
+      "name" : "DWH_AT_MAIL_SMTP_HOST"
+    }, {
+      "id" : "_RYxFeznDEe2Bt5XBBSqOpg",
+      "name" : "DWH_AT_MAIL_SMTP_PORT"
+    }, {
+      "id" : "_RYxFfDnDEe2Bt5XBBSqOpg",
+      "name" : "DWH_AT_MAIL_SMTP_USER"
+    }, {
+      "id" : "_RYxFfTnDEe2Bt5XBBSqOpg",
+      "name" : "DWH_AT_MAIL_SMTP_PWD"
+    }, {
+      "id" : "_RYxFfjnDEe2Bt5XBBSqOpg",
+      "name" : "DWH_AT_MAIL_SMTP_DEST"
+    }, {
+      "id" : "_RYxFfznDEe2Bt5XBBSqOpg",
+      "name" : "TALEND_PATH_LOG"
+    }, {
+      "id" : "_RYxFgDnDEe2Bt5XBBSqOpg",
+      "name" : "RESERVATION_PROCESS_ID"
+    }, {
+      "id" : "_RYxFgTnDEe2Bt5XBBSqOpg",
+      "name" : "HOST_FTP_STOCK"
+    }, {
+      "id" : "_RYxFgjnDEe2Bt5XBBSqOpg",
+      "name" : "PORT_FTP_STOCK"
+    }, {
+      "id" : "_RYxFgznDEe2Bt5XBBSqOpg",
+      "name" : "USER_FTP_STOCK"
+    }, {
+      "id" : "_RYxFhDnDEe2Bt5XBBSqOpg",
+      "name" : "PWD_FTP_STOCK"
+    }, {
+      "id" : "_RYxFhTnDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE50"
+    }, {
+      "id" : "_RYxFhjnDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE51"
+    }, {
+      "id" : "_RYxFhznDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE52"
+    }, {
+      "id" : "_RYxFiDnDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE70"
+    }, {
+      "id" : "_RYxFiTnDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE48"
+    }, {
+      "id" : "_RYxFijnDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE49"
+    }, {
+      "id" : "_RYxFiznDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_AUTH_URL"
+    }, {
+      "id" : "_RYxFjDnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_AUTH_HTTP_BODY"
+    }, {
+      "id" : "_RYxFjTnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_AUTH_CONTENT_TYPE"
+    }, {
+      "id" : "_RYxFjjnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_AUTH_TOKEN_ACCESS"
+    }, {
+      "id" : "_RYxFjznDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_AUTH_CLIENT_ID"
+    }, {
+      "id" : "_RYxFkDnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_AUTH_CLIENT_SECRET"
+    }, {
+      "id" : "_RYxFkTnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_METHOD_PRODUCT_LIST"
+    }, {
+      "id" : "_RYxFkjnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_QUERY_PARAM_FIRST_FIN"
+    }, {
+      "id" : "_RYxFkznDEe2Bt5XBBSqOpg",
+      "name" : "TRUSTORE_PATH"
+    }, {
+      "id" : "_RYxFlDnDEe2Bt5XBBSqOpg",
+      "name" : "FINDOMESTIC_SERVICE_URL"
+    }, {
+      "id" : "_RYxFlTnDEe2Bt5XBBSqOpg",
+      "name" : "FINDOMESTIC_SOAP_ACTION"
+    }, {
+      "id" : "_RYxFljnDEe2Bt5XBBSqOpg",
+      "name" : "FINDOMESTIC_REQUEST_VENDITORE_ID"
+    }, {
+      "id" : "_RYxFlznDEe2Bt5XBBSqOpg",
+      "name" : "FINDOMESTIC_AUTH_BASIC"
+    }, {
+      "id" : "_RYxFmDnDEe2Bt5XBBSqOpg",
+      "name" : "FINDOMESTIC_REQUESTPROP_CLIENT_CERT"
+    }, {
+      "id" : "_RYxFmTnDEe2Bt5XBBSqOpg",
+      "name" : "FINDOMESTIC_REQUESTPROP_CONTENT_TYPE"
+    }, {
+      "id" : "_RYxFmjnDEe2Bt5XBBSqOpg",
+      "name" : "FINDOMESTIC_REQUEST_VENDITORE_ID_MR"
+    }, {
+      "id" : "_RYxFmznDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_QUERY_PARAM_EXPIRED_FIN"
+    }, {
+      "id" : "_RYxFnDnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_QUERY_PARAM_SEND_DEALERK"
+    }, {
+      "id" : "_RYxFnTnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_METHOD_REFERENCE_ENTITIES"
+    }, {
+      "id" : "_RYxFnjnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_QUERY_PARAM_PROMO"
+    }, {
+      "id" : "_RYxFnznDEe2Bt5XBBSqOpg",
+      "name" : "NUM_DAYS_EXPIRE_FIN"
+    }, {
+      "id" : "_RYxFoDnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_METHOD_REFERENCE_ENTITIES_OPTIONS"
+    }, {
+      "id" : "_RYxFoTnDEe2Bt5XBBSqOpg",
+      "name" : "CLOUDINARY_PATH_STATIC"
+    }, {
+      "id" : "_RYxFojnDEe2Bt5XBBSqOpg",
+      "name" : "DEALERK_DIMENSIONI_POSIZIONE_IMG"
+    }, {
+      "id" : "_RYxFoznDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE71"
+    }, {
+      "id" : "_RYxFpDnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_QUERY_PARAM_SEND_INFOCAR"
+    }, {
+      "id" : "_RYxFpTnDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_OCI_Path"
+    }, {
+      "id" : "_RYxFpjnDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_OCI_Profile"
+    }, {
+      "id" : "_RYxFpznDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_OCI_NameSpace"
+    }, {
+      "id" : "_RYxFqDnDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_OCI_Bucket"
+    }, {
+      "id" : "_RYxFqTnDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_OCI_ContentType"
+    }, {
+      "id" : "_RYxFqjnDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_OCI_Region"
+    }, {
+      "id" : "_RYxFqznDEe2Bt5XBBSqOpg",
+      "name" : "DEALERK_FTP_HOST"
+    }, {
+      "id" : "_RYxFrDnDEe2Bt5XBBSqOpg",
+      "name" : "DEALERK_FTP_PORT"
+    }, {
+      "id" : "_RYxFrTnDEe2Bt5XBBSqOpg",
+      "name" : "DEALERK_FTP_USER"
+    }, {
+      "id" : "_RYxFrjnDEe2Bt5XBBSqOpg",
+      "name" : "DEALERK_FTP_PWD"
+    }, {
+      "id" : "_RYxFrznDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_METHOD_ATTR_OPT"
+    }, {
+      "id" : "_RYxFsDnDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE60"
+    }, {
+      "id" : "_RYxFsTnDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE61"
+    }, {
+      "id" : "_RYxFsjnDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE62"
+    }, {
+      "id" : "_RYxFsznDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_QUERY_PARAM_FIRST_FIN_SAN"
+    }, {
+      "id" : "_RYxFtDnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_QUERY_PARAM_EXPIRED_FIN_SAN"
+    }, {
+      "id" : "_RYxFtTnDEe2Bt5XBBSqOpg",
+      "name" : "SANTANDER_REQUEST_INTERMEDIARIO_ID"
+    }, {
+      "id" : "_RYxFtjnDEe2Bt5XBBSqOpg",
+      "name" : "SANTANDER_SERVICE_URL"
+    }, {
+      "id" : "_RYxFtznDEe2Bt5XBBSqOpg",
+      "name" : "SANTANDER_CLIENT_ID"
+    }, {
+      "id" : "_RYxFuDnDEe2Bt5XBBSqOpg",
+      "name" : "SANTANDER_CLIENT_SECRET"
+    }, {
+      "id" : "_RYxFuTnDEe2Bt5XBBSqOpg",
+      "name" : "CLOUDINARY_FOLDER"
+    } ]
+  }, {
+    "contextName" : "dev",
+    "repoId" : "_KL67QF0JEeyp-Nfllqv_Ag",
+    "parameterList" : [ {
+      "id" : "_KPDH9V0JEeyp-Nfllqv_Ag",
+      "name" : "RETENTION_BACKUP_FILE"
+    }, {
+      "id" : "_KPDH9l0JEeyp-Nfllqv_Ag",
+      "name" : "ORACLE_CLOUD_Url"
+    }, {
+      "id" : "_KPDH910JEeyp-Nfllqv_Ag",
+      "name" : "ORACLE_CLOUD_Password"
+    }, {
+      "id" : "_KPDH-F0JEeyp-Nfllqv_Ag",
+      "name" : "ORACLE_CLOUD_Username"
+    }, {
+      "id" : "_KPDH-V0JEeyp-Nfllqv_Ag",
+      "name" : "TALEND_PATH_FILE_CSV"
+    }, {
+      "id" : "_KPDH-l0JEeyp-Nfllqv_Ag",
+      "name" : "SIPADX_DB_Server"
+    }, {
+      "id" : "_KPDH-10JEeyp-Nfllqv_Ag",
+      "name" : "SIPADX_DB_Port"
+    }, {
+      "id" : "_KPDH_F0JEeyp-Nfllqv_Ag",
+      "name" : "SIPADX_DB_Database"
+    }, {
+      "id" : "_KPDH_V0JEeyp-Nfllqv_Ag",
+      "name" : "SIPADX_DB_Login"
+    }, {
+      "id" : "_KPDH_l0JEeyp-Nfllqv_Ag",
+      "name" : "SIPADX_DB_Password"
+    }, {
+      "id" : "_KPDH_10JEeyp-Nfllqv_Ag",
+      "name" : "SIPADX_DB_Schema"
+    }, {
+      "id" : "_KPDIAF0JEeyp-Nfllqv_Ag",
+      "name" : "DWH_AT_MAIL_NOTIFY"
+    }, {
+      "id" : "_KPDIAV0JEeyp-Nfllqv_Ag",
+      "name" : "DWH_AT_MAIL_SMTP_HOST"
+    }, {
+      "id" : "_KPDIAl0JEeyp-Nfllqv_Ag",
+      "name" : "DWH_AT_MAIL_SMTP_PORT"
+    }, {
+      "id" : "_KPDIA10JEeyp-Nfllqv_Ag",
+      "name" : "DWH_AT_MAIL_SMTP_USER"
+    }, {
+      "id" : "_KPDIBF0JEeyp-Nfllqv_Ag",
+      "name" : "DWH_AT_MAIL_SMTP_PWD"
+    }, {
+      "id" : "_KPDIBV0JEeyp-Nfllqv_Ag",
+      "name" : "DWH_AT_MAIL_SMTP_DEST"
+    }, {
+      "id" : "_KPDIBl0JEeyp-Nfllqv_Ag",
+      "name" : "TALEND_PATH_LOG"
+    }, {
+      "id" : "_KPDIB10JEeyp-Nfllqv_Ag",
+      "name" : "RESERVATION_PROCESS_ID"
+    }, {
+      "id" : "_KPDIDF0JEeyp-Nfllqv_Ag",
+      "name" : "HOST_FTP_STOCK"
+    }, {
+      "id" : "_KPDIDV0JEeyp-Nfllqv_Ag",
+      "name" : "PORT_FTP_STOCK"
+    }, {
+      "id" : "_KPDIDl0JEeyp-Nfllqv_Ag",
+      "name" : "USER_FTP_STOCK"
+    }, {
+      "id" : "_KPDID10JEeyp-Nfllqv_Ag",
+      "name" : "PWD_FTP_STOCK"
+    }, {
+      "id" : "_KPDIEF0JEeyp-Nfllqv_Ag",
+      "name" : "NOME_FILEDATASOURCE50"
+    }, {
+      "id" : "_KPDIEV0JEeyp-Nfllqv_Ag",
+      "name" : "NOME_FILEDATASOURCE51"
+    }, {
+      "id" : "_KPDIEl0JEeyp-Nfllqv_Ag",
+      "name" : "NOME_FILEDATASOURCE52"
+    }, {
+      "id" : "_KPDIE10JEeyp-Nfllqv_Ag",
+      "name" : "NOME_FILEDATASOURCE70"
+    }, {
+      "id" : "_KPDIHF0JEeyp-Nfllqv_Ag",
+      "name" : "NOME_FILEDATASOURCE48"
+    }, {
+      "id" : "_KPDIHV0JEeyp-Nfllqv_Ag",
+      "name" : "NOME_FILEDATASOURCE49"
+    }, {
+      "id" : "_KPDIHl0JEeyp-Nfllqv_Ag",
+      "name" : "AKENEOPIM_AUTH_URL"
+    }, {
+      "id" : "_KPDIH10JEeyp-Nfllqv_Ag",
+      "name" : "AKENEOPIM_AUTH_HTTP_BODY"
+    }, {
+      "id" : "_KPDIIF0JEeyp-Nfllqv_Ag",
+      "name" : "AKENEOPIM_AUTH_CONTENT_TYPE"
+    }, {
+      "id" : "_KPDIIV0JEeyp-Nfllqv_Ag",
+      "name" : "AKENEOPIM_AUTH_TOKEN_ACCESS"
+    }, {
+      "id" : "_KPDIIl0JEeyp-Nfllqv_Ag",
+      "name" : "AKENEOPIM_AUTH_CLIENT_ID"
+    }, {
+      "id" : "_KPDII10JEeyp-Nfllqv_Ag",
+      "name" : "AKENEOPIM_AUTH_CLIENT_SECRET"
+    }, {
+      "id" : "_KPDIJF0JEeyp-Nfllqv_Ag",
+      "name" : "AKENEOPIM_METHOD_PRODUCT_LIST"
+    }, {
+      "id" : "_jj_kEV2IEeymMuxz6fVrBA",
+      "name" : "AKENEOPIM_QUERY_PARAM_FIRST_FIN"
+    }, {
+      "id" : "_hLG_FGNEEey6w4kXkhmYxg",
+      "name" : "TRUSTORE_PATH"
+    }, {
+      "id" : "_hLG_FWNEEey6w4kXkhmYxg",
+      "name" : "FINDOMESTIC_SERVICE_URL"
+    }, {
+      "id" : "_hLG_FmNEEey6w4kXkhmYxg",
+      "name" : "FINDOMESTIC_SOAP_ACTION"
+    }, {
+      "id" : "_hLG_F2NEEey6w4kXkhmYxg",
+      "name" : "FINDOMESTIC_REQUEST_VENDITORE_ID"
+    }, {
+      "id" : "_scT8Y2PaEeyG8dV0DPIMyA",
+      "name" : "FINDOMESTIC_AUTH_BASIC"
+    }, {
+      "id" : "_scT8ZGPaEeyG8dV0DPIMyA",
+      "name" : "FINDOMESTIC_REQUESTPROP_CLIENT_CERT"
+    }, {
+      "id" : "_scT8ZWPaEeyG8dV0DPIMyA",
+      "name" : "FINDOMESTIC_REQUESTPROP_CONTENT_TYPE"
+    }, {
+      "id" : "_UcBOQWceEeykQMYLRR3Z6w",
+      "name" : "FINDOMESTIC_REQUEST_VENDITORE_ID_MR"
+    }, {
+      "id" : "_jZVKomvKEeyMJN8LHg56Dg",
+      "name" : "AKENEOPIM_QUERY_PARAM_EXPIRED_FIN"
+    }, {
+      "id" : "_jZVKo2vKEeyMJN8LHg56Dg",
+      "name" : "AKENEOPIM_QUERY_PARAM_SEND_DEALERK"
+    }, {
+      "id" : "_nbbvIXChEeyVZ_WzsW-1uQ",
+      "name" : "AKENEOPIM_METHOD_REFERENCE_ENTITIES"
+    }, {
+      "id" : "_ucT_AX0lEeyO9eb4aYQepA",
+      "name" : "AKENEOPIM_QUERY_PARAM_PROMO"
+    }, {
+      "id" : "_rkB7kX0rEeyO9eb4aYQepA",
+      "name" : "NUM_DAYS_EXPIRE_FIN"
+    }, {
+      "id" : "_7s82sYg-Eeyci6ANuO2TSQ",
+      "name" : "AKENEOPIM_METHOD_REFERENCE_ENTITIES_OPTIONS"
+    }, {
+      "id" : "_m8WpcYjqEey_dIEFaU5NGw",
+      "name" : "CLOUDINARY_PATH_STATIC"
+    }, {
+      "id" : "_huQiAYjsEey_dIEFaU5NGw",
+      "name" : "DEALERK_DIMENSIONI_POSIZIONE_IMG"
+    }, {
+      "id" : "_5g0D0YpCEey2f_wMoaP94Q",
+      "name" : "NOME_FILEDATASOURCE71"
+    }, {
+      "id" : "_45izAYpDEey2f_wMoaP94Q",
+      "name" : "AKENEOPIM_QUERY_PARAM_SEND_INFOCAR"
+    }, {
+      "id" : "_OxBRFoy_EeyUSZ55nfCcjA",
+      "name" : "ORACLE_CLOUD_OCI_Path"
+    }, {
+      "id" : "_OxBRF4y_EeyUSZ55nfCcjA",
+      "name" : "ORACLE_CLOUD_OCI_Profile"
+    }, {
+      "id" : "_OxBRGIy_EeyUSZ55nfCcjA",
+      "name" : "ORACLE_CLOUD_OCI_NameSpace"
+    }, {
+      "id" : "_OxBRGYy_EeyUSZ55nfCcjA",
+      "name" : "ORACLE_CLOUD_OCI_Bucket"
+    }, {
+      "id" : "_OxBRGoy_EeyUSZ55nfCcjA",
+      "name" : "ORACLE_CLOUD_OCI_ContentType"
+    }, {
+      "id" : "_OxBRG4y_EeyUSZ55nfCcjA",
+      "name" : "ORACLE_CLOUD_OCI_Region"
+    }, {
+      "id" : "_BXmw5I4oEeyOepXZNOHBPQ",
+      "name" : "DEALERK_FTP_HOST"
+    }, {
+      "id" : "_BXmw5Y4oEeyOepXZNOHBPQ",
+      "name" : "DEALERK_FTP_PORT"
+    }, {
+      "id" : "_BXmw5o4oEeyOepXZNOHBPQ",
+      "name" : "DEALERK_FTP_USER"
+    }, {
+      "id" : "_BXmw544oEeyOepXZNOHBPQ",
+      "name" : "DEALERK_FTP_PWD"
+    }, {
+      "id" : "_7a-EUY_dEeygUrekhfReVA",
+      "name" : "AKENEOPIM_METHOD_ATTR_OPT"
+    }, {
+      "id" : "_0GQKY9UGEeyRJ-6WUUsxSQ",
+      "name" : "NOME_FILEDATASOURCE60"
+    }, {
+      "id" : "_0GQKZNUGEeyRJ-6WUUsxSQ",
+      "name" : "NOME_FILEDATASOURCE61"
+    }, {
+      "id" : "_0GQKZdUGEeyRJ-6WUUsxSQ",
+      "name" : "NOME_FILEDATASOURCE62"
+    }, {
+      "id" : "_WUb1gNUIEeyRJ-6WUUsxSQ",
+      "name" : "AKENEOPIM_QUERY_PARAM_FIRST_FIN_SAN"
+    }, {
+      "id" : "_9-9-IdUVEeyRJ-6WUUsxSQ",
+      "name" : "AKENEOPIM_QUERY_PARAM_EXPIRED_FIN_SAN"
+    }, {
+      "id" : "_YhjhMdW0Eey-HIbiSx3hYQ",
+      "name" : "SANTANDER_REQUEST_INTERMEDIARIO_ID"
+    }, {
+      "id" : "_uye1gdXIEey-HIbiSx3hYQ",
+      "name" : "SANTANDER_SERVICE_URL"
+    }, {
+      "id" : "_aAgl8tXJEey-HIbiSx3hYQ",
+      "name" : "SANTANDER_CLIENT_ID"
+    }, {
+      "id" : "_aAgl89XJEey-HIbiSx3hYQ",
+      "name" : "SANTANDER_CLIENT_SECRET"
+    }, {
+      "id" : "_EQ_XERF1Ee2WpIr9AQUiDQ",
+      "name" : "CLOUDINARY_FOLDER"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_KL67QF0JEeyp-Nfllqv_Ag",
+    "parameterList" : [ {
+      "id" : "_RYxFITnDEe2Bt5XBBSqOpg",
+      "name" : "RETENTION_BACKUP_FILE"
+    }, {
+      "id" : "_RYxFIjnDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_Url"
+    }, {
+      "id" : "_RYxFIznDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_Password"
+    }, {
+      "id" : "_RYxFJDnDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_Username"
+    }, {
+      "id" : "_RYxFJTnDEe2Bt5XBBSqOpg",
+      "name" : "TALEND_PATH_FILE_CSV"
+    }, {
+      "id" : "_RYxFJjnDEe2Bt5XBBSqOpg",
+      "name" : "SIPADX_DB_Server"
+    }, {
+      "id" : "_RYxFJznDEe2Bt5XBBSqOpg",
+      "name" : "SIPADX_DB_Port"
+    }, {
+      "id" : "_RYxFKDnDEe2Bt5XBBSqOpg",
+      "name" : "SIPADX_DB_Database"
+    }, {
+      "id" : "_RYxFKTnDEe2Bt5XBBSqOpg",
+      "name" : "SIPADX_DB_Login"
+    }, {
+      "id" : "_RYxFKjnDEe2Bt5XBBSqOpg",
+      "name" : "SIPADX_DB_Password"
+    }, {
+      "id" : "_RYxFKznDEe2Bt5XBBSqOpg",
+      "name" : "SIPADX_DB_Schema"
+    }, {
+      "id" : "_RYxFLDnDEe2Bt5XBBSqOpg",
+      "name" : "DWH_AT_MAIL_NOTIFY"
+    }, {
+      "id" : "_RYxFLTnDEe2Bt5XBBSqOpg",
+      "name" : "DWH_AT_MAIL_SMTP_HOST"
+    }, {
+      "id" : "_RYxFLjnDEe2Bt5XBBSqOpg",
+      "name" : "DWH_AT_MAIL_SMTP_PORT"
+    }, {
+      "id" : "_RYxFLznDEe2Bt5XBBSqOpg",
+      "name" : "DWH_AT_MAIL_SMTP_USER"
+    }, {
+      "id" : "_RYxFMDnDEe2Bt5XBBSqOpg",
+      "name" : "DWH_AT_MAIL_SMTP_PWD"
+    }, {
+      "id" : "_RYxFMTnDEe2Bt5XBBSqOpg",
+      "name" : "DWH_AT_MAIL_SMTP_DEST"
+    }, {
+      "id" : "_RYxFMjnDEe2Bt5XBBSqOpg",
+      "name" : "TALEND_PATH_LOG"
+    }, {
+      "id" : "_RYxFMznDEe2Bt5XBBSqOpg",
+      "name" : "RESERVATION_PROCESS_ID"
+    }, {
+      "id" : "_RYxFNDnDEe2Bt5XBBSqOpg",
+      "name" : "HOST_FTP_STOCK"
+    }, {
+      "id" : "_RYxFNTnDEe2Bt5XBBSqOpg",
+      "name" : "PORT_FTP_STOCK"
+    }, {
+      "id" : "_RYxFNjnDEe2Bt5XBBSqOpg",
+      "name" : "USER_FTP_STOCK"
+    }, {
+      "id" : "_RYxFNznDEe2Bt5XBBSqOpg",
+      "name" : "PWD_FTP_STOCK"
+    }, {
+      "id" : "_RYxFODnDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE50"
+    }, {
+      "id" : "_RYxFOTnDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE51"
+    }, {
+      "id" : "_RYxFOjnDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE52"
+    }, {
+      "id" : "_RYxFOznDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE70"
+    }, {
+      "id" : "_RYxFPDnDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE48"
+    }, {
+      "id" : "_RYxFPTnDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE49"
+    }, {
+      "id" : "_RYxFPjnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_AUTH_URL"
+    }, {
+      "id" : "_RYxFPznDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_AUTH_HTTP_BODY"
+    }, {
+      "id" : "_RYxFQDnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_AUTH_CONTENT_TYPE"
+    }, {
+      "id" : "_RYxFQTnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_AUTH_TOKEN_ACCESS"
+    }, {
+      "id" : "_RYxFQjnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_AUTH_CLIENT_ID"
+    }, {
+      "id" : "_RYxFQznDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_AUTH_CLIENT_SECRET"
+    }, {
+      "id" : "_RYxFRDnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_METHOD_PRODUCT_LIST"
+    }, {
+      "id" : "_RYxFRTnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_QUERY_PARAM_FIRST_FIN"
+    }, {
+      "id" : "_RYxFRjnDEe2Bt5XBBSqOpg",
+      "name" : "TRUSTORE_PATH"
+    }, {
+      "id" : "_RYxFRznDEe2Bt5XBBSqOpg",
+      "name" : "FINDOMESTIC_SERVICE_URL"
+    }, {
+      "id" : "_RYxFSDnDEe2Bt5XBBSqOpg",
+      "name" : "FINDOMESTIC_SOAP_ACTION"
+    }, {
+      "id" : "_RYxFSTnDEe2Bt5XBBSqOpg",
+      "name" : "FINDOMESTIC_REQUEST_VENDITORE_ID"
+    }, {
+      "id" : "_RYxFSjnDEe2Bt5XBBSqOpg",
+      "name" : "FINDOMESTIC_AUTH_BASIC"
+    }, {
+      "id" : "_RYxFSznDEe2Bt5XBBSqOpg",
+      "name" : "FINDOMESTIC_REQUESTPROP_CLIENT_CERT"
+    }, {
+      "id" : "_RYxFTDnDEe2Bt5XBBSqOpg",
+      "name" : "FINDOMESTIC_REQUESTPROP_CONTENT_TYPE"
+    }, {
+      "id" : "_RYxFTTnDEe2Bt5XBBSqOpg",
+      "name" : "FINDOMESTIC_REQUEST_VENDITORE_ID_MR"
+    }, {
+      "id" : "_RYxFTjnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_QUERY_PARAM_EXPIRED_FIN"
+    }, {
+      "id" : "_RYxFTznDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_QUERY_PARAM_SEND_DEALERK"
+    }, {
+      "id" : "_RYxFUDnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_METHOD_REFERENCE_ENTITIES"
+    }, {
+      "id" : "_RYxFUTnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_QUERY_PARAM_PROMO"
+    }, {
+      "id" : "_RYxFUjnDEe2Bt5XBBSqOpg",
+      "name" : "NUM_DAYS_EXPIRE_FIN"
+    }, {
+      "id" : "_RYxFUznDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_METHOD_REFERENCE_ENTITIES_OPTIONS"
+    }, {
+      "id" : "_RYxFVDnDEe2Bt5XBBSqOpg",
+      "name" : "CLOUDINARY_PATH_STATIC"
+    }, {
+      "id" : "_RYxFVTnDEe2Bt5XBBSqOpg",
+      "name" : "DEALERK_DIMENSIONI_POSIZIONE_IMG"
+    }, {
+      "id" : "_RYxFVjnDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE71"
+    }, {
+      "id" : "_RYxFVznDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_QUERY_PARAM_SEND_INFOCAR"
+    }, {
+      "id" : "_RYxFWDnDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_OCI_Path"
+    }, {
+      "id" : "_RYxFWTnDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_OCI_Profile"
+    }, {
+      "id" : "_RYxFWjnDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_OCI_NameSpace"
+    }, {
+      "id" : "_RYxFWznDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_OCI_Bucket"
+    }, {
+      "id" : "_RYxFXDnDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_OCI_ContentType"
+    }, {
+      "id" : "_RYxFXTnDEe2Bt5XBBSqOpg",
+      "name" : "ORACLE_CLOUD_OCI_Region"
+    }, {
+      "id" : "_RYxFXjnDEe2Bt5XBBSqOpg",
+      "name" : "DEALERK_FTP_HOST"
+    }, {
+      "id" : "_RYxFXznDEe2Bt5XBBSqOpg",
+      "name" : "DEALERK_FTP_PORT"
+    }, {
+      "id" : "_RYxFYDnDEe2Bt5XBBSqOpg",
+      "name" : "DEALERK_FTP_USER"
+    }, {
+      "id" : "_RYxFYTnDEe2Bt5XBBSqOpg",
+      "name" : "DEALERK_FTP_PWD"
+    }, {
+      "id" : "_RYxFYjnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_METHOD_ATTR_OPT"
+    }, {
+      "id" : "_RYxFYznDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE60"
+    }, {
+      "id" : "_RYxFZDnDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE61"
+    }, {
+      "id" : "_RYxFZTnDEe2Bt5XBBSqOpg",
+      "name" : "NOME_FILEDATASOURCE62"
+    }, {
+      "id" : "_RYxFZjnDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_QUERY_PARAM_FIRST_FIN_SAN"
+    }, {
+      "id" : "_RYxFZznDEe2Bt5XBBSqOpg",
+      "name" : "AKENEOPIM_QUERY_PARAM_EXPIRED_FIN_SAN"
+    }, {
+      "id" : "_RYxFaDnDEe2Bt5XBBSqOpg",
+      "name" : "SANTANDER_REQUEST_INTERMEDIARIO_ID"
+    }, {
+      "id" : "_RYxFaTnDEe2Bt5XBBSqOpg",
+      "name" : "SANTANDER_SERVICE_URL"
+    }, {
+      "id" : "_RYxFajnDEe2Bt5XBBSqOpg",
+      "name" : "SANTANDER_CLIENT_ID"
+    }, {
+      "id" : "_RYxFaznDEe2Bt5XBBSqOpg",
+      "name" : "SANTANDER_CLIENT_SECRET"
+    }, {
+      "id" : "_RYxFbDnDEe2Bt5XBBSqOpg",
+      "name" : "CLOUDINARY_FOLDER"
+    } ]
+  } ]
+}

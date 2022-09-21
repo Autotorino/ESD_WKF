@@ -1,0 +1,279 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ValuesCampagna {
+	
+	
+	    public ValuesCampagna() {
+		}	    
+	    
+	    public ValuesCampagna(JSONObject jsonObjBody) {
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("values");
+	    	
+	    	setLabel(jsonObjValues);
+	    	setDescrizione_campagna(jsonObjValues);
+	    	setSconto(jsonObjValues);
+	    	setTipo_sconto(jsonObjValues);
+	    	setData_inizio(jsonObjValues);
+	    	setData_fine(jsonObjValues);
+	    	setPriorita(jsonObjValues);
+	    	setStop(jsonObjValues);
+	    	
+	    	
+		}
+	    
+	    private List<DataValue> label;
+	    
+	    private List<DataValue> descrizione_campagna;
+	    
+	    private List<DataValue> sconto;
+	    
+	    private List<DataValue> tipo_sconto;
+	    
+	    private List<DataValue> data_inizio;
+	    
+	    private List<DataValue> data_fine;
+	    
+	    private List<DataValue> priorita;
+	    
+	    private List<DataValue> stop;
+
+
+	    
+	    /**
+	     * 
+	     * Metodi GET\SET per Lettura dal PIM
+	     */
+	    public void setLabel(List<DataValue> label){
+	        this.label = label;
+	    }
+	    
+        public void setLabel(JSONObject jsonObjValues){
+	    	
+	    	this.label = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("label");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.label = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getLabel(){
+	        return this.label;
+	    }
+	    
+	    
+	    public void setDescrizione_campagna(List<DataValue> descrizione_campagna){
+	        this.descrizione_campagna = descrizione_campagna;
+	    }
+	    
+        public void setDescrizione_campagna(JSONObject jsonObjValues){
+	    	
+	    	this.descrizione_campagna = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("descrizione_campagna");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.descrizione_campagna = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getDescrizione_campagna(){
+	        return this.descrizione_campagna;
+	    }
+	    
+	    
+	    public void setSconto(List<DataValue> sconto){
+	        this.sconto = sconto;
+	    }
+	    
+        public void setSconto(JSONObject jsonObjValues){
+	    	
+	    	this.sconto = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("sconto");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.sconto = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getSconto(){
+	        return this.sconto;
+	    }
+	    
+	    public void setTipo_sconto(List<DataValue> tipo_sconto){
+	        this.tipo_sconto = tipo_sconto;
+	    }
+	    
+        public void setTipo_sconto(JSONObject jsonObjValues){
+	    	
+	    	this.tipo_sconto = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("tipo_sconto");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.tipo_sconto = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getTipo_sconto(){
+	        return this.tipo_sconto;
+	    }
+	    
+	    public void setData_inizio(List<DataValue> data_inizio){
+	        this.data_inizio = data_inizio;
+	    }
+	    
+        public void setData_inizio(JSONObject jsonObjValues){
+	    	
+	    	this.data_inizio = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("data_inizio");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.data_inizio = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getData_inizio(){
+	        return this.data_inizio;
+	    }
+
+	    
+	    public void setData_fine(List<DataValue> data_fine){
+	        this.data_fine = data_fine;
+	    }
+	    
+        public void setData_fine(JSONObject jsonObjValues){
+	    	
+	    	this.data_fine = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("data_fine");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.data_fine = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getData_fine(){
+	        return this.data_fine;
+	    }
+	    
+	    
+	    public void setPriorita(List<DataValue> priorita){
+	        this.priorita = priorita;
+	    }
+	    
+        public void setPriorita(JSONObject jsonObjValues){
+	    	
+	    	this.priorita = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("priorita");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.priorita = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getPriorita(){
+	        return this.priorita;
+	    }
+	    
+	    
+	    public void setStop(List<DataValue> stop){
+	        this.stop = stop;
+	    }
+	    
+        public void setStop(JSONObject jsonObjValues){
+	    	
+	    	this.stop = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("stop");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.stop = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getStop(){
+	        return this.stop;
+	    }
+
+}

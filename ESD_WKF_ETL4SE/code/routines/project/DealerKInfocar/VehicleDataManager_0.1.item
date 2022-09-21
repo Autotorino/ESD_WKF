@@ -1,0 +1,228 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+
+
+public class VehicleDataManager {
+	
+	
+	public Date current;
+    /*
+    * Property per mappature   
+    */
+	public Map<String,String> mapCategory; 
+	public Map<String,String> mapColoreInterni;
+	public Map<String,String> mapVernice;
+	public Map<String,String> mapAlimentazione;	
+	public Map<String,String> mapTrazione;	
+	public Map<String,String> mapClasseEmissioni; 
+	public Map<String,Garanzia> mapGaranzia;
+	public Map<String,String> mapGarOptsDesPortali;
+	public Map<String,String> mapIvaExp;
+	public Map<String,String> mapOptAuto;
+	public Map<String,String> mapColore;
+	public Map<String,String> mapCambio;
+	public Map<String,String> mapPremiumSelection;
+	public EntitiesCampagneList entitiesCampagne;
+	public Map<String,Filigrana> mapFiligrana;
+	public String cloudinaryStaticPath;
+	public String cloudinaryFolder;	
+	public String cloudinaryDimension;
+	public Map<String,FotoExtra> mapFotoExtra;
+
+	public List<Vehicle> vehicles;
+	
+	
+	public Date getCurrent() {
+		return current;
+	}
+
+	public void setCurrent(Date current) {
+		this.current = current;
+	}
+
+	public void setMapCategory(Map<String,String> mapCategory){
+		this.mapCategory = mapCategory;
+	}
+	
+	public void setMapColoreInterni(Map<String,String> mapColoreInterni){
+		this.mapColoreInterni = mapColoreInterni;
+	}
+	
+	public void setMapVernice(Map<String,String> mapVernice){
+		this.mapVernice = mapVernice;
+	}
+	
+	public void setMapAlimentazione(Map<String,String> mapAlimentazione){
+		this.mapAlimentazione = mapAlimentazione;
+	}
+	
+	public void setMapTrazione(Map<String,String> mapTrazione){
+		this.mapTrazione = mapTrazione;
+	}	
+	
+	public void setMapClasseEmissioni(Map<String,String> mapClasseEmissioni){
+		this.mapClasseEmissioni = mapClasseEmissioni;
+	}	
+	
+	public void setMapGaranzia(Map<String,Garanzia> mapGaranzia){
+		this.mapGaranzia = mapGaranzia;
+	}	
+	
+	public void setMapIvaExp(Map<String,String> mapIvaExp){
+		this.mapIvaExp = mapIvaExp;
+	}
+
+	public void setMapOptAuto(Map<String, String> mapOptAuto) {
+		this.mapOptAuto = mapOptAuto;
+	}
+	
+	public void setMapColore(Map<String, String> mapColore) {
+		this.mapColore = mapColore;
+	}
+	
+	public void setMapCambio(Map<String, String> mapCambio) {
+		this.mapCambio = mapCambio;
+	}
+	
+	public void setMapPremiumSelection(Map<String, String> mapPremiumSelection) {
+		this.mapPremiumSelection = mapPremiumSelection;
+	}
+	
+	public void setMapGarOptsDesPortali(Map<String,String> mapGarOptsDesPortali){
+		this.mapGarOptsDesPortali = mapGarOptsDesPortali;
+	}
+	
+	public void setEntitiesCampagne(EntitiesCampagneList entitiesCampagne){
+		this.entitiesCampagne = entitiesCampagne;
+	}
+	public void setMapFiligrana(Map<String,Filigrana> mapFiligrana){
+		this.mapFiligrana = mapFiligrana;
+	}	
+	
+	public void setCloudinaryStaticPath(String cloudinaryStaticPath) {
+		this.cloudinaryStaticPath = cloudinaryStaticPath;
+	}
+	
+	public void setCloudinaryFolder(String cloudinaryFolder) {
+		this.cloudinaryFolder = cloudinaryFolder;
+	}
+	
+	public void setCloudinaryDimension(String cloudinaryDimension) {
+		this.cloudinaryDimension = cloudinaryDimension;
+	}
+	
+	public void setMapFotoExtra(Map<String,FotoExtra> mapFotoExtra){
+		this.mapFotoExtra = mapFotoExtra;
+	}
+	
+	
+
+	public List<Vehicle> getVehicles() {
+		return vehicles;
+	}
+
+	public void setVehicles(List<Vehicle> vehicles) {
+		this.vehicles = vehicles;
+	}
+	
+	public void addVehicleFromProduct(Vehicle vehicle,Product product){
+		
+		if (this.vehicles!= null){
+			this.vehicles.add(this.setInfoFromProduct(vehicle, product));
+		}
+		else{
+			this.vehicles = new ArrayList<Vehicle>();
+			this.vehicles.add(this.setInfoFromProduct(vehicle, product));
+		}
+	}
+	
+	public Vehicle setInfoFromProduct(Vehicle vehicle,Product product){
+
+		vehicle.setOwnersvehicle_id(product.getIdentifier());
+		vehicle.setStatus("active");
+		vehicle.setVisibility("public");
+		vehicle.setCodice_eurotax(product.getCodiceEurotax());
+		vehicle.setVin(product.getTelaio());
+		vehicle.setTypeFromCategory(product.getCategoriesStringFromFamily());
+		vehicle.setCategoryFromMap(product.getTipo(),mapCategory);
+		vehicle.setBody(product.getCategoriaDealerK());
+		vehicle.setBrand(product.getDesMarca());
+		vehicle.setModel(product.getDesModello());
+		vehicle.setVersion(product.getDesVersione());
+		vehicle.setBody_colorgroupFromMap(product.getColoreEsterno(),mapColore);
+		vehicle.setBody_color(product.getColoreEsterno());
+		vehicle.setInterior_ColorFromMap(product.getColoreInterno(),mapColoreInterni);
+		vehicle.setCovering(product.getRivestimento());
+		vehicle.setDoors(product.getPorte());
+		vehicle.setBody_paintingFromMap(product.getVerniceEsterno(),mapVernice);
+		vehicle.setGear_typeFromMap(product.getCambio(),mapCambio);
+		vehicle.setFuel_typeFromMap(product.getAlimentazione(),mapAlimentazione);
+		vehicle.setTransmissionFromMap(product.getTrazione(),mapTrazione);
+		vehicle.setCapacity(product.getCilindrata());
+		vehicle.setKilowatt(product.getKilowatt());
+		vehicle.setEmissionFromMap(product.getClasseEmissioni(),mapClasseEmissioni);
+		vehicle.setMileage(product.getKm());
+		vehicle.setInitial_registration(product.getImmatricolazioneData()!=null && product.getImmatricolazioneData().trim().length()> 10 ? 
+				                 product.getImmatricolazioneData().substring(0,10) : null);  
+		vehicle.setLicence_number(product.getTarga());
+		vehicle.setWarranty_durationFromMap(product.getGaranzia(),mapGaranzia);
+		
+		Price price = new Price();
+		price.setType("public");
+		price.setVat_typeFromMap(product.getIvaEsposta(),mapIvaExp);
+		price.setCurrency("eur");
+		price.setValue(product.getPrezzoVenditaManuale()); 
+		vehicle.addPrice(price);
+		
+		
+		vehicle.setPrevious_owner(product.getPrecedentiPropietari());
+		vehicle.setSeats(product.getPosti());
+		vehicle.setNotesComplex(product,mapGaranzia,mapGarOptsDesPortali,entitiesCampagne,current);
+		
+		vehicle.setMediaComplex(product,mapFotoExtra,cloudinaryStaticPath,cloudinaryFolder,mapFiligrana,mapGaranzia,cloudinaryDimension);
+		
+		List<Equipment> equipments = null;
+		if (product.getOptionalAutoSelect()!= null && product.getOptionalAutoSelect().size()>0){
+			equipments = new ArrayList<Equipment>();
+			for (String optAuto:product.getOptionalAutoSelect()){
+				if (!UtilString.isEmptyTrim(optAuto) && mapOptAuto!= null &&  mapOptAuto.get(optAuto)!=null){
+					Equipment equipment = new Equipment();
+					equipment.setText(mapOptAuto.get(optAuto));
+					equipments.add(equipment);
+				}
+			}
+		}
+		vehicle.setEquipments(equipments);
+		vehicle.setSealsFromMap(product.getGaranzia(), mapGaranzia, mapPremiumSelection);
+		
+		return vehicle;
+	}
+
+	public String toXML() {
+		
+		String returnXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<stx3 xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n";
+		
+		if (this.vehicles!=null && this.vehicles.size()>0){
+			returnXML+="  <vehicle_data>\n    <vehicles>\n";
+			for(Vehicle vehicle : vehicles){
+				returnXML+=vehicle.toXML();
+			}
+			returnXML+="    </vehicles>\n  </vehicle_data>\n";
+
+		}
+		else {
+			returnXML = "  <vehicle_data/>";
+
+		}
+		
+		returnXML+="</stx3>";
+	
+		return returnXML;
+	}
+	
+	
+}

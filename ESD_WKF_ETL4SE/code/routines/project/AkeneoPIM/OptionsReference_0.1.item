@@ -1,0 +1,69 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+
+
+
+public class OptionsReference {
+	
+	public OptionsReference() {
+	}
+	
+	
+	public OptionsReference(String jsonObject) { 
+		
+		JSONArray jsonArrayObjBody = new JSONArray(jsonObject);
+		this.setOptions(jsonArrayObjBody);
+		
+	}
+
+	private List<Options> options;
+	
+    public void setOptions(JSONArray jsonArrayObjBody){
+    	
+	    	this.options = null;
+	    	
+	    	if(jsonArrayObjBody!= null) {
+		    	
+	    		if(jsonArrayObjBody.length()>0){
+		    	
+	    			ArrayList<Options> arrayList = new ArrayList<Options>();
+	    			
+	    			for (int i=0;i<jsonArrayObjBody.length();i++)
+	    				arrayList.add(new Options((JSONObject)jsonArrayObjBody.getJSONObject(i)));
+	    			
+			        this.options = arrayList;
+	    		}
+	    	}
+	    }
+     
+     public List<Options> getOptions(){
+     	return options;
+     }
+     
+     public HashMap<String,String> getMapOptions(){
+     	
+     	HashMap<String,String> mapOptions = new HashMap<String,String>();
+     	
+    	    if (this.options!=null && this.options.size()>0) {
+     	    
+    			for(Options opts:this.options) {
+    				mapOptions.put(opts.getCode(),
+    						opts.getLabels()!= null ? opts.getLabels().getIT_IT():null);
+    			}
+     		}
+
+
+         return mapOptions;
+     }
+     
+     public boolean isValid(){
+    	 return options!= null && options.size()>0;
+    }
+    
+    
+   
+}

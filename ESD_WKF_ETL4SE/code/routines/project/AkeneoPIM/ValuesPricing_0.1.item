@@ -1,0 +1,810 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class ValuesPricing {
+	
+	    public static String unitaDiMisuraCurrency = "EUR";
+	
+	    public ValuesPricing() {
+		}	    
+	    
+	    public ValuesPricing(JSONObject jsonObjBody) {
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("values");
+	    	
+
+	    	setPrezzo_listino(jsonObjValues);
+	    	setPrezzo_listino_manuale(jsonObjValues);
+	    	setPrezzo_listino_escluso_iva(jsonObjValues);
+	    	setPrezzo_vendita(jsonObjValues);
+	    	setPrezzo_vendita_manuale(jsonObjValues);
+	    	setPrezzo_vendita_senza_iva_es(jsonObjValues);
+	    	setCampagne_ml(jsonObjValues);
+	    	setSpese_trapasso_sl(jsonObjValues);
+	    	setArrotondamento_sl(jsonObjValues);	    	
+	    	setTipo(jsonObjValues);
+	    	setTipo_text(jsonObjValues);
+	    	setFin_finanziaria(jsonObjValues);
+
+	    	
+	    	
+		}
+	    
+	    private List<PriceValue> prezzo_listino;
+	    
+	    private List<PriceValue> prezzo_listino_manuale;	
+	    
+	    private List<PriceValue> prezzo_listino_escluso_iva;
+
+	    private List<PriceValue> prezzo_vendita;
+	    
+	    private List<PriceValue> prezzo_vendita_manuale;
+
+	    private List<PriceValue> prezzo_vendita_senza_iva_es;
+	    
+	    private List<MultiDataValue> campagne_ml;
+	    
+	    private List<DataValue> arrotondamento_sl;
+	    
+	    private List<DataValue> spese_trapasso_sl;
+	    
+	    private List<DataValue> tipo;
+	    
+	    private List<DataValue> tipo_text;
+	    
+	    private List<DataValue> data_calcolo_prezzi_finali;
+	    
+	    private List<DataValue> fin_finanziaria;
+	    
+	    /**
+	    **Property utilizzate solo per l'inizializzazione del finanziamento sul PIM in caso di cambio prezzo
+	    ** e per la depubblicazione del Prodotto su Dealerk
+	    **/
+	    
+	    private List<DataValue> fin_disclaimer_legale;
+	    private List<DataValue> fin_configurazione_finanziamento_default;
+	    private List<PriceValue> fin_anticipo;
+	    private List<DataValue> fin_durata;
+	    private List<PriceValue> fin_maxi_rata;
+	    private List<PriceValue> fin_finanziato;
+	    //private List<PriceValue> fin_erogato;
+	    private List<PriceValue> fin_importo_totale_credito;
+	    private List<PriceValue> fin_importo_tot_dovuto;
+	    private List<PriceValue> fin_imposta_di_bollo;
+	    private List<PriceValue> fin_imposta_di_bollo_sostitutiva;
+	    private List<PriceValue> fin_spese_incasso_gestione_rata;
+	    private List<PriceValue> fin_rata_ok;
+	    private List<DataValue> fin_taeg;
+	    private List<DataValue> fin_tan;
+	    private List<DataValue> fin_url_preventivo;
+	    private List<PriceValue> fin_spese_istruttoria;
+	    private List<PriceValue> fin_spese_comunicazioni_periodiche;
+	    private List<DataValue> fin_risposta_finanziaria;
+	    private List<DataValue> fin_data_inserimento_finanziamento;
+	    private List<BooleanValue> pubblica_su_dealerk;
+
+
+
+
+	    
+	    /**
+	     * 
+	     * Metodi GET\SET per Lettura\Scrittura sul PIM
+	     */
+        public void setPrezzo_listino(List<PriceValue> prezzo_listino){
+	        this.prezzo_listino = prezzo_listino;
+	    }
+	    
+	    public void setPrezzo_listino(JSONObject jsonObjValues){
+	    	
+	    	this.prezzo_listino = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("prezzo_listino");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.prezzo_listino = arrayList;
+	    		}
+	    	}
+	    }
+	    
+	    public List<PriceValue> getPrezzo_listino(){
+	        return this.prezzo_listino;
+	    }
+	    
+        public void setPrezzo_listino_manuale(List<PriceValue> prezzo_listino_manuale){
+	        this.prezzo_listino_manuale = prezzo_listino_manuale;
+	    }
+        
+	    public void setPrezzo_listino_manuale(String prezzo_listino_manuale){
+	    	ImpValue prezzo_listino_manualeImpValue 
+	    	  = (this.prezzo_listino_manuale != null && this.prezzo_listino_manuale.size()> 0 && 
+	    			  this.prezzo_listino_manuale.get(0).getData()!= null && this.prezzo_listino_manuale.get(0).getData().size()>0) ? 
+	    			  this.prezzo_listino_manuale.get(0).getData().get(0) :  new ImpValue();
+	        
+	    			  prezzo_listino_manualeImpValue.setAmount(prezzo_listino_manuale);
+	    			  prezzo_listino_manualeImpValue.setCurrency(unitaDiMisuraCurrency);
+	    	this.prezzo_listino_manuale = 
+	    			new ArrayList<PriceValue>(Arrays.asList(new PriceValue(null,null,
+	    					new ArrayList<ImpValue>(Arrays.asList(prezzo_listino_manualeImpValue)))));
+	    }  
+	    
+	    public void setPrezzo_listino_manuale(JSONObject jsonObjValues){
+	    	
+	    	this.prezzo_listino_manuale = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("prezzo_listino_manuale");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.prezzo_listino_manuale = arrayList;
+	    		}
+	    	}
+	    }
+	    
+	    public List<PriceValue> getPrezzo_listino_manuale(){
+	        return this.prezzo_listino_manuale;
+	    }
+	    
+	    public void setPrezzo_listino_escluso_iva(List<PriceValue> prezzo_listino_escluso_iva){
+	        this.prezzo_listino_escluso_iva = prezzo_listino_escluso_iva;
+	    }
+	    
+	    public void setPrezzo_listino_escluso_iva(String prezzo_listino_escluso_iva){
+	    	ImpValue prezzo_listino_escluso_ivaImpValue 
+	    	  = (this.prezzo_listino_escluso_iva != null && this.prezzo_listino_escluso_iva.size()> 0 && 
+	    			  this.prezzo_listino_escluso_iva.get(0).getData()!= null && this.prezzo_listino_escluso_iva.get(0).getData().size()>0) ? 
+	    			  this.prezzo_listino_escluso_iva.get(0).getData().get(0) :  new ImpValue();
+	        
+	    			  prezzo_listino_escluso_ivaImpValue.setAmount(prezzo_listino_escluso_iva);
+	    			  prezzo_listino_escluso_ivaImpValue.setCurrency(unitaDiMisuraCurrency);
+	    	this.prezzo_listino_escluso_iva = 
+	    			new ArrayList<PriceValue>(Arrays.asList(new PriceValue(null,null,
+	    					new ArrayList<ImpValue>(Arrays.asList(prezzo_listino_escluso_ivaImpValue)))));
+	    }  
+	    
+	    public void setPrezzo_listino_escluso_iva(JSONObject jsonObjValues){
+	    	
+	    	this.prezzo_listino_escluso_iva = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("prezzo_listino_escluso_iva");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.prezzo_listino_escluso_iva = arrayList;
+	    		}
+	    	}
+	    }
+	    	    	    
+	    public List<PriceValue> getPrezzo_listino_escluso_iva(){
+	        return this.prezzo_listino_escluso_iva;
+	    }
+	    
+	    public void setPrezzo_vendita(List<PriceValue> prezzo_vendita){
+	        this.prezzo_vendita = prezzo_vendita;
+	    }
+	    
+	    public void setPrezzo_vendita(JSONObject jsonObjValues){
+	    	
+	    	this.prezzo_vendita = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("prezzo_vendita");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.prezzo_vendita = arrayList;
+	    		}
+	    	}
+	    }
+	    	    
+	    public List<PriceValue> getPrezzo_vendita(){
+	        return this.prezzo_vendita;
+	    }
+	    
+	    public void setPrezzo_vendita_manuale(List<PriceValue> prezzo_vendita_manuale){
+	        this.prezzo_vendita_manuale = prezzo_vendita_manuale;
+	    }
+	    
+	    public void setPrezzo_vendita_manuale(String prezzo_vendita_manuale){
+	    	ImpValue prezzo_vendita_manualeImpValue 
+	    	  = (this.prezzo_vendita_manuale != null && this.prezzo_vendita_manuale.size()> 0 && 
+	    			  this.prezzo_vendita_manuale.get(0).getData()!= null && this.prezzo_vendita_manuale.get(0).getData().size()>0) ? 
+	    			  this.prezzo_vendita_manuale.get(0).getData().get(0) :  new ImpValue();
+	        
+	    			  prezzo_vendita_manualeImpValue.setAmount(prezzo_vendita_manuale);
+	    			  prezzo_vendita_manualeImpValue.setCurrency(unitaDiMisuraCurrency);
+	    	this.prezzo_vendita_manuale = 
+	    			new ArrayList<PriceValue>(Arrays.asList(new PriceValue(null,null,
+	    					new ArrayList<ImpValue>(Arrays.asList(prezzo_vendita_manualeImpValue)))));
+	    }  
+	    
+	    public void setPrezzo_vendita_manuale(JSONObject jsonObjValues){
+	    	
+	    	this.prezzo_vendita_manuale = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("prezzo_vendita_manuale");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.prezzo_vendita_manuale = arrayList;
+	    		}
+	    	}
+	    }
+	    	    
+	    public List<PriceValue> getPrezzo_vendita_manuale(){
+	        return this.prezzo_vendita_manuale;
+	    }
+	    
+	    public void setPrezzo_vendita_senza_iva_es(List<PriceValue> prezzo_vendita_senza_iva_es){
+	        this.prezzo_vendita_senza_iva_es = prezzo_vendita_senza_iva_es;
+	    }
+	    
+	    public void setPrezzo_vendita_senza_iva_es(String prezzo_vendita_senza_iva_es){
+	    	ImpValue prezzo_vendita_senza_iva_esImpValue 
+	    	  = (this.prezzo_vendita_senza_iva_es != null && this.prezzo_vendita_senza_iva_es.size()> 0 && 
+	    			  this.prezzo_vendita_senza_iva_es.get(0).getData()!= null && this.prezzo_vendita_senza_iva_es.get(0).getData().size()>0) ? 
+	    			  this.prezzo_vendita_senza_iva_es.get(0).getData().get(0) :  new ImpValue();
+	        
+	    			  prezzo_vendita_senza_iva_esImpValue.setAmount(prezzo_vendita_senza_iva_es);
+	    			  prezzo_vendita_senza_iva_esImpValue.setCurrency(unitaDiMisuraCurrency);
+	    	this.prezzo_vendita_senza_iva_es = 
+	    			new ArrayList<PriceValue>(Arrays.asList(new PriceValue(null,null,
+	    					new ArrayList<ImpValue>(Arrays.asList(prezzo_vendita_senza_iva_esImpValue)))));
+	    }  
+	    
+	    public void setPrezzo_vendita_senza_iva_es(JSONObject jsonObjValues){
+	    	
+	    	this.prezzo_vendita_senza_iva_es = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("prezzo_vendita_senza_iva_es");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.prezzo_vendita_senza_iva_es = arrayList;
+	    		}
+	    	}
+	    }
+	    	    	    
+	    public List<PriceValue> getPrezzo_vendita_senza_iva_es(){
+	        return this.prezzo_vendita_senza_iva_es;
+	    }
+	    
+	    public void setCampagne_ml(List<MultiDataValue> campagne_ml){
+	        this.campagne_ml = campagne_ml;
+	    }
+	    
+        public void setCampagne_ml(JSONObject jsonObjValues){
+	    	
+	    	this.campagne_ml = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("campagne_ml");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<MultiDataValue> arrayList = new ArrayList<MultiDataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new MultiDataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.campagne_ml = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<MultiDataValue> getCampagne_ml(){
+	        return this.campagne_ml;
+	    }
+	    
+	    public void setArrotondamento_sl(List<DataValue> arrotondamento_sl){
+	        this.arrotondamento_sl = arrotondamento_sl;
+	    }
+	    
+        public void setArrotondamento_sl(JSONObject jsonObjValues){
+	    	
+	    	this.arrotondamento_sl = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("arrotondamento_sl");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.arrotondamento_sl = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getArrotondamento_sl(){
+	        return this.arrotondamento_sl;
+	    }
+	    
+	    public void setSpese_trapasso_sl(List<DataValue> spese_trapasso_sl){
+	        this.spese_trapasso_sl = spese_trapasso_sl;
+	    }
+	    
+        public void setSpese_trapasso_sl(JSONObject jsonObjValues){
+	    	
+	    	this.spese_trapasso_sl = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("spese_trapasso_sl");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.spese_trapasso_sl = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getSpese_trapasso_sl(){
+	        return this.spese_trapasso_sl;
+	    }
+	    
+	    public void setTipo(List<DataValue> tipo){
+	        this.tipo = tipo;
+	    }
+	    
+	    public void setTipo(JSONObject jsonObjValues){
+	    	
+	    	this.tipo = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("tipo");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.tipo = arrayList;
+	    		}
+	    	}
+	    }	  	    
+	    
+	    public List<DataValue> getTipo(){
+	        return this.tipo;
+	    }
+	    
+	    public void setTipo_text(List<DataValue> tipo_text){
+	        this.tipo_text = tipo_text;
+	    }
+	    
+	    public void setTipo_text(JSONObject jsonObjValues){
+	    	
+	    	this.tipo_text = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("tipo_text");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.tipo_text = arrayList;
+	    		}
+	    	}
+	    }	  	    
+	    
+	    public List<DataValue> getTipo_text(){
+	        return this.tipo_text;
+	    }
+	    
+	    public void setData_calcolo_prezzi_finali(List<DataValue> data_calcolo_prezzi_finali){
+	        this.data_calcolo_prezzi_finali = data_calcolo_prezzi_finali;
+	    }
+	    
+	    public void setData_calcolo_prezzi_finali(String data_calcolo_prezzi_finali){
+	        this.data_calcolo_prezzi_finali = new ArrayList<DataValue>(Arrays.asList(new DataValue(null,null,data_calcolo_prezzi_finali)));
+	    }	    
+	    
+	    public void setData_calcolo_prezzi_finali(JSONObject jsonObjValues){
+	    	
+	    	this.data_calcolo_prezzi_finali = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("data_calcolo_prezzi_finali");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.data_calcolo_prezzi_finali = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getData_calcolo_prezzi_finali(){
+	        return this.data_calcolo_prezzi_finali;
+	    }
+	    
+	    
+	    public void setFin_finanziaria(List<DataValue> fin_finanziaria){
+	        this.fin_finanziaria = fin_finanziaria;
+	    }
+	    
+	    public void setFin_finanziaria(String fin_finanziaria){
+	        this.fin_finanziaria = new ArrayList<DataValue>(Arrays.asList(new DataValue(null,null,fin_finanziaria)));
+	    }	    
+	    
+	    public void setFin_finanziaria(JSONObject jsonObjValues){
+	    	
+	    	this.fin_finanziaria = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_finanziaria");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_finanziaria = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getFin_finanziaria(){
+	        return this.fin_finanziaria;
+	    }
+	    
+	    
+	    
+	    
+	    /**
+		**Finanziamento Init\Depubblica DealerK - Getter & Setter only 
+		**/
+	    
+	    public List<DataValue> getFin_disclaimer_legale() {
+			return fin_disclaimer_legale;
+		}
+
+		public void setFin_disclaimer_legale(String fin_disclaimer_legale) {
+			this.fin_disclaimer_legale = new ArrayList<DataValue>(Arrays.asList(new DataValue(null,null,fin_disclaimer_legale)));
+		}
+
+		public List<DataValue> getFin_configurazione_finanziamento_default() {
+			return fin_configurazione_finanziamento_default;
+		}
+
+		public void setFin_configurazione_finanziamento_default(String fin_configurazione_finanziamento_default) {
+			this.fin_configurazione_finanziamento_default = new ArrayList<DataValue>(Arrays.asList(new DataValue(null,null,fin_configurazione_finanziamento_default)));
+		}
+
+		public List<PriceValue> getFin_anticipo() {
+			return fin_anticipo;
+		}
+
+		public void setFin_anticipo(String fin_anticipo) {
+			ImpValue fin_anticipoImpValue 
+	    	  = (this.fin_anticipo != null && this.fin_anticipo.size()> 0 && 
+	    			  this.fin_anticipo.get(0).getData()!= null && this.fin_anticipo.get(0).getData().size()>0) ? 
+	    			  this.fin_anticipo.get(0).getData().get(0) :  new ImpValue();
+	        
+	    			  fin_anticipoImpValue.setAmount(fin_anticipo);
+	    			  fin_anticipoImpValue.setCurrency(unitaDiMisuraCurrency);
+	    	this.fin_anticipo = 
+	    			new ArrayList<PriceValue>(Arrays.asList(new PriceValue(null,null,
+	    					new ArrayList<ImpValue>(Arrays.asList(fin_anticipoImpValue)))));
+		}
+
+		public List<DataValue> getFin_durata() {
+			return fin_durata;
+		}
+
+		public void setFin_durata(String fin_durata) {
+			this.fin_durata = new ArrayList<DataValue>(Arrays.asList(new DataValue(null,null,fin_durata)));
+		}
+
+		public List<PriceValue> getFin_maxi_rata() {
+			return fin_maxi_rata;
+		}
+
+		public void setFin_maxi_rata(String fin_maxi_rata) {
+			ImpValue fin_maxi_rataImpValue 
+	    	  = (this.fin_maxi_rata != null && this.fin_maxi_rata.size()> 0 && 
+	    			  this.fin_maxi_rata.get(0).getData()!= null && this.fin_maxi_rata.get(0).getData().size()>0) ? 
+	    			  this.fin_maxi_rata.get(0).getData().get(0) :  new ImpValue();
+	        
+	    			  fin_maxi_rataImpValue.setAmount(fin_maxi_rata);
+	    			  fin_maxi_rataImpValue.setCurrency(unitaDiMisuraCurrency);
+	    	this.fin_maxi_rata = 
+	    			new ArrayList<PriceValue>(Arrays.asList(new PriceValue(null,null,
+	    					new ArrayList<ImpValue>(Arrays.asList(fin_maxi_rataImpValue)))));
+		}
+
+		public List<PriceValue> getFin_finanziato() {
+			return fin_finanziato;
+		}
+
+		public void setFin_finanziato(String fin_finanziato) {
+			ImpValue fin_finanziatoImpValue 
+	    	  = (this.fin_finanziato != null && this.fin_finanziato.size()> 0 && 
+	    			  this.fin_finanziato.get(0).getData()!= null && this.fin_finanziato.get(0).getData().size()>0) ? 
+	    			  this.fin_finanziato.get(0).getData().get(0) :  new ImpValue();
+	        
+	    			  fin_finanziatoImpValue.setAmount(fin_finanziato);
+	    			  fin_finanziatoImpValue.setCurrency(unitaDiMisuraCurrency);
+	    	this.fin_finanziato = 
+	    			new ArrayList<PriceValue>(Arrays.asList(new PriceValue(null,null,
+	    					new ArrayList<ImpValue>(Arrays.asList(fin_finanziatoImpValue)))));
+		}
+        /*
+		public List<PriceValue> getFin_erogato() {
+			return fin_erogato;
+		}
+
+		public void setFin_erogato(String fin_erogato) {
+			ImpValue fin_erogatoImpValue 
+	    	  = (this.fin_erogato != null && this.fin_erogato.size()> 0 && 
+	    			  this.fin_erogato.get(0).getData()!= null && this.fin_erogato.get(0).getData().size()>0) ? 
+	    			  this.fin_erogato.get(0).getData().get(0) :  new ImpValue();
+	        
+	    			  fin_erogatoImpValue.setAmount(fin_erogato);
+	    			  fin_erogatoImpValue.setCurrency(unitaDiMisuraCurrency);
+	    	this.fin_erogato = 
+	    			new ArrayList<PriceValue>(Arrays.asList(new PriceValue(null,null,
+	    					new ArrayList<ImpValue>(Arrays.asList(fin_erogatoImpValue)))));			
+		}*/
+
+		public List<PriceValue> getFin_importo_totale_credito() {
+			return fin_importo_totale_credito;
+		}
+
+		public void setFin_importo_totale_credito(String fin_importo_totale_credito) {
+			ImpValue fin_importo_totale_creditoImpValue 
+	    	  = (this.fin_importo_totale_credito != null && this.fin_importo_totale_credito.size()> 0 && 
+	    			  this.fin_importo_totale_credito.get(0).getData()!= null && this.fin_importo_totale_credito.get(0).getData().size()>0) ? 
+	    			  this.fin_importo_totale_credito.get(0).getData().get(0) :  new ImpValue();
+	        
+	    			  fin_importo_totale_creditoImpValue.setAmount(fin_importo_totale_credito);
+	    			  fin_importo_totale_creditoImpValue.setCurrency(unitaDiMisuraCurrency);
+	    	this.fin_importo_totale_credito = 
+	    			new ArrayList<PriceValue>(Arrays.asList(new PriceValue(null,null,
+	    					new ArrayList<ImpValue>(Arrays.asList(fin_importo_totale_creditoImpValue)))));					
+		}
+
+		public List<PriceValue> getFin_importo_tot_dovuto() {
+			return fin_importo_tot_dovuto;
+		}
+
+		public void setFin_importo_tot_dovuto(String fin_importo_tot_dovuto) {
+			ImpValue fin_importo_tot_dovutoImpValue 
+	    	  = (this.fin_importo_tot_dovuto != null && this.fin_importo_tot_dovuto.size()> 0 && 
+	    			  this.fin_importo_tot_dovuto.get(0).getData()!= null && this.fin_importo_tot_dovuto.get(0).getData().size()>0) ? 
+	    			  this.fin_importo_tot_dovuto.get(0).getData().get(0) :  new ImpValue();
+	        
+	    			  fin_importo_tot_dovutoImpValue.setAmount(fin_importo_tot_dovuto);
+	    			  fin_importo_tot_dovutoImpValue.setCurrency(unitaDiMisuraCurrency);
+	    	this.fin_importo_tot_dovuto = 
+	    			new ArrayList<PriceValue>(Arrays.asList(new PriceValue(null,null,
+	    					new ArrayList<ImpValue>(Arrays.asList(fin_importo_tot_dovutoImpValue)))));				
+		}
+
+		public List<PriceValue> getFin_imposta_di_bollo() {
+			return fin_imposta_di_bollo;
+		}
+
+		public void setFin_imposta_di_bollo(String fin_imposta_di_bollo) {
+			ImpValue fin_imposta_di_bolloImpValue 
+	    	  = (this.fin_imposta_di_bollo != null && this.fin_imposta_di_bollo.size()> 0 && 
+	    			  this.fin_imposta_di_bollo.get(0).getData()!= null && this.fin_imposta_di_bollo.get(0).getData().size()>0) ? 
+	    			  this.fin_imposta_di_bollo.get(0).getData().get(0) :  new ImpValue();
+	        
+	    			  fin_imposta_di_bolloImpValue.setAmount(fin_imposta_di_bollo);
+	    			  fin_imposta_di_bolloImpValue.setCurrency(unitaDiMisuraCurrency);
+	    	this.fin_imposta_di_bollo = 
+	    			new ArrayList<PriceValue>(Arrays.asList(new PriceValue(null,null,
+	    					new ArrayList<ImpValue>(Arrays.asList(fin_imposta_di_bolloImpValue)))));			
+		}
+
+		public List<PriceValue> getFin_imposta_di_bollo_sostitutiva() {
+			return fin_imposta_di_bollo_sostitutiva;
+		}
+
+		public void setFin_imposta_di_bollo_sostitutiva(String fin_imposta_di_bollo_sostitutiva) {
+			ImpValue fin_imposta_di_bollo_sostitutivaImpValue 
+	    	  = (this.fin_imposta_di_bollo_sostitutiva != null && this.fin_imposta_di_bollo_sostitutiva.size()> 0 && 
+	    			  this.fin_imposta_di_bollo_sostitutiva.get(0).getData()!= null && this.fin_imposta_di_bollo_sostitutiva.get(0).getData().size()>0) ? 
+	    			  this.fin_imposta_di_bollo_sostitutiva.get(0).getData().get(0) :  new ImpValue();
+	        
+	    			  fin_imposta_di_bollo_sostitutivaImpValue.setAmount(fin_imposta_di_bollo_sostitutiva);
+	    			  fin_imposta_di_bollo_sostitutivaImpValue.setCurrency(unitaDiMisuraCurrency);
+	    	this.fin_imposta_di_bollo_sostitutiva = 
+	    			new ArrayList<PriceValue>(Arrays.asList(new PriceValue(null,null,
+	    					new ArrayList<ImpValue>(Arrays.asList(fin_imposta_di_bollo_sostitutivaImpValue)))));			
+		}
+
+		public List<PriceValue> getFin_spese_incasso_gestione_rata() {
+			return fin_spese_incasso_gestione_rata;
+		}
+
+		public void setFin_spese_incasso_gestione_rata(String fin_spese_incasso_gestione_rata) {
+			ImpValue fin_spese_incasso_gestione_rataImpValue 
+	    	  = (this.fin_spese_incasso_gestione_rata != null && this.fin_spese_incasso_gestione_rata.size()> 0 && 
+	    			  this.fin_spese_incasso_gestione_rata.get(0).getData()!= null && this.fin_spese_incasso_gestione_rata.get(0).getData().size()>0) ? 
+	    			  this.fin_spese_incasso_gestione_rata.get(0).getData().get(0) :  new ImpValue();
+	        
+	    			  fin_spese_incasso_gestione_rataImpValue.setAmount(fin_spese_incasso_gestione_rata);
+	    			  fin_spese_incasso_gestione_rataImpValue.setCurrency(unitaDiMisuraCurrency);
+	    	this.fin_spese_incasso_gestione_rata = 
+	    			new ArrayList<PriceValue>(Arrays.asList(new PriceValue(null,null,
+	    					new ArrayList<ImpValue>(Arrays.asList(fin_spese_incasso_gestione_rataImpValue)))));				
+		}
+
+		public List<PriceValue> getFin_rata_ok() {
+			return fin_rata_ok;
+		}
+
+		public void setFin_rata_ok(String fin_rata_ok) {
+			ImpValue fin_rata_okImpValue 
+	    	  = (this.fin_rata_ok != null && this.fin_rata_ok.size()> 0 && 
+	    			  this.fin_rata_ok.get(0).getData()!= null && this.fin_rata_ok.get(0).getData().size()>0) ? 
+	    			  this.fin_rata_ok.get(0).getData().get(0) :  new ImpValue();
+	        
+	    			  fin_rata_okImpValue.setAmount(fin_rata_ok);
+	    			  fin_rata_okImpValue.setCurrency(unitaDiMisuraCurrency);
+	    	this.fin_rata_ok = 
+	    			new ArrayList<PriceValue>(Arrays.asList(new PriceValue(null,null,
+	    					new ArrayList<ImpValue>(Arrays.asList(fin_rata_okImpValue)))));				
+		}
+
+		public List<DataValue> getFin_taeg() {
+			return fin_taeg;
+		}
+
+		public void setFin_taeg(String fin_taeg) {
+			this.fin_taeg = new ArrayList<DataValue>(Arrays.asList(new DataValue(null,null,fin_taeg)));
+		}
+
+		public List<DataValue> getFin_tan() {
+			return fin_tan;
+		}
+
+		public void setFin_tan(String fin_tan) {
+			this.fin_tan = new ArrayList<DataValue>(Arrays.asList(new DataValue(null,null,fin_tan)));
+		}
+
+		public List<DataValue> getFin_url_preventivo() {
+			return fin_url_preventivo;
+		}
+
+		public void setFin_url_preventivo(String fin_url_preventivo) {
+			this.fin_url_preventivo = new ArrayList<DataValue>(Arrays.asList(new DataValue(null,null,fin_url_preventivo)));
+		}
+
+		public List<PriceValue> getFin_spese_istruttoria() {
+			return fin_spese_istruttoria;
+		}
+
+		public void setFin_spese_istruttoria(String fin_spese_istruttoria) {
+			ImpValue fin_spese_istruttoriaImpValue 
+	    	  = (this.fin_spese_istruttoria != null && this.fin_spese_istruttoria.size()> 0 && 
+	    			  this.fin_spese_istruttoria.get(0).getData()!= null && this.fin_spese_istruttoria.get(0).getData().size()>0) ? 
+	    			  this.fin_spese_istruttoria.get(0).getData().get(0) :  new ImpValue();
+	        
+	    			  fin_spese_istruttoriaImpValue.setAmount(fin_spese_istruttoria);
+	    			  fin_spese_istruttoriaImpValue.setCurrency(unitaDiMisuraCurrency);
+	    	this.fin_spese_istruttoria = 
+	    			new ArrayList<PriceValue>(Arrays.asList(new PriceValue(null,null,
+	    					new ArrayList<ImpValue>(Arrays.asList(fin_spese_istruttoriaImpValue)))));			
+		}
+
+		public List<PriceValue> getFin_spese_comunicazioni_periodiche() {
+			return fin_spese_comunicazioni_periodiche;
+		}
+
+		public void setFin_spese_comunicazioni_periodiche(String fin_spese_comunicazioni_periodiche) {
+			ImpValue fin_spese_comunicazioni_periodicheImpValue 
+	    	  = (this.fin_spese_comunicazioni_periodiche != null && this.fin_spese_comunicazioni_periodiche.size()> 0 && 
+	    			  this.fin_spese_comunicazioni_periodiche.get(0).getData()!= null && this.fin_spese_comunicazioni_periodiche.get(0).getData().size()>0) ? 
+	    			  this.fin_spese_comunicazioni_periodiche.get(0).getData().get(0) :  new ImpValue();
+	        
+	    			  fin_spese_comunicazioni_periodicheImpValue.setAmount(fin_spese_comunicazioni_periodiche);
+	    			  fin_spese_comunicazioni_periodicheImpValue.setCurrency(unitaDiMisuraCurrency);
+	    	this.fin_spese_comunicazioni_periodiche = 
+	    			new ArrayList<PriceValue>(Arrays.asList(new PriceValue(null,null,
+	    					new ArrayList<ImpValue>(Arrays.asList(fin_spese_comunicazioni_periodicheImpValue)))));				
+		}
+
+		public List<DataValue> getFin_risposta_finanziaria() {
+			return fin_risposta_finanziaria;
+		}
+
+		public void setFin_risposta_finanziaria(String fin_risposta_finanziaria) {
+			this.fin_risposta_finanziaria = new ArrayList<DataValue>(Arrays.asList(new DataValue(null,null,fin_risposta_finanziaria)));
+		}
+		
+		public List<DataValue> getFin_data_inserimento_finanziamento() {
+			return fin_data_inserimento_finanziamento;
+		}
+
+		public void setFin_data_inserimento_finanziamento(String fin_data_inserimento_finanziamento) {
+			this.fin_data_inserimento_finanziamento = new ArrayList<DataValue>(Arrays.asList(new DataValue(null,null,fin_data_inserimento_finanziamento)));
+		}
+		
+	    public List<BooleanValue> getPubblica_su_dealerk(){
+	        return this.pubblica_su_dealerk;
+	    }
+		
+	    public void setPubblica_su_dealerk(Boolean pubblica_su_dealerk){
+	        this.pubblica_su_dealerk = new ArrayList<BooleanValue>(Arrays.asList(new BooleanValue(null,null,pubblica_su_dealerk)));
+	    }
+	    
+
+	
+}
