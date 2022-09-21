@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:GenericSchemaConnection dataPackage="_Rxn24lLNEeyUzaqrdQE6Aw" mappingTypeId="oracle_id" mappingTypeUsed="true" name="repository.metadataGenericSchema" xmi:id="_Rxn24VLNEeyUzaqrdQE6Aw"/>
+  <TalendMetadata:GenericPackage dataManager="_Rxn24VLNEeyUzaqrdQE6Aw" name="repository.metadataGenericSchema" xmi:id="_Rxn24lLNEeyUzaqrdQE6Aw">
+    <ownedElement id="_wWwpoFLMEeyUzaqrdQE6Aw" label="SCHEMA_OUTPUT_DWH_EUROTAX" xmi:id="_Rxn241LNEeyUzaqrdQE6Aw" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="typ" name="typ" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0ooF8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0ooV8dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="codice_eurotax" length="-1" name="codice_eurotax" originalLength="-1" precision="-1" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0ool8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0oo18dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="codice_motornet" length="-1" name="codice_motornet" originalLength="-1" precision="-1" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0opF8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0opV8dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="architettura" name="architettura" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0opl8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0op18dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="trazione" name="trazione" originalLength="-1" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0oqF8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0oqV8dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="capSerbLitri" name="capSerbLitri" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0oql8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0oq18dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="bagagliaio" name="bagagliaio" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0orF8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0orV8dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="consumoExtraUrbano" name="consumoExtraUrbano" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0orl8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0or18dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="consumoUrbano" name="consumoUrbano" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0osF8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0osV8dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="consumoMedio" name="consumoMedio" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0osl8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0os18dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="euro" name="euro" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0otF8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0otV8dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="altezza" name="altezza" sourceType="VARCHAR2" talendType="id_String" xmi:id="_uZabgIDUEeyRTPqaC-9LzQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="autonomiaMax" name="autonomiaMax" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0otl8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0ot18dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="passo" name="passo" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0ouF8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0ouV8dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="porte" name="porte" originalLength="-1" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0oul8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0ou18dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="postiMax" name="postiMax" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0ovF8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0ovV8dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="postiMin" name="postiMin" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0ovl8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0ov18dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="lunghezza" name="lunghezza" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0owF8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0owV8dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="larghezza" name="larghezza" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0owl8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0ow18dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="peso" name="peso" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0oxF8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0oxV8dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="cavalliFiscali" name="cavalliFiscali" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0oxl8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0ox18dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="cilindri" name="cilindri" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0oyF8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0oyV8dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="valvole" name="valvole" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0oyl8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0oy18dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="numeroGiri" name="numeroGiri" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0ozF8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0ozV8dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="coppia" name="coppia" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0ozl8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0oz18dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="velocita" name="velocita" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0o0F8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0o0V8dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="descrizioneMarce" name="descrizioneMarce" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0o0l8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0o018dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="ridotte" name="ridotte" originalLength="255" sourceType="VARCHAR2" talendType="id_String" xmi:id="_Pp0o1F8dEeyRL4GW2hZn4g" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_Pp0o1V8dEeyRL4GW2hZn4g"/>
+      </feature>
+      <feature label="emissioniCo2" name="emissioniCo2" sourceType="VARCHAR2" talendType="id_String" xmi:id="_qiAIsGMSEeyKusXIcTkNNQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="neoPatentati" name="neoPatentati" sourceType="VARCHAR2" talendType="id_String" xmi:id="_GWKQIJidEeyjaP5sLMsA1g" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d4f82eea-a4b3-489f-a7e4-9516a123e146"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2Qjnvk+nc9RQohOmwsaw4fYUzCjlkqSNCMFyzuMmBt2o/b48SiEadCbLyCQw13mixxx0jHLMnBIf&#13;
+lZduaiWbKw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1ecdc5db-e49a-4eb9-a59a-cff6359a7dcc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jTvjXsyZdFddGjuu1qHsQDG71Jj9GO/S+T/8oBLrKB/YWsst/inUhlOtZIXvv2BjPcVAPTe5x6k2&#13;
+S82tIRLcZA==</DigestValue></Reference></SignedInfo><SignatureValue>YvLp+lU6Ptb+y6S3dliyWqRc9gTIGQ28oM7vU4MzsW12Sir4ovLFNPZOTp+I4qgqvl/hHKYY9gOF&#13;
+n3rEALFGqWvwZboz1Q9VU8IzLUB33hBN6PALFxFQblwkZ1/NpfWUsU1V+NjgpjXL0PoI6pa1r2qB&#13;
+7JfsFddk3HMzIb1Sn7eSYAylIX4GGAYvg4dekDBgSNtMVnJ9BJwHGrfHHHAI2KOapsELeg/W3gaI&#13;
+hHs3ow2OCpOvwbdVg5zGebl6bhtUahvUWg72BIEUlbGG8yGzVDLgvao7PF/KaPN9ZkAsqnk3Wxst&#13;
+xLoV33tAT3fAqpRNUTOfJczNCAPVR33MGqk3JQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1ecdc5db-e49a-4eb9-a59a-cff6359a7dcc" Target="#_d4f82eea-a4b3-489f-a7e4-9516a123e146"><Timestamp>2022-09-20 15:06:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

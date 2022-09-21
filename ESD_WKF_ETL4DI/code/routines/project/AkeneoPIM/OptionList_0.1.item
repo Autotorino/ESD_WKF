@@ -1,0 +1,69 @@
+package routines;
+
+
+
+
+public class OptionList {
+	
+	public OptionList() { 
+	}
+	
+	
+	public OptionList(String jsonObject) { 
+		
+		JSONObject jsonObjBody = new JSONObject(jsonObject);
+		
+	
+		setNext(jsonObjBody);
+		setCurrent_page(jsonObjBody);
+		
+		EmbeddedOpt _embedded = new EmbeddedOpt(jsonObjBody); 
+		setEmbedded(_embedded);
+		
+		
+		
+	}
+
+	private String next;
+	
+	private String current_page;
+	
+    private EmbeddedOpt _embedded;
+    
+    public void setNext(String next){
+        this.next = next;
+    }
+    
+    public void setNext(JSONObject jsonObjBody){
+    	this.next = UtilJson.getValueStringFrom_JObject_3Level(jsonObjBody, "_links", "next","href");
+    	
+    }
+    
+    public String getNext(){
+        return this.next;
+    }  
+    
+    public void setCurrent_page(String current_page){
+        this.current_page = current_page;
+    }
+    
+    public void setCurrent_page(JSONObject jsonObjBody){
+    	this.current_page = UtilJson.getValueStringFrom_JObject_1Level(jsonObjBody, "current_page");
+    	
+    }
+    
+    public String getCurrent_page(String current_page){
+        return this.current_page;
+    }
+
+    public void setEmbedded(EmbeddedOpt _embedded){
+        this._embedded = _embedded;
+    }
+    
+    public EmbeddedOpt getEmbedded(){
+        return this._embedded;
+    }
+    
+    
+   
+}

@@ -1,0 +1,113 @@
+package routines;
+
+import java.util.List;
+
+
+
+
+public class EntitiesSediList {
+	
+	public EntitiesSediList() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public EntitiesSediList(String jsonObject) {
+		
+		JSONObject jsonObjBody = new JSONObject(jsonObject);
+		
+	
+		//setNext(jsonObjBody);
+		//setCurrent_page(jsonObjBody);
+		
+		EmbeddedSede _embedded = new EmbeddedSede(jsonObjBody);
+		setEmbedded(_embedded);
+		
+		
+		
+	}
+
+	//private String next;
+	
+	//private String current_page;
+	
+    private EmbeddedSede _embedded;
+    
+    /*
+    public void setNext(String next){
+        this.next = next;
+    }
+    
+    public void setNext(JSONObject jsonObjBody){
+    	this.next = UtilJson.getValueStringFrom_JObject_3Level(jsonObjBody, "_links", "next","href");
+    	
+    }
+    
+    public String getNext(){
+        return this.next;
+    }  
+    
+    public void setCurrent_page(String current_page){
+        this.current_page = current_page;
+    }
+    
+    public void setCurrent_page(JSONObject jsonObjBody){
+    	this.current_page = UtilJson.getValueStringFrom_JObject_1Level(jsonObjBody, "current_page");
+    	
+    }
+    
+    public String getCurrent_page(String current_page){
+        return this.current_page;
+    }
+    */
+    
+    public void setEmbedded(EmbeddedSede _embedded){
+        this._embedded = _embedded;
+    }
+    
+    public EmbeddedSede getEmbedded(){
+        return this._embedded;
+    }
+    
+    /**
+     * Custom methods
+     */
+    
+    public Sede getSede(String codSede){
+    	
+    	if(UtilString.isEmptyTrim(codSede))
+    	   return null;
+    	
+    	Sede returnSede = null;
+    	
+    	if (this._embedded!=null) {
+    	    
+    		List<Sede> sedi = this._embedded.getItems();
+    	    
+    		if (sedi!= null && sedi.size()>0){
+    			for(Sede sede:sedi){
+    				if (sede.getCode().equals(codSede)){
+    					returnSede =  sede;
+    					break;
+    				}
+    			}
+    		}
+    	}
+    	
+    	return returnSede;
+    }
+    
+    public boolean isValidEntities(){
+       if (this._embedded!=null) {
+    	    
+    		List<Sede> sedi = this._embedded.getItems();
+    	    
+    		if (sedi!= null && sedi.size()>0)
+    			return true;
+    		else
+    			return false;
+       }
+       else return false;
+    }
+   
+}

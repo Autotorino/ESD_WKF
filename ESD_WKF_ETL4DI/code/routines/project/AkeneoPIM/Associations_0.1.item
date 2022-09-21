@@ -1,0 +1,38 @@
+package routines;
+
+
+public class Associations {
+	
+    private ComplexValue PACK;
+
+    private ComplexValue UPSELL;
+
+    private ComplexValue X_SELL;
+
+    private ComplexValue SUBSTITUTION;
+
+    public void setPACK(ComplexValue PACK){
+        this.PACK = PACK;
+    }
+    public ComplexValue getPACK(){
+        return this.PACK;
+    }
+    public void setUPSELL(ComplexValue UPSELL){
+        this.UPSELL = UPSELL;
+    }
+    public ComplexValue getUPSELL(){
+        return this.UPSELL;
+    }
+    public void setX_SELL(ComplexValue X_SELL){
+        this.X_SELL = X_SELL;
+    }
+    public ComplexValue getX_SELL(){
+        return this.X_SELL;
+    }
+    public void setSUBSTITUTION(ComplexValue SUBSTITUTION){
+        this.SUBSTITUTION = SUBSTITUTION;
+    }
+    public ComplexValue getSUBSTITUTION(){
+        return this.SUBSTITUTION;
+    }
+}

@@ -1,0 +1,44 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import routines.JSONArray;
+import routines.JSONObject;
+
+
+
+public class EmbeddedBloccoCms {
+	
+	    public EmbeddedBloccoCms(JSONObject jsonObjBody) { 
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("_embedded");
+	    	setItems(jsonObjValues);
+	    }
+	    
+	    private List<BloccoCms> items;
+	    
+        public void setItems(JSONObject jsonObjValues){
+	    	
+	    	this.items = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("items");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<BloccoCms> arrayList = new ArrayList<BloccoCms>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new BloccoCms((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.items = arrayList;
+	    		}
+	    	}
+	    }
+        
+        public List<BloccoCms> getItems(){
+        	return items;
+        }
+}

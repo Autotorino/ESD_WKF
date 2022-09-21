@@ -1,0 +1,93 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ValuesMarcaModello {
+	
+	    public static String unitaDiMisuraCurrency = "EUR";
+	
+	    public ValuesMarcaModello() {
+		}	    
+	    
+	    public ValuesMarcaModello(JSONObject jsonObjBody) {
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("values");
+	    	
+	    	setLabel(jsonObjValues);
+	    	setRegola_etl(jsonObjValues);
+	    	
+	    	
+	    	
+		}
+	    
+	    private List<DataValue> label;
+	    
+	    private List<DataValue> regola_etl;
+	    
+
+
+
+	    
+	    /**
+	     * 
+	     * Metodi GET\SET per Lettura dal PIM
+	     */
+	    public void setLabel(List<DataValue> label){
+	        this.label = label;
+	    }
+	    
+        public void setLabel(JSONObject jsonObjValues){
+	    	
+	    	this.label = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("label");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.label = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getLabel(){
+	        return this.label;
+	    }
+	    
+	    public void setRegola_etl(List<DataValue> regola_etl){
+	        this.regola_etl = regola_etl;
+	    }
+	    
+        public void setRegola_etl(JSONObject jsonObjValues){
+	    	
+	    	this.regola_etl = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("regola_etl");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.regola_etl = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getRegola_etl(){
+	        return this.regola_etl;
+	    }
+	    
+
+}

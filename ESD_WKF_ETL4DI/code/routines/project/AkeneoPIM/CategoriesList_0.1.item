@@ -1,0 +1,52 @@
+package routines;
+
+
+
+
+public class CategoriesList {
+	
+	public CategoriesList() {
+	}
+	
+	
+	public CategoriesList(String jsonObject) {
+		
+		JSONObject jsonObjBody = new JSONObject(jsonObject);
+		
+		setNext(jsonObjBody);
+		
+		EmbeddedCategories _embedded = new EmbeddedCategories(jsonObjBody);
+		setEmbedded(_embedded);
+		
+		
+		
+	}
+
+	private String next;
+	
+    private EmbeddedCategories _embedded;
+    
+    public void setNext(String next){
+        this.next = next;
+    }
+    
+    public void setNext(JSONObject jsonObjBody){
+    	this.next = UtilJson.getValueStringFrom_JObject_3Level(jsonObjBody, "_links", "next","href");
+    	
+    }
+    
+    public String getNext(){
+        return this.next;
+    }  
+    
+    public void setEmbedded(EmbeddedCategories _embedded){
+        this._embedded = _embedded;
+    }
+    
+    public EmbeddedCategories getEmbedded(){
+        return this._embedded;
+    }
+    
+    
+   
+}

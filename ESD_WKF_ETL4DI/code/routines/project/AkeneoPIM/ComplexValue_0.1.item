@@ -1,0 +1,31 @@
+package routines;
+
+import java.util.List;
+
+public class ComplexValue {
+	
+	  private List<String> products;
+
+	    private List<String> product_models;
+
+	    private List<String> groups;
+
+	    public void setProducts(List<String> products){
+	        this.products = products;
+	    }
+	    public List<String> getProducts(){
+	        return this.products;
+	    }
+	    public void setProduct_models(List<String> product_models){
+	        this.product_models = product_models;
+	    }
+	    public List<String> getProduct_models(){
+	        return this.product_models;
+	    }
+	    public void setGroups(List<String> groups){
+	        this.groups = groups;
+	    }
+	    public List<String> getGroups(){
+	        return this.groups;
+	    }
+}

@@ -1,0 +1,83 @@
+package routines;
+
+import routines.JSONObject;
+
+
+public class BloccoCmsMag {
+	
+	    public BloccoCmsMag(String code,String label,String identifier,Boolean enabled) {
+			this.code = code;
+			this.label = label;
+			this.identifier = identifier;
+			this.enabled = enabled;
+		}
+	    
+	    public BloccoCmsMag(JSONObject jsonObj) {
+	    	if(jsonObj!= null){
+				setCode(jsonObj);
+				setLabel(jsonObj);
+				setIdentifier(jsonObj);
+				setEnabled(jsonObj);
+            }
+		}
+	
+	    private String code;
+
+	    private String label;
+	    
+	    private String identifier;
+
+	    private Boolean enabled;
+
+	    public void setCode(String code){
+	        this.code = code;
+	    }
+	    
+	    public void setCode(JSONObject jsonObj){
+	    	if(jsonObj.get("code")!=null && jsonObj.get("code") instanceof String)
+	           this.code = (String)jsonObj.get("code");
+	    }
+	    
+	    public String getCode(){
+	        return this.code;
+	    }
+	    
+	    public void setLabel(String label){
+	        this.label = label;
+	    }
+	    
+	    public void setLabel(JSONObject jsonObj){
+	    	if(jsonObj.get("label")!=null && jsonObj.get("label") instanceof String)
+	           this.label = (String)jsonObj.get("label");
+	    }	   
+	    
+	    public String getLabel(){
+	        return this.label;
+	    }
+	    
+	    public void setIdentifier(String identifier){
+	        this.identifier = identifier;
+	    }
+	    
+	    public void setIdentifier(JSONObject jsonObj){
+	    	if(jsonObj.get("identifier")!=null && jsonObj.get("identifier") instanceof String)
+	           this.identifier = (String)jsonObj.get("identifier");
+	    }	   
+	    
+	    public String getIdentifier(){
+	        return this.identifier;
+	    }
+	    
+	    public void setEnabled(Boolean enabled){
+	        this.enabled = enabled;
+	    }
+	    
+	    public void setEnabled(JSONObject jsonObj){
+	    	if(jsonObj.get("enabled")!=null && jsonObj.get("enabled") instanceof Boolean)
+	           this.enabled = (Boolean)jsonObj.get("enabled");
+	    }	   
+	    
+	    public Boolean getEnabled(){
+	        return this.enabled;
+	    }
+}

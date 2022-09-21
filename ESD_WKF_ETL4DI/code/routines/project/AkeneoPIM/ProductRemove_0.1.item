@@ -1,0 +1,169 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+import routines.JSONArray;
+import routines.JSONObject;
+
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class ProductRemove {
+	
+	public ProductRemove() {
+		ValuesRemove valuesRemove = new ValuesRemove();
+		setValuesRemove(valuesRemove);
+	}
+	
+	
+	public ProductRemove(String jsonObject) {
+		
+		JSONObject jsonObjBody = new JSONObject(jsonObject);
+		
+		setIdentifier(jsonObjBody);
+		setEnabled(jsonObjBody);
+		setCategories(jsonObjBody);
+		setFamily(jsonObjBody);
+		
+		
+		//setUpdated(jsonObjBody);
+		
+		ValuesRemove values = new ValuesRemove(jsonObjBody);
+		setValuesRemove(values);
+		
+		
+	}
+
+	
+	private String identifier;
+
+    private Boolean enabled;
+
+    private String family;
+
+    private List<String> categories;
+
+    private ValuesRemove valuesRemove;
+
+    //private String updated;
+
+    public void setIdentifier(String identifier){
+        this.identifier = identifier;
+    }
+    
+    public void setIdentifier(JSONObject jsonObjBody){
+    	
+    	if(jsonObjBody!=null){
+    	  Object returnValue = jsonObjBody.get("identifier");
+          this.identifier = (returnValue instanceof String) ? (String)returnValue : null;
+    	}
+    	else
+    	  this.identifier = null;
+    }
+    
+    public String getIdentifier(){
+        return this.identifier;
+    }
+    
+    public void setEnabled(Boolean enabled){
+        this.enabled = enabled;
+    }
+    
+    public void setEnabled(JSONObject jsonObjBody){
+    	if(jsonObjBody!=null){
+	    	Object returnValue = jsonObjBody.get("enabled");
+	        this.enabled = (returnValue instanceof Boolean) ? (Boolean)returnValue : null;
+    	}
+    	else
+    		this.enabled = null;
+    }
+    
+    public Boolean getEnabled(){
+        return this.enabled;
+    }
+    
+    public void setFamily(String family){
+        this.family = family;
+    }
+    
+    public void setFamily(JSONObject jsonObjBody){
+    	
+    	if(jsonObjBody!=null){
+    	  Object returnValue = jsonObjBody.get("family");
+          this.family = (returnValue instanceof String) ? (String)returnValue : null;
+    	}
+    	else
+    	  this.family = null;
+    }
+    
+    public String getFamily(){
+        return this.family;
+    }
+    
+    public void setCategories(List<String> categories){
+        this.categories = categories;
+    }
+    
+    public void setCategories(String categories){
+        this.categories = new ArrayList<String>(Arrays.asList(categories));
+    }	
+
+    public void setCategories(JSONObject jsonObjBody){
+		this.categories = null;
+		
+		if(jsonObjBody!= null) {
+	    	
+			JSONArray jsonArray = (JSONArray)jsonObjBody.get("categories");
+	    	
+			if(jsonArray!= null && jsonArray.length()>0){
+	    	
+				ArrayList<String> arrayList = new ArrayList<String>();
+				
+				for (int i=0;i<jsonArray.length();i++)
+					arrayList.add((String)jsonArray.get(i));
+				
+		        this.categories = arrayList;
+			}
+		}
+    }
+    
+    public List<String> getCategories(){
+        return this.categories;
+    }
+    
+    public void setValuesRemove(ValuesRemove valuesRemove){
+        this.valuesRemove = valuesRemove;
+    }
+    
+    /*
+     * getValues() al posto di getValuesRemove() per rimanere allineati con la property del PIM
+     */
+    public ValuesRemove getValues(){
+        return this.valuesRemove;
+    }
+    
+    /*
+    public void setUpdated(String updated){
+        this.updated = updated;
+    }
+    
+    public void setUpdated(JSONObject jsonObjBody){
+    	
+    	if(jsonObjBody!=null){
+    	  Object returnValue = jsonObjBody.get("updated");
+          this.updated = (returnValue instanceof String) ? (String)returnValue : null;
+    	}
+    	else
+    	  this.updated = null;
+    }
+    
+    public String getUpdated(){
+        return this.updated;
+    }
+    */
+    
+   
+}

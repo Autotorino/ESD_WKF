@@ -1,0 +1,112 @@
+package routines;
+
+
+
+
+
+public class BloccoCmsList {
+	
+	public BloccoCmsList() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public BloccoCmsList(String jsonObject) {
+		
+		JSONObject jsonObjBody = new JSONObject(jsonObject);
+		
+	
+		setNext(jsonObjBody);
+		//setCurrent_page(jsonObjBody);
+		
+		EmbeddedBloccoCms _embedded = new EmbeddedBloccoCms(jsonObjBody);
+		setEmbedded(_embedded);
+		
+		
+		
+	}
+
+	private String next;
+	
+	//private String current_page;
+	
+    private EmbeddedBloccoCms _embedded;
+    
+    
+    public void setNext(String next){
+        this.next = next;
+    }
+    
+    public void setNext(JSONObject jsonObjBody){
+    	this.next = UtilJson.getValueStringFrom_JObject_3Level(jsonObjBody, "_links", "next","href");
+    	
+    }
+    
+    public String getNext(){
+        return this.next;
+    }  
+    /*
+    public void setCurrent_page(String current_page){
+        this.current_page = current_page;
+    }
+    
+    public void setCurrent_page(JSONObject jsonObjBody){
+    	this.current_page = UtilJson.getValueStringFrom_JObject_1Level(jsonObjBody, "current_page");
+    	
+    }
+    
+    public String getCurrent_page(String current_page){
+        return this.current_page;
+    }
+    */
+    
+    public void setEmbedded(EmbeddedBloccoCms _embedded){
+        this._embedded = _embedded;
+    }
+    
+    public EmbeddedBloccoCms getEmbedded(){
+        return this._embedded; 
+    }
+    
+    /**
+     * Custom methods
+     */
+    /*
+    public MarcaModello getMarcaModello(String codMarcaModello){
+    	
+    	if(UtilString.isEmptyTrim(codMarcaModello))
+    	   return null;
+    	
+    	MarcaModello returnMarcaModello = null;
+    	
+    	if (this._embedded!=null) {
+    	    
+    		List<MarcaModello> marcaModelloList = this._embedded.getItems();
+    	    
+    		if (marcaModelloList!= null && marcaModelloList.size()>0){
+    			for(MarcaModello marcaModello:marcaModelloList){
+    				if (marcaModello.getCode().equals(codMarcaModello)){
+    					returnMarcaModello =  marcaModello;
+    					break;
+    				}
+    			}
+    		}
+    	}
+    	
+    	return returnMarcaModello;
+    }
+    
+    public boolean isValidEntities(){
+       if (this._embedded!=null) {
+    	    
+    		List<MarcaModello> marcaModelloList = this._embedded.getItems();
+    	    
+    		if (marcaModelloList!= null && marcaModelloList.size()>0)
+    			return true;
+    		else
+    			return false;
+       }
+       else return false;
+    }
+   */
+}

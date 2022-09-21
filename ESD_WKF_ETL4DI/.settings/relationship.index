@@ -1,0 +1,740 @@
+[ {
+  "baseItem" : {
+    "id" : "_5dplAJk-EeyAkIgSnQLNFw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilJson",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilWorkBook",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_9gmWEJmLEeyDqJ5WrvJWgw - SCHEMA_STOCK_SIPADX_DWH",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_8XlygKytEeuyUM-aQBXF8w",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilWorkBook",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_ASA3IDytEeynNbSesFygtg - SCHEMA_STOCK_SIPADX",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_CgakwOC2Eeyf5og1YVD0WA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "Base64Util",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "BloccoCms",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "BloccoCmsList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "BloccoCmsListMag",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "BloccoCmsMag",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "CategoriesItem",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "CategoriesList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataValue",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Embedded",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedBloccoCms",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedCategories",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedMarcaModello",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedOpt",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesSediList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "MarcaModello",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "MarcaModelloList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Option",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "OptionList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Product",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ProductList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ProductRemove",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "RuleUtil",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Sede",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilJson",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilWorkBook",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Values",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ValuesBloccoCms",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ValuesMarcaModello",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ValuesRemove",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_S2B3sAT2Eemeo_1y04_W_A",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "UploadObjectonStorage",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilScheduleRoleDS",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_SzXhAINPEeyoeMbWIEkKPw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "UploadObjectonStorage",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilScheduleRoleDS",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_VhQWEAmqEeyzcaAVvZESZw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "Base64Util",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "CategoriesItem",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "CategoriesList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataValue",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Embedded",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedCategories",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedMarcaModello",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedOpt",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesSediList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "MarcaModello",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "MarcaModelloList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Option",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "OptionList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Product",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ProductList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ProductRemove",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "RuleUtil",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Sede",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilJson",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilWorkBook",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Values",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ValuesMarcaModello",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ValuesRemove",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_IfwzAIAJEeyZUODAKlDgcg - SCHEMA_OUTPUT_REMOVE_LOGIC_AKENEO_PIM",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Rzph4DytEeynNbSesFygtg - SCHEMA_INPUT_AKENEOPIM",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_XHlasAmqEeyzcaAVvZESZw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilWorkBook",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_YsvaoAmqEeyzcaAVvZESZw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilWorkBook",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "__fHc8BUeEeqnN-OmdHq6AQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "BloccoCms",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "RuleUtil",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UploadObjectonStorage",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilScheduleRoleDS",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_6AspMHqpEeyvm8MjRkvS9A - SCHEMA_DELETE_AKENEOPIM",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_IfwzAIAJEeyZUODAKlDgcg - SCHEMA_OUTPUT_REMOVE_LOGIC_AKENEO_PIM",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Rzph4DytEeynNbSesFygtg - SCHEMA_INPUT_AKENEOPIM",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_inS44KNxEeyREMJd_oNQDw - SCHEMA_SEGNALAZIONI",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_dwnp4CgXEeyulYyVG_vSDQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "RuleUtil",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilJson",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilWorkBook",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_ASA3IDytEeynNbSesFygtg - SCHEMA_STOCK_SIPADX",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Rxn24FLNEeyUzaqrdQE6Aw - SCHEMA_OUTPUT_DWH_EUROTAX",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Rzph4DytEeynNbSesFygtg - SCHEMA_INPUT_AKENEOPIM",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_arPf8F8jEeyRL4GW2hZn4g - SCHEMA_OUTPUT_DWH_CATEGORIA",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_er8yMJlAEeyAkIgSnQLNFw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "RuleUtil",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilJson",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilWorkBook",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_9gmWEJmLEeyDqJ5WrvJWgw - SCHEMA_STOCK_SIPADX_DWH",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Rxn24FLNEeyUzaqrdQE6Aw - SCHEMA_OUTPUT_DWH_EUROTAX",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Rzph4DytEeynNbSesFygtg - SCHEMA_INPUT_AKENEOPIM",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_kPODEMJFEei12d6Nkg1q8Q",
+    "version" : "0.2",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_5dplAJk-EeyAkIgSnQLNFw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_8XlygKytEeuyUM-aQBXF8w",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_CgakwOC2Eeyf5og1YVD0WA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_S2B3sAT2Eemeo_1y04_W_A",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_SzXhAINPEeyoeMbWIEkKPw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_VhQWEAmqEeyzcaAVvZESZw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_XHlasAmqEeyzcaAVvZESZw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_YsvaoAmqEeyzcaAVvZESZw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "__fHc8BUeEeqnN-OmdHq6AQ",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_dwnp4CgXEeyulYyVG_vSDQ",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_er8yMJlAEeyAkIgSnQLNFw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_xBr7IHnKEeyqL60yYZNokw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilScheduleRoleDS",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_xBr7IHnKEeyqL60yYZNokw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "Base64Util",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataValue",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Embedded",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Product",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ProductList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ProductRemove",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "RuleUtil",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilJson",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilWorkBook",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Values",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ValuesRemove",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_6AspMHqpEeyvm8MjRkvS9A - SCHEMA_DELETE_AKENEOPIM",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]

@@ -1,0 +1,39 @@
+package routines;
+
+
+
+public class CategoriesItem {
+	
+    public CategoriesItem(JSONObject jsonObjBody) {
+    	setCode(jsonObjBody);
+    	//setParent(jsonObjBody);
+	}
+
+    private String code;
+
+    private String parent;
+
+    public void setCode(JSONObject jsonObj){
+    	
+    	if(jsonObj.get("code")!=null && jsonObj.get("code") instanceof String)
+	           this.code = (String)jsonObj.get("code");
+
+    }
+    
+    public void setParent(JSONObject jsonObj){
+    	
+    	if(jsonObj.get("parent")!=null && jsonObj.get("parent") instanceof String)
+	           this.parent = (String)jsonObj.get("parent");
+	
+    }
+    
+    public String getCode(){
+        return this.code;
+    }
+    
+    public String getParent(){
+    	return this.parent;
+    }
+    
+
+}

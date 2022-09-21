@@ -1,0 +1,371 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.StringTokenizer;
+import java.util.regex.Pattern;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+
+public class RuleUtil {
+
+
+	
+	  static String REGEXP_TARGA_AUTO = "^[a-zA-Z]{2}[0-9]{3}[a-zA-Z]{2}$";
+	  static String REGEXP_TARGA_MOTO = "^[a-zA-Z]{2}[0-9]{5}$";
+	  
+	  
+	  public static boolean matchRegExpTarga(String textTarga){
+		  try {
+			  Pattern ptrTargaAuto = Pattern.compile(REGEXP_TARGA_AUTO);
+			  //Pattern ptrTargaMoto = Pattern.compile(REGEXP_TARGA_MOTO);
+			  
+			  if (ptrTargaAuto.matcher(textTarga).matches() /*|| ptrTargaMoto.matcher(textTarga).matches()*/)
+				  return true;
+			  
+		    } catch (Exception ex) {
+		        return false;
+		    }
+		  
+		  return false;
+	  }
+	  
+	  public static String getTipoVeicoloSito(String jsonRule,String categoria,String tipoSipadx,Boolean brandUfficiale,Integer month,Integer km) {
+		        
+			    Map<String,Object> mapJsonRule = null;
+			    Map<String,Object> mapTipi = null;
+			    ArrayList<Map<String,Object>> arrayCondizioni = null;
+			    
+			    String value = null;
+			    Integer ageFrom = null;
+			    Integer ageTo = null;
+			    Integer kmFrom = null;
+			    Integer kmTo = null;
+			    String  operator = null;
+			    
+			    String returnValue = null;
+			    
+		        try {
+		            ObjectMapper mapper = new ObjectMapper();
+		           
+		            mapJsonRule = (Map<String,Object>)mapper.readValue(jsonRule, Map.class);
+		            
+		            mapTipi = (Map<String,Object>)mapJsonRule.get(categoria);
+		            
+		            if(mapTipi!= null) {
+			            if (mapTipi.get(tipoSipadx) instanceof ArrayList){
+			            	
+			            	arrayCondizioni = (ArrayList<Map<String,Object>>)mapTipi.get(tipoSipadx);
+			            	
+			            	if (arrayCondizioni!= null && arrayCondizioni.size()>0){
+			            		
+			            		if(month!=null || km!=null){
+				            		for (Map<String,Object> mapCondizioni : arrayCondizioni){
+				            			     value = (String)mapCondizioni.get("VALUE");
+				            			     ageFrom = Integer.valueOf((String)mapCondizioni.get("AGE_FROM"));
+				            			     ageTo = Integer.valueOf((String)mapCondizioni.get("AGE_TO"));
+				            			     kmFrom = Integer.valueOf((String)mapCondizioni.get("KM_FROM"));
+				            			     kmTo = Integer.valueOf((String)mapCondizioni.get("KM_TO"));
+				            			     operator = (String)mapCondizioni.get("OPERATOR");
+				            			     
+				            			     if (operator.equals("AND") && month!=null && km!=null){
+				            			    	 if(month >= ageFrom && month <= ageTo && km >= kmFrom && km <= kmTo){
+				            			    		 returnValue = value;
+				            			    		 break;
+				            			    	 }
+				            			     }
+				            			     else if (operator.equals("OR")){
+				            			    	 if((month!=null && month >= ageFrom && month <= ageTo) || (km!=null && km >= kmFrom && km <= kmTo))
+				            			    	 {
+				            			    		 returnValue = value;
+				            			    		 break;
+				            			    	 }
+				            			     }
+				            		}
+			            		}
+			            	}
+			            }
+			            else if (mapTipi.get(tipoSipadx) instanceof String){
+			            	returnValue =  (String)mapTipi.get(tipoSipadx);
+			            }
+		            }
+		            
+		            if (brandUfficiale!= null && !brandUfficiale && !UtilString.isEmptyTrim(returnValue))
+		            	returnValue = "usato";
+		            
+		            return returnValue;
+		            
+		        } catch (Exception e) {
+		            e.printStackTrace();
+		            return null;
+		        }
+		        
+	 }
+	  
+	 public static String getGaranzia(String jsonRule,String brandUfficiale,String classificazione,Integer month,Integer km,String fuel) {
+	        
+		    Map<String,Object> mapJsonRule = null;
+		    Map<String,Object> mapBrand = null;
+		    ArrayList<Object> arrayConfigurazione = null;
+		    
+		    String valueCalc = null;
+		    Integer ageFrom = null;
+		    Integer ageTo = null;
+		    Integer kmFrom = null;
+		    Integer kmTo = null;
+		    String fuelIn = null;
+		    String fuelNot = null;
+		    String  operator = null;
+		    
+		    String returnValue = null;
+		    
+	        try {
+	            ObjectMapper mapper = new ObjectMapper();
+	            
+	            mapJsonRule = (Map<String,Object>)mapper.readValue(jsonRule, Map.class);
+	            
+	            if (mapJsonRule!= null){
+	            
+		            	
+	            	   for (Map.Entry<String, Object> entry : mapJsonRule.entrySet()) {
+		            	    String key = entry.getKey();
+            	    
+		            	    if (key.contains(brandUfficiale)){
+		            	    	mapBrand = (Map<String,Object>)entry.getValue();
+		            	        break;
+		            	    }
+		            	}
+
+			            if (mapBrand==null)
+			            	mapBrand = (Map<String,Object>)mapJsonRule.get("OTHERS");
+		            
+			            if(mapBrand!= null) {
+			            	
+				            
+			            	Object valueConfigurazioni = null;
+			            	
+			            	for (Map.Entry<String, Object> entry : mapBrand.entrySet()) {
+			            	    String key = entry.getKey();
+			            	    if (key.contains(classificazione)){
+			            	    	valueConfigurazioni = entry.getValue();
+			            	        break;
+			            	    }
+			            	}
+			            	
+			            	if(valueConfigurazioni!=null){
+			            	
+				            	if (valueConfigurazioni instanceof ArrayList){
+					            	
+				            		arrayConfigurazione = (ArrayList<Object>)valueConfigurazioni;
+					            	
+					            	if (arrayConfigurazione!= null && arrayConfigurazione.size()>0){
+					            		
+					            		for (Object configurazione : arrayConfigurazione)
+					            		{
+					            			 if(configurazione instanceof Map) {
+					            			
+					            				 Map<String,Object> condizioni = (Map<String,Object>)configurazione;
+					            				 
+					            				 valueCalc = (String)condizioni.get("VALUE");
+					            			     ageFrom = Integer.valueOf((String)condizioni.get("AGE_FROM"));
+					            			     ageTo = Integer.valueOf((String)condizioni.get("AGE_TO"));
+					            			     kmFrom = Integer.valueOf((String)condizioni.get("KM_FROM"));
+					            			     kmTo = Integer.valueOf((String)condizioni.get("KM_TO"));
+					            			     operator = (String)condizioni.get("OPERATOR");
+					            			     fuelIn = (String)condizioni.get("FUEL");
+					            			     fuelNot = (String)condizioni.get("FUEL_NOT");
+					            			     
+					            			     if (operator.equals("AND")){
+					            			    	 if(month!=null && month >= ageFrom && month <= ageTo && km!= null && km >= kmFrom && km <= kmTo && (fuelIn==null||(fuel!=null && fuelIn.contains(fuel)))){
+					            			    		 returnValue = valueCalc;
+					            			    		 break;
+					            			    	 }
+					            			     }
+					            			     else if (operator.equals("OR")){
+					            			    	 if((month!=null && month >= ageFrom && month <= ageTo) || (km!= null && km >= kmFrom && km <= kmTo) || (fuelNot!=null && fuel!=null && !fuelNot.contains(fuel)) ){
+					            			    		 returnValue = valueCalc;
+					            			    		 break;
+					            			    	 }
+					            			     }
+					            			 }
+					            			 else if (configurazione instanceof String){
+					            				 returnValue =  (String)configurazione;
+					            			 }
+					            		}
+					            	}
+					            }
+					            else if (valueConfigurazioni instanceof String){
+					            	returnValue =  ((String)valueConfigurazioni).replace("$brand$", brandUfficiale.toLowerCase());
+					            }
+			            	}
+			            }
+	            }
+	            
+	            return returnValue;
+	            
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	            return null;
+	        }
+	        
+    }
+	 
+	 public static String getGaranziaMoto(String jsonRule,String brand,String model,String classificazione,Integer month,Integer km) {
+	        
+		    Map<String,Object> mapJsonRule = null;
+		    Map<String,Object> mapBrand = null;
+		    ArrayList<Object> arrayConfigurazione = null;
+		    
+		    String valueCalc = null;
+		    Integer ageFrom = null;
+		    Integer ageTo = null;
+		    Integer kmFrom = null;
+		    Integer kmTo = null;
+		    String modelIn = null;
+		    String modelNot = null;
+		    String modelSearch = null;
+		    String  operator = null;
+		    
+		    String returnValue = null;
+		    
+	        try {
+	            ObjectMapper mapper = new ObjectMapper();
+	            
+	            mapJsonRule = (Map<String,Object>)mapper.readValue(jsonRule, Map.class);
+	            
+	            if (mapJsonRule!= null){
+	            
+		            	
+	            	   for (Map.Entry<String, Object> entry : mapJsonRule.entrySet()) {
+		            	    String key = entry.getKey();
+         	    
+		            	    if (key.contains(brand)){
+		            	    	mapBrand = (Map<String,Object>)entry.getValue();
+		            	        break;
+		            	    }
+		            	}
+
+			            if (mapBrand==null )
+			            	if (!(mapJsonRule.get("OTHERS") instanceof String))
+			            	    mapBrand = (Map<String,Object>)mapJsonRule.get("OTHERS");
+			            	else 
+			            		returnValue = (String)mapJsonRule.get("OTHERS");
+			            
+		            
+			            if(mapBrand!= null) {
+			            	
+				            
+			            	Object valueConfigurazioni = null;
+			            	
+			            	for (Map.Entry<String, Object> entry : mapBrand.entrySet()) {
+			            	    String key = entry.getKey();
+			            	    if (key.contains(classificazione)){
+			            	    	valueConfigurazioni = entry.getValue();
+			            	        break;
+			            	    }
+			            	}
+			            	
+			            	if(valueConfigurazioni!=null){
+			            	
+				            	if (valueConfigurazioni instanceof ArrayList){
+					            	
+				            		arrayConfigurazione = (ArrayList<Object>)valueConfigurazioni;
+					            	
+					            	if (arrayConfigurazione!= null && arrayConfigurazione.size()>0){
+					            		
+					            		for (Object configurazione : arrayConfigurazione)
+					            		{
+					            			 if(configurazione instanceof Map) {
+					            			
+					            				 Map<String,Object> condizioni = (Map<String,Object>)configurazione;
+					            				 
+					            				 valueCalc = (String)condizioni.get("VALUE");
+					            			     ageFrom = Integer.valueOf((String)condizioni.get("AGE_FROM"));
+					            			     ageTo = Integer.valueOf((String)condizioni.get("AGE_TO"));
+					            			     kmFrom = Integer.valueOf((String)condizioni.get("KM_FROM"));
+					            			     kmTo = Integer.valueOf((String)condizioni.get("KM_TO"));
+					            			     operator = (String)condizioni.get("OPERATOR");
+					            			     modelIn = (String)condizioni.get("MODEL");
+					            			     modelNot = (String)condizioni.get("MODEL_NOT");
+					            			     modelSearch = brand+"_"+model;
+					            			     
+					            			     if (operator.equals("AND")){
+					            			    	 if( 
+					            			    	    month!=null && month >= ageFrom && month <= ageTo && 
+					            			    		((km!= null && km >= kmFrom && km <= kmTo)|| kmTo == 9999999 ) && 
+					            			    		((modelIn==null||(modelSearch!=null && modelIn.contains(modelSearch))) && (modelNot==null||(modelSearch!=null && !modelNot.contains(modelSearch))))
+					            			    		){
+					            			    		 returnValue = valueCalc;
+					            			    		 break;
+					            			    	 }
+					            			     }
+					            			     else if (operator.equals("OR")){
+					            			    	 if(
+					            			    	    (month!=null && month >= ageFrom && month <= ageTo) || 
+					            			    	    (km!= null && km >= kmFrom && km <= kmTo) || 
+					            			    	    ((modelIn==null||(modelSearch!=null && modelIn.contains(modelSearch))) || (modelNot==null||(modelSearch!=null && !modelNot.contains(modelSearch))))
+					            			    	   ){
+					            			    		 returnValue = valueCalc;
+					            			    		 break;
+					            			    	 }
+					            			     }
+					            			 }
+					            			 else if (configurazione instanceof String){
+					            				 returnValue =  (String)configurazione;
+					            			 }
+					            		}
+					            	}
+					            }
+					            else if (valueConfigurazioni instanceof String){
+					            	returnValue = (String)valueConfigurazioni;
+					            }
+			            	}
+			            	else{
+			            		if (mapBrand.get("OTHERS") instanceof String)
+			            				returnValue = (String)mapBrand.get("OTHERS");
+			            	}
+			            }
+	            }
+	            
+	            return returnValue;
+	            
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	            return null;
+	        }
+	        
+    }		 
+	 
+	public static String[] getMarcaModelloSito(Map<String,String> mapMarcaModello,String desMarca,String desModello){
+		
+		if (mapMarcaModello==null || mapMarcaModello.size()==0 || UtilString.isEmptyTrim(desMarca) || UtilString.isEmptyTrim(desModello)) {
+			return null;
+		}
+		else {
+			String ruleEtl = mapMarcaModello.get("DES_MARCA='"+desMarca.toUpperCase().replaceAll(" ","")+"'|"+
+					                                     "DES_MODELLO='"+desModello.toUpperCase().replaceAll(" ","")+"'");
+			
+			if (UtilString.isEmptyTrim(ruleEtl))
+				return null;
+			else {
+				StringTokenizer resultRuleEtlTk = new StringTokenizer(ruleEtl, "|");
+				
+				if(resultRuleEtlTk.countTokens()!=2)
+				   return null;
+				else {
+					String [] marcaModelloSito = new String[2];
+					
+					String marcaSito = resultRuleEtlTk.nextToken();
+					String modelloSito = resultRuleEtlTk.nextToken();
+					
+					marcaModelloSito[0] = marcaSito.replaceFirst("marca_sito='","").replace("'","");
+					marcaModelloSito[1] = modelloSito.replaceFirst("modello_sito='","").replace("'","");		
+					
+					return marcaModelloSito;
+				}
+			}
+		}
+
+	}
+}

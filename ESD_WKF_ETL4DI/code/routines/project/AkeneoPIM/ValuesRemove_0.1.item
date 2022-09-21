@@ -1,0 +1,161 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class ValuesRemove {
+	
+	    
+	    public ValuesRemove() {
+		}
+	
+	    public ValuesRemove(JSONObject jsonObjBody) {
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("values");
+	    	setData_uscita_stock(jsonObjValues);
+	    	setAttiva(jsonObjValues);
+	    	setPubblica_su_dealerk(jsonObjValues);
+	    	setPubblica_su_infocar(jsonObjValues);
+		}
+	
+	 
+	    private List<DataValue> data_uscita_stock;
+	    private List<BooleanValue> attiva;
+	    private List<BooleanValue> pubblica_su_dealerk;
+	    private List<BooleanValue> pubblica_su_infocar;
+	    
+
+	    
+	    public void setData_uscita_stock(List<DataValue> data_uscita_stock){
+	        this.data_uscita_stock = data_uscita_stock;
+	    }
+	    
+	    public void setData_uscita_stock(String data_uscita_stock){
+	        this.data_uscita_stock = new ArrayList<DataValue>(Arrays.asList(new DataValue(null,null,data_uscita_stock)));
+	    }	    
+	    
+	    public void setData_uscita_stock(JSONObject jsonObjValues){
+	    	
+	    	this.data_uscita_stock = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("data_uscita_stock");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.data_uscita_stock = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getData_uscita_stock(){
+	        return this.data_uscita_stock;
+	    }
+	    
+	    public void setAttiva(List<BooleanValue> attiva){
+	        this.attiva = attiva;
+	    }
+	    
+	    public void setAttiva(Boolean attiva){
+	        this.attiva = new ArrayList<BooleanValue>(Arrays.asList(new BooleanValue(null,null,attiva)));
+	    }	
+	    
+	    public void setAttiva(JSONObject jsonObjValues){
+	    	
+	    	this.attiva = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("attiva");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<BooleanValue> arrayList = new ArrayList<BooleanValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new BooleanValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.attiva = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<BooleanValue> getAttiva(){
+	        return this.attiva;
+	    }
+	    
+	    public void setPubblica_su_dealerk(List<BooleanValue> pubblica_su_dealerk){
+	        this.pubblica_su_dealerk = pubblica_su_dealerk;
+	    }
+	    
+	    public void setPubblica_su_dealerk(Boolean pubblica_su_dealerk){
+	        this.pubblica_su_dealerk = new ArrayList<BooleanValue>(Arrays.asList(new BooleanValue(null,null,pubblica_su_dealerk)));
+	    }	
+	    
+	    public void setPubblica_su_dealerk(JSONObject jsonObjValues){
+	    	
+	    	this.pubblica_su_dealerk = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("pubblica_su_dealerk");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<BooleanValue> arrayList = new ArrayList<BooleanValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new BooleanValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.pubblica_su_dealerk = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<BooleanValue> getPubblica_su_dealerk(){
+	        return this.pubblica_su_dealerk;
+	    }
+	    
+	    
+	    public void setPubblica_su_infocar(List<BooleanValue> pubblica_su_infocar){
+	        this.pubblica_su_infocar = pubblica_su_infocar;
+	    }
+	    
+	    public void setPubblica_su_infocar(Boolean pubblica_su_infocar){
+	        this.pubblica_su_infocar = new ArrayList<BooleanValue>(Arrays.asList(new BooleanValue(null,null,pubblica_su_infocar)));
+	    }	
+	    
+	    public void setPubblica_su_infocar(JSONObject jsonObjValues){
+	    	
+	    	this.pubblica_su_infocar = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("pubblica_su_infocar");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<BooleanValue> arrayList = new ArrayList<BooleanValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new BooleanValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.pubblica_su_infocar = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<BooleanValue> getPubblica_su_infocar(){
+	        return this.pubblica_su_infocar;
+	    }
+}

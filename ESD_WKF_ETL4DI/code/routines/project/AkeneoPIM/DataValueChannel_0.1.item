@@ -1,0 +1,71 @@
+package routines;
+
+import routines.JSONObject;
+
+
+public class DataValueChannel {
+	
+	    public DataValueChannel(String locale,String channel,String data) {
+			this.locale = locale;
+			this.channel = channel;
+			this.data = data;
+		}
+	    
+	    public DataValueChannel(JSONObject jsonObj) {
+	    	if(jsonObj!= null){
+				setLocale(jsonObj);
+				setChannel(jsonObj);
+				setData(jsonObj);
+            }
+		}
+	
+	    private String locale;
+
+	    private String channel;
+
+	    private String data;
+
+	    public void setLocale(String locale){
+	        this.locale = locale;
+	    }
+	    
+	    public void setLocale(JSONObject jsonObj){
+	    	if(jsonObj.get("locale")!=null && jsonObj.get("locale") instanceof String)
+	           this.locale = (String)jsonObj.get("locale");
+	    }
+	    
+	    public String getLocale(){
+	        return this.locale;
+	    }
+	    
+	    public void setChannel(String channel){
+	        this.channel = channel;
+	    }
+	    
+	    public void setChannel(JSONObject jsonObj){
+	    	if(jsonObj.get("channel")!=null && jsonObj.get("channel") instanceof String)
+	           this.channel = (String)jsonObj.get("channel");
+	    }	   
+	    
+	    public String getChannel(){
+	        return this.channel;
+	    }
+	    
+	    public void setData(String data){
+	        this.data = data;
+	    }
+	    
+	    public void setData(JSONObject jsonObj){
+	    	if(jsonObj.get("data")!=null){
+	           if (jsonObj.get("data") instanceof String)
+	    		   this.data = (String)jsonObj.get("data");
+	           else if (jsonObj.get("data") instanceof Integer){
+	        	   this.data = ((Integer)jsonObj.get("data")).toString();
+	           }
+	    	}
+	    }	   
+	    
+	    public String getData(){
+	        return this.data;
+	    }
+}

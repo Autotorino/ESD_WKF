@@ -1,0 +1,682 @@
+{
+  "itemId" : "_CgakwOC2Eeyf5og1YVD0WA",
+  "contextList" : [ {
+    "contextName" : "prod",
+    "repoId" : "_McuX8KloEemvdbMxCJroiw",
+    "parameterList" : [ {
+      "id" : "_yqI5LDj3Ee24esQ0HF-8Eg",
+      "name" : "RETENTION_BACKUP_FILE"
+    }, {
+      "id" : "_yqI5LTj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_Url"
+    }, {
+      "id" : "_yqI5Ljj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_Password"
+    }, {
+      "id" : "_yqI5Lzj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_Username"
+    }, {
+      "id" : "_yqI5MDj3Ee24esQ0HF-8Eg",
+      "name" : "TALEND_PATH_FILE_CSV"
+    }, {
+      "id" : "_yqI5MTj3Ee24esQ0HF-8Eg",
+      "name" : "SIPADX_DB_Server"
+    }, {
+      "id" : "_yqI5Mjj3Ee24esQ0HF-8Eg",
+      "name" : "SIPADX_DB_Port"
+    }, {
+      "id" : "_yqI5Mzj3Ee24esQ0HF-8Eg",
+      "name" : "SIPADX_DB_Database"
+    }, {
+      "id" : "_yqI5NDj3Ee24esQ0HF-8Eg",
+      "name" : "SIPADX_DB_Login"
+    }, {
+      "id" : "_yqI5NTj3Ee24esQ0HF-8Eg",
+      "name" : "SIPADX_DB_Password"
+    }, {
+      "id" : "_yqI5Njj3Ee24esQ0HF-8Eg",
+      "name" : "SIPADX_DB_Schema"
+    }, {
+      "id" : "_yqI5Nzj3Ee24esQ0HF-8Eg",
+      "name" : "DWH_AT_MAIL_NOTIFY"
+    }, {
+      "id" : "_yqI5ODj3Ee24esQ0HF-8Eg",
+      "name" : "DWH_AT_MAIL_SMTP_HOST"
+    }, {
+      "id" : "_yqI5OTj3Ee24esQ0HF-8Eg",
+      "name" : "DWH_AT_MAIL_SMTP_PORT"
+    }, {
+      "id" : "_yqI5Ojj3Ee24esQ0HF-8Eg",
+      "name" : "DWH_AT_MAIL_SMTP_USER"
+    }, {
+      "id" : "_yqI5Ozj3Ee24esQ0HF-8Eg",
+      "name" : "DWH_AT_MAIL_SMTP_PWD"
+    }, {
+      "id" : "_yqI5PDj3Ee24esQ0HF-8Eg",
+      "name" : "DWH_AT_MAIL_SMTP_DEST"
+    }, {
+      "id" : "_yqI5PTj3Ee24esQ0HF-8Eg",
+      "name" : "TALEND_PATH_LOG"
+    }, {
+      "id" : "_yqI5Pjj3Ee24esQ0HF-8Eg",
+      "name" : "RESERVATION_PROCESS_ID"
+    }, {
+      "id" : "_yqI5Pzj3Ee24esQ0HF-8Eg",
+      "name" : "PATH_FILE_INPUT_STOCK_MANAGED"
+    }, {
+      "id" : "_yqI5QDj3Ee24esQ0HF-8Eg",
+      "name" : "FILE_NAME_INPUT_STOCK"
+    }, {
+      "id" : "_yqI5QTj3Ee24esQ0HF-8Eg",
+      "name" : "PATH_FILE_STOCK_TO_PIM_RUNPREC"
+    }, {
+      "id" : "_yqI5Qjj3Ee24esQ0HF-8Eg",
+      "name" : "FILE_NAME_STOCK_TO_PIM_RUNPREC"
+    }, {
+      "id" : "_yqI5Qzj3Ee24esQ0HF-8Eg",
+      "name" : "HOST_FTP_STOCK"
+    }, {
+      "id" : "_yqI5RDj3Ee24esQ0HF-8Eg",
+      "name" : "PORT_FTP_STOCK"
+    }, {
+      "id" : "_yqI5RTj3Ee24esQ0HF-8Eg",
+      "name" : "USER_FTP_STOCK"
+    }, {
+      "id" : "_yqI5Rjj3Ee24esQ0HF-8Eg",
+      "name" : "PWD_FTP_STOCK"
+    }, {
+      "id" : "_yqI5Rzj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE1"
+    }, {
+      "id" : "_yqI5SDj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE2"
+    }, {
+      "id" : "_yqI5STj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE3"
+    }, {
+      "id" : "_yqI5Sjj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE4"
+    }, {
+      "id" : "_yqI5Szj3Ee24esQ0HF-8Eg",
+      "name" : "MOTORNET_AUTH_URL"
+    }, {
+      "id" : "_yqI5TDj3Ee24esQ0HF-8Eg",
+      "name" : "MOTORNET_AUTH_HTTP_BODY"
+    }, {
+      "id" : "_yqI5TTj3Ee24esQ0HF-8Eg",
+      "name" : "MOTORNET_AUTH_CONTENT_TYPE"
+    }, {
+      "id" : "_yqI5Tjj3Ee24esQ0HF-8Eg",
+      "name" : "MOTORNET_AUTH_TOKEN_ACCESS"
+    }, {
+      "id" : "_yqI5Tzj3Ee24esQ0HF-8Eg",
+      "name" : "MOTORNET_DETTAGLIO_USATO_URL"
+    }, {
+      "id" : "_yqI5UDj3Ee24esQ0HF-8Eg",
+      "name" : "MOTORNET_DETTAGLIO_NUOVO_URL"
+    }, {
+      "id" : "_yqI5UTj3Ee24esQ0HF-8Eg",
+      "name" : "MOTORNET_TARGA_USATO_URL"
+    }, {
+      "id" : "_yqI5Ujj3Ee24esQ0HF-8Eg",
+      "name" : "MOTORNET_TARGA_NUOVO_URL"
+    }, {
+      "id" : "_yqI5Uzj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE5"
+    }, {
+      "id" : "_yqI5VDj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE6"
+    }, {
+      "id" : "_yqI5VTj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_AUTH_URL"
+    }, {
+      "id" : "_yqI5Vjj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_AUTH_HTTP_BODY"
+    }, {
+      "id" : "_yqI5Vzj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_AUTH_CONTENT_TYPE"
+    }, {
+      "id" : "_yqI5WDj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_AUTH_TOKEN_ACCESS"
+    }, {
+      "id" : "_yqI5WTj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_AUTH_CLIENT_ID"
+    }, {
+      "id" : "_yqI5Wjj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_AUTH_CLIENT_SECRET"
+    }, {
+      "id" : "_yqI5Wzj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_METHOD_PRODUCT"
+    }, {
+      "id" : "_yqI5XDj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE0"
+    }, {
+      "id" : "_yqI5XTj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE7"
+    }, {
+      "id" : "_yqI5Xjj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE8"
+    }, {
+      "id" : "_yqI5Xzj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_METHOD_PRODUCT_QP"
+    }, {
+      "id" : "_yqI5YDj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE9"
+    }, {
+      "id" : "_yqI5YTj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_METHOD_PRODUCT_QP_DELETE"
+    }, {
+      "id" : "_yqI5Yjj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_METHOD_ATTR_OPT"
+    }, {
+      "id" : "_yqI5Yzj3Ee24esQ0HF-8Eg",
+      "name" : "NUM_DAYS_DELETE_PRODUCT"
+    }, {
+      "id" : "_yqI5ZDj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_OCI_Path"
+    }, {
+      "id" : "_yqI5ZTj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_OCI_Profile"
+    }, {
+      "id" : "_yqI5Zjj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_OCI_NameSpace"
+    }, {
+      "id" : "_yqI5Zzj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_OCI_Bucket"
+    }, {
+      "id" : "_yqI5aDj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_OCI_ContentType"
+    }, {
+      "id" : "_yqI5aTj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_OCI_Region"
+    }, {
+      "id" : "_yqI5ajj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_METHOD_REFERENCE_ENTITIES"
+    }, {
+      "id" : "_yqI5azj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE11"
+    }, {
+      "id" : "_yqI5bDj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE12"
+    }, {
+      "id" : "_yqI5bTj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE10"
+    }, {
+      "id" : "_yqI5bjj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE17"
+    }, {
+      "id" : "_yqI5bzj3Ee24esQ0HF-8Eg",
+      "name" : "MAX_ACCESS_EUROTAX_TARGA_DAY"
+    }, {
+      "id" : "_yqI5cDj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_METHOD_CATEGORIES"
+    }, {
+      "id" : "_yqI5cTj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE18"
+    }, {
+      "id" : "_yqI5cjj3Ee24esQ0HF-8Eg",
+      "name" : "PATH_TRUSTSTORE_MAGENTO"
+    }, {
+      "id" : "_yqI5czj3Ee24esQ0HF-8Eg",
+      "name" : "URL_REST_API_MAGENTO"
+    }, {
+      "id" : "_yqI5dDj3Ee24esQ0HF-8Eg",
+      "name" : "BEARER_REST_API_MAGENTO"
+    }, {
+      "id" : "_yqI5dTj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_METHOD_BLOCK_CMS"
+    } ]
+  }, {
+    "contextName" : "dev",
+    "repoId" : "_McuX8KloEemvdbMxCJroiw",
+    "parameterList" : [ {
+      "id" : "_rrZ_-gdAEeyLmuYTh2QSjA",
+      "name" : "RETENTION_BACKUP_FILE"
+    }, {
+      "id" : "_rrZ_-wdAEeyLmuYTh2QSjA",
+      "name" : "ORACLE_CLOUD_Url"
+    }, {
+      "id" : "_rrZ__AdAEeyLmuYTh2QSjA",
+      "name" : "ORACLE_CLOUD_Password"
+    }, {
+      "id" : "_rrZ__QdAEeyLmuYTh2QSjA",
+      "name" : "ORACLE_CLOUD_Username"
+    }, {
+      "id" : "_rrZ__gdAEeyLmuYTh2QSjA",
+      "name" : "TALEND_PATH_FILE_CSV"
+    }, {
+      "id" : "_rrZ__wdAEeyLmuYTh2QSjA",
+      "name" : "SIPADX_DB_Server"
+    }, {
+      "id" : "_rraAAAdAEeyLmuYTh2QSjA",
+      "name" : "SIPADX_DB_Port"
+    }, {
+      "id" : "_rraAAQdAEeyLmuYTh2QSjA",
+      "name" : "SIPADX_DB_Database"
+    }, {
+      "id" : "_rraAAgdAEeyLmuYTh2QSjA",
+      "name" : "SIPADX_DB_Login"
+    }, {
+      "id" : "_rraAAwdAEeyLmuYTh2QSjA",
+      "name" : "SIPADX_DB_Password"
+    }, {
+      "id" : "_rraABAdAEeyLmuYTh2QSjA",
+      "name" : "SIPADX_DB_Schema"
+    }, {
+      "id" : "_rraABQdAEeyLmuYTh2QSjA",
+      "name" : "DWH_AT_MAIL_NOTIFY"
+    }, {
+      "id" : "_rraABgdAEeyLmuYTh2QSjA",
+      "name" : "DWH_AT_MAIL_SMTP_HOST"
+    }, {
+      "id" : "_rraABwdAEeyLmuYTh2QSjA",
+      "name" : "DWH_AT_MAIL_SMTP_PORT"
+    }, {
+      "id" : "_rraACAdAEeyLmuYTh2QSjA",
+      "name" : "DWH_AT_MAIL_SMTP_USER"
+    }, {
+      "id" : "_rraACQdAEeyLmuYTh2QSjA",
+      "name" : "DWH_AT_MAIL_SMTP_PWD"
+    }, {
+      "id" : "_rraACgdAEeyLmuYTh2QSjA",
+      "name" : "DWH_AT_MAIL_SMTP_DEST"
+    }, {
+      "id" : "_rraACwdAEeyLmuYTh2QSjA",
+      "name" : "TALEND_PATH_LOG"
+    }, {
+      "id" : "_rraADAdAEeyLmuYTh2QSjA",
+      "name" : "RESERVATION_PROCESS_ID"
+    }, {
+      "id" : "_rraADQdAEeyLmuYTh2QSjA",
+      "name" : "PATH_FILE_INPUT_STOCK_MANAGED"
+    }, {
+      "id" : "_rraADgdAEeyLmuYTh2QSjA",
+      "name" : "FILE_NAME_INPUT_STOCK"
+    }, {
+      "id" : "_rraADwdAEeyLmuYTh2QSjA",
+      "name" : "PATH_FILE_STOCK_TO_PIM_RUNPREC"
+    }, {
+      "id" : "_rraAEAdAEeyLmuYTh2QSjA",
+      "name" : "FILE_NAME_STOCK_TO_PIM_RUNPREC"
+    }, {
+      "id" : "_8-qKxCeJEeyJfNMApzKPWg",
+      "name" : "HOST_FTP_STOCK"
+    }, {
+      "id" : "_8-qKxSeJEeyJfNMApzKPWg",
+      "name" : "PORT_FTP_STOCK"
+    }, {
+      "id" : "_8-qKxieJEeyJfNMApzKPWg",
+      "name" : "USER_FTP_STOCK"
+    }, {
+      "id" : "_8-qKxyeJEeyJfNMApzKPWg",
+      "name" : "PWD_FTP_STOCK"
+    }, {
+      "id" : "_lKjn4ChDEeysBcAUGQ-6yA",
+      "name" : "NOME_FILEDATASOURCE1"
+    }, {
+      "id" : "_lKjn4ShDEeysBcAUGQ-6yA",
+      "name" : "NOME_FILEDATASOURCE2"
+    }, {
+      "id" : "_lKjn4ihDEeysBcAUGQ-6yA",
+      "name" : "NOME_FILEDATASOURCE3"
+    }, {
+      "id" : "_lKjn4yhDEeysBcAUGQ-6yA",
+      "name" : "NOME_FILEDATASOURCE4"
+    }, {
+      "id" : "_We7_VCwlEeyo4rAYqqt27g",
+      "name" : "MOTORNET_AUTH_URL"
+    }, {
+      "id" : "_We7_VSwlEeyo4rAYqqt27g",
+      "name" : "MOTORNET_AUTH_HTTP_BODY"
+    }, {
+      "id" : "_We7_ViwlEeyo4rAYqqt27g",
+      "name" : "MOTORNET_AUTH_CONTENT_TYPE"
+    }, {
+      "id" : "_We7_VywlEeyo4rAYqqt27g",
+      "name" : "MOTORNET_AUTH_TOKEN_ACCESS"
+    }, {
+      "id" : "_sKyQoiw5Eeyo4rAYqqt27g",
+      "name" : "MOTORNET_DETTAGLIO_USATO_URL"
+    }, {
+      "id" : "_sKyQoyw5Eeyo4rAYqqt27g",
+      "name" : "MOTORNET_DETTAGLIO_NUOVO_URL"
+    }, {
+      "id" : "_V08JYizQEeyPepXuXoPCvg",
+      "name" : "MOTORNET_TARGA_USATO_URL"
+    }, {
+      "id" : "_V08JYyzQEeyPepXuXoPCvg",
+      "name" : "MOTORNET_TARGA_NUOVO_URL"
+    }, {
+      "id" : "_Aw43kjVyEeyG6Y7j4ydJhg",
+      "name" : "NOME_FILEDATASOURCE5"
+    }, {
+      "id" : "_Aw43kzVyEeyG6Y7j4ydJhg",
+      "name" : "NOME_FILEDATASOURCE6"
+    }, {
+      "id" : "_6PQnhzV6EeyG6Y7j4ydJhg",
+      "name" : "AKENEOPIM_AUTH_URL"
+    }, {
+      "id" : "_6PQniDV6EeyG6Y7j4ydJhg",
+      "name" : "AKENEOPIM_AUTH_HTTP_BODY"
+    }, {
+      "id" : "_6PQniTV6EeyG6Y7j4ydJhg",
+      "name" : "AKENEOPIM_AUTH_CONTENT_TYPE"
+    }, {
+      "id" : "_6PQnijV6EeyG6Y7j4ydJhg",
+      "name" : "AKENEOPIM_AUTH_TOKEN_ACCESS"
+    }, {
+      "id" : "_6PQnizV6EeyG6Y7j4ydJhg",
+      "name" : "AKENEOPIM_AUTH_CLIENT_ID"
+    }, {
+      "id" : "_6PQnjDV6EeyG6Y7j4ydJhg",
+      "name" : "AKENEOPIM_AUTH_CLIENT_SECRET"
+    }, {
+      "id" : "_6PQnjTV6EeyG6Y7j4ydJhg",
+      "name" : "AKENEOPIM_METHOD_PRODUCT"
+    }, {
+      "id" : "_fC_j4TiCEeyRRpYAlJafVg",
+      "name" : "NOME_FILEDATASOURCE0"
+    }, {
+      "id" : "_GCnEETiMEey-ofFe9loYjQ",
+      "name" : "NOME_FILEDATASOURCE7"
+    }, {
+      "id" : "_uu6DEVQhEeyHtqgKPw0vlg",
+      "name" : "NOME_FILEDATASOURCE8"
+    }, {
+      "id" : "_uYuskW-dEeyhmvyBj9cN_g",
+      "name" : "AKENEOPIM_METHOD_PRODUCT_QP"
+    }, {
+      "id" : "_Go9eMXnOEeyqL60yYZNokw",
+      "name" : "NOME_FILEDATASOURCE9"
+    }, {
+      "id" : "_iihFYXnWEeyqL60yYZNokw",
+      "name" : "AKENEOPIM_METHOD_PRODUCT_QP_DELETE"
+    }, {
+      "id" : "_n2L-oXn7EeyIiKFN3M_FAA",
+      "name" : "AKENEOPIM_METHOD_ATTR_OPT"
+    }, {
+      "id" : "_zEFWAXqhEeyvm8MjRkvS9A",
+      "name" : "NUM_DAYS_DELETE_PRODUCT"
+    }, {
+      "id" : "_IPtm9oNNEeyoeMbWIEkKPw",
+      "name" : "ORACLE_CLOUD_OCI_Path"
+    }, {
+      "id" : "_IPtm94NNEeyoeMbWIEkKPw",
+      "name" : "ORACLE_CLOUD_OCI_Profile"
+    }, {
+      "id" : "_IPtm-INNEeyoeMbWIEkKPw",
+      "name" : "ORACLE_CLOUD_OCI_NameSpace"
+    }, {
+      "id" : "_IPtm-YNNEeyoeMbWIEkKPw",
+      "name" : "ORACLE_CLOUD_OCI_Bucket"
+    }, {
+      "id" : "_IPtm-oNNEeyoeMbWIEkKPw",
+      "name" : "ORACLE_CLOUD_OCI_ContentType"
+    }, {
+      "id" : "_IPtm-4NNEeyoeMbWIEkKPw",
+      "name" : "ORACLE_CLOUD_OCI_Region"
+    }, {
+      "id" : "_R9wWkYXfEeyL4O1NXmHcbA",
+      "name" : "AKENEOPIM_METHOD_REFERENCE_ENTITIES"
+    }, {
+      "id" : "_qyVZwJmDEeyDqJ5WrvJWgw",
+      "name" : "NOME_FILEDATASOURCE11"
+    }, {
+      "id" : "_qyVZwZmDEeyDqJ5WrvJWgw",
+      "name" : "NOME_FILEDATASOURCE12"
+    }, {
+      "id" : "_qyVZwpmDEeyDqJ5WrvJWgw",
+      "name" : "NOME_FILEDATASOURCE10"
+    }, {
+      "id" : "_qyVZw5mDEeyDqJ5WrvJWgw",
+      "name" : "NOME_FILEDATASOURCE17"
+    }, {
+      "id" : "__lbl0Z-EEey1Ref1oOAb5w",
+      "name" : "MAX_ACCESS_EUROTAX_TARGA_DAY"
+    }, {
+      "id" : "_rrb-MdwtEeyXsu8MMf2lkQ",
+      "name" : "AKENEOPIM_METHOD_CATEGORIES"
+    }, {
+      "id" : "_2fHtk-DrEeyn5NSIBVBFwg",
+      "name" : "NOME_FILEDATASOURCE18"
+    }, {
+      "id" : "_2fHtlODrEeyn5NSIBVBFwg",
+      "name" : "PATH_TRUSTSTORE_MAGENTO"
+    }, {
+      "id" : "_2fHtleDrEeyn5NSIBVBFwg",
+      "name" : "URL_REST_API_MAGENTO"
+    }, {
+      "id" : "_JrdmoeDsEeyn5NSIBVBFwg",
+      "name" : "BEARER_REST_API_MAGENTO"
+    }, {
+      "id" : "_FhdZMeGNEey0f94ARS2qqQ",
+      "name" : "AKENEOPIM_METHOD_BLOCK_CMS"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_McuX8KloEemvdbMxCJroiw",
+    "parameterList" : [ {
+      "id" : "_yqI44Tj3Ee24esQ0HF-8Eg",
+      "name" : "RETENTION_BACKUP_FILE"
+    }, {
+      "id" : "_yqI44jj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_Url"
+    }, {
+      "id" : "_yqI44zj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_Password"
+    }, {
+      "id" : "_yqI45Dj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_Username"
+    }, {
+      "id" : "_yqI45Tj3Ee24esQ0HF-8Eg",
+      "name" : "TALEND_PATH_FILE_CSV"
+    }, {
+      "id" : "_yqI45jj3Ee24esQ0HF-8Eg",
+      "name" : "SIPADX_DB_Server"
+    }, {
+      "id" : "_yqI45zj3Ee24esQ0HF-8Eg",
+      "name" : "SIPADX_DB_Port"
+    }, {
+      "id" : "_yqI46Dj3Ee24esQ0HF-8Eg",
+      "name" : "SIPADX_DB_Database"
+    }, {
+      "id" : "_yqI46Tj3Ee24esQ0HF-8Eg",
+      "name" : "SIPADX_DB_Login"
+    }, {
+      "id" : "_yqI46jj3Ee24esQ0HF-8Eg",
+      "name" : "SIPADX_DB_Password"
+    }, {
+      "id" : "_yqI46zj3Ee24esQ0HF-8Eg",
+      "name" : "SIPADX_DB_Schema"
+    }, {
+      "id" : "_yqI47Dj3Ee24esQ0HF-8Eg",
+      "name" : "DWH_AT_MAIL_NOTIFY"
+    }, {
+      "id" : "_yqI47Tj3Ee24esQ0HF-8Eg",
+      "name" : "DWH_AT_MAIL_SMTP_HOST"
+    }, {
+      "id" : "_yqI47jj3Ee24esQ0HF-8Eg",
+      "name" : "DWH_AT_MAIL_SMTP_PORT"
+    }, {
+      "id" : "_yqI47zj3Ee24esQ0HF-8Eg",
+      "name" : "DWH_AT_MAIL_SMTP_USER"
+    }, {
+      "id" : "_yqI48Dj3Ee24esQ0HF-8Eg",
+      "name" : "DWH_AT_MAIL_SMTP_PWD"
+    }, {
+      "id" : "_yqI48Tj3Ee24esQ0HF-8Eg",
+      "name" : "DWH_AT_MAIL_SMTP_DEST"
+    }, {
+      "id" : "_yqI48jj3Ee24esQ0HF-8Eg",
+      "name" : "TALEND_PATH_LOG"
+    }, {
+      "id" : "_yqI48zj3Ee24esQ0HF-8Eg",
+      "name" : "RESERVATION_PROCESS_ID"
+    }, {
+      "id" : "_yqI49Dj3Ee24esQ0HF-8Eg",
+      "name" : "PATH_FILE_INPUT_STOCK_MANAGED"
+    }, {
+      "id" : "_yqI49Tj3Ee24esQ0HF-8Eg",
+      "name" : "FILE_NAME_INPUT_STOCK"
+    }, {
+      "id" : "_yqI49jj3Ee24esQ0HF-8Eg",
+      "name" : "PATH_FILE_STOCK_TO_PIM_RUNPREC"
+    }, {
+      "id" : "_yqI49zj3Ee24esQ0HF-8Eg",
+      "name" : "FILE_NAME_STOCK_TO_PIM_RUNPREC"
+    }, {
+      "id" : "_yqI4-Dj3Ee24esQ0HF-8Eg",
+      "name" : "HOST_FTP_STOCK"
+    }, {
+      "id" : "_yqI4-Tj3Ee24esQ0HF-8Eg",
+      "name" : "PORT_FTP_STOCK"
+    }, {
+      "id" : "_yqI4-jj3Ee24esQ0HF-8Eg",
+      "name" : "USER_FTP_STOCK"
+    }, {
+      "id" : "_yqI4-zj3Ee24esQ0HF-8Eg",
+      "name" : "PWD_FTP_STOCK"
+    }, {
+      "id" : "_yqI4_Dj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE1"
+    }, {
+      "id" : "_yqI4_Tj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE2"
+    }, {
+      "id" : "_yqI4_jj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE3"
+    }, {
+      "id" : "_yqI4_zj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE4"
+    }, {
+      "id" : "_yqI5ADj3Ee24esQ0HF-8Eg",
+      "name" : "MOTORNET_AUTH_URL"
+    }, {
+      "id" : "_yqI5ATj3Ee24esQ0HF-8Eg",
+      "name" : "MOTORNET_AUTH_HTTP_BODY"
+    }, {
+      "id" : "_yqI5Ajj3Ee24esQ0HF-8Eg",
+      "name" : "MOTORNET_AUTH_CONTENT_TYPE"
+    }, {
+      "id" : "_yqI5Azj3Ee24esQ0HF-8Eg",
+      "name" : "MOTORNET_AUTH_TOKEN_ACCESS"
+    }, {
+      "id" : "_yqI5BDj3Ee24esQ0HF-8Eg",
+      "name" : "MOTORNET_DETTAGLIO_USATO_URL"
+    }, {
+      "id" : "_yqI5BTj3Ee24esQ0HF-8Eg",
+      "name" : "MOTORNET_DETTAGLIO_NUOVO_URL"
+    }, {
+      "id" : "_yqI5Bjj3Ee24esQ0HF-8Eg",
+      "name" : "MOTORNET_TARGA_USATO_URL"
+    }, {
+      "id" : "_yqI5Bzj3Ee24esQ0HF-8Eg",
+      "name" : "MOTORNET_TARGA_NUOVO_URL"
+    }, {
+      "id" : "_yqI5CDj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE5"
+    }, {
+      "id" : "_yqI5CTj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE6"
+    }, {
+      "id" : "_yqI5Cjj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_AUTH_URL"
+    }, {
+      "id" : "_yqI5Czj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_AUTH_HTTP_BODY"
+    }, {
+      "id" : "_yqI5DDj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_AUTH_CONTENT_TYPE"
+    }, {
+      "id" : "_yqI5DTj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_AUTH_TOKEN_ACCESS"
+    }, {
+      "id" : "_yqI5Djj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_AUTH_CLIENT_ID"
+    }, {
+      "id" : "_yqI5Dzj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_AUTH_CLIENT_SECRET"
+    }, {
+      "id" : "_yqI5EDj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_METHOD_PRODUCT"
+    }, {
+      "id" : "_yqI5ETj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE0"
+    }, {
+      "id" : "_yqI5Ejj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE7"
+    }, {
+      "id" : "_yqI5Ezj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE8"
+    }, {
+      "id" : "_yqI5FDj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_METHOD_PRODUCT_QP"
+    }, {
+      "id" : "_yqI5FTj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE9"
+    }, {
+      "id" : "_yqI5Fjj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_METHOD_PRODUCT_QP_DELETE"
+    }, {
+      "id" : "_yqI5Fzj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_METHOD_ATTR_OPT"
+    }, {
+      "id" : "_yqI5GDj3Ee24esQ0HF-8Eg",
+      "name" : "NUM_DAYS_DELETE_PRODUCT"
+    }, {
+      "id" : "_yqI5GTj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_OCI_Path"
+    }, {
+      "id" : "_yqI5Gjj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_OCI_Profile"
+    }, {
+      "id" : "_yqI5Gzj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_OCI_NameSpace"
+    }, {
+      "id" : "_yqI5HDj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_OCI_Bucket"
+    }, {
+      "id" : "_yqI5HTj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_OCI_ContentType"
+    }, {
+      "id" : "_yqI5Hjj3Ee24esQ0HF-8Eg",
+      "name" : "ORACLE_CLOUD_OCI_Region"
+    }, {
+      "id" : "_yqI5Hzj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_METHOD_REFERENCE_ENTITIES"
+    }, {
+      "id" : "_yqI5IDj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE11"
+    }, {
+      "id" : "_yqI5ITj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE12"
+    }, {
+      "id" : "_yqI5Ijj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE10"
+    }, {
+      "id" : "_yqI5Izj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE17"
+    }, {
+      "id" : "_yqI5JDj3Ee24esQ0HF-8Eg",
+      "name" : "MAX_ACCESS_EUROTAX_TARGA_DAY"
+    }, {
+      "id" : "_yqI5JTj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_METHOD_CATEGORIES"
+    }, {
+      "id" : "_yqI5Jjj3Ee24esQ0HF-8Eg",
+      "name" : "NOME_FILEDATASOURCE18"
+    }, {
+      "id" : "_yqI5Jzj3Ee24esQ0HF-8Eg",
+      "name" : "PATH_TRUSTSTORE_MAGENTO"
+    }, {
+      "id" : "_yqI5KDj3Ee24esQ0HF-8Eg",
+      "name" : "URL_REST_API_MAGENTO"
+    }, {
+      "id" : "_yqI5KTj3Ee24esQ0HF-8Eg",
+      "name" : "BEARER_REST_API_MAGENTO"
+    }, {
+      "id" : "_yqI5Kjj3Ee24esQ0HF-8Eg",
+      "name" : "AKENEOPIM_METHOD_BLOCK_CMS"
+    } ]
+  } ]
+}

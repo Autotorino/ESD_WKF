@@ -1,0 +1,111 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+
+
+public class BloccoCmsListMag {
+	
+	public BloccoCmsListMag() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public BloccoCmsListMag(String jsonObject) {
+		
+		JSONObject jsonObjBody = new JSONObject(jsonObject);
+		
+		setTotal_count(jsonObjBody);
+    	setItems(jsonObjBody);
+		
+		
+		
+	}
+
+	private String total_count;
+	private List<BloccoCmsMag> items;
+
+    
+    public void setTotal_count(String total_count){
+        this.total_count = total_count;
+    }
+    
+    public void setTotal_count(JSONObject jsonObjBody){
+    	this.total_count = UtilJson.getValueStringFrom_JObject_1Level(jsonObjBody, "total_count");
+    	
+    }
+    
+    public String getTotal_count(){
+        return this.total_count;
+    }  
+   
+    public void setItems(JSONObject jsonObjValues){
+    	
+	    	this.items = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("items");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<BloccoCmsMag> arrayList = new ArrayList<BloccoCmsMag>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new BloccoCmsMag((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.items = arrayList;
+	    		}
+	    	}
+	    }
+     
+     public List<BloccoCmsMag> getItems(){
+     	return items;
+     }
+
+    
+    /**
+     * Custom methods
+     */
+    /*
+    public MarcaModello getMarcaModello(String codMarcaModello){
+    	
+    	if(UtilString.isEmptyTrim(codMarcaModello))
+    	   return null;
+    	
+    	MarcaModello returnMarcaModello = null;
+    	
+    	if (this._embedded!=null) {
+    	    
+    		List<MarcaModello> marcaModelloList = this._embedded.getItems();
+    	    
+    		if (marcaModelloList!= null && marcaModelloList.size()>0){
+    			for(MarcaModello marcaModello:marcaModelloList){
+    				if (marcaModello.getCode().equals(codMarcaModello)){
+    					returnMarcaModello =  marcaModello;
+    					break;
+    				}
+    			}
+    		}
+    	}
+    	
+    	return returnMarcaModello;
+    }
+    
+    public boolean isValidEntities(){
+       if (this._embedded!=null) {
+    	    
+    		List<MarcaModello> marcaModelloList = this._embedded.getItems();
+    	    
+    		if (marcaModelloList!= null && marcaModelloList.size()>0)
+    			return true;
+    		else
+    			return false;
+       }
+       else return false;
+    }
+   */
+}

@@ -1,0 +1,207 @@
+package routines;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class ValuesBloccoCms {
+	
+	    public static String unitaDiMisuraCurrency = "EUR";
+	    
+	    private static boolean systemlog = false;
+	
+	    public ValuesBloccoCms() {
+		}	    
+	    
+	    public ValuesBloccoCms(JSONObject jsonObjBody) {
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("values");
+	    	
+	    	setLabel(jsonObjValues);
+	    	setIdentifier(jsonObjValues);
+	    	setStatus(jsonObjValues);
+	    	
+	    	
+	    	
+		}
+	    
+	    private List<DataValueChannel> label;
+	    private List<DataValueChannel> identifier;
+	    private List<DataValueChannel> status;
+	    
+
+
+
+	    
+	    /**
+	     * 
+	     * Metodi GET\SET per Lettura dal PIM
+	     */
+	    public void setLabel(List<DataValueChannel> label){
+	        this.label = label;
+	    }
+	    
+        public void setLabel(JSONObject jsonObjValues){
+	    	
+	    	this.label = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("label");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueChannel> arrayList = new ArrayList<DataValueChannel>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueChannel((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.label = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public void setLabel(String label){
+	        this.label = new ArrayList<DataValueChannel>(Arrays.asList(new DataValueChannel("it_IT",null,label)));
+	    }	
+        
+	    public List<DataValueChannel> getLabel(){
+	        return this.label;
+	    }
+	    
+	    public void setIdentifier(List<DataValueChannel> identifier){
+	        this.identifier = identifier;
+	    }
+	    
+        public void setIdentifier(JSONObject jsonObjValues){
+	    	
+	    	this.identifier = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("identifier");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueChannel> arrayList = new ArrayList<DataValueChannel>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueChannel((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.identifier = arrayList;
+	    		}
+	    	}
+	    }
+        
+	    public void setIdentifier(String identifier){
+	        this.identifier = new ArrayList<DataValueChannel>(Arrays.asList(new DataValueChannel(null,null,identifier)));
+	    }	
+        
+	    public List<DataValueChannel> getIdentifier(){
+	        return this.identifier;
+	    }
+	    
+	    
+	    public void setStatus(List<DataValueChannel> status){
+	        this.status = status;
+	    }
+	    
+        public void setStatus(JSONObject jsonObjValues){
+	    	
+	    	this.status = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("status");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueChannel> arrayList = new ArrayList<DataValueChannel>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueChannel((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.status = arrayList;
+	    		}
+	    	}
+	    }
+        
+	    public void setStatus(String status){
+	        this.status = new ArrayList<DataValueChannel>(Arrays.asList(new DataValueChannel(null,null,status)));
+	    }	
+        
+	    public List<DataValueChannel> getStatus(){
+	        return this.status;
+	    }
+	    
+	    
+	    public boolean isChange_ListDataValue(List<DataValueChannel> listDataValue,String value,boolean number){
+
+	    	if (systemlog) System.out.println("Entra_isChange_ListDataValue:"+value);
+	    	
+	    	if (listDataValue!=null && listDataValue.size()>0 && listDataValue.get(0)!=null)
+	    	{
+	    		if (UtilString.isEmptyTrim(listDataValue.get(0).getData()) && UtilString.isEmptyTrim(value))
+	    			return false;
+	    		else {
+		    		if (number){
+		    			if (!UtilString.isEmptyTrim(listDataValue.get(0).getData()) && !UtilString.isEmptyTrim(value)){
+		    				if (UtilString.stringIsNumber(value) && UtilString.stringIsNumber(listDataValue.get(0).getData())){
+		    					BigDecimal bd1 = new BigDecimal(value);
+		    					BigDecimal bd2 = new BigDecimal(listDataValue.get(0).getData());
+		    				    return !(bd1.compareTo(bd2)==0);
+		    				}
+		    				else return true;
+		    			}
+		    			else
+		    				return true;
+		    		}
+		    		else {
+		    			if (!UtilString.isEmptyTrim(listDataValue.get(0).getData()) && !UtilString.isEmptyTrim(value))
+		    				return !value.trim().equals(listDataValue.get(0).getData().trim());
+		    			else
+		    				return true;
+		    		}
+	    		}
+	    		
+	    	}
+	    	else if((listDataValue==null || listDataValue.size()==0 || listDataValue.get(0)==null) && UtilString.isEmptyTrim(value)){
+	    		return false;
+	    	}
+	    	else{
+	    		return true;
+	    	}
+	    }
+	    
+	    
+	    public boolean isChange_ListStatusValue(List<DataValueChannel> listDataValue,Boolean value){
+
+	    	if (systemlog) System.out.println("Entra_isChange_ListStatusValue:"+value.toString());
+	    	
+	    	if (listDataValue!=null && listDataValue.size()>0 && listDataValue.get(0)!=null)
+	    	{
+	    		if (UtilString.isEmptyTrim(listDataValue.get(0).getData()) && value == null)
+	    			return false;
+	    		else {
+		    		
+		    			if (!UtilString.isEmptyTrim(listDataValue.get(0).getData()) && value != null)
+		    				return  !((listDataValue.get(0).getData().equals("1") &&  value ) || (listDataValue.get(0).getData().equals("0") &&  !value ));
+		    			else
+		    				return true;
+	
+	    		}
+	    		
+	    	}
+	    	else if((listDataValue==null || listDataValue.size()==0 || listDataValue.get(0)==null) && value == null){
+	    		return false;
+	    	}
+	    	else{
+	    		return true;
+	    	}
+	    }
+	    
+
+}
