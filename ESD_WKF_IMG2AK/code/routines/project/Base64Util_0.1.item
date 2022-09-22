@@ -1,0 +1,12 @@
+package routines;
+
+import java.util.Base64;
+
+
+public class Base64Util {
+
+
+    public static String getAuthorizationB64(String client,String secret) {
+       return new String(Base64.getEncoder().encode((client+":"+secret).getBytes()));
+    }
+}

@@ -1,0 +1,72 @@
+package routines;
+
+public class AssetValue { 
+	
+	    public AssetValue(JSONObject jsonObjValues) {
+	    	setCode(jsonObjValues);
+	    	
+			ValuesAsset values = new ValuesAsset(jsonObjValues);
+			setValues(values);
+		}
+	
+	    private String code;
+	    
+	    private ValuesAsset values;
+
+	    public void setCode(String code){
+	        this.code = code;
+	    }
+	    
+	    public void setCode(JSONObject jsonObjBody){
+	    	
+	    	if(jsonObjBody!=null){
+	    	  Object returnValue = jsonObjBody.get("code");
+	          this.code = (returnValue instanceof String) ? (String)returnValue : null;
+	    	}
+	    	else
+	    	  this.code = null;
+	    }
+	    
+	    public String getCode(){
+	        return this.code;
+	    }
+	    
+	    public void setValues(ValuesAsset values){
+	        this.values = values;
+	    }
+	    public ValuesAsset getValues(){
+	        return this.values;
+	    }
+	    
+	    //Custom
+	    public String getProduct_ref(){
+	    	
+	    	if (this.values != null && this.values.getProduct_ref() != null && this.values.getProduct_ref().size() > 0 
+	    			 && this.values.getProduct_ref().get(0) != null)
+	    		return values.getProduct_ref().get(0).getData();
+	    	else
+	    		return null;
+	    	   
+	    }
+	    
+        public String getLabel(){
+	    	
+	    	if (this.values != null && this.values.getLabel() != null && this.values.getLabel().size() > 0 
+	    			 && this.values.getLabel().get(0) != null)
+	    		return values.getLabel().get(0).getData();
+	    	else
+	    		return null;
+	    	   
+	    }
+        
+        public String getCloudinaryImage(){
+	    	
+	    	if (this.values != null && this.values.getCloudinaryimage() != null && this.values.getCloudinaryimage().size() > 0 
+	    			 && this.values.getCloudinaryimage().get(0) != null)
+	    		return values.getCloudinaryimage().get(0).getData();
+	    	else
+	    		return null;
+	    	   
+	    }
+
+}

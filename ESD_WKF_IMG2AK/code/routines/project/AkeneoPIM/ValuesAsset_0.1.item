@@ -1,0 +1,113 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ValuesAsset {
+	
+	    public ValuesAsset(JSONObject jsonObjBody) {
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("values");
+	    	
+	    	
+	    	setCloudinaryimage(jsonObjValues);
+	    	setProduct_ref(jsonObjValues);
+	    	setLabel(jsonObjValues);
+	    	
+		}
+	
+	    private List<DataValue> cloudinaryimage;
+
+	    private List<DataValue> product_ref;
+	    
+	    private List<DataValue> label;
+
+
+
+	    public void setCloudinaryimage(List<DataValue> cloudinaryimage){
+	        this.cloudinaryimage = cloudinaryimage;
+	    }
+	    
+	    public void setCloudinaryimage(JSONObject jsonObjValues){
+	    	
+	    	this.cloudinaryimage = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("cloudinaryimage");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.cloudinaryimage = arrayList;
+	    		}
+	    	}
+	    }
+	    
+	    public List<DataValue> getCloudinaryimage(){
+	        return this.cloudinaryimage;
+	    }
+	    
+	    public void setProduct_ref(List<DataValue> product_ref){
+	        this.product_ref = product_ref;
+	    }
+	    
+	    public void setProduct_ref(JSONObject jsonObjValues){
+	    	
+	    	this.product_ref = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("product_ref");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.product_ref = arrayList;
+	    		}
+	    	}
+	    }
+	    	    
+	    public List<DataValue> getProduct_ref(){
+	        return this.product_ref;
+	    }
+	    
+	    
+	    public void setLabel(List<DataValue> label){
+	        this.label = label;
+	    }
+	    
+	    public void setLabel(JSONObject jsonObjValues){
+	    	
+	    	this.label = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("label");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.label = arrayList;
+	    		}
+	    	}
+	    }
+	    	    
+	    public List<DataValue> getLabel(){
+	        return this.label;
+	    }
+	    
+	  
+}

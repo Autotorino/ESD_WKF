@@ -1,0 +1,55 @@
+package routines;
+
+
+public class Product {
+	
+	  
+	
+	   public Product(JSONObject jsonObjValues) {
+	    	setIdentifier(jsonObjValues);
+	    	setFamily(jsonObjValues);
+
+		}
+	
+	    private String identifier;
+	    private String family;
+
+
+	    public void setIdentifier(String identifier){
+	        this.identifier = identifier;
+	    }
+	    
+	    public void setIdentifier(JSONObject jsonObjBody){
+	    	
+	    	if(jsonObjBody!=null){
+	    	  Object returnValue = jsonObjBody.get("identifier");
+	          this.identifier = (returnValue instanceof String) ? (String)returnValue : null;
+	    	}
+	    	else
+	    	  this.identifier = null;
+	    }
+	    
+	    public String getIdentifier(){
+	        return this.identifier;
+	    }
+	    
+	    public void setFamily(String family){
+	        this.family = family;
+	    }
+	    
+	    public void setFamily(JSONObject jsonObjBody){
+	    	
+	    	if(jsonObjBody!=null){
+	    	  Object returnValue = jsonObjBody.get("family");
+	          this.family = (returnValue instanceof String) ? (String)returnValue : null;
+	    	}
+	    	else
+	    	  this.family = null;
+	    }
+	    
+	    public String getFamily(){
+	        return this.family;
+	    }
+ 
+
+}

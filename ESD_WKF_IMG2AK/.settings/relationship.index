@@ -1,0 +1,334 @@
+[ {
+  "baseItem" : {
+    "id" : "_8XlygKytEeuyUM-aQBXF8w",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "Asset",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "CloudinaryUpload",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilWorkBook",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_Bro_gG_REey4EIlFu6QiUg - SCHEMA_CLOUDINARY_INFO",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_KL67QV0JEeyp-Nfllqv_Ag",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "AssetList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "AssetValue",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Base64Util",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataValue",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedAsset",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedProduct",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Product",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ProductList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilJson",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilWorkBook",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Values",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ValuesAsset",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_SzXhAINPEeyoeMbWIEkKPw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "UploadObjectonStorage",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilScheduleRoleDS",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_VhQWEAmqEeyzcaAVvZESZw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "Asset",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Base64Util",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataValue",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilJson",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilWorkBook",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Values",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_Bro_gG_REey4EIlFu6QiUg - SCHEMA_CLOUDINARY_INFO",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_Y4rHwA87Ee25QpwBkcouFA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "Asset",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Base64Util",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "CloudinaryUpload",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataValue",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilJson",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilWorkBook",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Values",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "__fHc8BUeEeqnN-OmdHq6AQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "Asset",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UploadObjectonStorage",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilScheduleRoleDS",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_Bro_gG_REey4EIlFu6QiUg - SCHEMA_CLOUDINARY_INFO",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_TfTM8KObEeyCZKPKwVL2Vg - SCHEMA_SEGNALAZIONI",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_kPODEMJFEei12d6Nkg1q8Q",
+    "version" : "0.2",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_8XlygKytEeuyUM-aQBXF8w",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_KL67QV0JEeyp-Nfllqv_Ag",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_SzXhAINPEeyoeMbWIEkKPw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_VhQWEAmqEeyzcaAVvZESZw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_Y4rHwA87Ee25QpwBkcouFA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "__fHc8BUeEeqnN-OmdHq6AQ",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilScheduleRoleDS",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
+} ]

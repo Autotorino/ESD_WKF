@@ -1,0 +1,94 @@
+package routines;
+
+
+import java.io.File;
+import java.util.Map;
+
+import com.oracle.bmc.Region;
+import com.oracle.bmc.auth.AuthenticationDetailsProvider;
+import com.oracle.bmc.auth.ConfigFileAuthenticationDetailsProvider;
+import com.oracle.bmc.objectstorage.ObjectStorage;
+import com.oracle.bmc.objectstorage.ObjectStorageClient;
+import com.oracle.bmc.objectstorage.model.BucketSummary;
+import com.oracle.bmc.objectstorage.requests.GetNamespaceRequest;
+import com.oracle.bmc.objectstorage.requests.GetObjectRequest;
+import com.oracle.bmc.objectstorage.requests.ListBucketsRequest;
+import com.oracle.bmc.objectstorage.requests.ListBucketsRequest.Builder;
+import com.oracle.bmc.objectstorage.requests.PutObjectRequest;
+import com.oracle.bmc.objectstorage.responses.GetNamespaceResponse;
+import com.oracle.bmc.objectstorage.responses.GetObjectResponse;
+import com.oracle.bmc.objectstorage.responses.ListBucketsResponse;
+import com.oracle.bmc.objectstorage.transfer.UploadConfiguration;
+import com.oracle.bmc.objectstorage.transfer.UploadManager;
+import com.oracle.bmc.objectstorage.transfer.UploadManager.UploadRequest;
+import com.oracle.bmc.objectstorage.transfer.UploadManager.UploadResponse;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class UploadObjectonStorage {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static String uploadOnObjectStorage_Bucket(String fileConfigOCI,String profile,String namespaceName,
+    		                                        String bucketName,String objectName,String contentType,String filePath,
+    		                                        String region) throws Exception {
+    	
+        File body = new File(filePath);
+        
+        AuthenticationDetailsProvider provider = new ConfigFileAuthenticationDetailsProvider(fileConfigOCI, profile);
+
+        ObjectStorage client = new ObjectStorageClient(provider);
+        client.setRegion(region);
+
+        // configure upload settings as desired
+        UploadConfiguration uploadConfiguration = 
+        		UploadConfiguration.builder().allowMultipartUploads(true).allowParallelUploads(true)
+                        .build();
+
+        UploadManager uploadManager = new UploadManager(client, uploadConfiguration);
+
+        PutObjectRequest request =
+                PutObjectRequest.builder()
+                        .bucketName(bucketName)
+                        .namespaceName(namespaceName)
+                        .objectName(objectName)
+                        .contentType(contentType)
+                        .build();
+
+        UploadRequest uploadDetails =
+                UploadRequest.builder(body).allowOverwrite(true).build(request);
+
+        // upload request and print result
+        // if multi-part is used, and any part fails, the entire upload fails and will throw BmcException
+        UploadResponse response = uploadManager.upload(uploadDetails);
+        return response.toString();
+
+
+    }
+}

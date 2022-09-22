@@ -1,0 +1,124 @@
+package routines;
+
+import java.io.File;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+import com.cloudinary.Cloudinary;
+import com.cloudinary.EagerTransformation;
+import com.cloudinary.utils.ObjectUtils;
+
+
+public class CloudinaryUpload {
+	
+	public enum ErroreFileImg { EMPTY, 
+		                        NOIMAGE, 
+		                        PREFIXERR, 
+		                        NOSEQUENCE,
+		                        SKUERR,
+		                        DSEQUENCE,
+		                        SEQNOTNUMB};
+
+
+    public static Map<String,Object> upload(File fileUpload,String apiKey,String apiSecret,String cloudName,String folder) {
+    	
+ 
+    	Map<String,Object> uploadResult = null;
+    	
+		try{
+		   	Cloudinary cloudinary = new Cloudinary();
+		   	
+		   	String fileName =  fileUpload.getName();
+	    	
+	    	Map params = ObjectUtils.asMap(
+				    "api_key", apiKey, 
+				    "api_secret", apiSecret, 
+				    "cloud_name", cloudName, 
+				    "folder",folder,
+				    "public_id", fileName.substring(0,fileName.indexOf(".")) ,
+				    "eager",Arrays.asList(new EagerTransformation().effect("viesus_correct"))
+				); 
+	    	
+			uploadResult = cloudinary.uploader().upload(fileUpload, params);
+			
+			uploadResult.put("Status","Uploaded");
+			
+
+			
+
+		}
+		catch(Exception e){
+			//e.printStackTrace();
+			uploadResult = new HashMap<String,Object>();
+			uploadResult.put("Status", "Error:"+e.getMessage());
+		}
+		
+		//for (Map.Entry<String, Object> entry : uploadResult.entrySet()) {
+		  //  System.out.println(entry.getKey() + "/" + entry.getValue());
+		//}
+		
+		return uploadResult;
+      
+    }
+    
+    public static ErroreFileImg checkFileName(String fileName){
+    	
+    	if (UtilString.isEmptyTrim(fileName))
+    		return ErroreFileImg.EMPTY;
+    	else if(!fileName.toUpperCase().endsWith(".JPG") && !fileName.toUpperCase().endsWith(".PNG"))
+    		return ErroreFileImg.NOIMAGE;
+    	else if(!fileName.startsWith("Z") && !fileName.startsWith("U") && !fileName.startsWith("N"))
+    		return ErroreFileImg.PREFIXERR;
+    	else if(fileName.indexOf("_")<0)
+    		return ErroreFileImg.NOSEQUENCE;
+    	else if(fileName.indexOf("_")<2)
+    		return ErroreFileImg.SKUERR;    	
+    	else if(fileName.indexOf("_")<fileName.lastIndexOf("_"))
+    		return ErroreFileImg.DSEQUENCE;
+    	else if( fileName.substring(fileName.indexOf("_")+1,fileName.indexOf(".")).length()==0 ||
+    			 !UtilString.isNumeric(fileName.substring(fileName.indexOf("_")+1,fileName.indexOf("."))))
+    		return ErroreFileImg.SEQNOTNUMB;
+    	
+    	    
+    	return null;
+    	
+    }
+    
+public static String destroy(String fileName,String apiKey,String apiSecret,String cloudName) {
+	   	
+	   	Cloudinary cloudinary = new Cloudinary();	
+	   	
+	   	String result = null;
+	   	
+	   	Map params = ObjectUtils.asMap(
+				    "api_key", apiKey, 
+				    "api_secret", apiSecret, 
+				    "cloud_name", cloudName
+		); 
+			
+		try{
+			Map<String,Object> deleteResult = 
+					 cloudinary.uploader().destroy(fileName , params);
+			
+			for (Map.Entry<String, Object> entry : deleteResult.entrySet()) {
+			    //System.out.println(entry.getKey() + "/" + entry.getValue());
+			    if (entry.getKey().equals("result") && ((String)entry.getValue()).equals("ok"))
+			    	result = "Success:"+(String)entry.getValue();
+			    
+			    if (entry.getKey().equals("result") && ((String)entry.getValue()).trim().equals("not found"))
+			    	result = "Error:"+(String)entry.getValue();
+			}
+			
+			if (result==null)
+				result =  "Error:empty response";
+		}
+		catch(Exception e){
+			e.printStackTrace();
+			result =  "Error:"+e.getMessage();
+		}
+		
+		return result;
+	     
+	}
+}

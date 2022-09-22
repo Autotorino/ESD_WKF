@@ -1,0 +1,412 @@
+{
+  "itemId" : "_kPODEMJFEei12d6Nkg1q8Q",
+  "contextList" : [ {
+    "contextName" : "prod",
+    "repoId" : "_McuX8KloEemvdbMxCJroiw",
+    "parameterList" : [ {
+      "id" : "_HSH7TjpZEe2N1uv-gQbK-w",
+      "name" : "RETENTION_BACKUP_FILE"
+    }, {
+      "id" : "_HSH7TzpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_Url"
+    }, {
+      "id" : "_HSH7UDpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_Password"
+    }, {
+      "id" : "_HSH7UTpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_Username"
+    }, {
+      "id" : "_HSH7UjpZEe2N1uv-gQbK-w",
+      "name" : "TALEND_PATH_FILE_CSV"
+    }, {
+      "id" : "_HSH7UzpZEe2N1uv-gQbK-w",
+      "name" : "DWH_AT_MAIL_NOTIFY"
+    }, {
+      "id" : "_HSH7VDpZEe2N1uv-gQbK-w",
+      "name" : "DWH_AT_MAIL_SMTP_HOST"
+    }, {
+      "id" : "_HSH7VTpZEe2N1uv-gQbK-w",
+      "name" : "DWH_AT_MAIL_SMTP_PORT"
+    }, {
+      "id" : "_HSH7VjpZEe2N1uv-gQbK-w",
+      "name" : "DWH_AT_MAIL_SMTP_USER"
+    }, {
+      "id" : "_HSH7VzpZEe2N1uv-gQbK-w",
+      "name" : "DWH_AT_MAIL_SMTP_PWD"
+    }, {
+      "id" : "_HSH7WDpZEe2N1uv-gQbK-w",
+      "name" : "DWH_AT_MAIL_SMTP_DEST"
+    }, {
+      "id" : "_HSH7WTpZEe2N1uv-gQbK-w",
+      "name" : "TALEND_PATH_LOG"
+    }, {
+      "id" : "_HSH7WjpZEe2N1uv-gQbK-w",
+      "name" : "RESERVATION_PROCESS_ID"
+    }, {
+      "id" : "_HSH7WzpZEe2N1uv-gQbK-w",
+      "name" : "HOST_FTP_UPLOAD_IMG"
+    }, {
+      "id" : "_HSH7XDpZEe2N1uv-gQbK-w",
+      "name" : "PORT_FTP_UPLOAD_IMG"
+    }, {
+      "id" : "_HSH7XTpZEe2N1uv-gQbK-w",
+      "name" : "USER_FTP_UPLOAD_IMG"
+    }, {
+      "id" : "_HSH7XjpZEe2N1uv-gQbK-w",
+      "name" : "PWD_FTP_UPLOAD_IMG"
+    }, {
+      "id" : "_HSH7XzpZEe2N1uv-gQbK-w",
+      "name" : "DIR_FTP_UPLOAD_IMG1"
+    }, {
+      "id" : "_HSH7YDpZEe2N1uv-gQbK-w",
+      "name" : "NOME_FILE_DATASOURCE30"
+    }, {
+      "id" : "_HSH7YTpZEe2N1uv-gQbK-w",
+      "name" : "CLOUDINARY_CLOUD_NAME"
+    }, {
+      "id" : "_HSH7YjpZEe2N1uv-gQbK-w",
+      "name" : "CLOUDINARY_API_KEY"
+    }, {
+      "id" : "_HSH7YzpZEe2N1uv-gQbK-w",
+      "name" : "CLOUDINARY_API_SECRET"
+    }, {
+      "id" : "_HSH7ZDpZEe2N1uv-gQbK-w",
+      "name" : "CLOUDINARY_FOLDER"
+    }, {
+      "id" : "_HSH7ZTpZEe2N1uv-gQbK-w",
+      "name" : "DIR_FTP_UPLOAD_IMG2"
+    }, {
+      "id" : "_HSH7ZjpZEe2N1uv-gQbK-w",
+      "name" : "DIR_FTP_UPLOAD_IMG3"
+    }, {
+      "id" : "_HSH7ZzpZEe2N1uv-gQbK-w",
+      "name" : "NOME_FILE_DATASOURCE31"
+    }, {
+      "id" : "_HSH7aDpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_AUTH_URL"
+    }, {
+      "id" : "_HSH7aTpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_AUTH_HTTP_BODY"
+    }, {
+      "id" : "_HSH7ajpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_AUTH_CONTENT_TYPE"
+    }, {
+      "id" : "_HSH7azpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_AUTH_TOKEN_ACCESS"
+    }, {
+      "id" : "_HSH7bDpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_AUTH_CLIENT_ID"
+    }, {
+      "id" : "_HSH7bTpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_AUTH_CLIENT_SECRET"
+    }, {
+      "id" : "_HSH7bjpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_METHOD_ASSET"
+    }, {
+      "id" : "_HSH7bzpZEe2N1uv-gQbK-w",
+      "name" : "CLOUDINARY_STATIC_PATH_UPLOAD"
+    }, {
+      "id" : "_HSH7cDpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_OCI_Path"
+    }, {
+      "id" : "_HSH7cTpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_OCI_Profile"
+    }, {
+      "id" : "_HSH7cjpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_OCI_NameSpace"
+    }, {
+      "id" : "_HSH7czpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_OCI_Bucket"
+    }, {
+      "id" : "_HSH7dDpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_OCI_ContentType"
+    }, {
+      "id" : "_HSH7dTpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_OCI_Region"
+    }, {
+      "id" : "_HSH7djpZEe2N1uv-gQbK-w",
+      "name" : "NOME_FILE_DATASOURCE32"
+    }, {
+      "id" : "_HSH7dzpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_METHOD_PRODUCT_LIST"
+    }, {
+      "id" : "_HSH7eDpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_METHOD_PRODUCT_LIST_QP"
+    }, {
+      "id" : "_HSH7eTpZEe2N1uv-gQbK-w",
+      "name" : "NOME_FILE_DATASOURCE33"
+    } ]
+  }, {
+    "contextName" : "dev",
+    "repoId" : "_McuX8KloEemvdbMxCJroiw",
+    "parameterList" : [ {
+      "id" : "_pR4E-h93Eey6itjIdNU6Tw",
+      "name" : "RETENTION_BACKUP_FILE"
+    }, {
+      "id" : "_pR4E-x93Eey6itjIdNU6Tw",
+      "name" : "ORACLE_CLOUD_Url"
+    }, {
+      "id" : "_pR4E_B93Eey6itjIdNU6Tw",
+      "name" : "ORACLE_CLOUD_Password"
+    }, {
+      "id" : "_pR4E_R93Eey6itjIdNU6Tw",
+      "name" : "ORACLE_CLOUD_Username"
+    }, {
+      "id" : "_pR4E_h93Eey6itjIdNU6Tw",
+      "name" : "TALEND_PATH_FILE_CSV"
+    }, {
+      "id" : "_pR4FBR93Eey6itjIdNU6Tw",
+      "name" : "DWH_AT_MAIL_NOTIFY"
+    }, {
+      "id" : "_pR4FBh93Eey6itjIdNU6Tw",
+      "name" : "DWH_AT_MAIL_SMTP_HOST"
+    }, {
+      "id" : "_pR4FBx93Eey6itjIdNU6Tw",
+      "name" : "DWH_AT_MAIL_SMTP_PORT"
+    }, {
+      "id" : "_pR4FCB93Eey6itjIdNU6Tw",
+      "name" : "DWH_AT_MAIL_SMTP_USER"
+    }, {
+      "id" : "_pR4FCR93Eey6itjIdNU6Tw",
+      "name" : "DWH_AT_MAIL_SMTP_PWD"
+    }, {
+      "id" : "_pR4FCh93Eey6itjIdNU6Tw",
+      "name" : "DWH_AT_MAIL_SMTP_DEST"
+    }, {
+      "id" : "_pR4FCx93Eey6itjIdNU6Tw",
+      "name" : "TALEND_PATH_LOG"
+    }, {
+      "id" : "_pR4FDB93Eey6itjIdNU6Tw",
+      "name" : "RESERVATION_PROCESS_ID"
+    }, {
+      "id" : "_pR4FDR93Eey6itjIdNU6Tw",
+      "name" : "HOST_FTP_UPLOAD_IMG"
+    }, {
+      "id" : "_pR4FDh93Eey6itjIdNU6Tw",
+      "name" : "PORT_FTP_UPLOAD_IMG"
+    }, {
+      "id" : "_pR4FDx93Eey6itjIdNU6Tw",
+      "name" : "USER_FTP_UPLOAD_IMG"
+    }, {
+      "id" : "_pR4FEB93Eey6itjIdNU6Tw",
+      "name" : "PWD_FTP_UPLOAD_IMG"
+    }, {
+      "id" : "_pR4FER93Eey6itjIdNU6Tw",
+      "name" : "DIR_FTP_UPLOAD_IMG1"
+    }, {
+      "id" : "_ZM4tsUeMEeyt85uYn1j6RQ",
+      "name" : "NOME_FILE_DATASOURCE30"
+    }, {
+      "id" : "_zjrlxErCEey3LLzGqQmFRA",
+      "name" : "CLOUDINARY_CLOUD_NAME"
+    }, {
+      "id" : "_zjrlxUrCEey3LLzGqQmFRA",
+      "name" : "CLOUDINARY_API_KEY"
+    }, {
+      "id" : "_zjrlxkrCEey3LLzGqQmFRA",
+      "name" : "CLOUDINARY_API_SECRET"
+    }, {
+      "id" : "_zjrlx0rCEey3LLzGqQmFRA",
+      "name" : "CLOUDINARY_FOLDER"
+    }, {
+      "id" : "_wIR1AEu2EeygEZmD2XfqwQ",
+      "name" : "DIR_FTP_UPLOAD_IMG2"
+    }, {
+      "id" : "_wIR1AUu2EeygEZmD2XfqwQ",
+      "name" : "DIR_FTP_UPLOAD_IMG3"
+    }, {
+      "id" : "_R5wFoVEAEeyrJp5mbkY7sw",
+      "name" : "NOME_FILE_DATASOURCE31"
+    }, {
+      "id" : "_nDnJZ1ECEeyrJp5mbkY7sw",
+      "name" : "AKENEOPIM_AUTH_URL"
+    }, {
+      "id" : "_nDnJaFECEeyrJp5mbkY7sw",
+      "name" : "AKENEOPIM_AUTH_HTTP_BODY"
+    }, {
+      "id" : "_nDnJaVECEeyrJp5mbkY7sw",
+      "name" : "AKENEOPIM_AUTH_CONTENT_TYPE"
+    }, {
+      "id" : "_nDnJalECEeyrJp5mbkY7sw",
+      "name" : "AKENEOPIM_AUTH_TOKEN_ACCESS"
+    }, {
+      "id" : "_nDnJa1ECEeyrJp5mbkY7sw",
+      "name" : "AKENEOPIM_AUTH_CLIENT_ID"
+    }, {
+      "id" : "_nDnJbFECEeyrJp5mbkY7sw",
+      "name" : "AKENEOPIM_AUTH_CLIENT_SECRET"
+    }, {
+      "id" : "_nDnJbVECEeyrJp5mbkY7sw",
+      "name" : "AKENEOPIM_METHOD_ASSET"
+    }, {
+      "id" : "_3N0q4W_SEey4EIlFu6QiUg",
+      "name" : "CLOUDINARY_STATIC_PATH_UPLOAD"
+    }, {
+      "id" : "_Qf7_hph8EeyQ5dYFHesSWQ",
+      "name" : "ORACLE_CLOUD_OCI_Path"
+    }, {
+      "id" : "_Qf7_h5h8EeyQ5dYFHesSWQ",
+      "name" : "ORACLE_CLOUD_OCI_Profile"
+    }, {
+      "id" : "_Qf7_iJh8EeyQ5dYFHesSWQ",
+      "name" : "ORACLE_CLOUD_OCI_NameSpace"
+    }, {
+      "id" : "_Qf7_iZh8EeyQ5dYFHesSWQ",
+      "name" : "ORACLE_CLOUD_OCI_Bucket"
+    }, {
+      "id" : "_Qf7_iph8EeyQ5dYFHesSWQ",
+      "name" : "ORACLE_CLOUD_OCI_ContentType"
+    }, {
+      "id" : "_Qf7_i5h8EeyQ5dYFHesSWQ",
+      "name" : "ORACLE_CLOUD_OCI_Region"
+    }, {
+      "id" : "_lxZuwfhzEey9DOrMtmm95Q",
+      "name" : "NOME_FILE_DATASOURCE32"
+    }, {
+      "id" : "_vVwCUftyEey8OOFJQflZgA",
+      "name" : "AKENEOPIM_METHOD_PRODUCT_LIST"
+    }, {
+      "id" : "_mDjkkft6EeyA45MmwqZvfw",
+      "name" : "AKENEOPIM_METHOD_PRODUCT_LIST_QP"
+    }, {
+      "id" : "_o4biYQwBEe2W79H2WR2h4w",
+      "name" : "NOME_FILE_DATASOURCE33"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_McuX8KloEemvdbMxCJroiw",
+    "parameterList" : [ {
+      "id" : "_HSH7ITpZEe2N1uv-gQbK-w",
+      "name" : "RETENTION_BACKUP_FILE"
+    }, {
+      "id" : "_HSH7IjpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_Url"
+    }, {
+      "id" : "_HSH7IzpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_Password"
+    }, {
+      "id" : "_HSH7JDpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_Username"
+    }, {
+      "id" : "_HSH7JTpZEe2N1uv-gQbK-w",
+      "name" : "TALEND_PATH_FILE_CSV"
+    }, {
+      "id" : "_HSH7JjpZEe2N1uv-gQbK-w",
+      "name" : "DWH_AT_MAIL_NOTIFY"
+    }, {
+      "id" : "_HSH7JzpZEe2N1uv-gQbK-w",
+      "name" : "DWH_AT_MAIL_SMTP_HOST"
+    }, {
+      "id" : "_HSH7KDpZEe2N1uv-gQbK-w",
+      "name" : "DWH_AT_MAIL_SMTP_PORT"
+    }, {
+      "id" : "_HSH7KTpZEe2N1uv-gQbK-w",
+      "name" : "DWH_AT_MAIL_SMTP_USER"
+    }, {
+      "id" : "_HSH7KjpZEe2N1uv-gQbK-w",
+      "name" : "DWH_AT_MAIL_SMTP_PWD"
+    }, {
+      "id" : "_HSH7KzpZEe2N1uv-gQbK-w",
+      "name" : "DWH_AT_MAIL_SMTP_DEST"
+    }, {
+      "id" : "_HSH7LDpZEe2N1uv-gQbK-w",
+      "name" : "TALEND_PATH_LOG"
+    }, {
+      "id" : "_HSH7LTpZEe2N1uv-gQbK-w",
+      "name" : "RESERVATION_PROCESS_ID"
+    }, {
+      "id" : "_HSH7LjpZEe2N1uv-gQbK-w",
+      "name" : "HOST_FTP_UPLOAD_IMG"
+    }, {
+      "id" : "_HSH7LzpZEe2N1uv-gQbK-w",
+      "name" : "PORT_FTP_UPLOAD_IMG"
+    }, {
+      "id" : "_HSH7MDpZEe2N1uv-gQbK-w",
+      "name" : "USER_FTP_UPLOAD_IMG"
+    }, {
+      "id" : "_HSH7MTpZEe2N1uv-gQbK-w",
+      "name" : "PWD_FTP_UPLOAD_IMG"
+    }, {
+      "id" : "_HSH7MjpZEe2N1uv-gQbK-w",
+      "name" : "DIR_FTP_UPLOAD_IMG1"
+    }, {
+      "id" : "_HSH7MzpZEe2N1uv-gQbK-w",
+      "name" : "NOME_FILE_DATASOURCE30"
+    }, {
+      "id" : "_HSH7NDpZEe2N1uv-gQbK-w",
+      "name" : "CLOUDINARY_CLOUD_NAME"
+    }, {
+      "id" : "_HSH7NTpZEe2N1uv-gQbK-w",
+      "name" : "CLOUDINARY_API_KEY"
+    }, {
+      "id" : "_HSH7NjpZEe2N1uv-gQbK-w",
+      "name" : "CLOUDINARY_API_SECRET"
+    }, {
+      "id" : "_HSH7NzpZEe2N1uv-gQbK-w",
+      "name" : "CLOUDINARY_FOLDER"
+    }, {
+      "id" : "_HSH7ODpZEe2N1uv-gQbK-w",
+      "name" : "DIR_FTP_UPLOAD_IMG2"
+    }, {
+      "id" : "_HSH7OTpZEe2N1uv-gQbK-w",
+      "name" : "DIR_FTP_UPLOAD_IMG3"
+    }, {
+      "id" : "_HSH7OjpZEe2N1uv-gQbK-w",
+      "name" : "NOME_FILE_DATASOURCE31"
+    }, {
+      "id" : "_HSH7OzpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_AUTH_URL"
+    }, {
+      "id" : "_HSH7PDpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_AUTH_HTTP_BODY"
+    }, {
+      "id" : "_HSH7PTpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_AUTH_CONTENT_TYPE"
+    }, {
+      "id" : "_HSH7PjpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_AUTH_TOKEN_ACCESS"
+    }, {
+      "id" : "_HSH7PzpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_AUTH_CLIENT_ID"
+    }, {
+      "id" : "_HSH7QDpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_AUTH_CLIENT_SECRET"
+    }, {
+      "id" : "_HSH7QTpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_METHOD_ASSET"
+    }, {
+      "id" : "_HSH7QjpZEe2N1uv-gQbK-w",
+      "name" : "CLOUDINARY_STATIC_PATH_UPLOAD"
+    }, {
+      "id" : "_HSH7QzpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_OCI_Path"
+    }, {
+      "id" : "_HSH7RDpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_OCI_Profile"
+    }, {
+      "id" : "_HSH7RTpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_OCI_NameSpace"
+    }, {
+      "id" : "_HSH7RjpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_OCI_Bucket"
+    }, {
+      "id" : "_HSH7RzpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_OCI_ContentType"
+    }, {
+      "id" : "_HSH7SDpZEe2N1uv-gQbK-w",
+      "name" : "ORACLE_CLOUD_OCI_Region"
+    }, {
+      "id" : "_HSH7STpZEe2N1uv-gQbK-w",
+      "name" : "NOME_FILE_DATASOURCE32"
+    }, {
+      "id" : "_HSH7SjpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_METHOD_PRODUCT_LIST"
+    }, {
+      "id" : "_HSH7SzpZEe2N1uv-gQbK-w",
+      "name" : "AKENEOPIM_METHOD_PRODUCT_LIST_QP"
+    }, {
+      "id" : "_HSH7TDpZEe2N1uv-gQbK-w",
+      "name" : "NOME_FILE_DATASOURCE33"
+    } ]
+  } ]
+}
