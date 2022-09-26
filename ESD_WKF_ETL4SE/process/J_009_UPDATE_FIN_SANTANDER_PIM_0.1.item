@@ -2,14 +2,14 @@
   <context confirmationNeeded="false" name="prod">
     <contextParameter comment="" internalId="_gWUXoDnFEe2Bt5XBBSqOpg" name="RETENTION_BACKUP_FILE" prompt="RETENTION_BACKUP_FILE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="3"/>
     <contextParameter comment="" internalId="_gWUXoTnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Url" prompt="ORACLE_CLOUD_Url?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="jdbc:oracle:thin:@autotorinodwh_medium?TNS_ADMIN=E:\\Talend\\Talend-ConfConnections\\OracleCloud\\Wallet_autotorinodwh"/>
-    <contextParameter comment="" internalId="_gWUXojnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:GwzFUVxc65buls0bqMijsExlnrSJHk5OSEXDGMn+3cdidziR6M9GWOnF"/>
+    <contextParameter comment="" internalId="_gWUXojnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:LSYtHgN4FOT7ZYgKyhzL6QkLfWNB1cnX1a9E+K7NrPDyjv4PRob4arn9"/>
     <contextParameter comment="" internalId="_gWUXoznFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Username" prompt="ORACLE_CLOUD_Username?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DI_DATA_CONFIG"/>
     <contextParameter comment="" internalId="_gWUXpDnFEe2Bt5XBBSqOpg" name="TALEND_PATH_FILE_CSV" prompt="TALEND_PATH_FILE_CSV?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="E:/Talend/Talend-Output/DataSource/ESD_WKF/StorageFisico/"/>
     <contextParameter comment="" internalId="_gWUXpTnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Server" prompt="SIPADX_DB_Server?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="192.168.1.113"/>
     <contextParameter comment="" internalId="_gWUXpjnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Port" prompt="SIPADX_DB_Port?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="5432"/>
     <contextParameter comment="" internalId="_gWUXpznFEe2Bt5XBBSqOpg" name="SIPADX_DB_Database" prompt="SIPADX_DB_Database?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="sipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactorysipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory&amp;socketTimeout=0"/>
     <contextParameter comment="" internalId="_gWUXqDnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Login" prompt="SIPADX_DB_Login?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="userread"/>
-    <contextParameter comment="" internalId="_gWUXqTnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:ddanABvSCj0/oR+4LLi+zv6HDGtvtJcIHy06HpXO5GY0gHbl"/>
+    <contextParameter comment="" internalId="_gWUXqTnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:mWAMf4ekl911TYedV4i8DG2uVzJElyhjgZL0E6cYyEHjiI27"/>
     <contextParameter comment="" internalId="_gWUXqjnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Schema" prompt="SIPADX_DB_Schema?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="public"/>
     <contextParameter comment="" internalId="_gWUXqznFEe2Bt5XBBSqOpg" name="DWH_AT_MAIL_NOTIFY" prompt="DWH_AT_MAIL_NOTIFY?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="true"/>
     <contextParameter comment="" internalId="_gWUXrDnFEe2Bt5XBBSqOpg" name="DWH_AT_MAIL_SMTP_HOST" prompt="DWH_AT_MAIL_SMTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="smtp.autotorino.local"/>
@@ -22,7 +22,7 @@
     <contextParameter comment="" internalId="_gWUXsznFEe2Bt5XBBSqOpg" name="HOST_FTP_STOCK" prompt="HOST_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="ftp.autotorino.it"/>
     <contextParameter comment="" internalId="_gWUXtDnFEe2Bt5XBBSqOpg" name="PORT_FTP_STOCK" prompt="PORT_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="21"/>
     <contextParameter comment="" internalId="_gWUXtTnFEe2Bt5XBBSqOpg" name="USER_FTP_STOCK" prompt="USER_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="eng_ftpuser"/>
-    <contextParameter comment="" internalId="_gWUXtjnFEe2Bt5XBBSqOpg" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:ffHcAGR3Fnn5/0OA98HHHskDyNcd96/xDyGlMA5QotAlBHL9yBQaSqr93uk="/>
+    <contextParameter comment="" internalId="_gWUXtjnFEe2Bt5XBBSqOpg" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:P+4HKYf1Ui8TDQNsG9pLRK1q7ktLZlMPK6CMDhkw6aJN8i7UqmwmbzaNIVc="/>
     <contextParameter comment="" internalId="_gWUXtznFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE50" prompt="NOME_FILEDATASOURCE50?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD50_PIM_VEHICLES_FOR_FINDOMESTIC.csv"/>
     <contextParameter comment="" internalId="_gWUXuDnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE51" prompt="NOME_FILEDATASOURCE51?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD51_FINDOMESTIC_VEHICLES_FINANCED.csv"/>
     <contextParameter comment="" internalId="_gWUXuTnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE52" prompt="NOME_FILEDATASOURCE52?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD52_PIM_UPDATE_FINANCING_VEHICLES.csv"/>
@@ -34,7 +34,7 @@
     <contextParameter comment="" internalId="_gWUXvznFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CONTENT_TYPE" prompt="AKENEOPIM_AUTH_CONTENT_TYPE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="application/x-www-form-urlencoded"/>
     <contextParameter comment="" internalId="_gWUXwDnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_TOKEN_ACCESS" prompt="AKENEOPIM_AUTH_TOKEN_ACCESS?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="access_token"/>
     <contextParameter comment="" internalId="_gWUXwTnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_ID" prompt="AKENEOPIM_AUTH_CLIENT_ID?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="9_19vob8y38la84s4s448cgoscgow0wo4wkwwwwssoksksogkc4k"/>
-    <contextParameter comment="" internalId="_gWUXwjnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:0NA1/TFJHeCAZbY5cKU+0HwuztFRRC3MYD745eRc2NlqCOQbne/dtxG68XG7hpFcOF2QYxVvbIrHpSOT+ssNzjUbuDG1sbBMy0sx7uN/"/>
+    <contextParameter comment="" internalId="_gWUXwjnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:2UPxOXD0C9nmAjawZXe+WiYfWGHPvdOd78wZImcgKxbKa0OzuCrIy+IdPv2kdctOL8NppzCcrQlmvoSbf6b19Vzw56m3RG4aptwpc/Vq"/>
     <contextParameter comment="" internalId="_gWUXwznFEe2Bt5XBBSqOpg" name="AKENEOPIM_METHOD_PRODUCT_LIST" prompt="AKENEOPIM_METHOD_PRODUCT_LIST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino.cloud.akeneo.com/api/rest/v1/products"/>
     <contextParameter comment="" internalId="_gWUXxDnFEe2Bt5XBBSqOpg" name="AKENEOPIM_QUERY_PARAM_FIRST_FIN" prompt="AKENEOPIM_QUERY_PARAM_FIRST_FIN?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="{'family':[{'operator':'IN','value':['veicoli_AUTO','veicoli_MOTO','veicoli_COMMERCIALI']}],'fin_finanziaria':[{'operator':'IN','value':['findomestic_retail','findomestic_retail_maxirata']}],'prezzo_vendita_manuale':[{'operator':'NOT EMPTY'}],'fin_url_preventivo':[{'operator':'EMPTY'}],'data_uscita_stock':[{'operator':'EMPTY'}]}"/>
     <contextParameter comment="" internalId="_gWUXxTnFEe2Bt5XBBSqOpg" name="TRUSTORE_PATH" prompt="TRUSTORE_PATH?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="E:/Users/Public/Shared_Talend/20210825_ESD_WKF/Config/jssecacerts_FIND"/>
@@ -64,7 +64,7 @@
     <contextParameter comment="" internalId="_gWUX3TnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_HOST" prompt="DEALERK_FTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="upload.dealerk.it"/>
     <contextParameter comment="" internalId="_gWUX3jnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PORT" prompt="DEALERK_FTP_PORT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="22"/>
     <contextParameter comment="" internalId="_gWUX3znFEe2Bt5XBBSqOpg" name="DEALERK_FTP_USER" prompt="DEALERK_FTP_USER?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="autotorino"/>
-    <contextParameter comment="" internalId="_gWdhkDnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:g4Sy5OJNSvBmuBvgKVi0dfzl1PNEzIFpX8to0aBvohGUUZIHd7iBlPEKdg=="/>
+    <contextParameter comment="" internalId="_gWdhkDnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:1oih2piDBHzW3yaHKxfD+00X05EMXZd7oQOVnLSwuSB7a3pl+q9Cg04VqQ=="/>
     <contextParameter comment="" internalId="_gWdhkTnFEe2Bt5XBBSqOpg" name="AKENEOPIM_METHOD_ATTR_OPT" prompt="AKENEOPIM_METHOD_ATTR_OPT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino.cloud.akeneo.com/api/rest/v1/attributes/{code}/options"/>
     <contextParameter comment="" internalId="_gWdhkjnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE60" prompt="NOME_FILEDATASOURCE60?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD60_PIM_VEHICLES_FOR_SANTANDER.csv"/>
     <contextParameter comment="" internalId="_gWdhkznFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE61" prompt="NOME_FILEDATASOURCE61?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD61_SANTANDER_VEHICLES_FINANCED.csv"/>
@@ -80,14 +80,14 @@
   <context confirmationNeeded="false" name="dev">
     <contextParameter comment="" internalId="_gWdhnDnFEe2Bt5XBBSqOpg" name="RETENTION_BACKUP_FILE" prompt="RETENTION_BACKUP_FILE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="3"/>
     <contextParameter comment="" internalId="_gWdhnTnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Url" prompt="ORACLE_CLOUD_Url?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="jdbc:oracle:thin:@dwhautosvil_medium?TNS_ADMIN=E:\\Talend\\Talend-ConfConnections\\OracleCloud\\Wallet_autotorinodwh"/>
-    <contextParameter comment="" internalId="_gWdhnjnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:SZAEiWPoAFN5ukCLujg1MDeGITFtcogdA2nffxMMEqW+87V/RxaodsFt"/>
+    <contextParameter comment="" internalId="_gWdhnjnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:cfkEkn+TGZ1wtFNeEGLkYvvuZ3c532EpiPxueDXNd+xxX7iOpgZrAHkk"/>
     <contextParameter comment="" internalId="_gWdhnznFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Username" prompt="ORACLE_CLOUD_Username?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DI_DATA_CONFIG"/>
     <contextParameter comment="" internalId="_gWdhoDnFEe2Bt5XBBSqOpg" name="TALEND_PATH_FILE_CSV" prompt="TALEND_PATH_FILE_CSV?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="E:/Talend/Talend-Output/DataSource/ESD_WKF/StorageFisico/"/>
     <contextParameter comment="" internalId="_gWdhoTnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Server" prompt="SIPADX_DB_Server?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="192.168.1.113"/>
     <contextParameter comment="" internalId="_gWdhojnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Port" prompt="SIPADX_DB_Port?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="5432"/>
     <contextParameter comment="" internalId="_gWdhoznFEe2Bt5XBBSqOpg" name="SIPADX_DB_Database" prompt="SIPADX_DB_Database?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="sipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactorysipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory&amp;socketTimeout=0"/>
     <contextParameter comment="" internalId="_gWdhpDnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Login" prompt="SIPADX_DB_Login?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="userread"/>
-    <contextParameter comment="" internalId="_gWdhpTnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:2f7pCUOwUD+eD7jtrtktqQrECU1UyOLOirZpKehUMpDkQy4K"/>
+    <contextParameter comment="" internalId="_gWdhpTnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:yj6tMcC6Yq1S9Sqj+PwOJcq047ycWczmjRaW4NDVEbmv5g0C"/>
     <contextParameter comment="" internalId="_gWdhpjnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Schema" prompt="SIPADX_DB_Schema?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="public"/>
     <contextParameter comment="" internalId="_gWdhpznFEe2Bt5XBBSqOpg" name="DWH_AT_MAIL_NOTIFY" prompt="DWH_AT_MAIL_NOTIFY?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="true"/>
     <contextParameter comment="" internalId="_gWdhqDnFEe2Bt5XBBSqOpg" name="DWH_AT_MAIL_SMTP_HOST" prompt="DWH_AT_MAIL_SMTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="smtp.autotorino.local"/>
@@ -100,7 +100,7 @@
     <contextParameter comment="" internalId="_gWdhrznFEe2Bt5XBBSqOpg" name="HOST_FTP_STOCK" prompt="HOST_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="ftp.autotorino.it"/>
     <contextParameter comment="" internalId="_gWdhsDnFEe2Bt5XBBSqOpg" name="PORT_FTP_STOCK" prompt="PORT_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="21"/>
     <contextParameter comment="" internalId="_gWdhsTnFEe2Bt5XBBSqOpg" name="USER_FTP_STOCK" prompt="USER_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="eng_ftpuser"/>
-    <contextParameter comment="" internalId="_gWdhsjnFEe2Bt5XBBSqOpg" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:76nbeJ2lhiQ+XE4kG6PerE1DlnWn26POQ8h0EDo6ZXs4DM9otvW/s+mC0nE="/>
+    <contextParameter comment="" internalId="_gWdhsjnFEe2Bt5XBBSqOpg" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:t+bz8Lyo+RsMI5qtmje25hG2/tMKeCjyTRMTzd8ZRTuxe4uUnCFkVJ1FsYo="/>
     <contextParameter comment="" internalId="_gWdhsznFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE50" prompt="NOME_FILEDATASOURCE50?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD50_PIM_VEHICLES_FOR_FINDOMESTIC.csv"/>
     <contextParameter comment="" internalId="_gWdhtDnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE51" prompt="NOME_FILEDATASOURCE51?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD51_FINDOMESTIC_VEHICLES_FINANCED.csv"/>
     <contextParameter comment="" internalId="_gWdhtTnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE52" prompt="NOME_FILEDATASOURCE52?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD52_PIM_UPDATE_FINANCING_VEHICLES.csv"/>
@@ -112,7 +112,7 @@
     <contextParameter comment="" internalId="_gWdhuznFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CONTENT_TYPE" prompt="AKENEOPIM_AUTH_CONTENT_TYPE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="application/x-www-form-urlencoded"/>
     <contextParameter comment="" internalId="_gWdhvDnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_TOKEN_ACCESS" prompt="AKENEOPIM_AUTH_TOKEN_ACCESS?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="access_token"/>
     <contextParameter comment="" internalId="_gWdhvTnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_ID" prompt="AKENEOPIM_AUTH_CLIENT_ID?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="2_2byflfgazckkwco4o4cs8s0okskkkkk4080cocw4k4scsosskg"/>
-    <contextParameter comment="" internalId="_gWdhvjnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:0GrQPetA1z+3fcj3X+RQYa0/WS89I9c/AompiblLSLJ3LrjCmMzH+TUoxze/V9CEdA2zhrQ3pna9qGwArAVGKldjBrN6auqsBoxgD7g3"/>
+    <contextParameter comment="" internalId="_gWdhvjnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:TnXJjrYJ4hJDIiM3ARqiTC/eCMSwFgv7cPTwufCe+YlLpjNLejZpEEHE6bhIOjDyeL+aSHTR+NbU+jMCsNfPzZviJSHBRix5r4bFLG6h"/>
     <contextParameter comment="" internalId="_gWdhvznFEe2Bt5XBBSqOpg" name="AKENEOPIM_METHOD_PRODUCT_LIST" prompt="AKENEOPIM_METHOD_PRODUCT_LIST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino-dev.cloud.akeneo.com/api/rest/v1/products"/>
     <contextParameter comment="" internalId="_gWdhwDnFEe2Bt5XBBSqOpg" name="AKENEOPIM_QUERY_PARAM_FIRST_FIN" prompt="AKENEOPIM_QUERY_PARAM_FIRST_FIN?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="{'family':[{'operator':'IN','value':['veicoli_AUTO','veicoli_MOTO','veicoli_COMMERCIALI']}],'fin_finanziaria':[{'operator':'IN','value':['findomestic_retail','findomestic_retail_maxirata']}],'prezzo_vendita_manuale':[{'operator':'NOT EMPTY'}],'fin_url_preventivo':[{'operator':'EMPTY'}],'data_uscita_stock':[{'operator':'EMPTY'}]}"/>
     <contextParameter comment="" internalId="_gWdhwTnFEe2Bt5XBBSqOpg" name="TRUSTORE_PATH" prompt="TRUSTORE_PATH?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="E:/Users/Public/Shared_Talend/20210825_ESD_WKF/Config/jssecacerts_FIND"/>
@@ -142,7 +142,7 @@
     <contextParameter comment="" internalId="_gWdh2TnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_HOST" prompt="DEALERK_FTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="upload.dealerk.it"/>
     <contextParameter comment="" internalId="_gWdh2jnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PORT" prompt="DEALERK_FTP_PORT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="22"/>
     <contextParameter comment="" internalId="_gWdh2znFEe2Bt5XBBSqOpg" name="DEALERK_FTP_USER" prompt="DEALERK_FTP_USER?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="autotorino_newftp"/>
-    <contextParameter comment="" internalId="_gWdh3DnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:j4J4jjNewubXabc1QQuzeXJqxbQ9Cl+1Vemzci8tofSzgTglaSjd0giusxA="/>
+    <contextParameter comment="" internalId="_gWdh3DnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:Uo5h3+VnJ4I7mH3QA7DbukYiWfhwjhD4Lu9jh4Ma0O+5VfNGZwYzDObBRBM="/>
     <contextParameter comment="" internalId="_gWdh3TnFEe2Bt5XBBSqOpg" name="AKENEOPIM_METHOD_ATTR_OPT" prompt="AKENEOPIM_METHOD_ATTR_OPT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino-dev.cloud.akeneo.com/api/rest/v1/attributes/{code}/options"/>
     <contextParameter comment="" internalId="_gWdh3jnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE60" prompt="NOME_FILEDATASOURCE60?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD60_PIM_VEHICLES_FOR_SANTANDER.csv"/>
     <contextParameter comment="" internalId="_gWdh3znFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE61" prompt="NOME_FILEDATASOURCE61?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD61_SANTANDER_VEHICLES_FINANCED.csv"/>
@@ -158,14 +158,14 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" internalId="_gWdh6DnFEe2Bt5XBBSqOpg" name="RETENTION_BACKUP_FILE" prompt="RETENTION_BACKUP_FILE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="3"/>
     <contextParameter comment="" internalId="_gWdh6TnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Url" prompt="ORACLE_CLOUD_Url?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="jdbc:oracle:thin:@dwhautosvil_medium?TNS_ADMIN=C:\\Talend\\Talend-ConfConnections\\OracleCloud\\Wallet_autotorinodwh"/>
-    <contextParameter comment="" internalId="_gWdh6jnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:C0fgWY7VSQwuYKXI4BNYfHK26EM8bGhkc10GzStCwNAWkQBh1x1K/3X7"/>
+    <contextParameter comment="" internalId="_gWdh6jnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:HrWjc95cximBJDATiVTen5xv6wATu0kb67YJq+kV4dcdDuego2UwaXEN"/>
     <contextParameter comment="" internalId="_gWdh6znFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Username" prompt="ORACLE_CLOUD_Username?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DI_DATA_CONFIG"/>
     <contextParameter comment="" internalId="_gWdh7DnFEe2Bt5XBBSqOpg" name="TALEND_PATH_FILE_CSV" prompt="TALEND_PATH_FILE_CSV?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="C:/Talend/Talend-Output/DataSource/ESD_WKF/StorageFisico/"/>
     <contextParameter comment="" internalId="_gWdh7TnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Server" prompt="SIPADX_DB_Server?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="192.168.1.113"/>
     <contextParameter comment="" internalId="_gWdh7jnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Port" prompt="SIPADX_DB_Port?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="5432"/>
     <contextParameter comment="" internalId="_gWdh7znFEe2Bt5XBBSqOpg" name="SIPADX_DB_Database" prompt="SIPADX_DB_Database?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="sipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactorysipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory&amp;socketTimeout=0"/>
     <contextParameter comment="" internalId="_gWdh8DnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Login" prompt="SIPADX_DB_Login?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="userread"/>
-    <contextParameter comment="" internalId="_gWdh8TnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:+NeS57huBw2YVK+O+6xn0e4ePI/C/cmkAAOTaYRf3OXPf61A"/>
+    <contextParameter comment="" internalId="_gWdh8TnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:gUQjvtIERbka5obtJXnfVYJayJQl7Paf2OEppWtNAl/wUQFx"/>
     <contextParameter comment="" internalId="_gWdh8jnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Schema" prompt="SIPADX_DB_Schema?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="public"/>
     <contextParameter comment="" internalId="_gWdh8znFEe2Bt5XBBSqOpg" name="DWH_AT_MAIL_NOTIFY" prompt="DWH_AT_MAIL_NOTIFY?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="true"/>
     <contextParameter comment="" internalId="_gWdh9DnFEe2Bt5XBBSqOpg" name="DWH_AT_MAIL_SMTP_HOST" prompt="DWH_AT_MAIL_SMTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="smtp.autotorino.local"/>
@@ -178,7 +178,7 @@
     <contextParameter comment="" internalId="_gWdh-znFEe2Bt5XBBSqOpg" name="HOST_FTP_STOCK" prompt="HOST_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="ftp.autotorino.it"/>
     <contextParameter comment="" internalId="_gWdh_DnFEe2Bt5XBBSqOpg" name="PORT_FTP_STOCK" prompt="PORT_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="21"/>
     <contextParameter comment="" internalId="_gWdh_TnFEe2Bt5XBBSqOpg" name="USER_FTP_STOCK" prompt="USER_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="eng_ftpuser"/>
-    <contextParameter comment="" internalId="_gWdh_jnFEe2Bt5XBBSqOpg" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:wb1FAt7tEppVpolnp1W7wDihTuROktth0W2Xm1fm3SoWQwUDjNkLKixJxs0="/>
+    <contextParameter comment="" internalId="_gWdh_jnFEe2Bt5XBBSqOpg" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:FIAV1spTQREpjM/xxEgh+Nenf1IiQgBTafkWobfednL6O4WMnQSUTOObOg8="/>
     <contextParameter comment="" internalId="_gWdh_znFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE50" prompt="NOME_FILEDATASOURCE50?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD50_PIM_VEHICLES_FOR_FINDOMESTIC.csv"/>
     <contextParameter comment="" internalId="_gWdiADnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE51" prompt="NOME_FILEDATASOURCE51?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD51_FINDOMESTIC_VEHICLES_FINANCED.csv"/>
     <contextParameter comment="" internalId="_gWdiATnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE52" prompt="NOME_FILEDATASOURCE52?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD52_PIM_UPDATE_FINANCING_VEHICLES.csv"/>
@@ -190,7 +190,7 @@
     <contextParameter comment="" internalId="_gWdiBznFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CONTENT_TYPE" prompt="AKENEOPIM_AUTH_CONTENT_TYPE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="application/x-www-form-urlencoded"/>
     <contextParameter comment="" internalId="_gWdiCDnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_TOKEN_ACCESS" prompt="AKENEOPIM_AUTH_TOKEN_ACCESS?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="access_token"/>
     <contextParameter comment="" internalId="_gWdiCTnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_ID" prompt="AKENEOPIM_AUTH_CLIENT_ID?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="2_2byflfgazckkwco4o4cs8s0okskkkkk4080cocw4k4scsosskg"/>
-    <contextParameter comment="" internalId="_gWdiCjnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:hk5masS/ntMw7NXRVQKntI7BJp+LoFSvny48nkKpXRq/aChAKXtPQGldOyQMm/PeCeACbFHq98Ph3b7xeh9crKy/XuPQ7wBo9wMhZSWS"/>
+    <contextParameter comment="" internalId="_gWdiCjnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:OEtBfr0j5Ar3lRuygXOwdwLI/hUggQOAxUlyrIn6grykzRSHHpixwcpdXiGQrlJsN2zIWmOKffLnCL1NbGBLOz+urSVB0AjUJFxUQACs"/>
     <contextParameter comment="" internalId="_gWdiCznFEe2Bt5XBBSqOpg" name="AKENEOPIM_METHOD_PRODUCT_LIST" prompt="AKENEOPIM_METHOD_PRODUCT_LIST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino-dev.cloud.akeneo.com/api/rest/v1/products"/>
     <contextParameter comment="" internalId="_gWdiDDnFEe2Bt5XBBSqOpg" name="AKENEOPIM_QUERY_PARAM_FIRST_FIN" prompt="AKENEOPIM_QUERY_PARAM_FIRST_FIN?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="{'family':[{'operator':'IN','value':['veicoli_AUTO','veicoli_MOTO','veicoli_COMMERCIALI']}],'fin_finanziaria':[{'operator':'IN','value':['findomestic_retail','findomestic_retail_maxirata']}],'prezzo_vendita_manuale':[{'operator':'NOT EMPTY'}],'fin_url_preventivo':[{'operator':'EMPTY'}],'data_uscita_stock':[{'operator':'EMPTY'}]}"/>
     <contextParameter comment="" internalId="_gWdiDTnFEe2Bt5XBBSqOpg" name="TRUSTORE_PATH" prompt="TRUSTORE_PATH?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="C:/Talend/Talend-ConfConnections/Findomestic/jssecacerts_FIND"/>
@@ -220,7 +220,7 @@
     <contextParameter comment="" internalId="_gWdiJTnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_HOST" prompt="DEALERK_FTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="upload.dealerk.it"/>
     <contextParameter comment="" internalId="_gWdiJjnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PORT" prompt="DEALERK_FTP_PORT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="22"/>
     <contextParameter comment="" internalId="_gWdiJznFEe2Bt5XBBSqOpg" name="DEALERK_FTP_USER" prompt="DEALERK_FTP_USER?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="autotorino_newftp"/>
-    <contextParameter comment="" internalId="_gWdiKDnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:HHLB4Lip07EQk3CjqFbXFcQNhhvAVDmBWnsi8dJCTikcGL/it0baPyURpWM="/>
+    <contextParameter comment="" internalId="_gWdiKDnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:yebOQl6svOoRRlFU2I2HT7vYU/y9SqJEzwRfMKabhvCR6yjbCILsnzKNj3o="/>
     <contextParameter comment="" internalId="_gWdiKTnFEe2Bt5XBBSqOpg" name="AKENEOPIM_METHOD_ATTR_OPT" prompt="AKENEOPIM_METHOD_ATTR_OPT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino-dev.cloud.akeneo.com/api/rest/v1/attributes/{code}/options"/>
     <contextParameter comment="" internalId="_gWdiKjnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE60" prompt="NOME_FILEDATASOURCE60?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD60_PIM_VEHICLES_FOR_SANTANDER.csv"/>
     <contextParameter comment="" internalId="_gWdiKznFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE61" prompt="NOME_FILEDATASOURCE61?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD61_SANTANDER_VEHICLES_FINANCED.csv"/>
@@ -278,7 +278,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Tv+DMQQuDx5Nh5MukA2PTqkveaeJe5hrCQUd2A9X"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Hzmam1HxwL4u5Y/zmSl2PhEIP/TA92YvN0LvBSNa"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -313,7 +313,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:PHnwgm9hSB/Ny2/norJlrSpfwEqaFdteNNZfKjW4"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:iJ3yQCmRYuGOdYmKDmXEDq0BW+NroMQIklJBaf12"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -395,7 +395,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.ORACLE_CLOUD_Url"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:gpMCdbcH/ntRTg8NFRMBE7GjVbJSLzWbFo00L1hxg8llAu2IiFpNMg6fRi0pJWacB5tRj2rtjtL4"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:zCeejhABa5+aZPym29WENmgMG1QEaVCW9mYB7haaqLfKAywBH7BF9hcODWZqTNw5xxlDv9mVsafY"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -472,7 +472,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:NrXP121gb7SM2iwxKFYJt5sF3fuiVpxhStVlCJ3B"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:EmdUsWDfl2bFFdab5qnWhoDc6XwK7P3C+b92nVa2"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;TAL_JOB_PROCESS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -569,7 +569,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:zTeRF8byxKAmdIZWIevcqd4HsOYQVDWPOC7QIpvcqChdYRHnGbG5wqCShKhUtrT737UQVekLKC9U"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:lnR4VYaHoTF6PrkHWTG27uqOFyvS0SZsngmuEQEi7xsydAJjz3jM4EOcgpZS06yDNFCcWhyErnrj"/>
     <elementParameter field="DBTABLE" name="TABLE" value=""/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -615,7 +615,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:57GkTfs0w13Z46PMGX9ZyaKLfjaZ1aiB3ebDoYrN0kTrP+/n4V/tgAPa1OFr4M8Xdg3lCnVIjZeo"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:COTph6D0vQP2Brzb81b0vX3Mud3+EJUNAV4SKmSsJY9tcRMqb5w0LMjGNQQwnN7Z+PV3aBQt26ac"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -691,13 +691,13 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+R0shb3hTM+kCGqk+ZhBM8LqhoJRqJRttNzRYMgcp2ktkmNWRD/VUHDBEnBLNIZMvLayvr5PbvJK"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1Z4B9OWxakWjXI/MfHUyHuwnA/AZncR5GV6JYJnjGHCFRlzQBQK5gzp8OtUJxwF8SocgKSlQ8zsV"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false"/>
     <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:TfL0aDntedoTUn8udGIGQTaCbSrCTE358RXIsJoS"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:QkEouqWlddW2XaYl1EgR+mi85tLzLEtndTknnpMI"/>
     <elementParameter field="CHECK" name="NEED_CLIENT_AUTH" show="false" value="false"/>
     <elementParameter field="FILE" name="SSL_KEYSTORE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:udreTuzhTacg2FJpwhXw/5hxy68i3EnHIfJymY+6"/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:MrGB//BRqGyKezQl9Lo9Qd7Vp+oes6M41YQSCgIH"/>
     <elementParameter field="CHECK" name="DISABLE_CBC_PROTECTION" show="false" value="true"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -727,7 +727,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:YtuB9Id1UKA444JS970NbwNQgzNVzYOUvOvFHQlR"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:BPE6zLxuy/xXTSXDGskfI6GuoVCfyBA3DldFGaOc"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value=""/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -809,7 +809,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.ORACLE_CLOUD_Url"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:RM0wFYT8ITx83mQ1H3GrUKOEpZBhEuVB2HoiKGlNRZpw3LQCc+hQL+G8F7AWVuY76gKPuLxolYt4"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:WL6ktbHmmkEY02MUbfTJHecoWPDoS70VRwQfCsINyoRmqabKLiNIx4rAPfTa65n4y8wE5RNDpoIq"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value=""/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -931,6 +931,8 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="durata"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="durata_totale_maxi_rata"/>
+      <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="durata_range"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="anticipo"/>
@@ -1001,6 +1003,8 @@
       <elementValue elementRef="DECODE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="durata"/>
       <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="durata_totale_maxi_rata"/>
+      <elementValue elementRef="DECODE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="durata_range"/>
       <elementValue elementRef="DECODE" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="anticipo"/>
@@ -1062,6 +1066,7 @@
       <column comment="" defaultValue="" key="false" length="-1" name="prezzo_vendita_manuale" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="conf_finanziaria" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="durata" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="durata_totale_maxi_rata" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="durata_range" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="anticipo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="tabella_finanziaria" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
@@ -1095,6 +1100,7 @@
       <column comment="" defaultValue="" key="false" length="-1" name="prezzo_vendita_manuale" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="conf_finanziaria" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="durata" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="durata_totale_maxi_rata" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="durata_range" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="anticipo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="tabella_finanziaria" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
@@ -1139,13 +1145,14 @@
     <elementParameter field="TEXT" name="LABEL" value="mapVehicles"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata comment="" connector="FLOW" label="VEHICLES_FINANCE_SANTANDER" name="outVehiclesFin">
-      <column comment="" key="false" length="-1" name="sku" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="sku" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="categoria" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="immatricolazionedata" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="finanziaria" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="prezzo_vendita_manuale" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="conf_finanziaria" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="durata" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="finanziaria" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="prezzo_vendita_manuale" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="conf_finanziaria" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="durata" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="durata_totale_maxi_rata" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="durata_range" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="anticipo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="tabella_finanziaria" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
@@ -1182,6 +1189,7 @@
         <mapperTableEntries expression="vehiclesFin.prezzo_vendita_manuale" name="prezzo_vendita_manuale" nullable="true" type="id_String"/>
         <mapperTableEntries expression="vehiclesFin.conf_finanziaria" name="conf_finanziaria" nullable="true" type="id_String"/>
         <mapperTableEntries expression="vehiclesFin.durata" name="durata" nullable="true" type="id_String"/>
+        <mapperTableEntries name="durata_totale_maxi_rata" nullable="true" type="id_String"/>
         <mapperTableEntries expression="vehiclesFin.durata_range " name="durata_range" nullable="true" type="id_String"/>
         <mapperTableEntries expression="vehiclesFin.anticipo" name="anticipo" nullable="true" type="id_String"/>
         <mapperTableEntries expression="vehiclesFin.tabella_finanziaria " name="tabella_finanziaria" nullable="true" type="id_String"/>
@@ -1215,6 +1223,7 @@
         <mapperTableEntries name="prezzo_vendita_manuale" nullable="true" type="id_String"/>
         <mapperTableEntries name="conf_finanziaria" nullable="true" type="id_String"/>
         <mapperTableEntries name="durata" nullable="true" type="id_String"/>
+        <mapperTableEntries name="durata_totale_maxi_rata" nullable="true" type="id_String"/>
         <mapperTableEntries name="durata_range" nullable="true" type="id_String"/>
         <mapperTableEntries name="anticipo" nullable="true" type="id_String"/>
         <mapperTableEntries name="tabella_finanziaria" nullable="true" type="id_String"/>
@@ -1284,7 +1293,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="org.apache.log4j.Logger.getRootLogger().info(&quot;[&quot;+jobName+&quot;]:&lt;Update Product : &quot;+globalMap.get(&quot;outVehiclesFin.sku&quot;)+&quot;&gt;&quot;);&#10;&#10;long access_token_ts = (long)globalMap.get(&quot;access_token_ts&quot;);&#10;globalMap.put(&quot;access_token_refresh&quot;,(System.currentTimeMillis() - access_token_ts) &gt; 3200000 ? &quot;true&quot;:&quot;false&quot;);&#10;&#10;SimpleDateFormat dateFormat = new SimpleDateFormat(&quot;dd/MM/yyyy HH:mm:ss&quot;);&#10;//SimpleDateFormat dateFormat = new SimpleDateFormat(&quot;yyyy-MM-dd'T'hh:mm:ssXXX&quot;);&#10;UtilCommonProcessFlow.nextValCountMap(globalMap,&quot;countManageFinPIM&quot;);&#10;&#10;&#10;List&lt;String&gt; pianiFinanziari = (List&lt;String&gt;)globalMap.get(&quot;pianiFinanziari&quot;); &#10;List&lt;String&gt; maxiRatePerc = (List&lt;String&gt;)globalMap.get(&quot;maxiRatePerc&quot;);&#10;&#10;ProductFinance productFinance = new ProductFinance();&#10;&#10;productFinance.setIdentifier((String)globalMap.get(&quot;outVehiclesFin.sku&quot;));&#10;&#10;ValuesFinance  values =   productFinance.getValues();&#10;&#10;if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.anticipo&quot;)))&#10;     values.setFin_anticipo((String)globalMap.get(&quot;outVehiclesFin.anticipo&quot;));&#10;if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.durata&quot;)))     &#10;     values.setFin_durata((String)globalMap.get(&quot;outVehiclesFin.durata&quot;));&#10;&#10;if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.conf_finanziaria&quot;))){&#10;      &#10;      String tabellaFinanziaria  = (String)globalMap.get(&quot;outVehiclesFin.tabella_finanziaria&quot;);&#10;      String percCapitaleResiduo = (String)globalMap.get(&quot;outVehiclesFin.perc_capitale_residuo&quot;);&#10;      &#10;      if(!UtilString.isEmptyTrim(tabellaFinanziaria))&#10;      {&#10;           if (pianiFinanziari.contains(tabellaFinanziaria))&#10;               values.setPiano_finanziario(tabellaFinanziaria);&#10;      }&#10;      &#10;      if(!UtilString.isEmptyTrim(percCapitaleResiduo))&#10;      {&#10;           if (maxiRatePerc.contains(percCapitaleResiduo))&#10;               values.setMaxi_rata_percentuale(percCapitaleResiduo);&#10;      }&#10;      &#10;      String durataRange = (String)globalMap.get(&quot;outVehiclesFin.durata_range&quot;);&#10;      &#10;      if( !UtilString.isEmptyTrim(durataRange))&#10;      {&#10;           String[] durataRangeSplit = durataRange.split(&quot;;&quot;);&#10;           List&lt;String&gt; durataRangeArray = new ArrayList&lt;String&gt;(Arrays.asList(durataRangeSplit));&#10;           values.setDurata_range(durataRangeArray);&#10;      }&#10;      &#10;&#10;}&#10;&#10;&#10;if (((String)globalMap.get(&quot;outVehiclesFin.infostatus_fin&quot;)).equals(&quot;200&quot;)) {&#10;    &#10;    if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.fin_rata&quot;)))&#10;         values.setFin_rata_ok((String)globalMap.get(&quot;outVehiclesFin.fin_rata&quot;));&#10;         &#10;    if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.fin_rata_aggiuntiva&quot;)))    &#10;         values.setFin_maxi_rata((String)globalMap.get(&quot;outVehiclesFin.fin_rata_aggiuntiva&quot;));&#10;&#9;else&#10;&#9;     values.setFin_maxi_rata((String)null);         &#10;    &#10;    values.setFin_tan((String)globalMap.get(&quot;outVehiclesFin.fin_tan&quot;));&#10;    values.setFin_taeg((String)globalMap.get(&quot;outVehiclesFin.fin_taeg&quot;));&#10;    &#10;    if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.fin_imptot_dovuto&quot;)))     &#10;         values.setFin_importo_tot_dovuto((String)globalMap.get(&quot;outVehiclesFin.fin_imptot_dovuto&quot;)); &#10;    &#10;    if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.fin_imptot_credito&quot;)))  &#10;         values.setFin_importo_totale_credito((String)globalMap.get(&quot;outVehiclesFin.fin_imptot_credito&quot;));   &#10;    &#10;    if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.fin_finanziato&quot;)))      &#10;         values.setFin_finanziato((String)globalMap.get(&quot;outVehiclesFin.fin_finanziato&quot;));   &#10;    &#10;    if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.fin_spese_istr&quot;)))      &#10;         values.setFin_spese_istruttoria((String)globalMap.get(&quot;outVehiclesFin.fin_spese_istr&quot;));&#10;    &#10;    if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.fin_spese_rid&quot;)))      &#10;         values.setFin_spese_incasso_gestione_rata((String)globalMap.get(&quot;outVehiclesFin.fin_spese_rid&quot;));  &#10;    &#10;    if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.fin_impbollo_sost&quot;)))       &#10;         values.setFin_imposta_di_bollo_sostitutiva((String)globalMap.get(&quot;outVehiclesFin.fin_impbollo_sost&quot;));   &#10;    &#10;    values.setFin_url_preventivo((String)globalMap.get(&quot;outVehiclesFin.fin_url_iebcc&quot;));   &#10;    values.setFin_disclaimer_legale((String)globalMap.get(&quot;outVehiclesFin.fin_disclaimer_legale&quot;));&#10;    values.setFin_data_inserimento_finanziamento(dateFormat.format(new Date())); &#10;    globalMap.put(&quot;outVehiclesFin.data_inserimento_finanziaria&quot;,dateFormat.format(new Date()));&#10;    &#10;    values.setFin_risposta_finanziaria(&quot;Positiva&quot;); &#10;}&#10;else {&#10;     values.setFin_risposta_finanziaria(&quot;Negativa&quot;); &#10;     values.setFin_disclaimer_legale((String)null);&#10;     values.setFin_maxi_rata((String)null);&#10;     values.setFin_finanziato((String)null);&#10;     values.setFin_importo_totale_credito((String)null);&#10;     values.setFin_importo_tot_dovuto((String)null);&#10;     values.setFin_imposta_di_bollo_sostitutiva((String)null);&#10;     values.setFin_spese_incasso_gestione_rata((String)null);&#10;     values.setFin_rata_ok((String)null);&#10;     values.setFin_taeg((String)null);&#10;     values.setFin_tan((String)null);&#10;     values.setFin_url_preventivo((String)null);&#10;     values.setFin_spese_istruttoria((String)null);&#10;     values.setFin_data_inserimento_finanziamento((String)null);&#10;}&#10;&#10;&#10;//System.out.println(UtilJson.getJsonString(productFinance));&#10;&#10;globalMap.put(&quot;productFinance&quot;,UtilJson.getJsonString(productFinance));&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="org.apache.log4j.Logger.getRootLogger().info(&quot;[&quot;+jobName+&quot;]:&lt;Update Product : &quot;+globalMap.get(&quot;outVehiclesFin.sku&quot;)+&quot;&gt;&quot;);&#10;&#10;long access_token_ts = (long)globalMap.get(&quot;access_token_ts&quot;);&#10;globalMap.put(&quot;access_token_refresh&quot;,(System.currentTimeMillis() - access_token_ts) &gt; 3200000 ? &quot;true&quot;:&quot;false&quot;);&#10;&#10;SimpleDateFormat dateFormat = new SimpleDateFormat(&quot;dd/MM/yyyy HH:mm:ss&quot;);&#10;//SimpleDateFormat dateFormat = new SimpleDateFormat(&quot;yyyy-MM-dd'T'hh:mm:ssXXX&quot;);&#10;UtilCommonProcessFlow.nextValCountMap(globalMap,&quot;countManageFinPIM&quot;);&#10;&#10;&#10;List&lt;String&gt; pianiFinanziari = (List&lt;String&gt;)globalMap.get(&quot;pianiFinanziari&quot;); &#10;List&lt;String&gt; maxiRatePerc = (List&lt;String&gt;)globalMap.get(&quot;maxiRatePerc&quot;);&#10;List&lt;String&gt; durateTotaliMaxiRata = (List&lt;String&gt;)globalMap.get(&quot;durateTotaliMaxiRata&quot;);&#10;&#10;ProductFinance productFinance = new ProductFinance();&#10;&#10;productFinance.setIdentifier((String)globalMap.get(&quot;outVehiclesFin.sku&quot;));&#10;&#10;ValuesFinance  values =   productFinance.getValues();&#10;&#10;if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.anticipo&quot;)))&#10;     values.setFin_anticipo((String)globalMap.get(&quot;outVehiclesFin.anticipo&quot;));&#10;     &#10;if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.durata&quot;)))     &#10;     values.setFin_durata((String)globalMap.get(&quot;outVehiclesFin.durata&quot;));&#10;&#10;if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.conf_finanziaria&quot;))){&#10;      &#10;      String tabellaFinanziaria  = (String)globalMap.get(&quot;outVehiclesFin.tabella_finanziaria&quot;);&#10;      String percCapitaleResiduo = (String)globalMap.get(&quot;outVehiclesFin.perc_capitale_residuo&quot;);&#10;      &#10;      if(!UtilString.isEmptyTrim(tabellaFinanziaria))&#10;      {&#10;           if (pianiFinanziari.contains(tabellaFinanziaria))&#10;               values.setPiano_finanziario(tabellaFinanziaria);&#10;      }&#10;      &#10;      if(!UtilString.isEmptyTrim(percCapitaleResiduo))&#10;      {&#10;           if (maxiRatePerc.contains(percCapitaleResiduo))&#10;               values.setMaxi_rata_percentuale(percCapitaleResiduo);&#10;               &#10;           if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.durata_totale_maxi_rata&quot;)) &amp;&amp; &#10;                       durateTotaliMaxiRata.contains((String)globalMap.get(&quot;outVehiclesFin.durata_totale_maxi_rata&quot;)))&#10;               values.setDurata_totale_maxi_rata((String)globalMap.get(&quot;outVehiclesFin.durata_totale_maxi_rata&quot;));               &#10;      }&#10;      &#10;      String durataRange = (String)globalMap.get(&quot;outVehiclesFin.durata_range&quot;);&#10;      &#10;      if( !UtilString.isEmptyTrim(durataRange))&#10;      {&#10;           String[] durataRangeSplit = durataRange.split(&quot;;&quot;);&#10;           List&lt;String&gt; durataRangeArray = new ArrayList&lt;String&gt;(Arrays.asList(durataRangeSplit));&#10;           values.setDurata_range(durataRangeArray);&#10;      }&#10;      &#10;&#10;}&#10;&#10;&#10;if (((String)globalMap.get(&quot;outVehiclesFin.infostatus_fin&quot;)).equals(&quot;200&quot;)) {&#10;    &#10;    if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.fin_rata&quot;)))&#10;         values.setFin_rata_ok((String)globalMap.get(&quot;outVehiclesFin.fin_rata&quot;));&#10;         &#10;    if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.fin_rata_aggiuntiva&quot;)))    &#10;         values.setFin_maxi_rata((String)globalMap.get(&quot;outVehiclesFin.fin_rata_aggiuntiva&quot;));&#10;&#9;else&#10;&#9;     values.setFin_maxi_rata((String)null);         &#10;    &#10;    values.setFin_tan((String)globalMap.get(&quot;outVehiclesFin.fin_tan&quot;));&#10;    values.setFin_taeg((String)globalMap.get(&quot;outVehiclesFin.fin_taeg&quot;));&#10;    &#10;    if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.fin_imptot_dovuto&quot;)))     &#10;         values.setFin_importo_tot_dovuto((String)globalMap.get(&quot;outVehiclesFin.fin_imptot_dovuto&quot;)); &#10;    &#10;    if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.fin_imptot_credito&quot;)))  &#10;         values.setFin_importo_totale_credito((String)globalMap.get(&quot;outVehiclesFin.fin_imptot_credito&quot;));   &#10;    &#10;    if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.fin_finanziato&quot;)))      &#10;         values.setFin_finanziato((String)globalMap.get(&quot;outVehiclesFin.fin_finanziato&quot;));   &#10;    &#10;    if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.fin_spese_istr&quot;)))      &#10;         values.setFin_spese_istruttoria((String)globalMap.get(&quot;outVehiclesFin.fin_spese_istr&quot;));&#10;    &#10;    if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.fin_spese_rid&quot;)))      &#10;         values.setFin_spese_incasso_gestione_rata((String)globalMap.get(&quot;outVehiclesFin.fin_spese_rid&quot;));  &#10;    &#10;    if (!UtilString.isEmptyTrim((String)globalMap.get(&quot;outVehiclesFin.fin_impbollo_sost&quot;)))       &#10;         values.setFin_imposta_di_bollo_sostitutiva((String)globalMap.get(&quot;outVehiclesFin.fin_impbollo_sost&quot;));   &#10;    &#10;    values.setFin_url_preventivo((String)globalMap.get(&quot;outVehiclesFin.fin_url_iebcc&quot;));   &#10;    values.setFin_disclaimer_legale((String)globalMap.get(&quot;outVehiclesFin.fin_disclaimer_legale&quot;));&#10;    values.setFin_data_inserimento_finanziamento(dateFormat.format(new Date())); &#10;    globalMap.put(&quot;outVehiclesFin.data_inserimento_finanziaria&quot;,dateFormat.format(new Date()));&#10;    &#10;    values.setFin_risposta_finanziaria(&quot;Positiva&quot;); &#10;}&#10;else {&#10;     values.setFin_risposta_finanziaria(&quot;Negativa&quot;); &#10;     values.setFin_disclaimer_legale((String)null);&#10;     values.setFin_maxi_rata((String)null);&#10;     values.setFin_finanziato((String)null);&#10;     values.setFin_importo_totale_credito((String)null);&#10;     values.setFin_importo_tot_dovuto((String)null);&#10;     values.setFin_imposta_di_bollo_sostitutiva((String)null);&#10;     values.setFin_spese_incasso_gestione_rata((String)null);&#10;     values.setFin_rata_ok((String)null);&#10;     values.setFin_taeg((String)null);&#10;     values.setFin_tan((String)null);&#10;     values.setFin_url_preventivo((String)null);&#10;     values.setFin_spese_istruttoria((String)null);&#10;     values.setFin_data_inserimento_finanziamento((String)null);&#10;}&#10;&#10;&#10;//System.out.println(UtilJson.getJsonString(productFinance));&#10;&#10;globalMap.put(&quot;productFinance&quot;,UtilJson.getJsonString(productFinance));&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.util.Arrays;"/>
     <elementParameter field="TEXT" name="LABEL" value="MANAGE_PRODUCT"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1311,6 +1320,8 @@
       <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;outVehiclesFin.conf_finanziaria&quot;)"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="durata"/>
       <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;outVehiclesFin.durata&quot;)"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="durata_totale_maxi_rata"/>
+      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;outVehiclesFin.durata_totale_maxi_rata&quot;)"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="durata_range"/>
       <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;outVehiclesFin.durata_range&quot;)"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="anticipo"/>
@@ -1376,6 +1387,7 @@
       <column comment="" defaultValue="" key="false" length="-1" name="prezzo_vendita_manuale" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="conf_finanziaria" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="durata" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="durata_totale_maxi_rata" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="durata_range" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="anticipo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="tabella_finanziaria" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
@@ -1441,6 +1453,7 @@
       <column comment="" defaultValue="" key="false" length="-1" name="prezzo_vendita_manuale" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="conf_finanziaria" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="durata" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="durata_totale_maxi_rata" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="durata_range" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="anticipo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="tabella_finanziaria" nullable="true" pattern="" precision="-1" type="id_String" usefulColumn="true"/>
@@ -1489,7 +1502,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:513NBx12utLU9WohM54Tkoz+POb9bSmB1YrnJXuVf96vunBWf5LeGCH54V8RmUVId4P75Yn5MtDm"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:YKyvWRauaRydYx8Acy8Fd5z4Gn54xJ2WicRfryi7joyoLFl4ARqOoOy+WmyNq0G9ArnkxR2251iB"/>
     <elementParameter field="DBTABLE" name="TABLE" value=""/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1606,6 +1619,32 @@
     <elementParameter field="TEXT" name="LABEL" value="PUT_OPTS_MR_PERC"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_9"/>
+  </node>
+  <node componentName="tREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tREST_4"/>
+    <elementParameter field="TEXT" name="URL" value="context.AKENEOPIM_METHOD_ATTR_OPT.replace(&quot;{code}&quot;,&quot;durata_totale_maxi_rata&quot;)+&quot;?limit=100&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+    <elementParameter field="TABLE" name="HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Authorization&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;Bearer &quot;+(String)globalMap.get(&quot;access_token&quot;)"/>
+      <elementValue elementRef="NAME" value="&quot;Accept&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;application/json&quot;"/>
+    </elementParameter>
+    <elementParameter field="MEMO" name="BODY" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="OPTS_DURATA_MR"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tREST_4">
+      <column key="false" length="0" name="Body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="ERROR_CODE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_7"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="if (input_row.Body!= null &amp;&amp; input_row.ERROR_CODE==null){&#10;    OptionList optList = new OptionList(input_row.Body);&#10;    &#10;    &#10;    ArrayList&lt;String&gt; durateTotaliMaxiRata = new ArrayList&lt;String&gt;();&#10;    &#10;    if (optList.getEmbedded()!= null &amp;&amp; optList.getEmbedded().getItems()!= null &amp;&amp; optList.getEmbedded().getItems().size()&gt;0)&#10;    {&#10;        for (Option opt :optList.getEmbedded().getItems())&#10;           if(opt.getCode()!=null)&#10;              durateTotaliMaxiRata.add(opt.getCode());&#10;    }&#10;    &#10;    globalMap.put(&quot;durateTotaliMaxiRata&quot;,durateTotaliMaxiRata);&#10;    &#10;    org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Options durata_totale_maxi_rata caricati correttamente&gt;&quot;);&#10;   &#10;}&#10;else {&#10;    org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Options durata_totale_maxi_rata :&quot;+input_row.ERROR_CODE+&quot;&gt;&quot;);&#10;}"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.util.ArrayList;"/>
+    <elementParameter field="TEXT" name="LABEL" value="PUT_OPTS_DURATA_MR"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_7"/>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaFlex_1" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_1" target="tDBRow_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk24"/>
@@ -1786,13 +1825,20 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="optsMrPerc"/>
   </connection>
-  <connection connectorName="RUN_IF" label="NOT_OPTS_ATTR_FOUND" lineStyle="6" metaname="tJavaRow_9" offsetLabelX="2" offsetLabelY="50" outputId="1" source="tJavaRow_9" target="tJavaFlex_1">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="globalMap.get(&quot;pianiFinanziari&quot;) == null ||&#10;&#10;globalMap.get(&quot;maxiRatePerc&quot;) == null "/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="NOT_OPTS_ATTR_FOUND"/>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_9" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_9" target="tREST_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk31"/>
   </connection>
-  <connection connectorName="RUN_IF" label="OPTS_ATTR_FOUND" lineStyle="6" metaname="tJavaRow_9" offsetLabelX="1" offsetLabelY="35" outputId="2" source="tJavaRow_9" target="tJava_3">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="globalMap.get(&quot;pianiFinanziari&quot;) != null &amp;&amp;&#10;&#10;globalMap.get(&quot;maxiRatePerc&quot;) != null "/>
+  <connection connectorName="FLOW" label="optsDurataMr" lineStyle="0" metaname="tREST_4" offsetLabelX="0" offsetLabelY="0" source="tREST_4" target="tJavaRow_7">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="optsDurataMr"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="OPTS_ATTR_FOUND" lineStyle="6" metaname="tJavaRow_7" offsetLabelX="1" offsetLabelY="35" outputId="1" source="tJavaRow_7" target="tJava_3">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="globalMap.get(&quot;pianiFinanziari&quot;) != null &amp;&amp;&#10;&#10;globalMap.get(&quot;durateTotaliMaxiRata&quot;) != null &amp;&amp;&#10;&#10;globalMap.get(&quot;maxiRatePerc&quot;) != null "/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OPTS_ATTR_FOUND"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="NOT_OPTS_ATTR_FOUND" lineStyle="6" metaname="tJavaRow_7" offsetLabelX="6" offsetLabelY="15" outputId="2" source="tJavaRow_7" target="tJavaFlex_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="globalMap.get(&quot;pianiFinanziari&quot;) == null ||&#10;&#10;globalMap.get(&quot;durateTotaliMaxiRata&quot;) == null ||&#10;&#10;globalMap.get(&quot;maxiRatePerc&quot;) == null "/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="NOT_OPTS_ATTR_FOUND"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
@@ -1969,13 +2015,20 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d77e52cf-f928-4c3f-bd1b-b5d67715a4e2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+ZZUHP5lso83mXhiODjW70G++mtf5LJDDxeoKQWAP4gRaNcj9xSunMA5c5e/IEytrHf1NCBRviXO&#13;
-WGIdb+O+8A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b4dbc57f-6b58-4331-bd53-84d706829730"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mMS9aFr58bYu5ZPnHlZbnbvlxsY6A7rhDB1O7h2NHUXalRXp+170TJdOnTHd7w2sha5h9SeQMTLZ&#13;
-bn39r8ok5Q==</DigestValue></Reference></SignedInfo><SignatureValue>b4RlCaYObA28QQriFXOXWs1IIpAPVShXZLirzgENtqA3buMrK2dlDWl1JCSA9jQliIlKGCjPQ5To&#13;
-XFCgwYNh9fK6qchXGLR/R2Td0qR4FfPWTWktDTIUAxzeMLORCHvtaSrNPCfVOItZpghB42aL564i&#13;
-1Nh9te5+2E6ajVj+v2HN7YUgxNC0/ELl2Ao5bdmRD70ZJ5ygqEZqp2kC590lW1lSO1+uQ/yiteQm&#13;
-M0v1nBBLQqxRLYRGptzh5S0NiZGd6tqs3NYX4Q6c2U4+A2twi5MzCIsRYfzOxfJX8WtQnB4k23zg&#13;
-HZg8+i2XkAYwm7jAsebGGYMnAJFL84OihbDVBA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tREST_4"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="RETRIEVE OPTIONS DURATA MAXI RATA"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a36f515a-ecd2-4e99-af9b-00f59b5f12aa"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MkCXDp73rs+Mc6cuL1FhblR3IdBrbsE1C7hXCj3zjl/z+PtOPKBlsO4GeOloGAo+gnOuuC7/Bp87&#13;
+/U2CZzH1MA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_081fa6ae-973e-4141-83d1-41c6aa05cc08"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aza1eYbA4zM+bS91rochG+tGbjRzXfEIUq6F/m/T4F/1N6jWm03YGhrCzl14Oulebo5vwI39erWp&#13;
+ni+nGqH94g==</DigestValue></Reference></SignedInfo><SignatureValue>nWJkwcrcg8TC3S7duKz0MIUWtda/mnoafvK/Mux4clxLEQWj3fvmJ389ib8oMFLUnMbG1BIRADCe&#13;
+fKc1ZGtv9zvOirqovq7lCm/39lcv/uIL69VmhVUn1QAeUZMkoxZAb+QTjAZYmOFa+ilGCdQTK6t8&#13;
+/qTGVo2s8VqIj+bhM6kuqFNTVT3weTs5UZ8mbRIHjp4EH3ScnpXHp2W5yZYZsOg5UL9RF3I1qVvr&#13;
+DDhCotdSjwlpdQMhGil2CiIBmeegJ+1qLCSvYzOsCeMnqrH4sU5RmF8z61tLvQ65glI47n1XTkUc&#13;
+fQ+QvESLmkk2HytLn1VFRjkmoRgMELSJTVVwLg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1997,4 +2050,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b4dbc57f-6b58-4331-bd53-84d706829730" Target="#_d77e52cf-f928-4c3f-bd1b-b5d67715a4e2"><Timestamp>2022-09-21 15:53:20</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_081fa6ae-973e-4141-83d1-41c6aa05cc08" Target="#_a36f515a-ecd2-4e99-af9b-00f59b5f12aa"><Timestamp>2022-09-26 15:26:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
