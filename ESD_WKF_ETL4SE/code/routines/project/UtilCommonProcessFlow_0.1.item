@@ -106,4 +106,16 @@ public class UtilCommonProcessFlow {
 	   }
 	   
    }
+   
+   public static Integer getValCountMap(Map<String,Object> globalMap,String nomeContatore) {
+	   
+	   
+	   if(globalMap.get(nomeContatore)==null){
+		  return 0;
+	   }
+	   else{
+		  return (Integer)globalMap.get(nomeContatore);
+	   }
+	   
+   }
 }
