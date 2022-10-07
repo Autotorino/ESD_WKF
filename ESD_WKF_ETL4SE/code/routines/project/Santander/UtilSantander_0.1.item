@@ -69,7 +69,7 @@ public class UtilSantander {
 					   codiceProdotto="10";
 			        else {
 			           if (dImmatricolazione.compareTo(dConfronto24)>=0 && dImmatricolazione.compareTo(dConfronto12)<0)
-			        	   codiceProdotto="9";
+			        	   codiceProdotto="09";
        		       else 
        		    	codiceProdotto="11"; 
 			        }
