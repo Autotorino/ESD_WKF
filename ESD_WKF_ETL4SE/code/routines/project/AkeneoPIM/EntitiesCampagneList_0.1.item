@@ -22,7 +22,7 @@ public class EntitiesCampagneList {
 		JSONObject jsonObjBody = new JSONObject(jsonObject);
 		
 	
-		//setNext(jsonObjBody);
+		setNext(jsonObjBody);
 		//setCurrent_page(jsonObjBody);
 		
 		EmbeddedCampagna _embedded = new EmbeddedCampagna(jsonObjBody);
@@ -32,13 +32,13 @@ public class EntitiesCampagneList {
 		
 	}
 
-	//private String next;
+	private String next;
 	
 	//private String current_page;
 	
     private EmbeddedCampagna _embedded;
     
-    /*
+    
     public void setNext(String next){
         this.next = next;
     }
@@ -51,7 +51,7 @@ public class EntitiesCampagneList {
     public String getNext(){
         return this.next;
     }  
-    
+    /*
     public void setCurrent_page(String current_page){
         this.current_page = current_page;
     }
@@ -110,9 +110,10 @@ public class EntitiesCampagneList {
     	ArrayList<Campagna> campagneOrdereds = new ArrayList<Campagna>();
     	
     	for (String codCampagna:codsCampagne){
-    		
+
     		Campagna campagna = this.getCampagna(codCampagna);
-/*System.out.println("EntitiesCampagneList- 1 getPriorita:"+campagna.getPriorita());
+/*System.out.println("codsCampagne:"+codCampagna);    		
+System.out.println("EntitiesCampagneList- 1 getPriorita:"+campagna.getPriorita());
 System.out.println("EntitiesCampagneList- 1 getCode:"+campagna.getCode());
 System.out.println("EntitiesCampagneList- 1 getSconto:"+campagna.getSconto());
 System.out.println("EntitiesCampagneList- 1 getTipoSconto:"+campagna.getTipoSconto());
