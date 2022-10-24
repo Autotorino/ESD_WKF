@@ -205,6 +205,125 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_IufGUE0vEe2km_ryq9camA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "Base64Util",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "CategoriesItem",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "CategoriesList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataValue",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Embedded",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedCategories",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedMarcaModello",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedOpt",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesSediList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "MarcaModello",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "MarcaModelloList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Option",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "OptionList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Product",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ProductList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ProductRemove",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "RuleUtil",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Sede",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilJson",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilWorkBook",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Values",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ValuesMarcaModello",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ValuesRemove",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_6AspMHqpEeyvm8MjRkvS9A - SCHEMA_DELETE_AKENEOPIM",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_S2B3sAT2Eemeo_1y04_W_A",
     "version" : "0.1",
     "type" : "job"
@@ -499,6 +618,125 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_dhcMkEyaEe2WgKNZIzNXAQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_McuX8KloEemvdbMxCJroiw",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "Base64Util",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "CategoriesItem",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "CategoriesList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataValue",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Embedded",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedCategories",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedMarcaModello",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedOpt",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesSediList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "MarcaModello",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "MarcaModelloList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Option",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "OptionList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Product",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ProductList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ProductRemove",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "RuleUtil",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Sede",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilJson",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilWorkBook",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Values",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ValuesMarcaModello",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ValuesRemove",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_IfwzAIAJEeyZUODAKlDgcg - SCHEMA_OUTPUT_REMOVE_LOGIC_AKENEO_PIM",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_dwnp4CgXEeyulYyVG_vSDQ",
     "version" : "0.1",
     "type" : "job"
@@ -618,6 +856,10 @@
     "version" : "Latest",
     "type" : "job"
   }, {
+    "id" : "_IufGUE0vEe2km_ryq9camA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
     "id" : "_S2B3sAT2Eemeo_1y04_W_A",
     "version" : "Latest",
     "type" : "job"
@@ -639,6 +881,10 @@
     "type" : "job"
   }, {
     "id" : "__fHc8BUeEeqnN-OmdHq6AQ",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_dhcMkEyaEe2WgKNZIzNXAQ",
     "version" : "Latest",
     "type" : "job"
   }, {

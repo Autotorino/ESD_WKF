@@ -225,6 +225,21 @@
     }, {
       "id" : "_yqI5dTj3Ee24esQ0HF-8Eg",
       "name" : "AKENEOPIM_METHOD_BLOCK_CMS"
+    }, {
+      "id" : "_IIXPdVObEe2SZ-fwpjuUjg",
+      "name" : "NOME_FILEDATASOURCE19"
+    }, {
+      "id" : "_IIXPdlObEe2SZ-fwpjuUjg",
+      "name" : "NOME_FILEDATASOURCE20"
+    }, {
+      "id" : "_IIXPd1ObEe2SZ-fwpjuUjg",
+      "name" : "NOME_FILEDATASOURCE13"
+    }, {
+      "id" : "_IIXPeFObEe2SZ-fwpjuUjg",
+      "name" : "URL_REST_API_MAGENTO_PRODUCT"
+    }, {
+      "id" : "_IIXPeVObEe2SZ-fwpjuUjg",
+      "name" : "NOME_FILEDATASOURCE14"
     } ]
   }, {
     "contextName" : "dev",
@@ -451,6 +466,21 @@
     }, {
       "id" : "_FhdZMeGNEey0f94ARS2qqQ",
       "name" : "AKENEOPIM_METHOD_BLOCK_CMS"
+    }, {
+      "id" : "_IIXPelObEe2SZ-fwpjuUjg",
+      "name" : "NOME_FILEDATASOURCE19"
+    }, {
+      "id" : "_IIXPe1ObEe2SZ-fwpjuUjg",
+      "name" : "NOME_FILEDATASOURCE20"
+    }, {
+      "id" : "_IIXPfFObEe2SZ-fwpjuUjg",
+      "name" : "NOME_FILEDATASOURCE13"
+    }, {
+      "id" : "_IIXPfVObEe2SZ-fwpjuUjg",
+      "name" : "URL_REST_API_MAGENTO_PRODUCT"
+    }, {
+      "id" : "_IIXPflObEe2SZ-fwpjuUjg",
+      "name" : "NOME_FILEDATASOURCE14"
     } ]
   }, {
     "contextName" : "Default",
@@ -677,6 +707,21 @@
     }, {
       "id" : "_yqI5Kjj3Ee24esQ0HF-8Eg",
       "name" : "AKENEOPIM_METHOD_BLOCK_CMS"
+    }, {
+      "id" : "_IIXPcFObEe2SZ-fwpjuUjg",
+      "name" : "NOME_FILEDATASOURCE19"
+    }, {
+      "id" : "_IIXPcVObEe2SZ-fwpjuUjg",
+      "name" : "NOME_FILEDATASOURCE20"
+    }, {
+      "id" : "_IIXPclObEe2SZ-fwpjuUjg",
+      "name" : "NOME_FILEDATASOURCE13"
+    }, {
+      "id" : "_IIXPc1ObEe2SZ-fwpjuUjg",
+      "name" : "URL_REST_API_MAGENTO_PRODUCT"
+    }, {
+      "id" : "_IIXPdFObEe2SZ-fwpjuUjg",
+      "name" : "NOME_FILEDATASOURCE14"
     } ]
   } ]
 }
