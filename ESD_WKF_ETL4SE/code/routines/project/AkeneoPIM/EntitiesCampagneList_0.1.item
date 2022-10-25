@@ -91,7 +91,7 @@ public class EntitiesCampagneList {
     	    
     		if (campagne!= null && campagne.size()>0){
     			for(Campagna campagna:campagne){
-    				if (campagna.getCode().equals(codCampagna)){
+    				if (campagna.getCode().equalsIgnoreCase(codCampagna)){
     					returnCampagna =  campagna;
     					break;
     				}
