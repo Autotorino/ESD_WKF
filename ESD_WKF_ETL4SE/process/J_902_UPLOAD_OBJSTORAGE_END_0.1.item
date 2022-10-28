@@ -2,14 +2,14 @@
   <context confirmationNeeded="false" name="prod">
     <contextParameter comment="" internalId="_rS1IgDnFEe2Bt5XBBSqOpg" name="RETENTION_BACKUP_FILE" prompt="RETENTION_BACKUP_FILE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="3"/>
     <contextParameter comment="" internalId="_rS1IgTnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Url" prompt="ORACLE_CLOUD_Url?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="jdbc:oracle:thin:@autotorinodwh_medium?TNS_ADMIN=E:\\Talend\\Talend-ConfConnections\\OracleCloud\\Wallet_autotorinodwh"/>
-    <contextParameter comment="" internalId="_rS1IgjnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:/L1Sttnw59LnaJBO4+QvAVLGmUCRgoML3SldaM1ISrWO2HKs52EpOVHg"/>
+    <contextParameter comment="" internalId="_rS1IgjnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:fQuLnU05FKqRKywM6Wy+3W4wm9heb/u1e/N4mO4ExsyvNeVL6m7+nQLF"/>
     <contextParameter comment="" internalId="_rS1IgznFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Username" prompt="ORACLE_CLOUD_Username?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DI_DATA_CONFIG"/>
     <contextParameter comment="" internalId="_rS1IhDnFEe2Bt5XBBSqOpg" name="TALEND_PATH_FILE_CSV" prompt="TALEND_PATH_FILE_CSV?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="E:/Talend/Talend-Output/DataSource/ESD_WKF/StorageFisico/"/>
     <contextParameter comment="" internalId="_rS1IhTnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Server" prompt="SIPADX_DB_Server?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="192.168.1.113"/>
     <contextParameter comment="" internalId="_rS1IhjnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Port" prompt="SIPADX_DB_Port?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="5432"/>
     <contextParameter comment="" internalId="_rS1IhznFEe2Bt5XBBSqOpg" name="SIPADX_DB_Database" prompt="SIPADX_DB_Database?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="sipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactorysipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory&amp;socketTimeout=0"/>
     <contextParameter comment="" internalId="_rS1IiDnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Login" prompt="SIPADX_DB_Login?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="userread"/>
-    <contextParameter comment="" internalId="_rS1IiTnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:/XdGVc+V4bxCzUQ9EbVl1ShXBaXzIBKk1u/yzkOMD4fjbMiO"/>
+    <contextParameter comment="" internalId="_rS1IiTnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:9t2V+BbRP8CvYkXbkhx7qvHWz6UAKp6czT7dXgTEHPcieXdV"/>
     <contextParameter comment="" internalId="_rS1IijnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Schema" prompt="SIPADX_DB_Schema?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="public"/>
     <contextParameter comment="" internalId="_rS1IiznFEe2Bt5XBBSqOpg" name="DWH_AT_MAIL_NOTIFY" prompt="DWH_AT_MAIL_NOTIFY?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="true"/>
     <contextParameter comment="" internalId="_rS1IjDnFEe2Bt5XBBSqOpg" name="DWH_AT_MAIL_SMTP_HOST" prompt="DWH_AT_MAIL_SMTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="smtp.autotorino.local"/>
@@ -22,7 +22,7 @@
     <contextParameter comment="" internalId="_rS1IkznFEe2Bt5XBBSqOpg" name="HOST_FTP_STOCK" prompt="HOST_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="ftp.autotorino.it"/>
     <contextParameter comment="" internalId="_rS1IlDnFEe2Bt5XBBSqOpg" name="PORT_FTP_STOCK" prompt="PORT_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="21"/>
     <contextParameter comment="" internalId="_rS1IlTnFEe2Bt5XBBSqOpg" name="USER_FTP_STOCK" prompt="USER_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="eng_ftpuser"/>
-    <contextParameter comment="" internalId="_rS1IljnFEe2Bt5XBBSqOpg" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:j+DasI0CsR1Ya4DrS9PsENpkAGAFy+KlpetlFUsQzkI0aQS/K0a1HfrqDBc="/>
+    <contextParameter comment="" internalId="_rS1IljnFEe2Bt5XBBSqOpg" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:bhrFOPa2Q8idpHImQSd3bGA0eXoUiKeZaBZa1iKSzvSce0N21OTzO9gCjkY="/>
     <contextParameter comment="" internalId="_rS1IlznFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE50" prompt="NOME_FILEDATASOURCE50?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD50_PIM_VEHICLES_FOR_FINDOMESTIC.csv"/>
     <contextParameter comment="" internalId="_rS1ImDnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE51" prompt="NOME_FILEDATASOURCE51?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD51_FINDOMESTIC_VEHICLES_FINANCED.csv"/>
     <contextParameter comment="" internalId="_rS1ImTnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE52" prompt="NOME_FILEDATASOURCE52?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD52_PIM_UPDATE_FINANCING_VEHICLES.csv"/>
@@ -34,7 +34,7 @@
     <contextParameter comment="" internalId="_rS1InznFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CONTENT_TYPE" prompt="AKENEOPIM_AUTH_CONTENT_TYPE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="application/x-www-form-urlencoded"/>
     <contextParameter comment="" internalId="_rS1IoDnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_TOKEN_ACCESS" prompt="AKENEOPIM_AUTH_TOKEN_ACCESS?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="access_token"/>
     <contextParameter comment="" internalId="_rS1IoTnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_ID" prompt="AKENEOPIM_AUTH_CLIENT_ID?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="9_19vob8y38la84s4s448cgoscgow0wo4wkwwwwssoksksogkc4k"/>
-    <contextParameter comment="" internalId="_rS1IojnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:gsBMzKMEDKlufuF5YWPnu1YlW+jgvtJaBglgo51lvXYskJDu4BPN0BvQFc3m+OanblOoNB5Hv5t/oWiHoiriK5Ymwmj2esZEtvaBW2wH"/>
+    <contextParameter comment="" internalId="_rS1IojnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:05h0MfE2YSevaYJ/QMDrkkI/m7sQtsXWnhDyibbjJMzv52lqjATw5l6Z5jQPsUbhPXsQq7cl4qxjdycGdxjPGJz2y+6Cl1faOSI34LkF"/>
     <contextParameter comment="" internalId="_rS1IoznFEe2Bt5XBBSqOpg" name="AKENEOPIM_METHOD_PRODUCT_LIST" prompt="AKENEOPIM_METHOD_PRODUCT_LIST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino.cloud.akeneo.com/api/rest/v1/products"/>
     <contextParameter comment="" internalId="_rS1IpDnFEe2Bt5XBBSqOpg" name="AKENEOPIM_QUERY_PARAM_FIRST_FIN" prompt="AKENEOPIM_QUERY_PARAM_FIRST_FIN?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="{'family':[{'operator':'IN','value':['veicoli_AUTO','veicoli_MOTO','veicoli_COMMERCIALI']}],'fin_finanziaria':[{'operator':'IN','value':['findomestic_retail','findomestic_retail_maxirata']}],'prezzo_vendita_manuale':[{'operator':'NOT EMPTY'}],'fin_url_preventivo':[{'operator':'EMPTY'}],'data_uscita_stock':[{'operator':'EMPTY'}]}"/>
     <contextParameter comment="" internalId="_rS1IpTnFEe2Bt5XBBSqOpg" name="TRUSTORE_PATH" prompt="TRUSTORE_PATH?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="E:/Users/Public/Shared_Talend/20210825_ESD_WKF/Config/jssecacerts_FIND"/>
@@ -64,7 +64,7 @@
     <contextParameter comment="" internalId="_rS1IvTnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_HOST" prompt="DEALERK_FTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="upload.dealerk.it"/>
     <contextParameter comment="" internalId="_rS1IvjnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PORT" prompt="DEALERK_FTP_PORT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="22"/>
     <contextParameter comment="" internalId="_rS1IvznFEe2Bt5XBBSqOpg" name="DEALERK_FTP_USER" prompt="DEALERK_FTP_USER?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="autotorino"/>
-    <contextParameter comment="" internalId="_rS1IwDnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:xu/ewA+jgasIaeIeevPZ4P6yQYSOShf7Wv2ksmc0lh99sLDGrw7+zdk64A=="/>
+    <contextParameter comment="" internalId="_rS1IwDnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:e/zpS/uUsmIGMSjoJGj+FWZAae7wGhtQsVD5aPPMHG9O55+H3dqVsnqDtQ=="/>
     <contextParameter comment="" internalId="_rS1IwTnFEe2Bt5XBBSqOpg" name="AKENEOPIM_METHOD_ATTR_OPT" prompt="AKENEOPIM_METHOD_ATTR_OPT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino.cloud.akeneo.com/api/rest/v1/attributes/{code}/options"/>
     <contextParameter comment="" internalId="_rS1IwjnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE60" prompt="NOME_FILEDATASOURCE60?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD60_PIM_VEHICLES_FOR_SANTANDER.csv"/>
     <contextParameter comment="" internalId="_rS1IwznFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE61" prompt="NOME_FILEDATASOURCE61?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD61_SANTANDER_VEHICLES_FINANCED.csv"/>
@@ -72,22 +72,22 @@
     <contextParameter comment="" internalId="_rS1IxTnFEe2Bt5XBBSqOpg" name="AKENEOPIM_QUERY_PARAM_FIRST_FIN_SAN" prompt="AKENEOPIM_QUERY_PARAM_FIRST_FIN_SAN?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="{'family':[{'operator':'IN','value':['veicoli_AUTO','veicoli_MOTO','veicoli_COMMERCIALI']}],'fin_finanziaria':[{'operator':'IN','value':['santander_retail','santander_retail_maxirata']}],'prezzo_vendita_manuale':[{'operator':'NOT EMPTY'}],'fin_url_preventivo':[{'operator':'EMPTY'}],'data_uscita_stock':[{'operator':'EMPTY'}]}"/>
     <contextParameter comment="" internalId="_rS1IxjnFEe2Bt5XBBSqOpg" name="AKENEOPIM_QUERY_PARAM_EXPIRED_FIN_SAN" prompt="AKENEOPIM_QUERY_PARAM_EXPIRED_FIN_SAN?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="{'family':[{'operator':'IN','value':['veicoli_AUTO','veicoli_MOTO','veicoli_COMMERCIALI']}],'fin_finanziaria':[{'operator':'IN','value':['santander_retail','santander_retail_maxirata']}],'prezzo_vendita_manuale':[{'operator':'NOT EMPTY'}],'fin_url_preventivo':[{'operator':'NOT EMPTY'}],'fin_data_inserimento_finanziamento':[{'operator':'NOT EMPTY'}],'data_uscita_stock':[{'operator':'EMPTY'}]}"/>
     <contextParameter comment="" internalId="_rS1IxznFEe2Bt5XBBSqOpg" name="SANTANDER_REQUEST_INTERMEDIARIO_ID" prompt="SANTANDER_REQUEST_INTERMEDIARIO_ID?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="1105547"/>
-    <contextParameter comment="" internalId="_rS1IyDnFEe2Bt5XBBSqOpg" name="SANTANDER_SERVICE_URL" prompt="SANTANDER_SERVICE_URL?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://api-gateway-c.santanderconsumer.it/scb/ar"/>
-    <contextParameter comment="" internalId="_rS1IyTnFEe2Bt5XBBSqOpg" name="SANTANDER_CLIENT_ID" prompt="SANTANDER_CLIENT_ID?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="9cbf241b-5238-4a38-ae53-0e79d273f73a"/>
-    <contextParameter comment="" internalId="_rS1IyjnFEe2Bt5XBBSqOpg" name="SANTANDER_CLIENT_SECRET" prompt="SANTANDER_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="yJ7gR4aS0aV1mQ2tG1wB3sV7vL6yT2lL4aU0hD1pK6lP2dU4wQ"/>
+    <contextParameter comment="" internalId="_rS1IyDnFEe2Bt5XBBSqOpg" name="SANTANDER_SERVICE_URL" prompt="SANTANDER_SERVICE_URL?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://api-gateway.santanderconsumer.it/scb/ar"/>
+    <contextParameter comment="" internalId="_rS1IyTnFEe2Bt5XBBSqOpg" name="SANTANDER_CLIENT_ID" prompt="SANTANDER_CLIENT_ID?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="35ca0b13-a9e2-4704-9a89-dabb46f3444f"/>
+    <contextParameter comment="" internalId="_rS1IyjnFEe2Bt5XBBSqOpg" name="SANTANDER_CLIENT_SECRET" prompt="SANTANDER_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="J7sJ4wS4kV2oI0eG3rJ4oX5lX6nE2bX6dT6jD3hB1xU3gA2oM6"/>
     <contextParameter comment="" internalId="_rS1IyznFEe2Bt5XBBSqOpg" name="CLOUDINARY_FOLDER" prompt="CLOUDINARY_FOLDER?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="dev">
     <contextParameter comment="" internalId="_rS1IzDnFEe2Bt5XBBSqOpg" name="RETENTION_BACKUP_FILE" prompt="RETENTION_BACKUP_FILE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="3"/>
     <contextParameter comment="" internalId="_rS1IzTnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Url" prompt="ORACLE_CLOUD_Url?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="jdbc:oracle:thin:@dwhautosvil_medium?TNS_ADMIN=E:\\Talend\\Talend-ConfConnections\\OracleCloud\\Wallet_autotorinodwh"/>
-    <contextParameter comment="" internalId="_rS1IzjnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:U7HkKnvS4Phv0TyxeMSHwGso5BUl56TuPC5dQuUa0G5p/klftsbxIrHI"/>
+    <contextParameter comment="" internalId="_rS1IzjnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:4f+u1DybgZU/RNL4OxfxgJRLppnvDxU6KTPSsI273tPlUVTzCkybT8fa"/>
     <contextParameter comment="" internalId="_rS1IzznFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Username" prompt="ORACLE_CLOUD_Username?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DI_DATA_CONFIG"/>
     <contextParameter comment="" internalId="_rS1I0DnFEe2Bt5XBBSqOpg" name="TALEND_PATH_FILE_CSV" prompt="TALEND_PATH_FILE_CSV?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="E:/Talend/Talend-Output/DataSource/ESD_WKF/StorageFisico/"/>
     <contextParameter comment="" internalId="_rS1I0TnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Server" prompt="SIPADX_DB_Server?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="192.168.1.113"/>
     <contextParameter comment="" internalId="_rS1I0jnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Port" prompt="SIPADX_DB_Port?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="5432"/>
     <contextParameter comment="" internalId="_rS1I0znFEe2Bt5XBBSqOpg" name="SIPADX_DB_Database" prompt="SIPADX_DB_Database?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="sipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactorysipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory&amp;socketTimeout=0"/>
     <contextParameter comment="" internalId="_rS1I1DnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Login" prompt="SIPADX_DB_Login?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="userread"/>
-    <contextParameter comment="" internalId="_rS1I1TnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:YifjDvTm0VQOk/Le70cTvRpr1jLoXoKSCiTcewhOQbo5pg0G"/>
+    <contextParameter comment="" internalId="_rS1I1TnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:/4an8ldNFCoMXtOt80LvEoAKr7+0xAFBLZqTHPVQRkE1In3i"/>
     <contextParameter comment="" internalId="_rS1I1jnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Schema" prompt="SIPADX_DB_Schema?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="public"/>
     <contextParameter comment="" internalId="_rS1I1znFEe2Bt5XBBSqOpg" name="DWH_AT_MAIL_NOTIFY" prompt="DWH_AT_MAIL_NOTIFY?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="true"/>
     <contextParameter comment="" internalId="_rS1I2DnFEe2Bt5XBBSqOpg" name="DWH_AT_MAIL_SMTP_HOST" prompt="DWH_AT_MAIL_SMTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="smtp.autotorino.local"/>
@@ -100,7 +100,7 @@
     <contextParameter comment="" internalId="_rS1I3znFEe2Bt5XBBSqOpg" name="HOST_FTP_STOCK" prompt="HOST_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="ftp.autotorino.it"/>
     <contextParameter comment="" internalId="_rS1I4DnFEe2Bt5XBBSqOpg" name="PORT_FTP_STOCK" prompt="PORT_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="21"/>
     <contextParameter comment="" internalId="_rS1I4TnFEe2Bt5XBBSqOpg" name="USER_FTP_STOCK" prompt="USER_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="eng_ftpuser"/>
-    <contextParameter comment="" internalId="_rS1I4jnFEe2Bt5XBBSqOpg" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:+/lPnYnXzG649OSCkqNXTl0gN/Qy8HKn1vXdfQ4bvWdd6hb+aqHJRP29r9c="/>
+    <contextParameter comment="" internalId="_rS1I4jnFEe2Bt5XBBSqOpg" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:TWvpSReywHqRfYqNntIYuV/bucmS/Bas/avruXu87AKhYmNf5VjQFSph9Bg="/>
     <contextParameter comment="" internalId="_rS1I4znFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE50" prompt="NOME_FILEDATASOURCE50?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD50_PIM_VEHICLES_FOR_FINDOMESTIC.csv"/>
     <contextParameter comment="" internalId="_rS1I5DnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE51" prompt="NOME_FILEDATASOURCE51?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD51_FINDOMESTIC_VEHICLES_FINANCED.csv"/>
     <contextParameter comment="" internalId="_rS1I5TnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE52" prompt="NOME_FILEDATASOURCE52?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD52_PIM_UPDATE_FINANCING_VEHICLES.csv"/>
@@ -112,7 +112,7 @@
     <contextParameter comment="" internalId="_rS1I6znFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CONTENT_TYPE" prompt="AKENEOPIM_AUTH_CONTENT_TYPE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="application/x-www-form-urlencoded"/>
     <contextParameter comment="" internalId="_rS1I7DnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_TOKEN_ACCESS" prompt="AKENEOPIM_AUTH_TOKEN_ACCESS?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="access_token"/>
     <contextParameter comment="" internalId="_rS1I7TnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_ID" prompt="AKENEOPIM_AUTH_CLIENT_ID?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="2_2byflfgazckkwco4o4cs8s0okskkkkk4080cocw4k4scsosskg"/>
-    <contextParameter comment="" internalId="_rS1I7jnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:rYUplezPZLFe+goRAJsFHYMT+pX6kPWom5lB0pSLfZ0irW6lRLrzjYKP3kU+CJ/3Q+l8Nt0UQG57jx+Y6Vymvk/mfG5qNo0SqWDwKtyD"/>
+    <contextParameter comment="" internalId="_rS1I7jnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:bRh02ra5DMRC+K8CEvVkvZivLrMmz5JNhEMpMo70gJwkalAYTYVEUO5+4HPkacjXRyWDqJV+5qnIupNHXDkEzq6SK71UzqR67DMR/7at"/>
     <contextParameter comment="" internalId="_rS1I7znFEe2Bt5XBBSqOpg" name="AKENEOPIM_METHOD_PRODUCT_LIST" prompt="AKENEOPIM_METHOD_PRODUCT_LIST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino-dev.cloud.akeneo.com/api/rest/v1/products"/>
     <contextParameter comment="" internalId="_rS1I8DnFEe2Bt5XBBSqOpg" name="AKENEOPIM_QUERY_PARAM_FIRST_FIN" prompt="AKENEOPIM_QUERY_PARAM_FIRST_FIN?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="{'family':[{'operator':'IN','value':['veicoli_AUTO','veicoli_MOTO','veicoli_COMMERCIALI']}],'fin_finanziaria':[{'operator':'IN','value':['findomestic_retail','findomestic_retail_maxirata']}],'prezzo_vendita_manuale':[{'operator':'NOT EMPTY'}],'fin_url_preventivo':[{'operator':'EMPTY'}],'data_uscita_stock':[{'operator':'EMPTY'}]}"/>
     <contextParameter comment="" internalId="_rS1I8TnFEe2Bt5XBBSqOpg" name="TRUSTORE_PATH" prompt="TRUSTORE_PATH?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="E:/Users/Public/Shared_Talend/20210825_ESD_WKF/Config/jssecacerts_FIND"/>
@@ -142,7 +142,7 @@
     <contextParameter comment="" internalId="_rS1JCTnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_HOST" prompt="DEALERK_FTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="upload.dealerk.it"/>
     <contextParameter comment="" internalId="_rS1JCjnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PORT" prompt="DEALERK_FTP_PORT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="22"/>
     <contextParameter comment="" internalId="_rS1JCznFEe2Bt5XBBSqOpg" name="DEALERK_FTP_USER" prompt="DEALERK_FTP_USER?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="autotorino_newftp"/>
-    <contextParameter comment="" internalId="_rS1JDDnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:t+WDuBVJEKX/cz0OkRmVqGhqxfQk7UhSi4LpMsgDv7ByOLr0+S7kWfJYe84="/>
+    <contextParameter comment="" internalId="_rS1JDDnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:vmqkSOwfLZoaGHZv+ERAXaIdlVJ6xlAGhuvsKqTtqIFhlUo5zxsXV2Ed+M0="/>
     <contextParameter comment="" internalId="_rS1JDTnFEe2Bt5XBBSqOpg" name="AKENEOPIM_METHOD_ATTR_OPT" prompt="AKENEOPIM_METHOD_ATTR_OPT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino-dev.cloud.akeneo.com/api/rest/v1/attributes/{code}/options"/>
     <contextParameter comment="" internalId="_rS1JDjnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE60" prompt="NOME_FILEDATASOURCE60?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD60_PIM_VEHICLES_FOR_SANTANDER.csv"/>
     <contextParameter comment="" internalId="_rS1JDznFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE61" prompt="NOME_FILEDATASOURCE61?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD61_SANTANDER_VEHICLES_FINANCED.csv"/>
@@ -158,14 +158,14 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" internalId="_rS1JGDnFEe2Bt5XBBSqOpg" name="RETENTION_BACKUP_FILE" prompt="RETENTION_BACKUP_FILE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="3"/>
     <contextParameter comment="" internalId="_rS1JGTnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Url" prompt="ORACLE_CLOUD_Url?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="jdbc:oracle:thin:@dwhautosvil_medium?TNS_ADMIN=C:\\Talend\\Talend-ConfConnections\\OracleCloud\\Wallet_autotorinodwh"/>
-    <contextParameter comment="" internalId="_rS1JGjnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:5kZ1jiHMujxXdg+gEn9HDoAnb1Y5gbQNp7ndE+Znw5DttHHqjr52T3n8"/>
+    <contextParameter comment="" internalId="_rS1JGjnFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:cOrd6PtTkgG7lluJ4EeY74ASAk/48uU5bdqotE1CUika9kCCqhM/KQN1"/>
     <contextParameter comment="" internalId="_rS1JGznFEe2Bt5XBBSqOpg" name="ORACLE_CLOUD_Username" prompt="ORACLE_CLOUD_Username?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DI_DATA_CONFIG"/>
     <contextParameter comment="" internalId="_rS1JHDnFEe2Bt5XBBSqOpg" name="TALEND_PATH_FILE_CSV" prompt="TALEND_PATH_FILE_CSV?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="C:/Talend/Talend-Output/DataSource/ESD_WKF/StorageFisico/"/>
     <contextParameter comment="" internalId="_rS1JHTnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Server" prompt="SIPADX_DB_Server?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="192.168.1.113"/>
     <contextParameter comment="" internalId="_rS1JHjnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Port" prompt="SIPADX_DB_Port?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="5432"/>
     <contextParameter comment="" internalId="_rS1JHznFEe2Bt5XBBSqOpg" name="SIPADX_DB_Database" prompt="SIPADX_DB_Database?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="sipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactorysipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory&amp;socketTimeout=0"/>
     <contextParameter comment="" internalId="_rS1JIDnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Login" prompt="SIPADX_DB_Login?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="userread"/>
-    <contextParameter comment="" internalId="_rS1JITnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:zfwmzRe7tEPFNnpLfwaNNKxcfkiE9et8S6+vqtHFOYQJ/H5H"/>
+    <contextParameter comment="" internalId="_rS1JITnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:3KXy7ks0ZW2NepDkdND9WYnRU0tuo/1JFfqwMrfKLfu7gofE"/>
     <contextParameter comment="" internalId="_rS1JIjnFEe2Bt5XBBSqOpg" name="SIPADX_DB_Schema" prompt="SIPADX_DB_Schema?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="public"/>
     <contextParameter comment="" internalId="_rS1JIznFEe2Bt5XBBSqOpg" name="DWH_AT_MAIL_NOTIFY" prompt="DWH_AT_MAIL_NOTIFY?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="true"/>
     <contextParameter comment="" internalId="_rS1JJDnFEe2Bt5XBBSqOpg" name="DWH_AT_MAIL_SMTP_HOST" prompt="DWH_AT_MAIL_SMTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="smtp.autotorino.local"/>
@@ -178,7 +178,7 @@
     <contextParameter comment="" internalId="_rS1JKznFEe2Bt5XBBSqOpg" name="HOST_FTP_STOCK" prompt="HOST_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="ftp.autotorino.it"/>
     <contextParameter comment="" internalId="_rS1JLDnFEe2Bt5XBBSqOpg" name="PORT_FTP_STOCK" prompt="PORT_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="21"/>
     <contextParameter comment="" internalId="_rS1JLTnFEe2Bt5XBBSqOpg" name="USER_FTP_STOCK" prompt="USER_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="eng_ftpuser"/>
-    <contextParameter comment="" internalId="_rS1JLjnFEe2Bt5XBBSqOpg" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:WxtskHDHHdP4H552TweOc4n5vGA2AYKgaVjDT2GF4G9N+r6w7REuSRhDd2o="/>
+    <contextParameter comment="" internalId="_rS1JLjnFEe2Bt5XBBSqOpg" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:l3/jQXKfROum0FKhwF8g8n0w0UWGt+4tUSeXiLOZe0wIGEE5Q/oYwspKTN8="/>
     <contextParameter comment="" internalId="_rS1JLznFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE50" prompt="NOME_FILEDATASOURCE50?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD50_PIM_VEHICLES_FOR_FINDOMESTIC.csv"/>
     <contextParameter comment="" internalId="_rS1JMDnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE51" prompt="NOME_FILEDATASOURCE51?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD51_FINDOMESTIC_VEHICLES_FINANCED.csv"/>
     <contextParameter comment="" internalId="_rS1JMTnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE52" prompt="NOME_FILEDATASOURCE52?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD52_PIM_UPDATE_FINANCING_VEHICLES.csv"/>
@@ -190,7 +190,7 @@
     <contextParameter comment="" internalId="_rS1JNznFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CONTENT_TYPE" prompt="AKENEOPIM_AUTH_CONTENT_TYPE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="application/x-www-form-urlencoded"/>
     <contextParameter comment="" internalId="_rS1JODnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_TOKEN_ACCESS" prompt="AKENEOPIM_AUTH_TOKEN_ACCESS?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="access_token"/>
     <contextParameter comment="" internalId="_rS1JOTnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_ID" prompt="AKENEOPIM_AUTH_CLIENT_ID?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="2_2byflfgazckkwco4o4cs8s0okskkkkk4080cocw4k4scsosskg"/>
-    <contextParameter comment="" internalId="_rS1JOjnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:ztO6OAA/xC49+SG7C2dQvwx2cIjimq+p7jp8MvGkqEAHIBKALs4XASb5PmwYUYwSkqiMbdYFT+LzvxqoEf5Q7BBpvxNX8DLcaLrI6amc"/>
+    <contextParameter comment="" internalId="_rS1JOjnFEe2Bt5XBBSqOpg" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:dQsmaXdGfsHTpfsjsvpqld9Ai3tk0RiBF2czcPABUZQ6gIuvDJaUl5lBELutE57eH2IP8ugRW4rygJTASl3vVMkt4O9UbJ8Gx6PRyEhl"/>
     <contextParameter comment="" internalId="_rS1JOznFEe2Bt5XBBSqOpg" name="AKENEOPIM_METHOD_PRODUCT_LIST" prompt="AKENEOPIM_METHOD_PRODUCT_LIST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino-dev.cloud.akeneo.com/api/rest/v1/products"/>
     <contextParameter comment="" internalId="_rS1JPDnFEe2Bt5XBBSqOpg" name="AKENEOPIM_QUERY_PARAM_FIRST_FIN" prompt="AKENEOPIM_QUERY_PARAM_FIRST_FIN?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="{'family':[{'operator':'IN','value':['veicoli_AUTO','veicoli_MOTO','veicoli_COMMERCIALI']}],'fin_finanziaria':[{'operator':'IN','value':['findomestic_retail','findomestic_retail_maxirata']}],'prezzo_vendita_manuale':[{'operator':'NOT EMPTY'}],'fin_url_preventivo':[{'operator':'EMPTY'}],'data_uscita_stock':[{'operator':'EMPTY'}]}"/>
     <contextParameter comment="" internalId="_rS1JPTnFEe2Bt5XBBSqOpg" name="TRUSTORE_PATH" prompt="TRUSTORE_PATH?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="C:/Talend/Talend-ConfConnections/Findomestic/jssecacerts_FIND"/>
@@ -220,7 +220,7 @@
     <contextParameter comment="" internalId="_rS1JVTnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_HOST" prompt="DEALERK_FTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="upload.dealerk.it"/>
     <contextParameter comment="" internalId="_rS1JVjnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PORT" prompt="DEALERK_FTP_PORT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="22"/>
     <contextParameter comment="" internalId="_rS1JVznFEe2Bt5XBBSqOpg" name="DEALERK_FTP_USER" prompt="DEALERK_FTP_USER?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="autotorino_newftp"/>
-    <contextParameter comment="" internalId="_rS1JWDnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:JPFDLhSRbXHL6OP3ojO1b1HGAtyCV0PQL5kuiuvpTgy5IXLW1GlYsvfR8FI="/>
+    <contextParameter comment="" internalId="_rS1JWDnFEe2Bt5XBBSqOpg" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:TCx4l/uGQa7MjhuBY4G+ZVHOlWZ5///VT0lWiOWWcKleqRmvGwIsBzBkkXY="/>
     <contextParameter comment="" internalId="_rS1JWTnFEe2Bt5XBBSqOpg" name="AKENEOPIM_METHOD_ATTR_OPT" prompt="AKENEOPIM_METHOD_ATTR_OPT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino-dev.cloud.akeneo.com/api/rest/v1/attributes/{code}/options"/>
     <contextParameter comment="" internalId="_rS1JWjnFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE60" prompt="NOME_FILEDATASOURCE60?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD60_PIM_VEHICLES_FOR_SANTANDER.csv"/>
     <contextParameter comment="" internalId="_rS1JWznFEe2Bt5XBBSqOpg" name="NOME_FILEDATASOURCE61" prompt="NOME_FILEDATASOURCE61?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD61_SANTANDER_VEHICLES_FINANCED.csv"/>
@@ -278,7 +278,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:mdSGBFknaLvwhOWfqjtYFHLOv05C///cFk0zDmrX"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:itlUHyJ5qfGocFBMXITt/1hpy/TifZoDIwkAj/vl"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -313,7 +313,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:dEdGcGfm4GiM+4qeccoFilSSqaQPTUGzvtgLC/FF"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:t3pgKoNoOKQYG/hoBFQ0dvDV6BRaujMpKtH2pg+f"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -388,7 +388,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.ORACLE_CLOUD_Url"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:MIL0hlOMilO3ZvcjjY3LrJkiScHud0ifDy4Nmz7NrFs0Tz/6W4kq4Jx2wfenFfVV4yM4VeEbtSJI"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:9BM1V0MLL13wJmoGu5m5xtfZt1PsxO3og5mdZeRDs8PEWjyN/82d/B3/br4FopNYaaHivrTdMSuV"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -465,7 +465,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+2QkA38tlVRIm2cLtep50TYT+qgXQSPWLigLzix1"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:dDXGXc/J2+jdrIFNhS46WUplzLGu+ro5/deYgjGg"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DI_DATA_CONFIG.TAL_JOB_PROCESS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -562,7 +562,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:wtQj01ey/UMzmA0mRdTIXbpC2rKuuCkWn07ryBFaE32Fq3P3Qr7TepcVlQun3z+wDXmXU7zFfqSZ"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:cjtxRHjCJ9dkJdBY5f0xCEBxddD7dJ5x43TX+14kJ5zmZvfX2XmJ1wAqh1nMLD66hHS7NSrXoeF5"/>
     <elementParameter field="DBTABLE" name="TABLE" value=""/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -608,7 +608,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:gbKQgWkZXuEVmJ0FbZnp4wxEDGuKDN8ybOuOetqm+TcqsHiDtMY5ACkr6BpuN2rVu9vxSK4YxyDK"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ePwPF/qRLnEYNfQ+EmO8ZIZJkla9UnTYnhwb511krxvBsieRLFPz5Yqy4x7gAa4fMQXylOwHlGSW"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -684,13 +684,13 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:UkhhxKTbx4zCuCJpIY2Ckw1tLBuSbTn+H6enPppH9bbJ+KsFwk1bMxxbZxHmnzCsedsT+TMx1XqH"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Ws2z3W5iNpofdYq7CZATYAVFoq243keQvCh8NIJgBU2//jEjJPBbvQHkhbVizzIVgXWWWKHIbo5N"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false"/>
     <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:vvX/S2i3QiaoxZnlfZVhxHYrZj53yfnBSjRbN9qn"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:DVjJDa1c8m+ITsLdv+rTCG6ow+RGKlgJEt0mJgVk"/>
     <elementParameter field="CHECK" name="NEED_CLIENT_AUTH" show="false" value="false"/>
     <elementParameter field="FILE" name="SSL_KEYSTORE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:7tCmWrRLioNJVeS/LvXYoqelAoLsiewF6W43uKts"/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:kJh12d8+KiGOcF74Ue+hK9dqzY2aQDHaB6TaO5eF"/>
     <elementParameter field="CHECK" name="DISABLE_CBC_PROTECTION" show="false" value="true"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -720,7 +720,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:UP5PtD+e2JT17Xy+QIcS4qaQw7n0CVYVc7nY2u+q"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:tKbvfFKgU6dbkEBqY+D4MqgKAoMOv0TKA5QjLk8E"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value=""/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -983,13 +983,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4c51bbdd-cb25-4718-8f3f-895d4fde57d2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Gn2sq3Z7U7GIzoDHGKqt+1PAIyrh3maegAvo6PPctxAO6LJmG/squMUqtSLHiT2+kUdpnOWLiKbl&#13;
-iqj6IXvujA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c8372f29-cbc2-41f5-859c-51027e7ccbf2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>K409mYxMmsTFVzVi5TPVCR7jQqTgvNwAvf2dhG7/yx4KM2Y+r2nwDOP3ZcFiLwXYvVs+Qry38pCA&#13;
-8v74I46R6Q==</DigestValue></Reference></SignedInfo><SignatureValue>F0x1qqJtip5AajJarKRaQ6OAgpWhAMPnNTEJSEAo9KEXuBiBjD9UtjWJLcbNlSjGUE08vOmtORAW&#13;
-GCr3nv/DjQQgGgnBjild7oMDJo1MemhEh+6t2MMYyJRISUCVuhJk+u7CYWH6J2FOYWHGMNri9pcN&#13;
-5dk6nNMPhgQD4NKgT4i08oL4zE/5wcWh1EbQdHGTZ4AmOTNSY69QsIyJBhXy8XLACF6j1q25GbZ2&#13;
-n64UyDKFSt6SB425xsFlI2rIOsVozv1OXtKSWH6CgqvAK3EsQF/R7YlrkZixFSjELZAtUNNiVFMD&#13;
-3t6G30UfYdekuclGkAWABS+VkZtllJXcGjg1mw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c7e327f7-d085-43ec-8f2e-2f10bbf0db15"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Z+mkgAoKCktc4LbmINytRB4BGTCTtgMZQRmHLGGKb9m9d80bUqNwxE0D1aOrQPwi+7zGBkKRALBa&#13;
+MMdAUzw/tQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e97829c5-1e2c-4f0d-b082-27252dc4143c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BVB4fFf1w6tMLKZCGvmd0WcX2VIa2Up+/y5YLRSmqTtD0YfcctAq8QHcrrpz+unvsrjz3gDPDQtM&#13;
+iWAeku8Gsg==</DigestValue></Reference></SignedInfo><SignatureValue>QybHu3mIkDGkRBV4KXx1OSiOtsvKWGcsjc15DfRcjLtuCY4vwwHZJLUuO5P0Sd40O4vZ2jUmJrqa&#13;
+tDA4RD/F/W4g/+ZbSiMSIYy7U5lDTUlLYG0+U42jw+h2cRz8w4J/44kYp5N9P8Is8aTwgX62nrcP&#13;
+24AxsxXOYZDqG5bu3F8nRhROhGuPJfcoRNsyGuvfpiVy8amDvGxtGVhnHKheNbFauv/5LkL5mK5z&#13;
+5uiTIGcV9G2HqghRfH8n7nbDVCFkRaNrFzU/KPkjZ9PdvHvoUHbEd6SM8TR7/O5ZloLIuRY20nOb&#13;
+WaZU+nr9phba2Vt7SzG/EJL13/ZkkitVhB/wAA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1011,4 +1011,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c8372f29-cbc2-41f5-859c-51027e7ccbf2" Target="#_4c51bbdd-cb25-4718-8f3f-895d4fde57d2"><Timestamp>2022-10-04 07:19:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e97829c5-1e2c-4f0d-b082-27252dc4143c" Target="#_c7e327f7-d085-43ec-8f2e-2f10bbf0db15"><Timestamp>2022-10-28 08:47:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
