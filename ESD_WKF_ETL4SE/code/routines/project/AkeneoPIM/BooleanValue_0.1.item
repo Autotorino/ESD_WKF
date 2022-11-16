@@ -14,7 +14,7 @@ public class BooleanValue {
 	    public BooleanValue(JSONObject jsonObj) {
 	    	if(jsonObj!= null){
 				setLocale(jsonObj);
-				setScope(jsonObj);
+				//setScope(jsonObj);
 				setData(jsonObj);
             }
 		}

@@ -1,0 +1,166 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+
+
+
+
+public class EntitiesGaranziaListSF {
+	
+	public EntitiesGaranziaListSF() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public EntitiesGaranziaListSF(String jsonObject) {
+		
+		JSONObject jsonObjBody = new JSONObject(jsonObject);
+		
+	
+		setNext(jsonObjBody);
+		//setCurrent_page(jsonObjBody);
+		
+		EmbeddedGaranziaSF _embedded = new EmbeddedGaranziaSF(jsonObjBody);
+		setEmbedded(_embedded);
+		
+		
+		
+	}
+
+	private String next;
+	
+	//private String current_page;
+	
+    private EmbeddedGaranziaSF _embedded;
+    
+    
+    public void setNext(String next){
+        this.next = next;
+    }
+    
+    public void setNext(JSONObject jsonObjBody){
+    	this.next = UtilJson.getValueStringFrom_JObject_3Level(jsonObjBody, "_links", "next","href");
+    	
+    }
+    
+    public String getNext(){
+        return this.next;
+    }  
+    /*
+    public void setCurrent_page(String current_page){
+        this.current_page = current_page;
+    }
+    
+    public void setCurrent_page(JSONObject jsonObjBody){
+    	this.current_page = UtilJson.getValueStringFrom_JObject_1Level(jsonObjBody, "current_page");
+    	
+    }
+    
+    public String getCurrent_page(String current_page){
+        return this.current_page;
+    }
+    */
+    
+    public void setEmbedded(EmbeddedGaranziaSF _embedded){
+        this._embedded = _embedded; 
+    }
+    
+    public EmbeddedGaranziaSF getEmbedded(){
+        return this._embedded;
+    }
+    
+    /**
+     * Custom methods
+     */
+    
+    public GaranziaSF getGaranzia(String codGaranzia){
+    	
+    	if(UtilString.isEmptyTrim(codGaranzia))
+    	   return null;
+    	
+    	GaranziaSF returnGaranzia = null;
+    	
+    	if (this._embedded!=null) {
+    	    
+    		List<GaranziaSF> garanzie = this._embedded.getItems();
+    	    
+    		if (garanzie!= null && garanzie.size()>0){
+    			for(GaranziaSF garanzia:garanzie){
+    				if (garanzia.getCode().equals(codGaranzia)){
+    					returnGaranzia =  garanzia;
+    					break;
+    				}
+    			}
+    		}
+    	}
+    	
+    	return returnGaranzia;
+    }
+    
+    public HashMap<String,GaranziaSF> getGaranzie(){
+    	
+    	HashMap<String,GaranziaSF> mapGaranzie = new HashMap<String,GaranziaSF>();
+    	
+   	    if (this._embedded!=null) {
+    	    
+    		List<GaranziaSF> garanzie = this._embedded.getItems();
+    	    
+    		if (garanzie!= null && garanzie.size()>0){
+    			for(GaranziaSF garanzia:garanzie)
+    				mapGaranzie.put(garanzia.getCode(),garanzia);
+
+    		}
+    	}
+
+        return mapGaranzie;
+    }
+    
+    public List<Object> getGaranziaOrderedObj(){
+    	
+
+    	List<Object> garanziaObj = null;
+    	
+	    if (this._embedded!=null && this._embedded.getItems()!= null && this._embedded.getItems().size()>0) 
+	    {
+	    	garanziaObj = new ArrayList<Object>();
+	    	List<GaranziaSF> garanzie = this._embedded.getItems();
+	    	
+    		
+	    	Collections.sort(garanzie, new Comparator<GaranziaSF>() {
+ 		        @Override
+ 		        public int compare(GaranziaSF br1, GaranziaSF br2)
+ 		        {
+ 	
+ 		            return  br1.getCode().compareTo(br2.getCode());
+ 		        }
+ 		    });
+	    	
+	    	for (GaranziaSF garanzia : garanzie){
+	    		garanziaObj.add(garanzia);
+	    	}
+    	}
+     	
+    	return garanziaObj;
+    }
+    
+    public boolean isValidEntities(){
+        if (this._embedded!=null) {
+     	    
+        	List<GaranziaSF> garanzie = this._embedded.getItems();
+     	    
+     		if (garanzie!= null && garanzie.size()>0)
+     			return true;
+     		else
+     			return false;
+        }
+        else return false;
+     }    
+    
+
+
+   
+}

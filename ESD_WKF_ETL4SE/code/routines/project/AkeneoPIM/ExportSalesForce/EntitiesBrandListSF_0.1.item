@@ -1,0 +1,217 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+
+
+
+
+public class EntitiesBrandListSF {  
+	
+	public EntitiesBrandListSF() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public EntitiesBrandListSF(String jsonObject) {
+		
+		JSONObject jsonObjBody = new JSONObject(jsonObject);
+		
+	
+		setNext(jsonObjBody);
+		//setCurrent_page(jsonObjBody);
+		
+		EmbeddedBrandSF _embedded = new EmbeddedBrandSF(jsonObjBody);
+		setEmbedded(_embedded);
+		
+		
+		
+	}
+
+	private String next;
+	
+	//private String current_page;
+	
+    private EmbeddedBrandSF _embedded;
+    
+    
+    public void setNext(String next){
+        this.next = next;
+    }
+    
+    public void setNext(JSONObject jsonObjBody){
+    	this.next = UtilJson.getValueStringFrom_JObject_3Level(jsonObjBody, "_links", "next","href");
+    	
+    }
+    
+    public String getNext(){
+        return this.next;
+    }  
+    /*
+    public void setCurrent_page(String current_page){
+        this.current_page = current_page;
+    }
+    
+    public void setCurrent_page(JSONObject jsonObjBody){
+    	this.current_page = UtilJson.getValueStringFrom_JObject_1Level(jsonObjBody, "current_page");
+    	
+    }
+    
+    public String getCurrent_page(String current_page){
+        return this.current_page;
+    }
+    */
+    
+    public void setEmbedded(EmbeddedBrandSF _embedded){
+        this._embedded = _embedded;
+    }
+    
+    public EmbeddedBrandSF getEmbedded(){
+        return this._embedded;
+    }
+    
+    /**
+     * Custom methods
+     */
+    
+    public BrandSF getBrand(String codBrand){
+    	
+    	if(UtilString.isEmptyTrim(codBrand))
+    	   return null;
+    	
+    	BrandSF returnBrand = null;
+    	
+    	if (this._embedded!=null) {
+    	    
+    		List<BrandSF> brands = this._embedded.getItems();
+    	    
+    		if (brands!= null && brands.size()>0){
+    			for(BrandSF brand:brands){
+    				if (brand.getCode().equalsIgnoreCase(codBrand)){
+    					returnBrand =  brand;
+    					break;
+    				}
+    			}
+    		}
+    	}
+    	
+    	return returnBrand;
+    }
+    
+    public List<BrandSF> getBrandsOrdered(List<String> codBrands){
+    	
+    	if(codBrands==null||codBrands.size()==0)
+    	   return null;
+
+    	ArrayList<BrandSF> brandsOrdereds = new ArrayList<BrandSF>();
+    	
+    	for (String codBrand:codBrands){
+
+    		BrandSF brand = this.getBrand(codBrand);
+
+    		if(brand != null && brand.getCode()!=null)
+    			brandsOrdereds.add(brand);
+    	}
+    	
+    	if(brandsOrdereds.size()>1){ 
+			Collections.sort(brandsOrdereds, new Comparator<BrandSF>() {
+		        @Override
+		        public int compare(BrandSF br1, BrandSF br2)
+		        {
+	
+		            return  br1.getCode().compareTo(br2.getCode());
+		        }
+		    });
+    	}
+    	
+     	
+    	return brandsOrdereds;
+    }
+    
+    public List<BrandSF> getBrandsOrdered(){
+    	
+
+    	List<BrandSF> brands = null;
+    	
+	    if (this._embedded!=null && this._embedded.getItems()!= null && this._embedded.getItems().size()>0) {
+    		 
+	    	brands = this._embedded.getItems();
+    		
+	    	Collections.sort(brands, new Comparator<BrandSF>() {
+ 		        @Override
+ 		        public int compare(BrandSF br1, BrandSF br2)
+ 		        {
+ 	
+ 		            return  br1.getCode().compareTo(br2.getCode());
+ 		        }
+ 		    });
+    	}
+     	
+    	return brands;
+    }
+    
+    public List<Object> getBrandsOrderedObj(){
+    	
+
+    	List<Object> brandsObj = null;
+    	
+	    if (this._embedded!=null && this._embedded.getItems()!= null && this._embedded.getItems().size()>0) 
+	    {
+	    	brandsObj = new ArrayList<Object>();
+	    	List<BrandSF> brands = this._embedded.getItems();
+	    	
+    		
+	    	Collections.sort(brands, new Comparator<BrandSF>() {
+ 		        @Override
+ 		        public int compare(BrandSF br1, BrandSF br2)
+ 		        {
+ 	
+ 		            return  br1.getCode().compareTo(br2.getCode());
+ 		        }
+ 		    });
+	    	
+	    	for (BrandSF brand : brands){
+	    		brandsObj.add(brand);
+	    	}
+    	}
+     	
+    	return brandsObj;
+    }
+   
+    public HashMap<String,BrandSF> getBrands(List<String> codBrands){
+    	
+    	HashMap<String,BrandSF> mapBrands = new HashMap<String,BrandSF>();
+    	
+    	List<BrandSF> listBrands = this.getBrandsOrdered(codBrands);
+    	
+    	    
+		if (listBrands!= null && listBrands.size()>0){
+			for(BrandSF brand:listBrands)
+				mapBrands.put(brand.getCode(),brand);
+
+		}
+
+
+        return mapBrands;
+    }
+    
+    public boolean isValidEntities(){
+        if (this._embedded!=null) {
+     	    
+     		List<BrandSF> campagne = this._embedded.getItems();
+     	    
+     		if (campagne!= null && campagne.size()>0)
+     			return true;
+     		else
+     			return false;
+        }
+        else return false;
+     }
+    
+  
+ 
+   
+}

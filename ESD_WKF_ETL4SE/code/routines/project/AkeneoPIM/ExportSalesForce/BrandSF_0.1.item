@@ -1,0 +1,84 @@
+package routines;
+
+
+
+public class BrandSF {
+	
+	    
+	   public BrandSF() {
+		   ValuesBrandSF values = new ValuesBrandSF();
+		   setValues(values);
+	   }
+	
+	   public BrandSF(JSONObject jsonObjValues) {
+	    	setCode(jsonObjValues);
+	    	
+	    	ValuesBrandSF values = new ValuesBrandSF(jsonObjValues);
+			setValues(values);
+		}
+	
+	    private String code;
+	    
+	    private ValuesBrandSF values;
+
+	    public void setCode(String code){
+	        this.code = code;
+	    }
+	    
+	    public void setCode(JSONObject jsonObjBody){
+	    	
+	    	if(jsonObjBody!=null){
+	    	  Object returnValue = jsonObjBody.get("code");
+	          this.code = (returnValue instanceof String) ? (String)returnValue : null;
+	    	}
+	    	else
+	    	  this.code = null;
+	    }
+	    
+	    public String getCode(){
+	        return this.code;
+	    }
+	    
+	    public void setValues(ValuesBrandSF values){
+	        this.values = values;
+	    }
+	    public ValuesBrandSF getValues(){
+	        return this.values;
+	    }
+	    
+	    /**
+	     * Custom methods
+	     */
+	    public String getLabel(){
+	    	
+	    	if (this.values!= null && this.values.getLabel()!= null && this.values.getLabel().size()> 0 && 
+	    			 this.values.getLabel().get(0)!=null && this.values.getLabel().get(0).getData()!=null){
+	    		return this.values.getLabel().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }
+	    
+	    public Integer getPosition(){
+	    	
+	    	if (this.values!= null && this.values.getPosition()!= null && this.values.getPosition().size()> 0 && 
+	    			 this.values.getPosition().get(0)!=null&& UtilString.stringIsInteger(this.values.getPosition().get(0).getData())){
+	    		return new Integer(this.values.getPosition().get(0).getData());
+	    	}
+	    	else
+	    	   return null;
+	    }
+	    
+        public String getUnofficial(){
+	    	
+	    	if (this.values!= null && this.values.getUnofficial()!= null && this.values.getUnofficial().size()> 0 && 
+	    			 this.values.getUnofficial().get(0)!=null && this.values.getUnofficial().get(0).getData()!=null){
+	    		return this.values.getUnofficial().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }
+        
+	
+
+}

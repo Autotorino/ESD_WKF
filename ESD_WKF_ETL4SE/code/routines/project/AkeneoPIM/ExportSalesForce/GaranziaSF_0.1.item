@@ -1,0 +1,138 @@
+package routines;
+
+
+public class GaranziaSF {
+	
+	    
+	   public GaranziaSF() {
+		   ValuesGaranziaSF values = new ValuesGaranziaSF(); 
+		   setValues(values);
+	   }
+	
+	   public GaranziaSF(JSONObject jsonObjValues) {
+	    	setCode(jsonObjValues);
+	    	
+	    	ValuesGaranziaSF values = new ValuesGaranziaSF(jsonObjValues);
+			setValues(values);
+		}
+	
+	    private String code;
+	    
+	    private ValuesGaranziaSF values;
+
+	    public void setCode(String code){
+	        this.code = code;
+	    }
+	    
+	    public void setCode(JSONObject jsonObjBody){
+	    	
+	    	if(jsonObjBody!=null){
+	    	  Object returnValue = jsonObjBody.get("code");
+	          this.code = (returnValue instanceof String) ? (String)returnValue : null;
+	    	}
+	    	else
+	    	  this.code = null;
+	    }
+	    
+	    public String getCode(){
+	        return this.code;
+	    }
+	    
+	    public void setValues(ValuesGaranziaSF values){
+	        this.values = values;
+	    }
+	    public ValuesGaranziaSF getValues(){
+	        return this.values;
+	    }
+	    
+	    /**
+	     * Custom methods
+	     */
+	    public String getLabel(){
+	    	
+	    	if (this.values!= null && this.values.getLabel()!= null && this.values.getLabel().size()> 0 && this.values.getLabel().get(0)!=null){
+	    		return this.values.getLabel().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }
+	    
+	    public String getNomeGaranziaSito(){
+	    	
+	    	if (this.values!= null && this.values.getNome_garanzia_sito()!= null && this.values.getNome_garanzia_sito().size()> 0 && this.values.getNome_garanzia_sito().get(0)!=null){
+	    		return this.values.getNome_garanzia_sito().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }	
+	    
+	    public String getTipologiaGaranzia(){
+	    	
+	    	if (this.values!= null && this.values.getTipologia_garanzia()!= null && this.values.getTipologia_garanzia().size()> 0 && this.values.getTipologia_garanzia().get(0)!=null){
+	    		return this.values.getTipologia_garanzia().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }	  
+	    
+       public String getDurataMesi(){
+	    	
+	    	if (this.values!= null && this.values.getDurata_mesi()!= null && this.values.getDurata_mesi().size()> 0 && 
+	    			 this.values.getDurata_mesi().get(0)!=null && this.values.getDurata_mesi().get(0).getData()!= null){
+	    		return this.values.getDurata_mesi().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }
+       
+       public String getDurataAnni(){
+	    	
+	    	if (this.values!= null && this.values.getDurata_anni()!= null && this.values.getDurata_anni().size()> 0 && 
+	    			 this.values.getDurata_anni().get(0)!=null && this.values.getDurata_anni().get(0).getData()!= null){
+	    		return this.values.getDurata_anni().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }       
+       
+       public String getPremiumSelection(){
+	    	
+	    	if (this.values!= null && this.values.getPremium_selection()!= null && this.values.getPremium_selection().size()> 0 && 
+	    			 this.values.getPremium_selection().get(0)!=null && this.values.getPremium_selection().get(0).getData()!= null){
+	    		return this.values.getPremium_selection().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }
+       
+       public String getDescrizionePortaliEsterni(){
+	    	
+ 	    	if (this.values!= null && this.values.getDescrizione_portali_esterni()!= null && this.values.getDescrizione_portali_esterni().size()> 0 && 
+ 	    			 this.values.getDescrizione_portali_esterni().get(0)!=null && this.values.getDescrizione_portali_esterni().get(0).getData()!= null){
+ 	    		return this.values.getDescrizione_portali_esterni().get(0).getData();
+ 	    	}
+ 	    	else
+ 	    	   return null;
+ 	    }
+       
+       public String getDescrizioneSitoWeb(){
+	    	
+ 	    	if (this.values!= null && this.values.getDescrizione_sito_web()!= null && this.values.getDescrizione_sito_web().size()> 0 && 
+ 	    			 this.values.getDescrizione_sito_web().get(0)!=null && this.values.getDescrizione_sito_web().get(0).getData()!= null){
+ 	    		return this.values.getDescrizione_sito_web().get(0).getData();
+ 	    	}
+ 	    	else
+ 	    	   return null;
+ 	    }       
+       
+       public String getUrlLogo(){
+	    	
+	    	if (this.values!= null && this.values.getUrl_logo()!= null && this.values.getUrl_logo().size()> 0 && 
+	    			 this.values.getUrl_logo().get(0)!=null && this.values.getUrl_logo().get(0).getData()!= null){
+	    		return this.values.getUrl_logo().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }
+
+}

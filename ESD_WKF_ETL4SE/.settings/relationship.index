@@ -185,6 +185,229 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_LRW58FqcEe2XS7tI4aTp0w",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_KL67QF0JEeyp-Nfllqv_Ag",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "Base64Util",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "BrandSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "CampagnaSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataValue",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedDealerK",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedFotoExtra",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedOptSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EmbeddedSede",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesBrandListSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesCampagneList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesCampagneListSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesColoreInterniList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesFiligranaList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesFotoExtraList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesGaranziaList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesGaranziaListSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesModelloListSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesPacchettoMobilityListSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesSediList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesServiziSitoListSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesSpeseTrapassoList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Filigrana",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "FotoExtra",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "GaranziaSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Label",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "MapUtilValueSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ModelloSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "OptionListSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "OptionSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Options",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "OptionsReference",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "PacchettoMobilitySF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Product",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ProductListDealerK",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ProductListSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ProductSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Sede",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ServiziSitoSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "SpeseTrapasso",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilCommonProcessFlow",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilDate",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilJson",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilString",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "UtilWorkBook",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Values",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ValuesColoreInterni",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ValuesFotoExtra",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ValuesSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "ValuesSede",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "Vehicle",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "VehicleDataManager",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_cAXEIGQvEe2fUKiP3LO_JQ - VEHICLES_SEND_SALESFORCE",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_M8Me8Gu5Eey4ybgp78VGdg",
     "version" : "0.1",
     "type" : "job"
@@ -633,10 +856,6 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "built-in",
-    "version" : "Latest",
-    "type" : "context"
-  }, {
     "id" : "Price",
     "version" : "Latest",
     "type" : "routine"
@@ -670,6 +889,10 @@
     "type" : "schema"
   }, {
     "id" : "_CUUxYIA-EeyjkKPScvPNwQ - VEHICLES_DISCOUNT_PROMOTION",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_cAXEIGQvEe2fUKiP3LO_JQ - VEHICLES_SEND_SALESFORCE",
     "version" : "Latest",
     "type" : "schema"
   }, {
@@ -744,6 +967,10 @@
     "type" : "job"
   }, {
     "id" : "_KL67QV0JEeyp-Nfllqv_Ag",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "_LRW58FqcEe2XS7tI4aTp0w",
     "version" : "Latest",
     "type" : "job"
   }, {

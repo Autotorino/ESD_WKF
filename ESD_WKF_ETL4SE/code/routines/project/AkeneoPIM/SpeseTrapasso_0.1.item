@@ -48,6 +48,15 @@ public class SpeseTrapasso {
 	    /**
 	     * Custom methods
 	     */
+	    public String getLabel(){
+	    	
+	    	if (this.values!= null && this.values.getLabel()!= null && this.values.getLabel().size()> 0 && this.values.getLabel().get(0)!=null){
+	    		return this.values.getLabel().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }
+	    
 	    public Integer getSpesaTrapasso(){
 	    	
 	    	if (this.values!= null && this.values.getSpesa_trapasso()!= null && this.values.getSpesa_trapasso().size()> 0 && 

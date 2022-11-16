@@ -1,0 +1,48 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import routines.JSONArray;
+import routines.JSONObject;
+
+
+
+public class EmbeddedPacchettoMobilitySF { 
+	
+	    public EmbeddedPacchettoMobilitySF(JSONObject jsonObjBody) {
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("_embedded");
+	    	setItems(jsonObjValues);
+	    }
+	    
+	    private List<PacchettoMobilitySF> items;
+	    
+        public void setItems(JSONObject jsonObjValues){
+	    	
+	    	this.items = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("items");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PacchettoMobilitySF> arrayList = new ArrayList<PacchettoMobilitySF>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PacchettoMobilitySF((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.items = arrayList;
+	    		}
+	    	}
+	    }
+        
+        public List<PacchettoMobilitySF> getItems(){
+        	return items;
+        }
+        
+        public void addItems(List<PacchettoMobilitySF> items){
+        	this.items.addAll(items);
+        }           
+}

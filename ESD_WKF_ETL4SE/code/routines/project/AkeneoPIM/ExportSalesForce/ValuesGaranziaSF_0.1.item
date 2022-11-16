@@ -1,0 +1,301 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ValuesGaranziaSF {
+	
+	
+	    public ValuesGaranziaSF() {
+		}	    
+	    
+	    public ValuesGaranziaSF(JSONObject jsonObjBody) {
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("values");
+	    	
+	    	setLabel(jsonObjValues);
+	    	setNome_garanzia_sito(jsonObjValues);
+	    	setTipologia_garanzia(jsonObjValues);
+	    	setDurata_mesi(jsonObjValues);
+	    	setDurata_anni(jsonObjValues);
+	    	setPremium_selection(jsonObjValues);
+	    	setDescrizione_portali_esterni(jsonObjValues);
+	    	setDescrizione_sito_web(jsonObjValues);
+	    	setUrl_logo(jsonObjValues);
+	    	
+		}
+	    
+	    private List<DataValue> label;
+	    
+	    private List<DataValue> nome_garanzia_sito;	
+	    
+	    private List<DataValue> tipologia_garanzia;		    
+	    
+	    private List<DataValue> durata_mesi;
+	    
+	    private List<DataValue> durata_anni;	    
+	    
+	    private List<DataValue> premium_selection;
+	    
+	    private List<DataValue> descrizione_portali_esterni;
+	    
+	    private List<DataValue> descrizione_sito_web;	    
+
+	    private List<DataValue> url_logo;
+	    
+	    /**
+	     * 
+	     * Metodi GET\SET per Lettura dal PIM
+	     */
+	    public void setLabel(List<DataValue> label){
+	        this.label = label;
+	    }
+	    
+        public void setLabel(JSONObject jsonObjValues){
+	    	
+	    	this.label = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("label");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.label = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getLabel(){
+	        return this.label;
+	    }
+	    
+	    public void setNome_garanzia_sito(List<DataValue> nome_garanzia_sito){
+	        this.nome_garanzia_sito = nome_garanzia_sito;
+	    }
+	    
+        public void setNome_garanzia_sito(JSONObject jsonObjValues){
+	    	
+	    	this.nome_garanzia_sito = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("nome_garanzia_sito");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.nome_garanzia_sito = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getNome_garanzia_sito(){
+	        return this.nome_garanzia_sito;
+	    }
+	    
+	    public void setTipologia_garanzia(List<DataValue> tipologia_garanzia){
+	        this.tipologia_garanzia = tipologia_garanzia;
+	    }
+	    
+        public void setTipologia_garanzia(JSONObject jsonObjValues){
+	    	
+	    	this.tipologia_garanzia = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("tipologia_garanzia");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.tipologia_garanzia = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getTipologia_garanzia(){
+	        return this.tipologia_garanzia;
+	    }
+	    
+	    public void setDurata_mesi(List<DataValue> durata_mesi){
+	        this.durata_mesi = durata_mesi;
+	    }
+	    
+        public void setDurata_mesi(JSONObject jsonObjValues){
+	    	
+	    	this.durata_mesi = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("durata_mesi");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.durata_mesi = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getDurata_mesi(){
+	        return this.durata_mesi;
+	    }
+	    
+	    public void setDurata_anni(List<DataValue> durata_anni){
+	        this.durata_anni = durata_anni;
+	    }
+	    
+        public void setDurata_anni(JSONObject jsonObjValues){
+	    	
+	    	this.durata_anni = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("durata_anni");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.durata_anni = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getDurata_anni(){
+	        return this.durata_anni;
+	    }
+	    
+	    public void setPremium_selection(List<DataValue> premium_selection){
+	        this.premium_selection = premium_selection;
+	    }
+	    
+        public void setPremium_selection(JSONObject jsonObjValues){
+	    	
+	    	this.premium_selection = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("premium_selection");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.premium_selection = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getPremium_selection(){
+	        return this.premium_selection;
+	    }
+	    
+	    public void setDescrizione_portali_esterni(List<DataValue> descrizione_portali_esterni){
+	        this.descrizione_portali_esterni = descrizione_portali_esterni;
+	    }
+	    
+        public void setDescrizione_portali_esterni(JSONObject jsonObjValues){
+	    	
+	    	this.descrizione_portali_esterni = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("descrizione_portali_esterni");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.descrizione_portali_esterni = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getDescrizione_portali_esterni(){
+	        return this.descrizione_portali_esterni;
+	    }
+	    
+	    public void setDescrizione_sito_web(List<DataValue> descrizione_sito_web){
+	        this.descrizione_sito_web = descrizione_sito_web;
+	    }
+	    
+        public void setDescrizione_sito_web(JSONObject jsonObjValues){
+	    	
+	    	this.descrizione_sito_web = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("descrizione_sito_web");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.descrizione_sito_web = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getDescrizione_sito_web(){
+	        return this.descrizione_sito_web;
+	    }
+	    
+	    public void setUrl_logo(List<DataValue> url_logo){
+	        this.url_logo = url_logo;
+	    }
+	    
+        public void setUrl_logo(JSONObject jsonObjValues){
+	    	
+	    	this.url_logo = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("url_logo");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.url_logo = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getUrl_logo(){
+	        return this.url_logo;
+	    }
+}

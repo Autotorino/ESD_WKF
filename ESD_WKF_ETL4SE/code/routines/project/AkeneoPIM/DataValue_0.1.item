@@ -14,7 +14,7 @@ public class DataValue {
 	    public DataValue(JSONObject jsonObj) {
 	    	if(jsonObj!= null){
 				setLocale(jsonObj);
-				setScope(jsonObj);
+				//setScope(jsonObj);
 				setData(jsonObj);
             }
 		}
@@ -56,8 +56,12 @@ public class DataValue {
 	    }
 	    
 	    public void setData(JSONObject jsonObj){
-	    	if(jsonObj.get("data")!=null && jsonObj.get("data") instanceof String)
-	           this.data = (String)jsonObj.get("data");
+	    	if (jsonObj.get("data")!=null){
+		    	if(jsonObj.get("data") instanceof String)
+		           this.data = (String)jsonObj.get("data");
+		    	else if(jsonObj.get("data") instanceof Integer) 
+		    	   this.data = ((Integer)jsonObj.get("data")).toString();
+	    	}
 	    }	   
 	    
 	    public String getData(){

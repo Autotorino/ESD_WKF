@@ -1,0 +1,99 @@
+package routines;
+
+
+public class PacchettoMobilitySF {
+	
+	    
+	   public PacchettoMobilitySF() {
+		   ValuesPacchettoMobilitySF values = new ValuesPacchettoMobilitySF(); 
+		   setValues(values);
+	   }
+	
+	   public PacchettoMobilitySF(JSONObject jsonObjValues) {
+	    	setCode(jsonObjValues);
+	    	
+	    	ValuesPacchettoMobilitySF values = new ValuesPacchettoMobilitySF(jsonObjValues);
+			setValues(values);
+		}
+	
+	    private String code;
+	    
+	    private ValuesPacchettoMobilitySF values;
+
+	    public void setCode(String code){
+	        this.code = code;
+	    }
+	    
+	    public void setCode(JSONObject jsonObjBody){
+	    	
+	    	if(jsonObjBody!=null){
+	    	  Object returnValue = jsonObjBody.get("code");
+	          this.code = (returnValue instanceof String) ? (String)returnValue : null;
+	    	}
+	    	else
+	    	  this.code = null;
+	    }
+	    
+	    public String getCode(){
+	        return this.code;
+	    }
+	    
+	    public void setValues(ValuesPacchettoMobilitySF values){
+	        this.values = values;
+	    }
+	    public ValuesPacchettoMobilitySF getValues(){
+	        return this.values;
+	    }
+	    
+	    /**
+	     * Custom methods
+	     */
+	    public String getLabel(){
+	    	
+	    	if (this.values!= null && this.values.getLabel()!= null && this.values.getLabel().size()> 0 && this.values.getLabel().get(0)!=null){
+	    		return this.values.getLabel().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }
+	    
+
+	    public String getServiziInclusi(){
+	    	
+	    	if (this.values!= null && this.values.getServizi_inclusi()!= null && this.values.getServizi_inclusi().size()> 0 && this.values.getServizi_inclusi().get(0)!=null){
+	    		return this.values.getServizi_inclusi().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }	  
+	    
+	    public String getServiziOpzionali(){
+	    	
+	    	if (this.values!= null && this.values.getServizi_opzionali()!= null && this.values.getServizi_opzionali().size()> 0 && this.values.getServizi_opzionali().get(0)!=null){
+	    		return this.values.getServizi_opzionali().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }	
+	    
+	    public String getServiziEsclusi(){
+	    	
+	    	if (this.values!= null && this.values.getServizi_esclusi()!= null && this.values.getServizi_esclusi().size()> 0 && this.values.getServizi_esclusi().get(0)!=null){
+	    		return this.values.getServizi_esclusi().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }	
+	    
+	    public String getOrdinamento(){
+	    	
+	    	if (this.values!= null && this.values.getOrdinamento()!= null && this.values.getOrdinamento().size()> 0 && this.values.getOrdinamento().get(0)!=null){
+	    		return this.values.getOrdinamento().get(0).getData();
+	    	}
+	    	else
+	    	   return null;
+	    }		    
+	    
+	  
+
+}

@@ -685,7 +685,7 @@ public class Vehicle {
 			
 			for (String cloudinaryImage:product.getCloudinaryImage()){
 				
-				if (cloudinaryImage!= null && cloudinaryImage.indexOf("_")>0 && cloudinaryImage.indexOf("_")+1 > cloudinaryImage.length())	{ // Valido finchè il code sarà version+"_"+(folder)+"_"+image
+				if (cloudinaryImage!= null && cloudinaryImage.indexOf("_")>0 && cloudinaryImage.indexOf("_")+1 < cloudinaryImage.length())	{ // Valido finchè il code sarà version+"_"+(folder)+"_"+image
 					
 
 				        String folderAsset = !UtilString.isEmptyTrim(cloudinaryFolder) ? cloudinaryFolder.replace("/","_")+"_" : null;

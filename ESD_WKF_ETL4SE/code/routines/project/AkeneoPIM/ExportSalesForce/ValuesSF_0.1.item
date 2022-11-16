@@ -1,0 +1,3273 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
+public class ValuesSF {
+	
+	    public static String unitaDiMisuraVelocita = "KILOMETER_PER_HOUR";
+	    public static String unitaDiMisuraCilindrata = "CUBIC_CENTIMETER";
+	    public static String unitaDiMisuraPeso = "KILOGRAM";
+	    public static String unitaDiMisuraPasso = "CENTIMETER";
+	    public static String unitaDiMisuraSerbatoio = "LITER";
+	    public static String unitaDiMisuraConsumo = "LITER_PER_100_KILOMETER";
+	    public static String unitaDiMisuraEmissioni = "GRAM_PER_KILOMETER";
+	    public static String unitaDiMisuraCoppia = "NEWTON_PER_METER";
+	    public static String unitaDiMisuraCurrency = "EUR";
+	    public static String unitaDiMisuraBagagliaio = "LITER";
+	    
+    
+	    public ValuesSF() {
+		}
+	
+	    public ValuesSF(JSONObject jsonObjBody) {
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("values");
+
+	    	setAlimentazione(jsonObjValues); 
+	    	setAltezza(jsonObjValues); 
+	    	setArchitettura(jsonObjValues); 
+	    	setArrotondamento_sl(jsonObjValues); 
+	    	setAttiva(jsonObjValues); 
+	    	setAutocarro(jsonObjValues); 
+	    	setAutonomia(jsonObjValues); 
+	    	setBagagliaio(jsonObjValues); 
+	    	setBagagliaio_con_sedili_rialzati(jsonObjValues); 
+	    	setCalcola_prezzi_finali(jsonObjValues); 
+	    	setCambio(jsonObjValues); 
+	    	setCampagne_ml(jsonObjValues); 
+	    	setCampi_da_bloccare(jsonObjValues); 
+	    	setCapacita_serbatoio_litri(jsonObjValues); 
+	    	setCategoria_auto(jsonObjValues); 
+	    	setCategoria_dealerK(jsonObjValues); 
+	    	setCategoria_moto(jsonObjValues); 
+	    	setCategoria_van(jsonObjValues); 
+	    	setCavalli(jsonObjValues); 
+	    	setCavalli_fiscali(jsonObjValues); 
+	    	setCilindrata(jsonObjValues); 
+	    	setCilindri(jsonObjValues); 
+	    	setClasse_emissione(jsonObjValues); 
+	    	setCloudinary_image(jsonObjValues); 
+	    	setCodice_eurotax(jsonObjValues); 
+	    	setCodice_motornet(jsonObjValues); 
+	    	setColore_esterno(jsonObjValues); 
+	    	setColore_interni(jsonObjValues); 
+	    	setCondizioni_validita_offerta(jsonObjValues); 
+	    	setConsumo_extra_urbano(jsonObjValues); 
+	    	setConsumo_medio(jsonObjValues); 
+	    	setConsumo_urbano(jsonObjValues); 
+	    	setCoppia(jsonObjValues); 
+	    	setData_calcolo_prezzi_finali(jsonObjValues); 
+	    	setData_uscita_stock(jsonObjValues); 
+	    	setDes_marca(jsonObjValues); 
+	    	setDes_modello(jsonObjValues); 
+	    	setDes_versione(jsonObjValues); 
+	    	setDescrizione_estesa_dealerk(jsonObjValues); 
+	    	setDescrizione_marce(jsonObjValues); 
+	    	setDescrizione_web_estesa(jsonObjValues); 
+	    	setEmissioni_co2(jsonObjValues); 
+	    	setEsponi_prezzi_escluso_iva(jsonObjValues); 
+	    	setFiliale(jsonObjValues); 
+	    	setFiliale_infocar(jsonObjValues); 
+	    	setFiligrane(jsonObjValues); 
+	    	setFiligrane_dealerk(jsonObjValues); 
+	    	setFin_anticipo(jsonObjValues); 
+	    	setFin_anticipo_default_sito(jsonObjValues); 
+	    	setFin_configurazione_finanziamento_default(jsonObjValues); 
+	    	setFin_configurazioni_sito(jsonObjValues); 
+	    	setFin_data_inserimento_finanziamento(jsonObjValues); 
+	    	setFin_disclaimer_legale(jsonObjValues); 
+	    	setFin_durata(jsonObjValues); 
+	    	setFin_durata_default_sito(jsonObjValues); 
+	    	setFin_finanziaria(jsonObjValues); 
+	    	setFin_finanziato(jsonObjValues); 
+	    	setFin_importo_tot_dovuto(jsonObjValues); 
+	    	setFin_importo_totale_credito(jsonObjValues); 
+	    	setFin_imposta_di_bollo(jsonObjValues); 
+	    	setFin_imposta_di_bollo_sostitutiva(jsonObjValues); 
+	    	setFin_maxi_rata(jsonObjValues); 
+	    	setFin_rata_ok(jsonObjValues); 
+	    	setFin_risposta_finanziaria(jsonObjValues); 
+	    	setFin_spese_comunicazioni_periodiche(jsonObjValues); 
+	    	setFin_spese_incasso_gestione_rata(jsonObjValues); 
+	    	setFin_spese_istruttoria(jsonObjValues); 
+	    	setFin_taeg(jsonObjValues); 
+	    	setFin_tan(jsonObjValues); 
+	    	setFin_url_preventivo(jsonObjValues); 
+	    	setFoto_originali(jsonObjValues); 
+	    	setGaranzia(jsonObjValues); 
+	    	setHighlights_attributi_veicoli(jsonObjValues); 
+	    	setId_youtube(jsonObjValues); 
+	    	setImmatricolazione_anno(jsonObjValues); 
+	    	setImmatricolazione_data(jsonObjValues); 
+	    	setImmatricolazione_mese(jsonObjValues); 
+	    	setIva_esposta(jsonObjValues); 
+	    	setKilowatt(jsonObjValues); 
+	    	setKm(jsonObjValues); 
+	    	setLarghezza(jsonObjValues); 
+	    	setLunghezza(jsonObjValues); 
+	    	setMarca_sito(jsonObjValues); 
+	    	setModello_sito(jsonObjValues); 
+	    	setNeopatentati_sito(jsonObjValues); 
+	    	setNumero_giri(jsonObjValues); 
+	    	setOptional_auto(jsonObjValues); 
+	    	setOptional_auto_select(jsonObjValues); 
+	    	setOptional_pagamento(jsonObjValues); 
+	    	setPacchetti_mobility(jsonObjValues); 
+	    	setPasso(jsonObjValues); 
+	    	setPeso(jsonObjValues); 
+	    	setPorte(jsonObjValues); 
+	    	setPosti(jsonObjValues); 
+	    	setPrecedenti_proprietari(jsonObjValues); 
+	    	setPrefisso_descrizione_estesa_dealerk(jsonObjValues); 
+	    	setPrezzo_listino(jsonObjValues); 
+	    	setPrezzo_listino_escluso_iva(jsonObjValues); 
+	    	setPrezzo_listino_manuale(jsonObjValues); 
+	    	setPrezzo_vendita(jsonObjValues); 
+	    	setPrezzo_vendita_manuale(jsonObjValues); 
+	    	setPrezzo_vendita_senza_iva_es(jsonObjValues); 
+	    	setPubblica_su_dealerk(jsonObjValues); 
+	    	setPubblica_su_infocar(jsonObjValues); 
+	    	setRidotte(jsonObjValues); 
+	    	setRivestimento(jsonObjValues); 
+	    	setSeconda_foto(jsonObjValues); 
+	    	setSede(jsonObjValues); 
+	    	setSeo_description(jsonObjValues); 
+	    	setSeo_title(jsonObjValues); 
+	    	setServizi_veicolo_extra(jsonObjValues); 
+	    	setServizi_veicolo_inclusi(jsonObjValues); 
+	    	setSottotitolo(jsonObjValues); 
+	    	setSpese_trapasso_sl(jsonObjValues); 
+	    	setTarga(jsonObjValues); 
+	    	setTelaio(jsonObjValues); 
+	    	setTipo(jsonObjValues); 
+	    	setTipo_text(jsonObjValues); 
+	    	setTitolo_prezzo(jsonObjValues); 
+	    	setTrazione(jsonObjValues); 
+	    	setUltima_foto(jsonObjValues); 
+	    	setValvole(jsonObjValues); 
+	    	setVelocita(jsonObjValues); 
+	    	setVernice_esterno(jsonObjValues);
+	    	
+		}
+	    
+
+	    private List<DataValue> alimentazione;
+	    private List<DataValueUnit> altezza;
+	    private List<DataValue> architettura;
+	    private List<DataValue> arrotondamento_sl;
+	    private List<BooleanValue> attiva;
+	    private List<BooleanValue> autocarro;
+	    private List<DataValue> autonomia;
+	    private List<DataValueUnit> bagagliaio;	 
+	    private List<DataValueUnit> bagagliaio_con_sedili_rialzati;	 
+	    private List<BooleanValue> calcola_prezzi_finali;
+	    private List<DataValue> cambio;
+	    private List<MultiDataValue> campagne_ml;
+	    private List<MultiDataValue> campi_da_bloccare;
+	    private List<DataValueUnit> capacita_serbatoio_litri;
+	    private List<DataValue> categoria_auto;	  
+	    private List<DataValue> categoria_dealerK;	
+	    private List<DataValue> categoria_moto;	
+	    private List<DataValue> categoria_van;	
+	    private List<DataValue> cavalli;
+	    private List<DataValue> cavalli_fiscali;
+	    private List<DataValueUnit> cilindrata;
+	    private List<DataValue> cilindri;
+	    private List<DataValue> classe_emissione;
+	    private List<MultiDataValue> cloudinary_image;
+	    private List<DataValue> codice_eurotax;
+	    private List<DataValue> codice_motornet;
+	    private List<DataValue> colore_esterno;
+	    private List<DataValue> colore_interni;	  
+	    private List<DataValue> condizioni_validita_offerta;
+	    private List<DataValueUnit> consumo_extra_urbano;
+	    private List<DataValueUnit> consumo_medio;
+	    private List<DataValueUnit> consumo_urbano;
+	    private List<DataValueUnit> coppia;
+	    private List<DataValue> data_calcola_prezzi_finali;
+	    private List<DataValue> data_uscita_stock;
+	    private List<DataValue> des_marca;
+	    private List<DataValue> des_modello;
+	    private List<DataValue> des_versione;
+	    private List<DataValue> descrizione_estesa_dealerk;
+	    private List<DataValue> descrizione_marce;
+	    private List<DataValue> descrizione_web_estesa;
+	    private List<DataValueUnit> emissioni_co2;
+	    private List<BooleanValue> esponi_prezzi_escluso_iva;
+	    private List<MultiDataValue> filiale;
+	    private List<MultiDataValue> filiale_infocar;
+	    private List<MultiDataValue> filigrane;
+	    private List<MultiDataValue> filigrane_dealerk;
+	    private List<PriceValue> fin_anticipo;
+	    private List<PriceValue> fin_anticipo_default_sito;
+	    private List<DataValue> fin_configurazione_finanziamento_default;
+	    private List<MultiDataValue> fin_configurazioni_sito;
+	    private List<DataValue> fin_data_inserimento_finanziamento;
+	    private List<DataValue> fin_disclaimer_legale;
+	    private List<DataValue> fin_durata;
+	    private List<DataValue> fin_durata_default_sito;
+	    private List<DataValue> fin_finanziaria;
+	    private List<PriceValue> fin_finanziato;
+	    private List<PriceValue> fin_importo_tot_dovuto;
+	    private List<PriceValue> fin_importo_totale_credito;
+	    private List<PriceValue> fin_imposta_di_bollo;
+	    private List<PriceValue> fin_imposta_di_bollo_sostitutiva;
+	    private List<PriceValue> fin_maxi_rata;
+	    private List<PriceValue> fin_rata_ok;
+	    private List<DataValue> fin_risposta_finanziaria;
+	    private List<PriceValue> fin_spese_comunicazioni_periodiche;
+	    private List<PriceValue> fin_spese_incasso_gestione_rata;
+	    private List<PriceValue> fin_spese_istruttoria;
+	    private List<DataValue> fin_taeg;
+	    private List<DataValue> fin_tan;
+	    private List<DataValue> fin_url_preventivo;
+	    private List<BooleanValue> foto_originali;
+	    private List<DataValue> garanzia;
+	    private List<MultiDataValue> highlights_attributi_veicoli;
+	    private List<DataValue> id_youtube;
+	    private List<DataValue> immatricolazione_anno;
+	    private List<DataValue> immatricolazione_data;
+	    private List<DataValue> immatricolazione_mese;
+	    private List<BooleanValue> iva_esposta;
+	    private List<DataValue> kilowatt;
+	    private List<DataValue> km;
+	    private List<DataValueUnit> larghezza;
+	    private List<DataValueUnit> lunghezza;
+	    private List<DataValue> marca_sito;
+	    private List<DataValue> modello_sito;
+	    private List<BooleanValue> neopatentati_sito;
+	    private List<DataValue> numero_giri;
+	    private List<DataValue> optional_auto;
+	    private List<MultiDataValue> optional_auto_select;
+	    private List<DataValue> optional_pagamento;
+	    private List<MultiDataValue> pacchetti_mobility;
+	    private List<DataValueUnit> passo;
+	    private List<DataValueUnit> peso;
+	    private List<DataValue> porte;
+	    private List<DataValue> posti;
+	    private List<DataValue> precedenti_proprietari;
+	    private List<DataValue> prefisso_descrizione_estesa_dealerk;
+	    private List<PriceValue> prezzo_listino;
+	    private List<PriceValue> prezzo_listino_escluso_iva;
+	    private List<PriceValue> prezzo_listino_manuale;
+	    private List<PriceValue> prezzo_vendita;
+	    private List<PriceValue> prezzo_vendita_manuale;
+	    private List<PriceValue> prezzo_vendita_senza_iva_es;
+	    private List<BooleanValue> pubblica_su_dealerk;
+	    private List<BooleanValue> pubblica_su_infocar;
+	    private List<BooleanValue> ridotte;
+	    private List<DataValue> rivestimento;
+	    private List<DataValue> seconda_foto;
+	    private List<DataValue> sede;
+	    private List<DataValue> seo_description;
+	    private List<DataValue> seo_title;
+	    private List<MultiDataValue> servizi_veicolo_extra;
+	    private List<MultiDataValue> servizi_veicolo_inclusi;
+	    private List<DataValue> sottotitolo;
+	    private List<DataValue> spese_trapasso_sl;
+	    private List<DataValue> targa;
+	    private List<DataValue> telaio;
+	    private List<DataValue> tipo;
+	    private List<DataValue> tipo_text;
+	    private List<DataValue> titolo_prezzo;
+	    private List<DataValue> trazione;
+	    private List<DataValue> ultima_foto;
+	    private List<DataValue> valvole;	
+	    private List<DataValueUnit> velocita;
+	    private List<DataValue> vernice_esterno;
+   
+	    
+	    /**
+		**Getter & Setter 
+		**/
+	    public void setPrezzo_listino(JSONObject jsonObjValues){
+	    	
+	    	this.prezzo_listino = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("prezzo_listino");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.prezzo_listino = arrayList;
+	    		}
+	    	}
+	    }
+	    
+	    public List<PriceValue> getPrezzo_listino(){
+	        return this.prezzo_listino;
+	    }
+	    
+	    public void setPrezzo_listino_escluso_iva(JSONObject jsonObjValues){
+	    	
+	    	this.prezzo_listino_escluso_iva = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("prezzo_listino_escluso_iva");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.prezzo_listino_escluso_iva = arrayList;
+	    		}
+	    	}
+	    }
+	    
+	    public List<PriceValue> getPrezzo_listino_escluso_iva(){
+	        return this.prezzo_listino_escluso_iva;
+	    }	    
+	    
+	    
+	    public void setPrezzo_listino_manuale(JSONObject jsonObjValues){
+	    	
+	    	this.prezzo_listino_manuale = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("prezzo_listino_manuale");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.prezzo_listino_manuale = arrayList;
+	    		}
+	    	}
+	    }
+	    
+	    public List<PriceValue> getPrezzo_listino_manuale(){
+	        return this.prezzo_listino_manuale;
+	    }
+	    
+    
+	    public void setPrezzo_vendita(JSONObject jsonObjValues){
+	    	
+	    	this.prezzo_vendita = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("prezzo_vendita");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.prezzo_vendita = arrayList;
+	    		}
+	    	}
+	    }
+	    	    
+	    public List<PriceValue> getPrezzo_vendita(){
+	        return this.prezzo_vendita;
+	    }
+	    
+	    public void setPrezzo_vendita_manuale(JSONObject jsonObjValues){
+	    	
+	    	this.prezzo_vendita_manuale = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("prezzo_vendita_manuale");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.prezzo_vendita_manuale = arrayList;
+	    		}
+	    	}
+	    }
+	    	    	    
+	    public List<PriceValue> getPrezzo_vendita_manuale(){
+	        return this.prezzo_vendita_manuale;
+	    }
+	    
+	    public void setPrezzo_vendita_senza_iva_es(JSONObject jsonObjValues){
+	    	
+	    	this.prezzo_vendita_senza_iva_es = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("prezzo_vendita_senza_iva_es");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.prezzo_vendita_senza_iva_es = arrayList;
+	    		}
+	    	}
+	    }
+	    	    	    
+	    public List<PriceValue> getPrezzo_vendita_senza_iva_es(){
+	        return this.prezzo_vendita_senza_iva_es;
+	    }
+	    
+	    public void setIva_esposta(JSONObject jsonObjValues){
+	    	
+	    	this.iva_esposta = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("iva_esposta");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<BooleanValue> arrayList = new ArrayList<BooleanValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new BooleanValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.iva_esposta = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<BooleanValue> getIva_esposta(){
+	        return this.iva_esposta;
+	    }	    
+	    
+	    public void setPubblica_su_dealerk(JSONObject jsonObjValues){
+	    	
+	    	this.pubblica_su_dealerk = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("pubblica_su_dealerk");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<BooleanValue> arrayList = new ArrayList<BooleanValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new BooleanValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.pubblica_su_dealerk = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<BooleanValue> getPubblica_su_dealerk(){
+	        return this.pubblica_su_dealerk;
+	    }	
+	    
+	    public void setPubblica_su_infocar(JSONObject jsonObjValues){
+	    	
+	    	this.pubblica_su_infocar = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("pubblica_su_infocar");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<BooleanValue> arrayList = new ArrayList<BooleanValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new BooleanValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.pubblica_su_infocar = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<BooleanValue> getPubblica_su_infocar(){
+	        return this.pubblica_su_infocar;
+	    }	    	    
+	    
+	    public void setKm(JSONObject jsonObjValues){
+	    	
+	    	this.km = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("km");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.km = arrayList;
+	    		}
+	    	}
+	    }
+	    
+	    public List<DataValue> getKm(){
+	        return this.km;
+	    }
+	    
+	    public void setPorte(JSONObject jsonObjValues){
+	    	
+	    	this.porte = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("porte");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.porte = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getPorte(){
+	        return this.porte;
+	    }
+	    
+	    public void setCavalli_fiscali(JSONObject jsonObjValues){
+	    	
+	    	this.cavalli_fiscali = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("cavalli_fiscali");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.cavalli_fiscali = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getCavalli_fiscali(){
+	        return this.cavalli_fiscali;
+	    }
+	    
+	    public void setCilindri(JSONObject jsonObjValues){
+	    	
+	    	this.cilindri = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("cilindri");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.cilindri = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getCilindri(){
+	        return this.cilindri;
+	    }
+	    
+	    public void setValvole(JSONObject jsonObjValues){
+	    	
+	    	this.valvole = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("valvole");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.valvole = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getValvole(){
+	        return this.valvole;
+	    }
+	    
+	    public void setNumero_giri(JSONObject jsonObjValues){
+	    	
+	    	this.numero_giri = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("numero_giri");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.numero_giri = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getNumero_giri(){
+	        return this.numero_giri;
+	    }
+	    
+	    public void setPosti(JSONObject jsonObjValues){
+	    	
+	    	this.posti = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("posti");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.posti = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getPosti(){
+	        return this.posti;
+	    }
+	    
+	    public void setCavalli(JSONObject jsonObjValues){
+	    	
+	    	this.cavalli = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("cavalli");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.cavalli = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getCavalli(){
+	        return this.cavalli;
+	    }
+	    
+	    public void setKilowatt(JSONObject jsonObjValues){
+	    	
+	    	this.kilowatt = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("kilowatt");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.kilowatt = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getKilowatt(){
+	        return this.kilowatt;
+	    }
+	    
+	    public void setAutonomia(JSONObject jsonObjValues){
+	    	
+	    	this.autonomia = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("autonomia");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.autonomia = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getAutonomia(){
+	        return this.autonomia;
+	    }
+
+	    public void setPrecedenti_proprietari(JSONObject jsonObjValues){
+	    	
+	    	this.precedenti_proprietari = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("precedenti_proprietari");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.precedenti_proprietari = arrayList;
+	    		}
+	    	}
+	    }	  	    
+	    
+	    public List<DataValue> getPrecedenti_proprietari(){
+	        return this.precedenti_proprietari;
+	    }
+	    
+	    public void setTipo(JSONObject jsonObjValues){
+	    	
+	    	this.tipo = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("tipo");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.tipo = arrayList;
+	    		}
+	    	}
+	    }	  	    
+	    
+	    public List<DataValue> getTipo(){
+	        return this.tipo;
+	    }
+	    
+	    public void setTipo_text(JSONObject jsonObjValues){
+	    	
+	    	this.tipo_text = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("tipo_text");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.tipo_text = arrayList;
+	    		}
+	    	}
+	    }	  	    
+	    
+	    public List<DataValue> getTipo_text(){
+	        return this.tipo_text;
+	    }
+	    
+	    public void setTitolo_prezzo(JSONObject jsonObjValues){
+	    	
+	    	this.titolo_prezzo = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("titolo_prezzo");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.titolo_prezzo = arrayList;
+	    		}
+	    	}
+	    }	  	    
+	    
+	    public List<DataValue> getTitolo_prezzo(){
+	        return this.titolo_prezzo;
+	    }
+	    
+	    public void setCategoria_dealerK(JSONObject jsonObjValues){
+	    	
+	    	this.categoria_dealerK = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("categoria_dealerK");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.categoria_dealerK = arrayList;
+	    		}
+	    	}
+	    }	  	    
+	    
+	    public List<DataValue> getCategoria_dealerK(){
+	        return this.categoria_dealerK;
+	    }
+	    
+	    public void setCategoria_auto(JSONObject jsonObjValues){
+	    	
+	    	this.categoria_auto = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("categoria_auto");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.categoria_auto = arrayList;
+	    		}
+	    	}
+	    }	  	    
+	    
+	    public List<DataValue> getCategoria_auto(){
+	        return this.categoria_auto;
+	    }
+
+	    
+	    public void setCategoria_moto(JSONObject jsonObjValues){
+	    	
+	    	this.categoria_moto = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("categoria_moto");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.categoria_moto = arrayList;
+	    		}
+	    	}
+	    }	  	    
+	    
+	    public List<DataValue> getCategoria_moto(){
+	        return this.categoria_moto;
+	    }
+	    
+	    public void setCategoria_van(JSONObject jsonObjValues){
+	    	
+	    	this.categoria_van = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("categoria_van");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.categoria_van = arrayList;
+	    		}
+	    	}
+	    }	  	    
+	    
+	    public List<DataValue> getCategoria_van(){
+	        return this.categoria_van;
+	    }
+	    
+	    public void setTarga(JSONObject jsonObjValues){
+	    	
+	    	this.targa = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("targa");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.targa = arrayList;
+	    		}
+	    	}
+	    }
+	    
+	    public List<DataValue> getTarga(){
+	        return this.targa;
+	    }
+	    
+	    public void setCambio(JSONObject jsonObjValues){
+	    	
+	    	this.cambio = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("cambio");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.cambio = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getCambio(){
+	        return this.cambio;
+	    }
+	    
+	    public void setTelaio(JSONObject jsonObjValues){
+	    	
+	    	this.telaio = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("telaio");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.telaio = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getTelaio(){
+	        return this.telaio;
+	    }
+	    
+	    public void setDes_marca(JSONObject jsonObjValues){
+	    	
+	    	this.des_marca = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("des_marca");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.des_marca = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getDes_marca(){
+	        return this.des_marca;
+	    }
+	    
+	    public void setData_calcolo_prezzi_finali(JSONObject jsonObjValues){
+	    	
+	    	this.data_calcola_prezzi_finali = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("data_calcola_prezzi_finali");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.data_calcola_prezzi_finali = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getData_calcolo_prezzi_finali(){
+	        return this.data_calcola_prezzi_finali;
+	    }
+	    
+	    public void setData_uscita_stock(JSONObject jsonObjValues){
+	    	
+	    	this.data_uscita_stock = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("data_uscita_stock");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.data_uscita_stock = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getData_uscita_stock(){
+	        return this.data_uscita_stock;
+	    }
+	    
+	    public void setTrazione(JSONObject jsonObjValues){
+	    	
+	    	this.trazione = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("trazione");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.trazione = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getTrazione(){
+	        return this.trazione;
+	    }
+	    
+	    public void setSede(JSONObject jsonObjValues){
+	    	
+	    	this.sede = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("sede");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.sede = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<DataValue> getSede(){
+	        return this.sede;
+	    }
+	    
+	    public void setSeo_description(JSONObject jsonObjValues){
+	    	
+	    	this.seo_description = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("seo_description");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.seo_description = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<DataValue> getSeo_description(){
+	        return this.seo_description;
+	    }
+	    
+	    public void setSeo_title(JSONObject jsonObjValues){
+	    	
+	    	this.seo_title = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("seo_title");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.seo_title = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<DataValue> getSeo_title(){
+	        return this.seo_title;
+	    }
+	    
+	    public void setSottotitolo(JSONObject jsonObjValues){
+	    	
+	    	this.sottotitolo = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("sottotitolo");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.sottotitolo = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<DataValue> getSottotitolo(){
+	        return this.sottotitolo;
+	    }
+	    
+	    public void setSpese_trapasso_sl(JSONObject jsonObjValues){
+	    	
+	    	this.spese_trapasso_sl = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("spese_trapasso_sl");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.spese_trapasso_sl = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<DataValue> getSpese_trapasso_sl(){
+	        return this.spese_trapasso_sl;
+	    }	    
+	    
+	    public void setDes_modello(JSONObject jsonObjValues){
+	    	
+	    	this.des_modello = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("des_modello");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.des_modello = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    	    
+	    public List<DataValue> getDes_modello(){
+	        return this.des_modello;
+	    }
+	    
+	    public void setDes_versione(JSONObject jsonObjValues){
+	    	
+	    	this.des_versione = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("des_versione");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.des_versione = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<DataValue> getDes_versione(){
+	        return this.des_versione;
+	    }
+	    
+	    public void setRivestimento(JSONObject jsonObjValues){
+	    	
+	    	this.rivestimento = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("rivestimento");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.rivestimento = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	 	    
+	    public List<DataValue> getRivestimento(){
+	        return this.rivestimento;
+	    }
+	    
+	    public void setAlimentazione(JSONObject jsonObjValues){
+	    	
+	    	this.alimentazione = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("alimentazione");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.alimentazione = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	 	    
+	    public List<DataValue> getAlimentazione(){
+	        return this.alimentazione;
+	    }
+	    
+	    public void setCodice_eurotax(JSONObject jsonObjValues){
+	    	
+	    	this.codice_eurotax = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("codice_eurotax");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.codice_eurotax = arrayList;
+	    		}
+	    	}
+	    }	  
+	    
+	    public List<DataValue> getCodice_eurotax(){
+	        return this.codice_eurotax;
+	    }
+	    
+	    public void setCodice_motornet(JSONObject jsonObjValues){
+	    	
+	    	this.codice_motornet = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("codice_motornet");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.codice_motornet = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getCodice_motornet(){
+	        return this.codice_motornet;
+	    }
+	    
+	    public void setGaranzia(JSONObject jsonObjValues){
+	    	
+	    	this.garanzia = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("garanzia");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.garanzia = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	 	  
+	    public List<DataValue> getGaranzia(){
+	        return this.garanzia;
+	    }
+	    
+	    public void setMarca_sito(JSONObject jsonObjValues){
+	    	
+	    	this.marca_sito = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("marca_sito");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.marca_sito = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	 	  
+	    public List<DataValue> getMarca_sito(){
+	        return this.marca_sito;
+	    }
+	    
+	    public void setModello_sito(JSONObject jsonObjValues){
+	    	
+	    	this.modello_sito = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("modello_sito");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.modello_sito = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	 	  
+	    public List<DataValue> getModello_sito(){
+	        return this.modello_sito;
+	    }
+	    
+	    public void setColore_esterno(JSONObject jsonObjValues){
+	    	
+	    	this.colore_esterno = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("colore_esterno");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.colore_esterno = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	
+	    public List<DataValue> getColore_esterno(){
+	        return this.colore_esterno;
+	    }
+	    
+	    public void setColore_interni(JSONObject jsonObjValues){
+	    	
+	    	this.colore_interni = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("colore_interni");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.colore_interni = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	
+	    public List<DataValue> getColore_interni(){
+	        return this.colore_interni;
+	    }
+	    
+	    public void setVernice_esterno(JSONObject jsonObjValues){
+	    	
+	    	this.vernice_esterno = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("vernice_esterno");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.vernice_esterno = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	
+	    public List<DataValue> getVernice_esterno(){
+	        return this.vernice_esterno;
+	    }
+	    
+	    public void setClasse_emissione(JSONObject jsonObjValues){
+	    	
+	    	this.classe_emissione = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("classe_emissione");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.classe_emissione = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getClasse_emissione(){
+	        return this.classe_emissione;
+	    }
+	    
+	    public void setImmatricolazione_anno(JSONObject jsonObjValues){
+	    	
+	    	this.immatricolazione_anno = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("immatricolazione_anno");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.immatricolazione_anno = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getImmatricolazione_anno(){
+	        return this.immatricolazione_anno;
+	    }
+	    
+	    public void setImmatricolazione_mese(JSONObject jsonObjValues){
+	    	
+	    	this.immatricolazione_mese = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("immatricolazione_mese");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.immatricolazione_mese = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<DataValue> getImmatricolazione_mese(){
+	        return this.immatricolazione_mese;
+	    }
+	    
+	    public void setAttiva(JSONObject jsonObjValues){
+	    	
+	    	this.attiva = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("attiva");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<BooleanValue> arrayList = new ArrayList<BooleanValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new BooleanValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.attiva = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<BooleanValue> getAttiva(){
+	        return this.attiva;
+	    }
+	    
+	    public void setAutocarro(JSONObject jsonObjValues){
+	    	
+	    	this.autocarro = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("autocarro");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<BooleanValue> arrayList = new ArrayList<BooleanValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new BooleanValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.autocarro = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<BooleanValue> getAutocarro(){
+	        return this.autocarro;
+	    }
+	    
+	    public void setCalcola_prezzi_finali(JSONObject jsonObjValues){
+	    	
+	    	this.calcola_prezzi_finali = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("calcola_prezzi_finali");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<BooleanValue> arrayList = new ArrayList<BooleanValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new BooleanValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.calcola_prezzi_finali = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<BooleanValue> getCalcola_prezzi_finali(){
+	        return this.calcola_prezzi_finali;
+	    }
+	    
+	    public void setEsponi_prezzi_escluso_iva(JSONObject jsonObjValues){
+	    	
+	    	this.esponi_prezzi_escluso_iva = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("esponi_prezzi_escluso_iva");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<BooleanValue> arrayList = new ArrayList<BooleanValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new BooleanValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.esponi_prezzi_escluso_iva = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<BooleanValue> getEsponi_prezzi_escluso_iva(){
+	        return this.esponi_prezzi_escluso_iva;
+	    }
+	    
+	    public void setFoto_originali(JSONObject jsonObjValues){
+	    	
+	    	this.foto_originali = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("foto_originali");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<BooleanValue> arrayList = new ArrayList<BooleanValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new BooleanValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.foto_originali = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<BooleanValue> getFoto_originali(){
+	        return this.foto_originali;
+	    }
+	    
+	    public void setRidotte(JSONObject jsonObjValues){
+	    	
+	    	this.ridotte = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("ridotte");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<BooleanValue> arrayList = new ArrayList<BooleanValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new BooleanValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.ridotte = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<BooleanValue> getRidotte(){
+	        return this.ridotte;
+	    }
+	    
+	    public void setNeopatentati_sito(JSONObject jsonObjValues){
+	    	
+	    	this.neopatentati_sito = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("neopatentati_sito");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<BooleanValue> arrayList = new ArrayList<BooleanValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new BooleanValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.neopatentati_sito = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    
+	    public List<BooleanValue> getNeopatentati_sito(){
+	        return this.neopatentati_sito;
+	    }
+	    
+	    public void setCilindrata(JSONObject jsonObjValues){
+	    	
+	    	this.cilindrata = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("cilindrata");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueUnit> arrayList = new ArrayList<DataValueUnit>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueUnit((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.cilindrata = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValueUnit> getCilindrata(){
+	        return this.cilindrata;
+	    }
+	    
+	    public void setEmissioni_co2(JSONObject jsonObjValues){
+	    	
+	    	this.emissioni_co2 = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("emissioni_co2");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueUnit> arrayList = new ArrayList<DataValueUnit>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueUnit((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.emissioni_co2 = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValueUnit> getEmissioni_co2(){
+	        return this.emissioni_co2;
+	    }
+	    
+	    public void setConsumo_medio(JSONObject jsonObjValues){
+	    	
+	    	this.consumo_medio = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("consumo_medio");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueUnit> arrayList = new ArrayList<DataValueUnit>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueUnit((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.consumo_medio = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValueUnit> getConsumo_medio(){
+	        return this.consumo_medio;
+	    }
+	    
+	    public void setConsumo_urbano(JSONObject jsonObjValues){
+	    	
+	    	this.consumo_urbano = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("consumo_urbano");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueUnit> arrayList = new ArrayList<DataValueUnit>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueUnit((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.consumo_urbano = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValueUnit> getConsumo_urbano(){
+	        return this.consumo_urbano;
+	    }
+	    
+	    public void setConsumo_extra_urbano(JSONObject jsonObjValues){
+	    	
+	    	this.consumo_extra_urbano = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("consumo_extra_urbano");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueUnit> arrayList = new ArrayList<DataValueUnit>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueUnit((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.consumo_extra_urbano = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValueUnit> getConsumo_extra_urbano(){
+	        return this.consumo_extra_urbano;
+	    }
+	    
+	    public void setPeso(JSONObject jsonObjValues){
+	    	
+	    	this.peso = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("peso");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueUnit> arrayList = new ArrayList<DataValueUnit>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueUnit((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.peso = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValueUnit> getPeso(){
+	        return this.peso;
+	    }
+	    
+	    public void setPasso(JSONObject jsonObjValues){
+	    	
+	    	this.passo = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("passo");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueUnit> arrayList = new ArrayList<DataValueUnit>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueUnit((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.passo = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValueUnit> getPasso(){
+	        return this.passo;
+	    }
+	    
+	    public void setLunghezza(JSONObject jsonObjValues){
+	    	
+	    	this.lunghezza = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("lunghezza");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueUnit> arrayList = new ArrayList<DataValueUnit>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueUnit((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.lunghezza = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValueUnit> getLunghezza(){
+	        return this.lunghezza;
+	    }
+	    
+	    public void setLarghezza(JSONObject jsonObjValues){
+	    	
+	    	this.larghezza = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("larghezza");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueUnit> arrayList = new ArrayList<DataValueUnit>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueUnit((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.larghezza = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+
+	    public List<DataValueUnit> getLarghezza(){
+	        return this.larghezza;
+	    }
+	    
+	    public void setAltezza(JSONObject jsonObjValues){
+	    	
+	    	this.altezza = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("altezza");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueUnit> arrayList = new ArrayList<DataValueUnit>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueUnit((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.altezza = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+
+	    public List<DataValueUnit> getAltezza(){
+	        return this.altezza;
+	    }	    
+	    
+	    public void setCoppia(JSONObject jsonObjValues){
+	    	
+	    	this.coppia = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("coppia");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueUnit> arrayList = new ArrayList<DataValueUnit>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueUnit((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.coppia = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValueUnit> getCoppia(){
+	        return this.coppia;
+	    }
+	    
+	    public void setVelocita(JSONObject jsonObjValues){
+	    	
+	    	this.velocita = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("velocita");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueUnit> arrayList = new ArrayList<DataValueUnit>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueUnit((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.velocita = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValueUnit> getVelocita(){
+	        return this.velocita;
+	    }
+	    
+	    public void setCapacita_serbatoio_litri(JSONObject jsonObjValues){
+	    	
+	    	this.capacita_serbatoio_litri = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("capacita_serbatoio_litri");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueUnit> arrayList = new ArrayList<DataValueUnit>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueUnit((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.capacita_serbatoio_litri = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValueUnit> getCapacita_serbatoio_litri(){
+	        return this.capacita_serbatoio_litri;
+	    }
+	    
+	    public void setBagagliaio(JSONObject jsonObjValues){
+	    	
+	    	this.bagagliaio = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("bagagliaio");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueUnit> arrayList = new ArrayList<DataValueUnit>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueUnit((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.bagagliaio = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValueUnit> getBagagliaio(){
+	        return this.bagagliaio;
+	    }
+	    
+	    public void setBagagliaio_con_sedili_rialzati(JSONObject jsonObjValues){
+	    	
+	    	this.bagagliaio_con_sedili_rialzati = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("bagagliaio_con_sedili_rialzati");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValueUnit> arrayList = new ArrayList<DataValueUnit>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValueUnit((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.bagagliaio_con_sedili_rialzati = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValueUnit> getBagagliaio_con_sedili_rialzati(){
+	        return this.bagagliaio_con_sedili_rialzati;
+	    }
+	    
+	    public void setArchitettura(JSONObject jsonObjValues){
+	    	
+	    	this.architettura = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("architettura");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.architettura = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getArchitettura(){
+	        return this.architettura;
+	    }	 
+	    
+	    public void setArrotondamento_sl(JSONObject jsonObjValues){
+	    	
+	    	this.arrotondamento_sl = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("arrotondamento_sl");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.arrotondamento_sl = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getArrotondamento_sl(){
+	        return this.arrotondamento_sl;
+	    }	 	    
+	    
+	    public void setDescrizione_marce(JSONObject jsonObjValues){
+	    	
+	    	this.descrizione_marce = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("descrizione_marce");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.descrizione_marce = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getDescrizione_marce(){
+	        return this.descrizione_marce;
+	    }	
+	    
+	    public void setDescrizione_web_estesa(JSONObject jsonObjValues){
+	    	
+	    	this.descrizione_web_estesa = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("descrizione_web_estesa");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.descrizione_web_estesa = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getDescrizione_web_estesa(){
+	        return this.descrizione_web_estesa;
+	    }	
+	    
+	    public void setOptional_auto(JSONObject jsonObjValues){
+	    	
+	    	this.optional_auto = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("optional_auto");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.optional_auto = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getOptional_auto(){
+	        return this.optional_auto;
+	    }
+	    
+	    public void setOptional_pagamento(JSONObject jsonObjValues){
+	    	
+	    	this.optional_pagamento = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("optional_pagamento");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.optional_pagamento = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getOptional_pagamento(){
+	        return this.optional_pagamento;
+	    }
+	    
+	    public void setImmatricolazione_data(JSONObject jsonObjValues){
+	    	
+	    	this.immatricolazione_data = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("immatricolazione_data");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.immatricolazione_data = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getImmatricolazione_data(){
+	        return this.immatricolazione_data;
+	    }
+
+	    public void setPrefisso_descrizione_estesa_dealerk(JSONObject jsonObjValues){
+	    	
+	    	this.prefisso_descrizione_estesa_dealerk = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("prefisso_descrizione_estesa_dealerk");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.prefisso_descrizione_estesa_dealerk = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getPrefisso_descrizione_estesa_dealerk(){
+	        return this.prefisso_descrizione_estesa_dealerk;
+	    }
+	    
+	    public void setDescrizione_estesa_dealerk(JSONObject jsonObjValues){
+	    	
+	    	this.descrizione_estesa_dealerk = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("descrizione_estesa_dealerk");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.descrizione_estesa_dealerk = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getDescrizione_estesa_dealerk(){
+	        return this.descrizione_estesa_dealerk;
+	    }
+	    
+	    public void setCondizioni_validita_offerta(JSONObject jsonObjValues){
+	    	
+	    	this.condizioni_validita_offerta = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("condizioni_validita_offerta");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.condizioni_validita_offerta = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getCondizioni_validita_offerta(){
+	        return this.condizioni_validita_offerta;
+	    }
+	    
+        public void setCampagne_ml(JSONObject jsonObjValues){
+	    	
+	    	this.campagne_ml = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("campagne_ml");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<MultiDataValue> arrayList = new ArrayList<MultiDataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new MultiDataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.campagne_ml = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<MultiDataValue> getCampagne_ml(){
+	        return this.campagne_ml;
+	    }
+	    
+        public void setPacchetti_mobility(JSONObject jsonObjValues){
+	    	
+	    	this.pacchetti_mobility = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("pacchetti_mobility");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<MultiDataValue> arrayList = new ArrayList<MultiDataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new MultiDataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.pacchetti_mobility = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<MultiDataValue> getPacchetti_mobility(){
+	        return this.pacchetti_mobility;
+	    }
+	    
+        public void setServizi_veicolo_extra(JSONObject jsonObjValues){
+	    	
+	    	this.servizi_veicolo_extra = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("servizi_veicolo_extra");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<MultiDataValue> arrayList = new ArrayList<MultiDataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new MultiDataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.servizi_veicolo_extra = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<MultiDataValue> getServizi_veicolo_extra(){
+	        return this.servizi_veicolo_extra;
+	    }
+	    
+        public void setServizi_veicolo_inclusi(JSONObject jsonObjValues){
+	    	
+	    	this.servizi_veicolo_inclusi = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("servizi_veicolo_inclusi");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<MultiDataValue> arrayList = new ArrayList<MultiDataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new MultiDataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.servizi_veicolo_inclusi = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<MultiDataValue> getServizi_veicolo_inclusi(){
+	        return this.servizi_veicolo_inclusi;
+	    }	    
+	    
+        public void setFin_configurazioni_sito(JSONObject jsonObjValues){
+	    	
+	    	this.fin_configurazioni_sito = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_configurazioni_sito");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<MultiDataValue> arrayList = new ArrayList<MultiDataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new MultiDataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_configurazioni_sito = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<MultiDataValue> getFin_configurazioni_sito(){
+	        return this.fin_configurazioni_sito;
+	    }
+	    
+        public void setCampi_da_bloccare(JSONObject jsonObjValues){
+	    	
+	    	this.campi_da_bloccare = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("campi_da_bloccare");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<MultiDataValue> arrayList = new ArrayList<MultiDataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new MultiDataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.campi_da_bloccare = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<MultiDataValue> getCampi_da_bloccare(){
+	        return this.campi_da_bloccare;
+	    }
+	    
+        public void setCloudinary_image(JSONObject jsonObjValues){
+	    	
+	    	this.cloudinary_image = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("cloudinary_image");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<MultiDataValue> arrayList = new ArrayList<MultiDataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new MultiDataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.cloudinary_image = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<MultiDataValue> getCloudinary_image(){
+	        return this.cloudinary_image;
+	    }
+	    
+        public void setFiligrane_dealerk(JSONObject jsonObjValues){
+	    	
+	    	this.filigrane_dealerk = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("filigrane_dealerk");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<MultiDataValue> arrayList = new ArrayList<MultiDataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new MultiDataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.filigrane_dealerk = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<MultiDataValue> getFiligrane_dealerk(){
+	        return this.filigrane_dealerk;
+	    }
+	    
+        public void setFiligrane(JSONObject jsonObjValues){
+	    	
+	    	this.filigrane = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("filigrane");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<MultiDataValue> arrayList = new ArrayList<MultiDataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new MultiDataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.filigrane = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<MultiDataValue> getFiligrane(){
+	        return this.filigrane;
+	    }
+	    
+        public void setOptional_auto_select(JSONObject jsonObjValues){
+	    	
+	    	this.optional_auto_select = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("optional_auto_select");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<MultiDataValue> arrayList = new ArrayList<MultiDataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new MultiDataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.optional_auto_select = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<MultiDataValue> getOptional_auto_select(){
+	        return this.optional_auto_select;
+	    }
+	    
+	    public void setId_youtube(JSONObject jsonObjValues){
+	    	
+	    	this.id_youtube = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("id_youtube");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.id_youtube = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getId_youtube(){
+	        return this.id_youtube;
+	    }
+
+        public void setFiliale(JSONObject jsonObjValues){
+	    	
+	    	this.filiale = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("filiale");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<MultiDataValue> arrayList = new ArrayList<MultiDataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new MultiDataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.filiale = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<MultiDataValue> getFiliale(){
+	        return this.filiale;
+	    }
+	    
+        public void setFiliale_infocar(JSONObject jsonObjValues){
+	    	
+	    	this.filiale_infocar = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("filiale_infocar");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<MultiDataValue> arrayList = new ArrayList<MultiDataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new MultiDataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.filiale_infocar = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<MultiDataValue> getFiliale_infocar(){
+	        return this.filiale_infocar;
+	    }
+	    
+        public void setHighlights_attributi_veicoli(JSONObject jsonObjValues){
+	    	
+	    	this.highlights_attributi_veicoli = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("highlights_attributi_veicoli");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<MultiDataValue> arrayList = new ArrayList<MultiDataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new MultiDataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.highlights_attributi_veicoli = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<MultiDataValue> getHighlights_attributi_veicoli(){
+	        return this.highlights_attributi_veicoli;
+	    }
+	    
+	    public void setSeconda_foto(JSONObject jsonObjValues){
+	    	
+	    	this.seconda_foto = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("seconda_foto");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.seconda_foto = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getSeconda_foto(){
+	        return this.seconda_foto;
+	    }
+
+	    public void setUltima_foto(JSONObject jsonObjValues){
+	    	
+	    	this.ultima_foto = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("ultima_foto");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.ultima_foto = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getUltima_foto(){
+	        return this.ultima_foto;
+	    }
+	    
+	    
+        public void setFin_finanziaria(JSONObject jsonObjValues){
+	    	
+	    	this.fin_finanziaria = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_finanziaria");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_finanziaria = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getFin_finanziaria(){
+	        return this.fin_finanziaria;
+	    }
+    
+        public void setFin_configurazione_finanziamento_default(JSONObject jsonObjValues){
+	    	
+	    	this.fin_configurazione_finanziamento_default = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_configurazione_finanziamento_default");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_configurazione_finanziamento_default = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getFin_configurazione_finanziamento_default(){
+	        return this.fin_configurazione_finanziamento_default;
+	    }
+
+        public void setFin_durata(JSONObject jsonObjValues){
+	    	
+	    	this.fin_durata = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_durata");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_durata = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getFin_durata(){
+	        return this.fin_durata;
+	    }
+	    
+        public void setFin_durata_default_sito(JSONObject jsonObjValues){
+	    	
+	    	this.fin_durata_default_sito = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_durata_default_sito");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_durata_default_sito = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getFin_durata_default_sito(){
+	        return this.fin_durata_default_sito;
+	    }
+
+	    public void setFin_anticipo(JSONObject jsonObjValues){
+	    	
+	    	this.fin_anticipo = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_anticipo");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_anticipo = arrayList;
+	    		}
+	    	}
+	    }
+	    
+	    public List<PriceValue> getFin_anticipo(){
+	        return this.fin_anticipo;
+	    }
+	    
+	    public void setFin_anticipo_default_sito(JSONObject jsonObjValues){
+	    	
+	    	this.fin_anticipo_default_sito = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_anticipo_default_sito");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_anticipo_default_sito = arrayList;
+	    		}
+	    	}
+	    }
+	    
+	    public List<PriceValue> getFin_anticipo_default_sito(){
+	        return this.fin_anticipo_default_sito;
+	    }
+
+	    public void setFin_rata_ok(JSONObject jsonObjValues){
+	    	
+	    	this.fin_rata_ok = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_rata_ok");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_rata_ok = arrayList;
+	    		}
+	    	}
+	    }
+	    	    	    
+	    public List<PriceValue> getFin_rata_ok(){
+	        return this.fin_rata_ok;
+	    }
+	    
+	    public void setFin_maxi_rata(JSONObject jsonObjValues){
+	    	
+	    	this.fin_maxi_rata = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_maxi_rata");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_maxi_rata = arrayList;
+	    		}
+	    	}
+	    }
+	    	    	    
+	    public List<PriceValue> getFin_maxi_rata(){
+	        return this.fin_maxi_rata;
+	    }	    
+
+	    public void setFin_tan(JSONObject jsonObjValues){
+	    	
+	    	this.fin_tan = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_tan");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_tan = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getFin_tan(){
+	        return this.fin_tan;
+	    }
+
+	    public void setFin_taeg(JSONObject jsonObjValues){
+	    	
+	    	this.fin_taeg = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_taeg");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_taeg = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getFin_taeg(){
+	        return this.fin_taeg;
+	    }
+
+	    public void setFin_importo_tot_dovuto(JSONObject jsonObjValues){
+	    	
+	    	this.fin_importo_tot_dovuto = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_importo_tot_dovuto");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_importo_tot_dovuto = arrayList;
+	    		}
+	    	}
+	    }
+	    	    	    
+	    public List<PriceValue> getFin_importo_tot_dovuto(){
+	        return this.fin_importo_tot_dovuto;
+	    }
+
+	    public void setFin_importo_totale_credito(JSONObject jsonObjValues){
+	    	
+	    	this.fin_importo_totale_credito = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_importo_totale_credito");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_importo_totale_credito = arrayList;
+	    		}
+	    	}
+	    }
+	    	    	    
+	    public List<PriceValue> getFin_importo_totale_credito(){
+	        return this.fin_importo_totale_credito;
+	    }
+
+	    public void setFin_finanziato(JSONObject jsonObjValues){
+	    	
+	    	this.fin_finanziato = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_finanziato");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_finanziato = arrayList;
+	    		}
+	    	}
+	    }
+	    	    	    
+	    public List<PriceValue> getFin_finanziato(){
+	        return this.fin_finanziato;
+	    }
+
+	    public void setFin_spese_istruttoria(JSONObject jsonObjValues){
+	    	
+	    	this.fin_spese_istruttoria = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_spese_istruttoria");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_spese_istruttoria = arrayList;
+	    		}
+	    	}
+	    }
+	    	    	    
+	    public List<PriceValue> getFin_spese_istruttoria(){
+	        return this.fin_spese_istruttoria;
+	    }
+
+	    public void setFin_spese_incasso_gestione_rata(JSONObject jsonObjValues){
+	    	
+	    	this.fin_spese_incasso_gestione_rata = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_spese_incasso_gestione_rata");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_spese_incasso_gestione_rata = arrayList;
+	    		}
+	    	}
+	    }
+	    	    	    
+	    public List<PriceValue> getFin_spese_incasso_gestione_rata(){
+	        return this.fin_spese_incasso_gestione_rata;
+	    }
+
+	    public void setFin_imposta_di_bollo_sostitutiva(JSONObject jsonObjValues){
+	    	
+	    	this.fin_imposta_di_bollo_sostitutiva = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_imposta_di_bollo_sostitutiva");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_imposta_di_bollo_sostitutiva = arrayList;
+	    		}
+	    	}
+	    }
+	    	    	    
+	    public List<PriceValue> getFin_imposta_di_bollo_sostitutiva(){
+	        return this.fin_imposta_di_bollo_sostitutiva;
+	    }
+
+	    public void setFin_spese_comunicazioni_periodiche(JSONObject jsonObjValues){
+	    	
+	    	this.fin_spese_comunicazioni_periodiche = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_spese_comunicazioni_periodiche");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_spese_comunicazioni_periodiche = arrayList;
+	    		}
+	    	}
+	    }
+	    	    	    
+	    public List<PriceValue> getFin_spese_comunicazioni_periodiche(){
+	        return this.fin_spese_comunicazioni_periodiche;
+	    }	  
+
+	    public void setFin_imposta_di_bollo(JSONObject jsonObjValues){
+	    	
+	    	this.fin_imposta_di_bollo = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_imposta_di_bollo");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<PriceValue> arrayList = new ArrayList<PriceValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new PriceValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_imposta_di_bollo = arrayList;
+	    		}
+	    	}
+	    }
+	    	    	    
+	    public List<PriceValue> getFin_imposta_di_bollo(){
+	        return this.fin_imposta_di_bollo;
+	    }	  
+
+	    public void setFin_url_preventivo(JSONObject jsonObjValues){
+	    	
+	    	this.fin_url_preventivo = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_url_preventivo");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_url_preventivo = arrayList;
+	    		}
+	    	}
+	    }	     
+	    
+	    public List<DataValue> getFin_url_preventivo(){
+	        return this.fin_url_preventivo;
+	    }
+
+	    public void setFin_data_inserimento_finanziamento(JSONObject jsonObjValues){
+	    	
+	    	this.fin_data_inserimento_finanziamento = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_data_inserimento_finanziamento");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_data_inserimento_finanziamento = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getFin_data_inserimento_finanziamento(){
+	        return this.fin_data_inserimento_finanziamento;
+	    }
+
+	    public void setFin_disclaimer_legale(JSONObject jsonObjValues){
+	    	
+	    	this.fin_disclaimer_legale = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_disclaimer_legale");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_disclaimer_legale = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getFin_disclaimer_legale(){
+	        return this.fin_disclaimer_legale;
+	    }
+
+	    public void setFin_risposta_finanziaria(JSONObject jsonObjValues){
+	    	
+	    	this.fin_risposta_finanziaria = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("fin_risposta_finanziaria");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.fin_risposta_finanziaria = arrayList;
+	    		}
+	    	}
+	    }	
+	    
+	    public List<DataValue> getFin_risposta_finanziaria(){
+	        return this.fin_risposta_finanziaria;
+	    }
+	    
+
+
+	    
+}

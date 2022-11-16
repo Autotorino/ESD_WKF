@@ -15,7 +15,7 @@ public class MultiDataValue {
 	    public MultiDataValue(JSONObject jsonObj) {
 	    	if(jsonObj!= null){
 				setLocale(jsonObj);
-				setScope(jsonObj);
+				//setScope(jsonObj);
 				setData(jsonObj);
             }
 		}

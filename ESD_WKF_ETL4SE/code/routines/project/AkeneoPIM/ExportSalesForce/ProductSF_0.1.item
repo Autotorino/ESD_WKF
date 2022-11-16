@@ -1,0 +1,263 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import routines.JSONArray;
+import routines.JSONObject;
+
+
+
+public class ProductSF {
+	
+	public static String family_auto = "veicoli_AUTO";
+	public static String family_moto = "veicoli_MOTO";
+	public static String family_lcv = "veicoli_COMMERCIALI";
+	
+	public static String category_auto = "auto";
+	public static String category_moto = "moto";
+	public static String category_lcv = "veicoli_commerciali";
+	
+	public ProductSF() {
+		ValuesSF values = new ValuesSF();
+		setValues(values);
+	}
+	
+	public ProductSF(JSONObject jsonObjBody) {
+		
+		setIdentifier(jsonObjBody);
+		setEnabled(jsonObjBody);
+		setCategories(jsonObjBody);
+		setFamily(jsonObjBody);
+		
+		
+		//setCreated(jsonObjBody);
+		//setUpdated(jsonObjBody);
+		
+		ValuesSF values = new ValuesSF(jsonObjBody);
+		setValues(values);
+		
+		
+	}	
+	
+	
+	public ProductSF(String jsonObject) {
+		
+		JSONObject jsonObjBody = new JSONObject(jsonObject);
+		
+		setIdentifier(jsonObjBody);
+		setEnabled(jsonObjBody);
+		setCategories(jsonObjBody);
+		setFamily(jsonObjBody);
+		
+		
+		//setCreated(jsonObjBody);
+		//setUpdated(jsonObjBody);
+		
+		ValuesSF values = new ValuesSF(jsonObjBody);
+		setValues(values);
+		
+		
+	}
+
+	
+	private String identifier;
+
+    private Boolean enabled;
+
+    private String family;
+
+    private List<String> categories;
+
+    //private List<String> groups;
+
+    private String parent;
+
+    private ValuesSF values;
+
+    //private String created;
+
+    //private String updated;
+
+    //private Associations associations;
+
+    //private Quantified_associations quantified_associations;
+
+    //private Metadata metadata;
+
+    public void setIdentifier(String identifier){
+        this.identifier = identifier;
+    }
+    
+    public void setIdentifier(JSONObject jsonObjBody){
+    	
+    	if(jsonObjBody!=null){
+    	  Object returnValue = jsonObjBody.get("identifier");
+          this.identifier = (returnValue instanceof String) ? (String)returnValue : null;
+    	}
+    	else
+    	  this.identifier = null;
+    }
+    
+    public String getIdentifier(){
+        return this.identifier;
+    }
+    
+    public void setEnabled(Boolean enabled){
+        this.enabled = enabled;
+    }
+    
+    public void setEnabled(JSONObject jsonObjBody){
+    	if(jsonObjBody!=null){
+	    	Object returnValue = jsonObjBody.get("enabled");
+	        this.enabled = (returnValue instanceof Boolean) ? (Boolean)returnValue : null;
+    	}
+    	else
+    		this.enabled = null;
+    }
+    
+    public Boolean getEnabled(){
+        return this.enabled;
+    }
+    
+    public void setFamily(String family){
+        this.family = family;
+    }
+    
+    public void setFamily(JSONObject jsonObjBody){
+    	
+    	if(jsonObjBody!=null){
+    	  Object returnValue = jsonObjBody.get("family");
+          this.family = (returnValue instanceof String) ? (String)returnValue : null;
+    	}
+    	else
+    	  this.family = null;
+    }
+    
+    public String getFamily(){
+        return this.family;
+    }
+    
+    public void setCategories(List<String> categories){
+        this.categories = categories;
+    }
+    
+    public void setCategories(String categories){
+        this.categories = new ArrayList<String>(Arrays.asList(categories));
+    }	
+
+    public void setCategories(JSONObject jsonObjBody){
+		this.categories = null;
+		
+		if(jsonObjBody!= null) {
+	    	
+			JSONArray jsonArray = (JSONArray)jsonObjBody.get("categories");
+	    	
+			if(jsonArray!= null && jsonArray.length()>0){
+	    	
+				ArrayList<String> arrayList = new ArrayList<String>();
+				
+				for (int i=0;i<jsonArray.length();i++)
+					arrayList.add((String)jsonArray.get(i));
+				
+		        this.categories = arrayList;
+			}
+		}
+    }
+    
+    public List<String> getCategories(){
+        return this.categories;
+    }
+    /*
+    public void setGroups(List<String> groups){
+        this.groups = groups;
+    }
+    
+    public void setGroups(String groups){
+        this.groups = new ArrayList<String>(Arrays.asList(groups));
+    }	
+    
+    public List<String> getGroups(){
+        return this.groups;
+    }
+    */
+    public void setParent(String parent){
+        this.parent = parent;
+    }
+    public String getParent(){
+        return this.parent;
+    }
+    
+    public void setValues(ValuesSF values){
+        this.values = values;
+    }
+    public ValuesSF getValues(){
+        return this.values;
+    }
+    /*
+    public void setCreated(String created){
+        this.created = created;
+    }
+    
+    public void setCreated(JSONObject jsonObjBody){
+    	
+    	if(jsonObjBody!=null){
+    	  Object returnValue = jsonObjBody.get("created");
+          this.created = (returnValue instanceof String) ? (String)returnValue : null;
+    	}
+    	else
+    	  this.created = null;
+    }
+    
+    public String getCreated(){
+        return this.created;
+    }
+    
+    public void setUpdated(String updated){
+        this.updated = updated;
+    }
+    
+    public void setUpdated(JSONObject jsonObjBody){
+    	
+    	if(jsonObjBody!=null){
+    	  Object returnValue = jsonObjBody.get("updated");
+          this.updated = (returnValue instanceof String) ? (String)returnValue : null;
+    	}
+    	else
+    	  this.updated = null;
+    }
+    
+    public String getUpdated(){
+        return this.updated;
+    }
+
+    public void setAssociations(Associations associations){
+        this.associations = associations;
+    }
+    
+    public Associations getAssociations(){
+        return this.associations;
+    }
+ 
+    public void setQuantified_associations(Quantified_associations quantified_associations){
+        this.quantified_associations = quantified_associations;
+    }
+    public Quantified_associations getQuantified_associations(){
+        return this.quantified_associations;
+    }
+    public void setMetadata(Metadata metadata){
+        this.metadata = metadata;
+    }
+    public Metadata getMetadata(){
+        return this.metadata;
+    }
+    */
+    
+ 
+   
+}

@@ -1,0 +1,166 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+
+
+
+
+public class EntitiesPacchettoMobilityListSF {
+	
+	public EntitiesPacchettoMobilityListSF() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public EntitiesPacchettoMobilityListSF(String jsonObject) {
+		
+		JSONObject jsonObjBody = new JSONObject(jsonObject);
+		
+	
+		setNext(jsonObjBody);
+		//setCurrent_page(jsonObjBody);
+		
+		EmbeddedPacchettoMobilitySF _embedded = new EmbeddedPacchettoMobilitySF(jsonObjBody);
+		setEmbedded(_embedded);
+		
+		
+		
+	}
+
+	private String next;
+	
+	//private String current_page;
+	
+    private EmbeddedPacchettoMobilitySF _embedded;
+    
+
+    public void setNext(String next){
+        this.next = next;
+    }
+    
+    public void setNext(JSONObject jsonObjBody){
+    	this.next = UtilJson.getValueStringFrom_JObject_3Level(jsonObjBody, "_links", "next","href");
+    	
+    }
+    
+    public String getNext(){
+        return this.next;
+    }  
+    /*    
+    public void setCurrent_page(String current_page){
+        this.current_page = current_page;
+    }
+    
+    public void setCurrent_page(JSONObject jsonObjBody){
+    	this.current_page = UtilJson.getValueStringFrom_JObject_1Level(jsonObjBody, "current_page");
+    	
+    }
+    
+    public String getCurrent_page(String current_page){
+        return this.current_page;
+    }
+    */
+    
+    public void setEmbedded(EmbeddedPacchettoMobilitySF _embedded){
+        this._embedded = _embedded; 
+    }
+    
+    public EmbeddedPacchettoMobilitySF getEmbedded(){
+        return this._embedded;
+    }
+    
+    /**
+     * Custom methods
+     */
+    
+    public PacchettoMobilitySF getPacchettoMobilitySF(String codPacchettoMobility){
+    	
+    	if(UtilString.isEmptyTrim(codPacchettoMobility))
+    	   return null;
+    	
+    	PacchettoMobilitySF returnPacchettoMobility = null;
+    	
+    	if (this._embedded!=null) {
+    	    
+    		List<PacchettoMobilitySF> pacchettiMobility = this._embedded.getItems();
+    	    
+    		if (pacchettiMobility!= null && pacchettiMobility.size()>0){
+    			for(PacchettoMobilitySF pacchetto:pacchettiMobility){
+    				if (pacchetto.getCode().equalsIgnoreCase(codPacchettoMobility)){
+    					returnPacchettoMobility =  pacchetto;
+    					break;
+    				}
+    			}
+    		}
+    	}
+    	
+    	return returnPacchettoMobility;
+    }
+    
+   public List<Object> getPacchettiMobilityOrderedObj(){
+    	
+
+    	List<Object> pacchettiObj = null;
+    	
+	    if (this._embedded!=null && this._embedded.getItems()!= null && this._embedded.getItems().size()>0) 
+	    {
+	    	pacchettiObj = new ArrayList<Object>();
+	    	List<PacchettoMobilitySF> pacchetti = this._embedded.getItems();
+	    	
+    		
+	    	Collections.sort(pacchetti, new Comparator<PacchettoMobilitySF>() {
+ 		        @Override
+ 		        public int compare(PacchettoMobilitySF br1, PacchettoMobilitySF br2)
+ 		        {
+ 	
+ 		            return  br1.getCode().compareTo(br2.getCode());
+ 		        }
+ 		    });
+	    	
+	    	for (PacchettoMobilitySF pacchetto : pacchetti){
+	    		pacchettiObj.add(pacchetto);
+	    	}
+    	}
+     	
+    	return pacchettiObj;
+    }
+    
+    public HashMap<String,PacchettoMobilitySF> getPacchettiMobility(){
+    	
+    	HashMap<String,PacchettoMobilitySF> mapPacchettiMobility = new HashMap<String,PacchettoMobilitySF>();
+    	
+   	    if (this._embedded!=null) {
+    	    
+    		List<PacchettoMobilitySF> pacchettiMobility = this._embedded.getItems();
+    	    
+    		if (pacchettiMobility!= null && pacchettiMobility.size()>0){
+    			for(PacchettoMobilitySF pacchetto:pacchettiMobility)
+    				mapPacchettiMobility.put(pacchetto.getCode(),pacchetto);
+
+    		}
+    	}
+
+        return mapPacchettiMobility;
+    }
+    
+    public boolean isValidEntities(){
+        if (this._embedded!=null) {
+     	    
+        	List<PacchettoMobilitySF> pacchettiMobility = this._embedded.getItems();
+     	    
+     		if (pacchettiMobility!= null && pacchettiMobility.size()>0)
+     			return true;
+     		else
+     			return false;
+        }
+        else return false;
+     }    
+    
+
+
+   
+}

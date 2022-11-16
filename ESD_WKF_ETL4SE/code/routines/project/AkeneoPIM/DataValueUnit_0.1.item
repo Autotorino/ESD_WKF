@@ -14,7 +14,7 @@ public class DataValueUnit {
 	    public DataValueUnit(JSONObject jsonObj) {
 	    	if(jsonObj!= null){
 				setLocale(jsonObj);
-				setScope(jsonObj);
+				//setScope(jsonObj);
 				setData(jsonObj);
             }
 		}

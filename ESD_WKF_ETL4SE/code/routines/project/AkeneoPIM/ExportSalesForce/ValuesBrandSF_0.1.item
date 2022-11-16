@@ -1,0 +1,125 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ValuesBrandSF {
+	
+	
+	    public ValuesBrandSF() {
+		}	    
+	    
+	    public ValuesBrandSF(JSONObject jsonObjBody) {
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("values");
+	    	
+	    	setLabel(jsonObjValues);
+	    	setPosition(jsonObjValues);
+	    	setUnofficial(jsonObjValues);
+	    	
+	    	
+		}
+	    
+	    private List<DataValue> label;
+	    
+	    private List<DataValue> position;
+	    
+	    private List<DataValue> unofficial;
+	    
+
+
+
+	    
+	    /**
+	     * 
+	     * Metodi GET\SET per Lettura dal PIM
+	     */
+	    public void setLabel(List<DataValue> label){
+	        this.label = label;
+	    }
+	    
+        public void setLabel(JSONObject jsonObjValues){
+	    	
+	    	this.label = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("label");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.label = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getLabel(){
+	        return this.label;
+	    }
+	    
+	    
+	    public void setPosition(List<DataValue> position){
+	        this.position = position;
+	    }
+	    
+        public void setPosition(JSONObject jsonObjValues){
+	    	
+	    	this.position = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("position");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.position = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getPosition(){
+	        return this.position;
+	    }
+	    
+	    
+	    public void setUnofficial(List<DataValue> unofficial){
+	        this.unofficial = unofficial;
+	    }
+	    
+        public void setUnofficial(JSONObject jsonObjValues){
+	    	
+	    	this.unofficial = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("unofficial");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.unofficial = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getUnofficial(){
+	        return this.unofficial;
+	    }
+	    
+	  
+
+}

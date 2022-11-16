@@ -1,6 +1,8 @@
 package routines;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 
@@ -18,7 +20,7 @@ public class EntitiesSpeseTrapassoList {
 		JSONObject jsonObjBody = new JSONObject(jsonObject);
 		
 	
-		//setNext(jsonObjBody);
+		setNext(jsonObjBody);
 		//setCurrent_page(jsonObjBody);
 		
 		EmbeddedSpeseTrapasso _embedded = new EmbeddedSpeseTrapasso(jsonObjBody);
@@ -28,13 +30,13 @@ public class EntitiesSpeseTrapassoList {
 		
 	}
 
-	//private String next;
+	private String next;
 	
 	//private String current_page;
 	
     private EmbeddedSpeseTrapasso _embedded;
     
-    /*
+
     public void setNext(String next){
         this.next = next;
     }
@@ -47,7 +49,7 @@ public class EntitiesSpeseTrapassoList {
     public String getNext(){
         return this.next;
     }  
-    
+    /*    
     public void setCurrent_page(String current_page){
         this.current_page = current_page;
     }
@@ -96,6 +98,34 @@ public class EntitiesSpeseTrapassoList {
     	}
     	
     	return returnSpeseTrapasso;
+    }
+    
+   public List<Object> getSpeseTrapassoOrderedObj(){
+    	
+
+    	List<Object> speseTrObj = null;
+    	
+	    if (this._embedded!=null && this._embedded.getItems()!= null && this._embedded.getItems().size()>0) 
+	    {
+	    	speseTrObj = new ArrayList<Object>();
+	    	List<SpeseTrapasso> speseTr = this._embedded.getItems();
+	    	
+    		
+	    	Collections.sort(speseTr, new Comparator<SpeseTrapasso>() {
+ 		        @Override
+ 		        public int compare(SpeseTrapasso br1, SpeseTrapasso br2)
+ 		        {
+ 	
+ 		            return  br1.getCode().compareTo(br2.getCode());
+ 		        }
+ 		    });
+	    	
+	    	for (SpeseTrapasso spesaTr : speseTr){
+	    		speseTrObj.add(spesaTr);
+	    	}
+    	}
+     	
+    	return speseTrObj;
     }
     
     public boolean isValidEntities(){

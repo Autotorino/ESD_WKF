@@ -1,5 +1,8 @@
 package routines;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 
@@ -18,7 +21,7 @@ public class EntitiesFotoExtraList {
 		JSONObject jsonObjBody = new JSONObject(jsonObject);
 		
 	
-		//setNext(jsonObjBody);
+		setNext(jsonObjBody);
 		//setCurrent_page(jsonObjBody);
 		
 		EmbeddedFotoExtra _embedded = new EmbeddedFotoExtra(jsonObjBody);
@@ -28,13 +31,13 @@ public class EntitiesFotoExtraList {
 		
 	}
 
-	//private String next;
+	private String next;
 	
 	//private String current_page;
 	
     private EmbeddedFotoExtra _embedded;
     
-    /*
+    
     public void setNext(String next){
         this.next = next;
     }
@@ -47,7 +50,7 @@ public class EntitiesFotoExtraList {
     public String getNext(){
         return this.next;
     }  
-    
+    /*
     public void setCurrent_page(String current_page){
         this.current_page = current_page;
     }
@@ -96,6 +99,34 @@ public class EntitiesFotoExtraList {
     	}
     	
     	return returnFotoExtra;
+    }
+    
+    public List<Object> getFotoExtraOrderedObj(){
+    	
+
+    	List<Object> fotoExtraObj = null;
+    	
+	    if (this._embedded!=null && this._embedded.getItems()!= null && this._embedded.getItems().size()>0) 
+	    {
+	    	fotoExtraObj = new ArrayList<Object>();
+	    	List<FotoExtra> fotoExtra = this._embedded.getItems();
+	    	
+    		
+	    	Collections.sort(fotoExtra, new Comparator<FotoExtra>() {
+ 		        @Override
+ 		        public int compare(FotoExtra br1, FotoExtra br2)
+ 		        {
+ 	
+ 		            return  br1.getCode().compareTo(br2.getCode());
+ 		        }
+ 		    });
+	    	
+	    	for (FotoExtra foto : fotoExtra){
+	    		fotoExtraObj.add(foto);
+	    	}
+    	}
+     	
+    	return fotoExtraObj;
     }
     
     public HashMap<String,FotoExtra> getFotoExtra(){

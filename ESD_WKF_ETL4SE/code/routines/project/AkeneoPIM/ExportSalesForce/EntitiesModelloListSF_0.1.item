@@ -1,0 +1,166 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+
+
+
+
+public class EntitiesModelloListSF {
+	
+	public EntitiesModelloListSF() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public EntitiesModelloListSF(String jsonObject) {
+		
+		JSONObject jsonObjBody = new JSONObject(jsonObject);
+		
+	
+		setNext(jsonObjBody);
+		//setCurrent_page(jsonObjBody);
+		
+		EmbeddedModelloSF _embedded = new EmbeddedModelloSF(jsonObjBody);
+		setEmbedded(_embedded);
+		
+		
+		
+	}
+
+	private String next;
+	
+	//private String current_page;
+	
+    private EmbeddedModelloSF _embedded;
+    
+
+    public void setNext(String next){
+        this.next = next;
+    }
+    
+    public void setNext(JSONObject jsonObjBody){
+    	this.next = UtilJson.getValueStringFrom_JObject_3Level(jsonObjBody, "_links", "next","href");
+    	
+    }
+    
+    public String getNext(){
+        return this.next;
+    }  
+    /*    
+    public void setCurrent_page(String current_page){
+        this.current_page = current_page;
+    }
+    
+    public void setCurrent_page(JSONObject jsonObjBody){
+    	this.current_page = UtilJson.getValueStringFrom_JObject_1Level(jsonObjBody, "current_page");
+    	
+    }
+    
+    public String getCurrent_page(String current_page){
+        return this.current_page;
+    }
+    */
+    
+    public void setEmbedded(EmbeddedModelloSF _embedded){
+        this._embedded = _embedded; 
+    }
+    
+    public EmbeddedModelloSF getEmbedded(){
+        return this._embedded;
+    }
+    
+    /**
+     * Custom methods
+     */
+    
+    public ModelloSF getModello(String codModello){
+    	
+    	if(UtilString.isEmptyTrim(codModello))
+    	   return null;
+    	
+    	ModelloSF returnModello = null;
+    	
+    	if (this._embedded!=null) {
+    	    
+    		List<ModelloSF> modelli = this._embedded.getItems();
+    	    
+    		if (modelli!= null && modelli.size()>0){
+    			for(ModelloSF modello:modelli){
+    				if (modello.getCode().equalsIgnoreCase(codModello)){
+    					returnModello =  modello;
+    					break;
+    				}
+    			}
+    		}
+    	}
+    	
+    	return returnModello;
+    }
+    
+    public List<Object> getModelliOrderedObj(){
+    	
+
+    	List<Object> modelliObj = null;
+    	
+	    if (this._embedded!=null && this._embedded.getItems()!= null && this._embedded.getItems().size()>0) 
+	    {
+	    	modelliObj = new ArrayList<Object>();
+	    	List<ModelloSF> modelli = this._embedded.getItems();
+	    	
+    		
+	    	Collections.sort(modelli, new Comparator<ModelloSF>() {
+ 		        @Override
+ 		        public int compare(ModelloSF br1, ModelloSF br2)
+ 		        {
+ 	
+ 		            return  br1.getCode().compareTo(br2.getCode());
+ 		        }
+ 		    });
+	    	
+	    	for (ModelloSF modello : modelli){
+	    		modelliObj.add(modello);
+	    	}
+    	}
+     	
+    	return modelliObj;
+    }
+    
+    public HashMap<String,ModelloSF> getModelli(){
+    	
+    	HashMap<String,ModelloSF> mapModelli = new HashMap<String,ModelloSF>();
+    	
+   	    if (this._embedded!=null) {
+    	    
+    		List<ModelloSF> modelli = this._embedded.getItems();
+    	    
+    		if (modelli!= null && modelli.size()>0){
+    			for(ModelloSF modello:modelli)
+    				mapModelli.put(modello.getCode(),modello);
+
+    		}
+    	}
+
+        return mapModelli;
+    }
+    
+    public boolean isValidEntities(){
+        if (this._embedded!=null) {
+     	    
+        	List<ModelloSF> modelli = this._embedded.getItems();
+     	    
+     		if (modelli!= null && modelli.size()>0)
+     			return true;
+     		else
+     			return false;
+        }
+        else return false;
+     }    
+    
+
+
+   
+}

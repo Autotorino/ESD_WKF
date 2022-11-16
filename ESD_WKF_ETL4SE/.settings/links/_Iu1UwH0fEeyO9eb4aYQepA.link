@@ -231,6 +231,12 @@
     }, {
       "id" : "_RYxFuTnDEe2Bt5XBBSqOpg",
       "name" : "CLOUDINARY_FOLDER"
+    }, {
+      "id" : "_-MefImWjEe2sEoInmMPVqw",
+      "name" : "NOME_FILEDATASOURCE72"
+    }, {
+      "id" : "_-MefI2WjEe2sEoInmMPVqw",
+      "name" : "AKENEOPIM_QUERY_PARAM_SALESFORCE"
     } ]
   }, {
     "contextName" : "dev",
@@ -463,6 +469,12 @@
     }, {
       "id" : "_EQ_XERF1Ee2WpIr9AQUiDQ",
       "name" : "CLOUDINARY_FOLDER"
+    }, {
+      "id" : "_-MefJGWjEe2sEoInmMPVqw",
+      "name" : "NOME_FILEDATASOURCE72"
+    }, {
+      "id" : "_-MefJWWjEe2sEoInmMPVqw",
+      "name" : "AKENEOPIM_QUERY_PARAM_SALESFORCE"
     } ]
   }, {
     "contextName" : "Default",
@@ -695,6 +707,12 @@
     }, {
       "id" : "_RYxFbDnDEe2Bt5XBBSqOpg",
       "name" : "CLOUDINARY_FOLDER"
+    }, {
+      "id" : "_-MefIGWjEe2sEoInmMPVqw",
+      "name" : "NOME_FILEDATASOURCE72"
+    }, {
+      "id" : "_-MefIWWjEe2sEoInmMPVqw",
+      "name" : "AKENEOPIM_QUERY_PARAM_SALESFORCE"
     } ]
   } ]
 }

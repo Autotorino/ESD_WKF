@@ -1,0 +1,181 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ValuesPacchettoMobilitySF {
+	
+	
+	    public ValuesPacchettoMobilitySF() {
+		}	    
+	    
+	    public ValuesPacchettoMobilitySF(JSONObject jsonObjBody) {
+	    	
+	    	JSONObject jsonObjValues = (JSONObject)jsonObjBody.get("values");
+	    	
+	    	setLabel(jsonObjValues);
+	    	setServizi_inclusi(jsonObjValues);
+	    	setServizi_opzionali(jsonObjValues);
+	    	setServizi_esclusi(jsonObjValues);
+	    	setOrdinamento(jsonObjValues);
+
+		}
+	    
+	    private List<DataValue> label;
+	    
+	    private List<DataValue> servizi_inclusi;
+	    
+	    private List<DataValue> servizi_opzionali;	
+	    
+	    private List<DataValue> servizi_esclusi;		    
+	    
+	    private List<DataValue> ordinamento;	    
+	  
+
+	    
+	    /**
+	     * 
+	     * Metodi GET\SET per Lettura dal PIM
+	     */
+	    public void setLabel(List<DataValue> label){
+	        this.label = label;
+	    }
+	    
+        public void setLabel(JSONObject jsonObjValues){
+	    	
+	    	this.label = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("label");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.label = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getLabel(){
+	        return this.label;
+	    }
+	    
+	    
+	    public void setServizi_inclusi(List<DataValue> servizi_inclusi){
+	        this.servizi_inclusi = servizi_inclusi;
+	    }
+	    
+        public void setServizi_inclusi(JSONObject jsonObjValues){
+	    	
+	    	this.servizi_inclusi = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("servizi_inclusi");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.servizi_inclusi = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getServizi_inclusi(){
+	        return this.servizi_inclusi;
+	    }
+	    
+	    public void setServizi_opzionali(List<DataValue> servizi_opzionali){
+	        this.servizi_opzionali = servizi_opzionali;
+	    }
+	    
+        public void setServizi_opzionali(JSONObject jsonObjValues){
+	    	
+	    	this.servizi_opzionali = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("servizi_opzionali");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.servizi_opzionali = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getServizi_opzionali(){
+	        return this.servizi_opzionali;
+	    }
+	    
+	    public void setServizi_esclusi(List<DataValue> servizi_esclusi){
+	        this.servizi_esclusi = servizi_esclusi;
+	    }
+	    
+        public void setServizi_esclusi(JSONObject jsonObjValues){
+	    	
+	    	this.servizi_esclusi = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("servizi_esclusi");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.servizi_esclusi = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getServizi_esclusi(){
+	        return this.servizi_esclusi;
+	    }	    
+	    
+	    public void setOrdinamento(List<DataValue> ordinamento){
+	        this.ordinamento = ordinamento;
+	    }
+	    
+        public void setOrdinamento(JSONObject jsonObjValues){
+	    	
+	    	this.ordinamento = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("ordinamento");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.ordinamento = arrayList;
+	    		}
+	    	}
+	    }	
+        
+	    public List<DataValue> getOrdinamento(){
+	        return this.ordinamento;
+	    }	    	    
+
+}

@@ -1,0 +1,166 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+
+
+
+
+public class EntitiesServiziSitoListSF {
+	
+	public EntitiesServiziSitoListSF() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public EntitiesServiziSitoListSF(String jsonObject) {
+		
+		JSONObject jsonObjBody = new JSONObject(jsonObject);
+		
+	
+		setNext(jsonObjBody);
+		//setCurrent_page(jsonObjBody);
+		
+		EmbeddedServiziSitoSF _embedded = new EmbeddedServiziSitoSF(jsonObjBody);
+		setEmbedded(_embedded);
+		
+		
+		
+	}
+
+	private String next;
+	
+	//private String current_page;
+	
+    private EmbeddedServiziSitoSF _embedded;
+    
+
+    public void setNext(String next){
+        this.next = next;
+    }
+    
+    public void setNext(JSONObject jsonObjBody){
+    	this.next = UtilJson.getValueStringFrom_JObject_3Level(jsonObjBody, "_links", "next","href");
+    	
+    }
+    
+    public String getNext(){
+        return this.next;
+    }  
+    /*    
+    public void setCurrent_page(String current_page){
+        this.current_page = current_page;
+    }
+    
+    public void setCurrent_page(JSONObject jsonObjBody){
+    	this.current_page = UtilJson.getValueStringFrom_JObject_1Level(jsonObjBody, "current_page");
+    	
+    }
+    
+    public String getCurrent_page(String current_page){
+        return this.current_page;
+    }
+    */
+    
+    public void setEmbedded(EmbeddedServiziSitoSF _embedded){
+        this._embedded = _embedded; 
+    }
+    
+    public EmbeddedServiziSitoSF getEmbedded(){
+        return this._embedded;
+    }
+    
+    /**
+     * Custom methods
+     */
+    
+    public ServiziSitoSF getServiziSitoSF(String codServiziSito){
+    	
+    	if(UtilString.isEmptyTrim(codServiziSito))
+    	   return null;
+    	
+    	ServiziSitoSF returnServiziSito = null;
+    	
+    	if (this._embedded!=null) {
+    	    
+    		List<ServiziSitoSF> serviziSito = this._embedded.getItems();
+    	    
+    		if (serviziSito!= null && serviziSito.size()>0){
+    			for(ServiziSitoSF servizio:serviziSito){
+    				if (servizio.getCode().equalsIgnoreCase(codServiziSito)){
+    					returnServiziSito =  servizio;
+    					break;
+    				}
+    			}
+    		}
+    	}
+    	
+    	return returnServiziSito;
+    }
+    
+   public List<Object> getServiziSitoOrderedObj(){
+    	
+
+    	List<Object> serviziObj = null;
+    	
+	    if (this._embedded!=null && this._embedded.getItems()!= null && this._embedded.getItems().size()>0) 
+	    {
+	    	serviziObj = new ArrayList<Object>();
+	    	List<ServiziSitoSF> servizi = this._embedded.getItems();
+	    	
+    		
+	    	Collections.sort(servizi, new Comparator<ServiziSitoSF>() {
+ 		        @Override
+ 		        public int compare(ServiziSitoSF br1, ServiziSitoSF br2)
+ 		        {
+ 	
+ 		            return  br1.getCode().compareTo(br2.getCode());
+ 		        }
+ 		    });
+	    	
+	    	for (ServiziSitoSF servizio : servizi){
+	    		serviziObj.add(servizio);
+	    	}
+    	}
+     	
+    	return serviziObj;
+    }
+    
+    public HashMap<String,ServiziSitoSF> getServiziSito(){
+    	
+    	HashMap<String,ServiziSitoSF> mapServiziSito = new HashMap<String,ServiziSitoSF>();
+    	
+   	    if (this._embedded!=null) {
+    	    
+    		List<ServiziSitoSF> serviziSito = this._embedded.getItems();
+    	    
+    		if (serviziSito!= null && serviziSito.size()>0){
+    			for(ServiziSitoSF servizio:serviziSito)
+    				mapServiziSito.put(servizio.getCode(),servizio);
+
+    		}
+    	}
+
+        return mapServiziSito;
+    }
+    
+    public boolean isValidEntities(){
+        if (this._embedded!=null) {
+     	    
+        	List<ServiziSitoSF> serviziSito = this._embedded.getItems();
+     	    
+     		if (serviziSito!= null && serviziSito.size()>0)
+     			return true;
+     		else
+     			return false;
+        }
+        else return false;
+     }    
+    
+
+
+   
+}

@@ -1,0 +1,224 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+
+
+
+
+public class EntitiesCampagneListSF {  
+	
+	public EntitiesCampagneListSF() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public EntitiesCampagneListSF(String jsonObject) {
+		
+		JSONObject jsonObjBody = new JSONObject(jsonObject);
+		
+	
+		setNext(jsonObjBody);
+		//setCurrent_page(jsonObjBody);
+		
+		EmbeddedCampagnaSF _embedded = new EmbeddedCampagnaSF(jsonObjBody);
+		setEmbedded(_embedded);
+		
+		
+		
+	}
+
+	private String next;
+	
+	//private String current_page;
+	
+    private EmbeddedCampagnaSF _embedded;
+    
+    
+    public void setNext(String next){
+        this.next = next;
+    }
+    
+    public void setNext(JSONObject jsonObjBody){
+    	this.next = UtilJson.getValueStringFrom_JObject_3Level(jsonObjBody, "_links", "next","href");
+    	
+    }
+    
+    public String getNext(){
+        return this.next;
+    }  
+    /*
+    public void setCurrent_page(String current_page){
+        this.current_page = current_page;
+    }
+    
+    public void setCurrent_page(JSONObject jsonObjBody){
+    	this.current_page = UtilJson.getValueStringFrom_JObject_1Level(jsonObjBody, "current_page");
+    	
+    }
+    
+    public String getCurrent_page(String current_page){
+        return this.current_page;
+    }
+    */
+    
+    public void setEmbedded(EmbeddedCampagnaSF _embedded){
+        this._embedded = _embedded;
+    }
+    
+    public EmbeddedCampagnaSF getEmbedded(){
+        return this._embedded;
+    }
+    
+    /**
+     * Custom methods
+     */
+    
+    public CampagnaSF getCampagna(String codCampagna){
+    	
+    	if(UtilString.isEmptyTrim(codCampagna))
+    	   return null;
+    	
+    	CampagnaSF returnCampagna = null;
+    	
+    	if (this._embedded!=null) {
+    	    
+    		List<CampagnaSF> campagne = this._embedded.getItems();
+    	    
+    		if (campagne!= null && campagne.size()>0){
+    			for(CampagnaSF campagna:campagne){
+    				if (campagna.getCode().equalsIgnoreCase(codCampagna)){
+    					returnCampagna =  campagna;
+    					break;
+    				}
+    			}
+    		}
+    	}
+    	
+    	return returnCampagna;
+    }
+    
+    public List<CampagnaSF> getCampagneOrderedsActive(List<String> codsCampagne,Date current){
+    	
+    	if(codsCampagne==null||codsCampagne.size()==0||!this.isValidEntities())
+    	   return null;
+
+    	ArrayList<CampagnaSF> campagneOrdereds = new ArrayList<CampagnaSF>();
+    	
+    	for (String codCampagna:codsCampagne){
+
+    		CampagnaSF campagna = this.getCampagna(codCampagna);
+/*System.out.println("codsCampagne:"+codCampagna);    		
+System.out.println("EntitiesCampagneList- 1 getPriorita:"+campagna.getPriorita());
+System.out.println("EntitiesCampagneList- 1 getCode:"+campagna.getCode());
+System.out.println("EntitiesCampagneList- 1 getSconto:"+campagna.getSconto());
+System.out.println("EntitiesCampagneList- 1 getTipoSconto:"+campagna.getTipoSconto());
+System.out.println("EntitiesCampagneList- 1 getDataInizio:"+campagna.getDataInizio()); 
+System.out.println("EntitiesCampagneList- 1 getDataFine:"+campagna.getDataFine()); */
+    		if(campagna != null && campagna.getPriorita()!=null && campagna.idValidDate(current))
+    		   campagneOrdereds.add(campagna);
+    	}
+    	
+    	if(campagneOrdereds.size()>1){ //Order only for multicampagna
+			Collections.sort(campagneOrdereds, new Comparator<CampagnaSF>() {
+		        @Override
+		        public int compare(CampagnaSF camp1, CampagnaSF camp2)
+		        {
+	
+		            return  camp1.getPriorita().compareTo(camp2.getPriorita());
+		        }
+		    });
+    	}
+    	
+     	
+    	return campagneOrdereds;
+    }
+    
+    public HashMap<String,CampagnaSF> getCampagne(List<String> codsCampagne,Date current){
+    	
+    	HashMap<String,CampagnaSF> mapCampagne = new HashMap<String,CampagnaSF>();
+    	
+    	List<CampagnaSF> listCampagne = this.getCampagneOrderedsActive(codsCampagne, current);
+    	
+    	    
+		if (listCampagne!= null && listCampagne.size()>0){
+			for(CampagnaSF campagna:listCampagne)
+				mapCampagne.put(campagna.getCode(),campagna);
+
+		}
+
+
+        return mapCampagne;
+    }
+    
+    public List<CampagnaSF> getCampagneOrdered(){
+    	
+
+    	List<CampagnaSF> campagne = null;
+    	
+	    if (this._embedded!=null && this._embedded.getItems()!= null && this._embedded.getItems().size()>0) {
+    		 
+	    	campagne = this._embedded.getItems();
+    		
+	    	Collections.sort(campagne, new Comparator<CampagnaSF>() {
+ 		        @Override
+ 		        public int compare(CampagnaSF br1, CampagnaSF br2)
+ 		        {
+ 	
+ 		            return  br1.getCode().compareTo(br2.getCode());
+ 		        }
+ 		    });
+    	}
+     	
+    	return campagne;
+    }
+    
+    
+    public List<Object> getCampagneOrderedObj(){
+    	
+
+    	List<Object> campagneObj = null;
+    	
+	    if (this._embedded!=null && this._embedded.getItems()!= null && this._embedded.getItems().size()>0) 
+	    {
+	    	campagneObj = new ArrayList<Object>();
+	    	List<CampagnaSF> campagne = this._embedded.getItems();
+	    	
+    		
+	    	Collections.sort(campagne, new Comparator<CampagnaSF>() {
+ 		        @Override
+ 		        public int compare(CampagnaSF br1, CampagnaSF br2)
+ 		        {
+ 	
+ 		            return  br1.getCode().compareTo(br2.getCode());
+ 		        }
+ 		    });
+	    	
+	    	for (CampagnaSF campagna : campagne){
+	    		campagneObj.add(campagna);
+	    	}
+    	}
+     	
+    	return campagneObj;
+    }
+    
+    public boolean isValidEntities(){
+        if (this._embedded!=null) {
+     	    
+     		List<CampagnaSF> campagne = this._embedded.getItems();
+     	    
+     		if (campagne!= null && campagne.size()>0)
+     			return true;
+     		else
+     			return false;
+        }
+        else return false;
+     }
+    
+ 
+   
+}

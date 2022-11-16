@@ -16,7 +16,7 @@ public class PriceValue {
 	
 	    public PriceValue(JSONObject jsonObjValues) {
 			setLocale(jsonObjValues);
-			setScope(jsonObjValues);
+			//setScope(jsonObjValues);
 			setData(jsonObjValues);
 		}
 	
