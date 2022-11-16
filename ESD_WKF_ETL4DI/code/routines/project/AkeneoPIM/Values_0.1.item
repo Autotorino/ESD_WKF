@@ -3028,6 +3028,31 @@ public class Values {
 	    	}
 	    }
 	    
+	    public boolean isChange_ListDataValueOpt(List<DataValue> listDataValue,String value){
+
+	    	if (systemlog) System.out.println("Entra_isChange_ListDataValueOpt:"+value);
+	    	
+	    	if (listDataValue!=null && listDataValue.size()>0 && listDataValue.get(0)!=null)
+	    	{
+	    		if (UtilString.isEmptyTrim(listDataValue.get(0).getData()) && UtilString.isEmptyTrim(value))
+	    			return false;
+	    		else {
+		    			if (!UtilString.isEmptyTrim(listDataValue.get(0).getData()) && !UtilString.isEmptyTrim(value))
+		    				return !value.toLowerCase().trim().replaceAll("?","").replaceAll("\"","").replaceAll("'","").replaceAll("»","").equals
+		    						(listDataValue.get(0).getData().toLowerCase().trim().replaceAll("?","").replaceAll("\"","").replaceAll("'","").replaceAll("»",""));
+		    			else
+		    				return true;
+	    		}
+	    		
+	    	}
+	    	else if((listDataValue==null || listDataValue.size()==0 || listDataValue.get(0)==null) && UtilString.isEmptyTrim(value)){
+	    		return false;
+	    	}
+	    	else{
+	    		return true;
+	    	}
+	    }	    
+	    
 	    public boolean isChange_ListDataValueUnit(List<DataValueUnit> listDataValueUnit,String value,boolean number){
 
 	    	if (systemlog) System.out.println("Entra_isChange_ListDataValueUnit:"+value);
