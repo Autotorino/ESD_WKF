@@ -3038,8 +3038,8 @@ public class Values {
 	    			return false;
 	    		else {
 		    			if (!UtilString.isEmptyTrim(listDataValue.get(0).getData()) && !UtilString.isEmptyTrim(value))
-		    				return !value.toLowerCase().trim().replaceAll("\\?","").replaceAll("\"","").replaceAll("'","").replaceAll("»","").equals
-		    						(listDataValue.get(0).getData().toLowerCase().trim().replaceAll("\\?","").replaceAll("\"","").replaceAll("'","").replaceAll("»",""));
+		    				return !value.toLowerCase().trim().replaceAll("\\?","").replaceAll("\"","").replaceAll("'","").replaceAll("»","").replaceAll("«","").replaceAll(" ","").equals
+		    						(listDataValue.get(0).getData().toLowerCase().trim().replaceAll("\\?","").replaceAll("\"","").replaceAll("'","").replaceAll("»","").replaceAll("«","").replaceAll(" ",""));
 		    			else
 		    				return true;
 	    		}
