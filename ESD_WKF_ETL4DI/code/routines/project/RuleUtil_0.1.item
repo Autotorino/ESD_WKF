@@ -359,8 +359,8 @@ public class RuleUtil {
 					String marcaSito = resultRuleEtlTk.nextToken();
 					String modelloSito = resultRuleEtlTk.nextToken();
 					
-					marcaModelloSito[0] = marcaSito.replaceFirst("marca_sito='","").replace("'","");
-					marcaModelloSito[1] = modelloSito.replaceFirst("modello_sito='","").replace("'","");		
+					marcaModelloSito[0] = marcaSito.replaceFirst("marca_sito='","").replace("'","").toLowerCase();
+					marcaModelloSito[1] = modelloSito.replaceFirst("modello_sito='","").replace("'","").toLowerCase();		
 					
 					return marcaModelloSito;
 				}

@@ -142,7 +142,7 @@ public class Product {
 				ArrayList<String> arrayList = new ArrayList<String>();
 				
 				for (int i=0;i<jsonArray.length();i++)
-					arrayList.add((String)jsonArray.get(i));
+					arrayList.add(((String)jsonArray.get(i)).toLowerCase());
 				
 		        this.categories = arrayList;
 			}

@@ -3028,6 +3028,48 @@ public class Values {
 	    	}
 	    }
 	    
+	    
+	    public boolean isChange_ListDataValueCaseIns(List<DataValue> listDataValue,String value,boolean number){
+
+	    	if (systemlog) System.out.println("Entra_isChange_ListDataValue:"+value);
+	    	
+	    	if (listDataValue!=null && listDataValue.size()>0 && listDataValue.get(0)!=null)
+	    	{
+	    		if (UtilString.isEmptyTrim(listDataValue.get(0).getData()) && UtilString.isEmptyTrim(value))
+	    			return false;
+	    		else {
+		    		if (number){
+		    			if (!UtilString.isEmptyTrim(listDataValue.get(0).getData()) && !UtilString.isEmptyTrim(value)){
+		    				if (UtilString.stringIsNumber(value) && UtilString.stringIsNumber(listDataValue.get(0).getData())){
+		    					BigDecimal bd1 = new BigDecimal(value);
+		    					BigDecimal bd2 = new BigDecimal(listDataValue.get(0).getData());
+		    				    return !(bd1.compareTo(bd2)==0);
+		    				}
+		    				else return true;
+		    			}
+		    			else
+		    				return true;
+		    		}
+		    		else {
+		    			if (!UtilString.isEmptyTrim(listDataValue.get(0).getData()) && !UtilString.isEmptyTrim(value))
+		    				return !value.trim().equalsIgnoreCase(listDataValue.get(0).getData().trim());
+		    			else
+		    				return true;
+		    		}
+	    		}
+	    		
+	    	}
+	    	else if((listDataValue==null || listDataValue.size()==0 || listDataValue.get(0)==null) && UtilString.isEmptyTrim(value)){
+	    		return false;
+	    	}
+	    	else{
+	    		return true;
+	    	}
+	    }	    
+	    
+	    /*
+	     * Confronto valore string OPT "case insensitive" escludendo gli spazi e i caratteri (? " «  » ') 
+	     */	    
 	    public boolean isChange_ListDataValueOpt(List<DataValue> listDataValue,String value){
 
 	    	if (systemlog) System.out.println("Entra_isChange_ListDataValueOpt:"+value);
