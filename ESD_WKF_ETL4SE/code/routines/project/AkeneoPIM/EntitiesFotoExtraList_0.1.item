@@ -137,9 +137,11 @@ public class EntitiesFotoExtraList {
     	    
     		List<FotoExtra> fotoExtra = this._embedded.getItems();
     	    
-    		if (fotoExtra!= null && fotoExtra.size()>0){
-    			for(FotoExtra foto:fotoExtra)
-    				mapFotoExtra.put(foto.getCode(),foto);
+       		if (fotoExtra!= null && fotoExtra.size()>0){
+    			for(FotoExtra foto:fotoExtra){
+    				if(foto.getCode()!= null)
+    				   mapFotoExtra.put(foto.getCode().toLowerCase(),foto);
+    			}
 
     		}
     	}

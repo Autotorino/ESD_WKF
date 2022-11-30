@@ -733,7 +733,7 @@ public class Vehicle {
 						    uri+=mapGaranzia.get(product.getGaranzia()).getUrlLogo()+"/";
 						 
 						 uri+= cloudinaryDimension + pathImage.toLowerCase();
-						 image.setUri(uri);
+						 image.setUri(uri+".jpg");
 						 
 						 images.add(image);
 				         countImg+=1;
@@ -750,6 +750,41 @@ public class Vehicle {
 			media = new Media();
 			media.setImages(images);
 		}
+		else{
+			List<Image> imagesNoAsset = new ArrayList<Image>();
+			
+			if (mapFotoExtra!= null) {
+				
+				if(mapFotoExtra.get("foto_place_holder")!= null && 
+				     !UtilString.isEmptyTrim(mapFotoExtra.get("foto_place_holder").getUrl())){
+				    
+					Image imagePlaceHolder = new Image();
+					imagePlaceHolder.setUri(mapFotoExtra.get("foto_place_holder").getUrl());
+					imagesNoAsset.add(imagePlaceHolder);
+				}
+				
+				
+				if (!UtilString.isEmptyTrim(product.getSecondaFoto()) && mapFotoExtra.get(product.getSecondaFoto())!= null 
+						 && !UtilString.isEmptyTrim(mapFotoExtra.get(product.getSecondaFoto()).getUrl())){
+					Image imageSeconda2 = new Image();
+					imageSeconda2.setUri(mapFotoExtra.get(product.getSecondaFoto()).getUrl());
+					imagesNoAsset.add(imageSeconda2);
+				}
+				
+				if (!UtilString.isEmptyTrim(product.getUltimaFoto()) && mapFotoExtra.get(product.getUltimaFoto())!= null 
+						 && !UtilString.isEmptyTrim(mapFotoExtra.get(product.getUltimaFoto()).getUrl())){
+					Image imageUltima2 = new Image();
+					imageUltima2.setUri(mapFotoExtra.get(product.getUltimaFoto()).getUrl());
+					imagesNoAsset.add(imageUltima2);
+				}
+				
+				if (imagesNoAsset.size()>0){
+					media = new Media();
+					media.setImages(imagesNoAsset);
+				}
+		   }	
+			
+		}			
 		
 		if(!UtilString.isEmptyTrim(product.getIdYoutube())){
 			

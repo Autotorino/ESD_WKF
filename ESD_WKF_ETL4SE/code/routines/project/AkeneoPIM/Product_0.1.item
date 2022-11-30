@@ -721,7 +721,7 @@ public class Product {
     public String getSecondaFoto(){
     	
     	try {
-    		return this.getValues().getSeconda_foto().get(0).getData();
+    		return this.getValues().getSeconda_foto().get(0).getData().toLowerCase();
     	}
     	catch (Exception e){
 	    	return null;
@@ -732,7 +732,7 @@ public class Product {
     public String getUltimaFoto(){
     	
     	try {
-    		return this.getValues().getUltima_foto().get(0).getData();
+    		return this.getValues().getUltima_foto().get(0).getData().toLowerCase();
     	}
     	catch (Exception e){
 	    	return null;

@@ -64,9 +64,9 @@ public class MapUtilValueSF {
 							}		   					
 			   				
 			   			    if (stringBuilder==null)
-			   			    	stringBuilder = new StringBuilder(cloudinaryStaticPath+pathImage.toLowerCase());
+			   			    	stringBuilder = new StringBuilder(cloudinaryStaticPath+pathImage.toLowerCase()+".jpg");
 			   			    else
-			   				    stringBuilder.append("|"+cloudinaryStaticPath+pathImage.toLowerCase());
+			   				    stringBuilder.append("|"+cloudinaryStaticPath+pathImage.toLowerCase()+".jpg");
 		   				}
 		   			}
 		   		}
