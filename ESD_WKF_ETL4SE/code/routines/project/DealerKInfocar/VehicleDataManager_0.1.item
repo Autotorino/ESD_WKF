@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 
-public class VehicleDataManager {
+public class VehicleDataManager { 
 	
 	
 	public Date current;
@@ -28,6 +28,9 @@ public class VehicleDataManager {
 	public Map<String,String> mapPremiumSelection;
 	public EntitiesCampagneList entitiesCampagne;
 	public Map<String,Filigrana> mapFiligrana;
+	public Map<String,BrandSF> mapBrand;
+	public Map<String,String> mapBrandMain;
+	public Map<String,ModelloSF> mapModello;
 	public String cloudinaryStaticPath;
 	public String cloudinaryFolder;	
 	public String cloudinaryDimension;
@@ -101,6 +104,15 @@ public class VehicleDataManager {
 	}
 	public void setMapFiligrana(Map<String,Filigrana> mapFiligrana){
 		this.mapFiligrana = mapFiligrana;
+	}
+	public void setMapBrand(Map<String,BrandSF> mapBrand){
+		this.mapBrand = mapBrand;
+	}
+	public void setMapBrandMain(Map<String,String> mapBrandMain){
+		this.mapBrandMain = mapBrandMain;
+	}	
+	public void setMapModello(Map<String,ModelloSF> mapModello){
+		this.mapModello = mapModello;
 	}	
 	
 	public void setCloudinaryStaticPath(String cloudinaryStaticPath) {
@@ -150,8 +162,8 @@ public class VehicleDataManager {
 		vehicle.setTypeFromCategory(product.getCategoriesStringFromFamily());
 		vehicle.setCategoryFromMap(product.getTipo(),mapCategory);
 		vehicle.setBody(product.getCategoriaDealerK());
-		vehicle.setBrand(product.getDesMarca());
-		vehicle.setModel(product.getDesModello());
+		vehicle.setBrandFromMap(product.getMarcaSito(),mapBrand,mapBrandMain);
+		vehicle.setModelFromMap(product.getModelloSito(),mapModello);
 		vehicle.setVersion(product.getDesVersione());
 		vehicle.setBody_colorgroupFromMap(product.getColoreEsterno(),mapColore);
 		vehicle.setBody_color(product.getColoreEsterno());

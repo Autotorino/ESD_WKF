@@ -441,6 +441,10 @@
     "version" : "Latest",
     "type" : "routine"
   }, {
+    "id" : "EntitiesBrandListSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
     "id" : "EntitiesCampagneList",
     "version" : "Latest",
     "type" : "routine"
@@ -458,6 +462,10 @@
     "type" : "routine"
   }, {
     "id" : "EntitiesGaranziaList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesModelloListSF",
     "version" : "Latest",
     "type" : "routine"
   }, {
@@ -1128,6 +1136,10 @@
     "version" : "Latest",
     "type" : "routine"
   }, {
+    "id" : "EntitiesBrandListSF",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
     "id" : "EntitiesCampagneList",
     "version" : "Latest",
     "type" : "routine"
@@ -1145,6 +1157,10 @@
     "type" : "routine"
   }, {
     "id" : "EntitiesGaranziaList",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "EntitiesModelloListSF",
     "version" : "Latest",
     "type" : "routine"
   }, {

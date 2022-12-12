@@ -2,14 +2,14 @@
   <context confirmationNeeded="false" name="prod">
     <contextParameter comment="" internalId="_4nmPYGWlEe2sEoInmMPVqw" name="RETENTION_BACKUP_FILE" prompt="RETENTION_BACKUP_FILE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="3"/>
     <contextParameter comment="" internalId="_4nmPYWWlEe2sEoInmMPVqw" name="ORACLE_CLOUD_Url" prompt="ORACLE_CLOUD_Url?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="jdbc:oracle:thin:@autotorinodwh_medium?TNS_ADMIN=E:\\Talend\\Talend-ConfConnections\\OracleCloud\\Wallet_autotorinodwh"/>
-    <contextParameter comment="" internalId="_4nmPYmWlEe2sEoInmMPVqw" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:aSuru0CrRYHiSIrZBMTPLvNjqhw78RPSOeoduFaOVYaPDIrPoqAwFtKf"/>
+    <contextParameter comment="" internalId="_4nmPYmWlEe2sEoInmMPVqw" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:/Iat6C/BRBaSd/tAq3KOTgztYwPYgp6/nxt/W2G4aExJ/1RsqUaFOImR"/>
     <contextParameter comment="" internalId="_4nmPY2WlEe2sEoInmMPVqw" name="ORACLE_CLOUD_Username" prompt="ORACLE_CLOUD_Username?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DI_DATA_CONFIG"/>
     <contextParameter comment="" internalId="_4nmPZGWlEe2sEoInmMPVqw" name="TALEND_PATH_FILE_CSV" prompt="TALEND_PATH_FILE_CSV?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="E:/Talend/Talend-Output/DataSource/ESD_WKF/StorageFisico/"/>
     <contextParameter comment="" internalId="_4nmPZWWlEe2sEoInmMPVqw" name="SIPADX_DB_Server" prompt="SIPADX_DB_Server?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="192.168.1.113"/>
     <contextParameter comment="" internalId="_4nmPZmWlEe2sEoInmMPVqw" name="SIPADX_DB_Port" prompt="SIPADX_DB_Port?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="5432"/>
     <contextParameter comment="" internalId="_4nmPZ2WlEe2sEoInmMPVqw" name="SIPADX_DB_Database" prompt="SIPADX_DB_Database?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="sipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactorysipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory&amp;socketTimeout=0"/>
     <contextParameter comment="" internalId="_4nmPaGWlEe2sEoInmMPVqw" name="SIPADX_DB_Login" prompt="SIPADX_DB_Login?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="userread"/>
-    <contextParameter comment="" internalId="_4nmPaWWlEe2sEoInmMPVqw" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:rROw0aVAHic04apdHLLDtjbz0/lKnuToGC/QfL0QNUjgvvcm"/>
+    <contextParameter comment="" internalId="_4nmPaWWlEe2sEoInmMPVqw" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:KJSGHtc8BhyK25JirJKkGpB+903a+Lnvew8S7KDKS4V8ESlV"/>
     <contextParameter comment="" internalId="_4nmPamWlEe2sEoInmMPVqw" name="SIPADX_DB_Schema" prompt="SIPADX_DB_Schema?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="public"/>
     <contextParameter comment="" internalId="_4nmPa2WlEe2sEoInmMPVqw" name="DWH_AT_MAIL_NOTIFY" prompt="DWH_AT_MAIL_NOTIFY?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="true"/>
     <contextParameter comment="" internalId="_4nmPbGWlEe2sEoInmMPVqw" name="DWH_AT_MAIL_SMTP_HOST" prompt="DWH_AT_MAIL_SMTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="smtp.autotorino.local"/>
@@ -22,7 +22,7 @@
     <contextParameter comment="" internalId="_4nmPc2WlEe2sEoInmMPVqw" name="HOST_FTP_STOCK" prompt="HOST_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="ftp.autotorino.it"/>
     <contextParameter comment="" internalId="_4nmPdGWlEe2sEoInmMPVqw" name="PORT_FTP_STOCK" prompt="PORT_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="21"/>
     <contextParameter comment="" internalId="_4nmPdWWlEe2sEoInmMPVqw" name="USER_FTP_STOCK" prompt="USER_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="eng_ftpuser"/>
-    <contextParameter comment="" internalId="_4nmPdmWlEe2sEoInmMPVqw" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:XTDF9/xFWUSFVjXMBsNdtfMQpOSMiVcRjDBtFWqhbGtiTnbMg9GXou6Uwy4="/>
+    <contextParameter comment="" internalId="_4nmPdmWlEe2sEoInmMPVqw" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:i+frT4xAqPH729CcNigiFaR83Hn9t074W+1+YgFPrkWHZOzM1RgquNWZNM8="/>
     <contextParameter comment="" internalId="_4nmPd2WlEe2sEoInmMPVqw" name="NOME_FILEDATASOURCE50" prompt="NOME_FILEDATASOURCE50?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD50_PIM_VEHICLES_FOR_FINDOMESTIC.csv"/>
     <contextParameter comment="" internalId="_4nmPeGWlEe2sEoInmMPVqw" name="NOME_FILEDATASOURCE51" prompt="NOME_FILEDATASOURCE51?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD51_FINDOMESTIC_VEHICLES_FINANCED.csv"/>
     <contextParameter comment="" internalId="_4nmPeWWlEe2sEoInmMPVqw" name="NOME_FILEDATASOURCE52" prompt="NOME_FILEDATASOURCE52?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD52_PIM_UPDATE_FINANCING_VEHICLES.csv"/>
@@ -34,7 +34,7 @@
     <contextParameter comment="" internalId="_4nmPf2WlEe2sEoInmMPVqw" name="AKENEOPIM_AUTH_CONTENT_TYPE" prompt="AKENEOPIM_AUTH_CONTENT_TYPE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="application/x-www-form-urlencoded"/>
     <contextParameter comment="" internalId="_4nmPgGWlEe2sEoInmMPVqw" name="AKENEOPIM_AUTH_TOKEN_ACCESS" prompt="AKENEOPIM_AUTH_TOKEN_ACCESS?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="access_token"/>
     <contextParameter comment="" internalId="_4nmPgWWlEe2sEoInmMPVqw" name="AKENEOPIM_AUTH_CLIENT_ID" prompt="AKENEOPIM_AUTH_CLIENT_ID?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="9_19vob8y38la84s4s448cgoscgow0wo4wkwwwwssoksksogkc4k"/>
-    <contextParameter comment="" internalId="_4nmPgmWlEe2sEoInmMPVqw" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:T+Gs+f9GrJ6tS9gcnsDdm1MWgzGB3YWehvwb6dEq+Ucw8qlWUtjEmflvRZajqbEjDMJZCgUFugFmeyNL8ZQXHLvmYbF6a28cU2MQ/9No"/>
+    <contextParameter comment="" internalId="_4nmPgmWlEe2sEoInmMPVqw" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:okI5YT6sxqeCLHS0Rt1GG2NqYg6dfcnUSeXsQRUjCHYfTkCQ3hIWw0ayVdkDm6XiwojVYuCZw/Pk9xcLE9Gx3XTWFy/XKUWM58s9wHfM"/>
     <contextParameter comment="" internalId="_4nmPg2WlEe2sEoInmMPVqw" name="AKENEOPIM_METHOD_PRODUCT_LIST" prompt="AKENEOPIM_METHOD_PRODUCT_LIST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino.cloud.akeneo.com/api/rest/v1/products"/>
     <contextParameter comment="" internalId="_4nmPhGWlEe2sEoInmMPVqw" name="AKENEOPIM_QUERY_PARAM_FIRST_FIN" prompt="AKENEOPIM_QUERY_PARAM_FIRST_FIN?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="{'family':[{'operator':'IN','value':['veicoli_AUTO','veicoli_MOTO','veicoli_COMMERCIALI']}],'fin_finanziaria':[{'operator':'IN','value':['findomestic_retail','findomestic_retail_maxirata']}],'prezzo_vendita_manuale':[{'operator':'NOT EMPTY'}],'fin_url_preventivo':[{'operator':'EMPTY'}],'data_uscita_stock':[{'operator':'EMPTY'}]}"/>
     <contextParameter comment="" internalId="_4nmPhWWlEe2sEoInmMPVqw" name="TRUSTORE_PATH" prompt="TRUSTORE_PATH?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="E:/Users/Public/Shared_Talend/20210825_ESD_WKF/Config/jssecacerts_FIND"/>
@@ -64,7 +64,7 @@
     <contextParameter comment="" internalId="_4nmPnWWlEe2sEoInmMPVqw" name="DEALERK_FTP_HOST" prompt="DEALERK_FTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="upload.dealerk.it"/>
     <contextParameter comment="" internalId="_4nmPnmWlEe2sEoInmMPVqw" name="DEALERK_FTP_PORT" prompt="DEALERK_FTP_PORT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="22"/>
     <contextParameter comment="" internalId="_4nmPn2WlEe2sEoInmMPVqw" name="DEALERK_FTP_USER" prompt="DEALERK_FTP_USER?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="autotorino"/>
-    <contextParameter comment="" internalId="_4nmPoGWlEe2sEoInmMPVqw" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:SxBHe7XqLiWlAVusAkQ0ObDN8ochnyUuiUnJqhftF6q4aGRyULVVWJjReA=="/>
+    <contextParameter comment="" internalId="_4nmPoGWlEe2sEoInmMPVqw" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:Z3OIcTsbJU32gPKD7lm3jUqSUzBt4+W7EPZo1MXGvEjqjdJqRINnLPXsIg=="/>
     <contextParameter comment="" internalId="_4nmPoWWlEe2sEoInmMPVqw" name="AKENEOPIM_METHOD_ATTR_OPT" prompt="AKENEOPIM_METHOD_ATTR_OPT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino.cloud.akeneo.com/api/rest/v1/attributes/{code}/options"/>
     <contextParameter comment="" internalId="_4nmPomWlEe2sEoInmMPVqw" name="NOME_FILEDATASOURCE60" prompt="NOME_FILEDATASOURCE60?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD60_PIM_VEHICLES_FOR_SANTANDER.csv"/>
     <contextParameter comment="" internalId="_4nmPo2WlEe2sEoInmMPVqw" name="NOME_FILEDATASOURCE61" prompt="NOME_FILEDATASOURCE61?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD61_SANTANDER_VEHICLES_FINANCED.csv"/>
@@ -82,14 +82,14 @@
   <context confirmationNeeded="false" name="dev">
     <contextParameter comment="" internalId="_4nmPrmWlEe2sEoInmMPVqw" name="RETENTION_BACKUP_FILE" prompt="RETENTION_BACKUP_FILE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="3"/>
     <contextParameter comment="" internalId="_4nmPr2WlEe2sEoInmMPVqw" name="ORACLE_CLOUD_Url" prompt="ORACLE_CLOUD_Url?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="jdbc:oracle:thin:@dwhautosvil_medium?TNS_ADMIN=E:\\Talend\\Talend-ConfConnections\\OracleCloud\\Wallet_autotorinodwh"/>
-    <contextParameter comment="" internalId="_4nmPsGWlEe2sEoInmMPVqw" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:wQGT/IVae8BheVfzwuw9hiSSCHIckSRIM9ux/E9A7f+pXRANyktTKv3n"/>
+    <contextParameter comment="" internalId="_4nmPsGWlEe2sEoInmMPVqw" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:a9E0aAEmfWN0zr5bH0z0hFX2haNYl4BK/3m9NBMIhc9FqJGzlMX1RORa"/>
     <contextParameter comment="" internalId="_4nmPsWWlEe2sEoInmMPVqw" name="ORACLE_CLOUD_Username" prompt="ORACLE_CLOUD_Username?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DI_DATA_CONFIG"/>
     <contextParameter comment="" internalId="_4nmPsmWlEe2sEoInmMPVqw" name="TALEND_PATH_FILE_CSV" prompt="TALEND_PATH_FILE_CSV?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="E:/Talend/Talend-Output/DataSource/ESD_WKF/StorageFisico/"/>
     <contextParameter comment="" internalId="_4nmPs2WlEe2sEoInmMPVqw" name="SIPADX_DB_Server" prompt="SIPADX_DB_Server?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="192.168.1.113"/>
     <contextParameter comment="" internalId="_4nmPtGWlEe2sEoInmMPVqw" name="SIPADX_DB_Port" prompt="SIPADX_DB_Port?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="5432"/>
     <contextParameter comment="" internalId="_4nmPtWWlEe2sEoInmMPVqw" name="SIPADX_DB_Database" prompt="SIPADX_DB_Database?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="sipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactorysipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory&amp;socketTimeout=0"/>
     <contextParameter comment="" internalId="_4nmPtmWlEe2sEoInmMPVqw" name="SIPADX_DB_Login" prompt="SIPADX_DB_Login?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="userread"/>
-    <contextParameter comment="" internalId="_4nmPt2WlEe2sEoInmMPVqw" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:sFU3gtnI2bmtdbHSNiuj6oc1FiH7phNPiRlVGKiCppZD5Soz"/>
+    <contextParameter comment="" internalId="_4nmPt2WlEe2sEoInmMPVqw" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:KhWiTLGAx+7N7ADkYyphbT4f/cs8ZOUA93jWCzg0CGrTvBXR"/>
     <contextParameter comment="" internalId="_4nmPuGWlEe2sEoInmMPVqw" name="SIPADX_DB_Schema" prompt="SIPADX_DB_Schema?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="public"/>
     <contextParameter comment="" internalId="_4nmPuWWlEe2sEoInmMPVqw" name="DWH_AT_MAIL_NOTIFY" prompt="DWH_AT_MAIL_NOTIFY?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="true"/>
     <contextParameter comment="" internalId="_4nmPumWlEe2sEoInmMPVqw" name="DWH_AT_MAIL_SMTP_HOST" prompt="DWH_AT_MAIL_SMTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="smtp.autotorino.local"/>
@@ -102,7 +102,7 @@
     <contextParameter comment="" internalId="_4nmPwWWlEe2sEoInmMPVqw" name="HOST_FTP_STOCK" prompt="HOST_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="ftp.autotorino.it"/>
     <contextParameter comment="" internalId="_4nmPwmWlEe2sEoInmMPVqw" name="PORT_FTP_STOCK" prompt="PORT_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="21"/>
     <contextParameter comment="" internalId="_4nmPw2WlEe2sEoInmMPVqw" name="USER_FTP_STOCK" prompt="USER_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="eng_ftpuser"/>
-    <contextParameter comment="" internalId="_4nmPxGWlEe2sEoInmMPVqw" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:Lqp9hGexd4gSCXIm+A+4g46UMLostHgCjs8gWFD2RrhWq42giFZkg1PvsHo="/>
+    <contextParameter comment="" internalId="_4nmPxGWlEe2sEoInmMPVqw" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:9mIczq4m3BauNL5PNYQhctJyJtFrT8Vmo82EO7jVxQjbqmOrlumxqHEV35s="/>
     <contextParameter comment="" internalId="_4nmPxWWlEe2sEoInmMPVqw" name="NOME_FILEDATASOURCE50" prompt="NOME_FILEDATASOURCE50?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD50_PIM_VEHICLES_FOR_FINDOMESTIC.csv"/>
     <contextParameter comment="" internalId="_4nmPxmWlEe2sEoInmMPVqw" name="NOME_FILEDATASOURCE51" prompt="NOME_FILEDATASOURCE51?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD51_FINDOMESTIC_VEHICLES_FINANCED.csv"/>
     <contextParameter comment="" internalId="_4nmPx2WlEe2sEoInmMPVqw" name="NOME_FILEDATASOURCE52" prompt="NOME_FILEDATASOURCE52?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD52_PIM_UPDATE_FINANCING_VEHICLES.csv"/>
@@ -114,7 +114,7 @@
     <contextParameter comment="" internalId="_4nmPzWWlEe2sEoInmMPVqw" name="AKENEOPIM_AUTH_CONTENT_TYPE" prompt="AKENEOPIM_AUTH_CONTENT_TYPE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="application/x-www-form-urlencoded"/>
     <contextParameter comment="" internalId="_4nmPzmWlEe2sEoInmMPVqw" name="AKENEOPIM_AUTH_TOKEN_ACCESS" prompt="AKENEOPIM_AUTH_TOKEN_ACCESS?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="access_token"/>
     <contextParameter comment="" internalId="_4nmPz2WlEe2sEoInmMPVqw" name="AKENEOPIM_AUTH_CLIENT_ID" prompt="AKENEOPIM_AUTH_CLIENT_ID?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="2_2byflfgazckkwco4o4cs8s0okskkkkk4080cocw4k4scsosskg"/>
-    <contextParameter comment="" internalId="_4nmP0GWlEe2sEoInmMPVqw" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:MUcVhnOUjEzhS9ZNJR3I3Mlk3+fJYOW5tySPcLx3B4h+WK/JRIQDW0Q2LR+cIWQEz1P/YY0iE8l4NPVi4hqBN/AOGATEjqdC3eg5Q80j"/>
+    <contextParameter comment="" internalId="_4nmP0GWlEe2sEoInmMPVqw" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:PZeILPnAM4fAFwYT8xwnzWstvPdZe4O2w2y814w6Oe9K+72/MIcWNnBovctuuMlVo3NW4JvAfcnRWPaS/e4FgeV69PsbJSgbDHb8obeN"/>
     <contextParameter comment="" internalId="_4nmP0WWlEe2sEoInmMPVqw" name="AKENEOPIM_METHOD_PRODUCT_LIST" prompt="AKENEOPIM_METHOD_PRODUCT_LIST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino-dev.cloud.akeneo.com/api/rest/v1/products"/>
     <contextParameter comment="" internalId="_4nmP0mWlEe2sEoInmMPVqw" name="AKENEOPIM_QUERY_PARAM_FIRST_FIN" prompt="AKENEOPIM_QUERY_PARAM_FIRST_FIN?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="{'family':[{'operator':'IN','value':['veicoli_AUTO','veicoli_MOTO','veicoli_COMMERCIALI']}],'fin_finanziaria':[{'operator':'IN','value':['findomestic_retail','findomestic_retail_maxirata']}],'prezzo_vendita_manuale':[{'operator':'NOT EMPTY'}],'fin_url_preventivo':[{'operator':'EMPTY'}],'data_uscita_stock':[{'operator':'EMPTY'}]}"/>
     <contextParameter comment="" internalId="_4nmP02WlEe2sEoInmMPVqw" name="TRUSTORE_PATH" prompt="TRUSTORE_PATH?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="E:/Users/Public/Shared_Talend/20210825_ESD_WKF/Config/jssecacerts_FIND"/>
@@ -144,7 +144,7 @@
     <contextParameter comment="" internalId="_4nmP62WlEe2sEoInmMPVqw" name="DEALERK_FTP_HOST" prompt="DEALERK_FTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="upload.dealerk.it"/>
     <contextParameter comment="" internalId="_4nmP7GWlEe2sEoInmMPVqw" name="DEALERK_FTP_PORT" prompt="DEALERK_FTP_PORT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="22"/>
     <contextParameter comment="" internalId="_4nmP7WWlEe2sEoInmMPVqw" name="DEALERK_FTP_USER" prompt="DEALERK_FTP_USER?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="autotorino_newftp"/>
-    <contextParameter comment="" internalId="_4nmP7mWlEe2sEoInmMPVqw" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:wDP2prZiELTN2TbS3ZJcI4HbP3LJFYBgl92A0rIJnMpRak9IM5z1q4MaxgU="/>
+    <contextParameter comment="" internalId="_4nmP7mWlEe2sEoInmMPVqw" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:sLQHIZRgzYFR8tirfrBLKZFXwJ9X6UilzT+30n3//ZrmUGqMazOlBGOqsEw="/>
     <contextParameter comment="" internalId="_4nmP72WlEe2sEoInmMPVqw" name="AKENEOPIM_METHOD_ATTR_OPT" prompt="AKENEOPIM_METHOD_ATTR_OPT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino-dev.cloud.akeneo.com/api/rest/v1/attributes/{code}/options"/>
     <contextParameter comment="" internalId="_4nmP8GWlEe2sEoInmMPVqw" name="NOME_FILEDATASOURCE60" prompt="NOME_FILEDATASOURCE60?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD60_PIM_VEHICLES_FOR_SANTANDER.csv"/>
     <contextParameter comment="" internalId="_4nmP8WWlEe2sEoInmMPVqw" name="NOME_FILEDATASOURCE61" prompt="NOME_FILEDATASOURCE61?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD61_SANTANDER_VEHICLES_FINANCED.csv"/>
@@ -162,14 +162,14 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" internalId="_4nmP_GWlEe2sEoInmMPVqw" name="RETENTION_BACKUP_FILE" prompt="RETENTION_BACKUP_FILE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="3"/>
     <contextParameter comment="" internalId="_4nmP_WWlEe2sEoInmMPVqw" name="ORACLE_CLOUD_Url" prompt="ORACLE_CLOUD_Url?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="jdbc:oracle:thin:@dwhautosvil_medium?TNS_ADMIN=C:\\Talend\\Talend-ConfConnections\\OracleCloud\\Wallet_autotorinodwh"/>
-    <contextParameter comment="" internalId="_4nmP_mWlEe2sEoInmMPVqw" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:vVj8ksowuGx9XcUvQCbREQ4AhVi9e4UZIztqPlrlkTgqsw8C7E4OKdkt"/>
+    <contextParameter comment="" internalId="_4nmP_mWlEe2sEoInmMPVqw" name="ORACLE_CLOUD_Password" prompt="ORACLE_CLOUD_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:4KF610CMboxVzOPC+ArnqI01nqs4Wo1vLpDtwazQb4J6ljXK+CIH2fGC"/>
     <contextParameter comment="" internalId="_4nmP_2WlEe2sEoInmMPVqw" name="ORACLE_CLOUD_Username" prompt="ORACLE_CLOUD_Username?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DI_DATA_CONFIG"/>
     <contextParameter comment="" internalId="_4nmQAGWlEe2sEoInmMPVqw" name="TALEND_PATH_FILE_CSV" prompt="TALEND_PATH_FILE_CSV?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="C:/Talend/Talend-Output/DataSource/ESD_WKF/StorageFisico/"/>
     <contextParameter comment="" internalId="_4nmQAWWlEe2sEoInmMPVqw" name="SIPADX_DB_Server" prompt="SIPADX_DB_Server?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="192.168.1.113"/>
     <contextParameter comment="" internalId="_4nmQAmWlEe2sEoInmMPVqw" name="SIPADX_DB_Port" prompt="SIPADX_DB_Port?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="5432"/>
     <contextParameter comment="" internalId="_4nmQA2WlEe2sEoInmMPVqw" name="SIPADX_DB_Database" prompt="SIPADX_DB_Database?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="sipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactorysipadx?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory&amp;socketTimeout=0"/>
     <contextParameter comment="" internalId="_4nmQBGWlEe2sEoInmMPVqw" name="SIPADX_DB_Login" prompt="SIPADX_DB_Login?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="userread"/>
-    <contextParameter comment="" internalId="_4nmQBWWlEe2sEoInmMPVqw" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:q0Y0+S5yO7iyNPopFwUTdZI+yCi/q+kQoPJe0RS3xosojot3"/>
+    <contextParameter comment="" internalId="_4nmQBWWlEe2sEoInmMPVqw" name="SIPADX_DB_Password" prompt="SIPADX_DB_Password?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:01Os6BX9YpDnoDZdZudRyqJICYileBS8bt4oC7upKVDHABDv"/>
     <contextParameter comment="" internalId="_4nmQBmWlEe2sEoInmMPVqw" name="SIPADX_DB_Schema" prompt="SIPADX_DB_Schema?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="public"/>
     <contextParameter comment="" internalId="_4nmQB2WlEe2sEoInmMPVqw" name="DWH_AT_MAIL_NOTIFY" prompt="DWH_AT_MAIL_NOTIFY?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="true"/>
     <contextParameter comment="" internalId="_4nmQCGWlEe2sEoInmMPVqw" name="DWH_AT_MAIL_SMTP_HOST" prompt="DWH_AT_MAIL_SMTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="smtp.autotorino.local"/>
@@ -182,7 +182,7 @@
     <contextParameter comment="" internalId="_4nmQD2WlEe2sEoInmMPVqw" name="HOST_FTP_STOCK" prompt="HOST_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="ftp.autotorino.it"/>
     <contextParameter comment="" internalId="_4nmQEGWlEe2sEoInmMPVqw" name="PORT_FTP_STOCK" prompt="PORT_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="21"/>
     <contextParameter comment="" internalId="_4nmQEWWlEe2sEoInmMPVqw" name="USER_FTP_STOCK" prompt="USER_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="eng_ftpuser"/>
-    <contextParameter comment="" internalId="_4nmQEmWlEe2sEoInmMPVqw" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:eQoz/ou/L7eBCgxqlZJ4EJyhTzI88ycdKQCXWNmObVSjURkWdvm09BMiNEM="/>
+    <contextParameter comment="" internalId="_4nmQEmWlEe2sEoInmMPVqw" name="PWD_FTP_STOCK" prompt="PWD_FTP_STOCK?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:AyuqZ0KO2EUlS7+ppSKeJ2T8QbVea5hnNMz0QS+4SgmaYwajWqHiNU7rEMw="/>
     <contextParameter comment="" internalId="_4nmQE2WlEe2sEoInmMPVqw" name="NOME_FILEDATASOURCE50" prompt="NOME_FILEDATASOURCE50?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD50_PIM_VEHICLES_FOR_FINDOMESTIC.csv"/>
     <contextParameter comment="" internalId="_4nmQFGWlEe2sEoInmMPVqw" name="NOME_FILEDATASOURCE51" prompt="NOME_FILEDATASOURCE51?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD51_FINDOMESTIC_VEHICLES_FINANCED.csv"/>
     <contextParameter comment="" internalId="_4nmQFWWlEe2sEoInmMPVqw" name="NOME_FILEDATASOURCE52" prompt="NOME_FILEDATASOURCE52?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD52_PIM_UPDATE_FINANCING_VEHICLES.csv"/>
@@ -194,7 +194,7 @@
     <contextParameter comment="" internalId="_4nmQG2WlEe2sEoInmMPVqw" name="AKENEOPIM_AUTH_CONTENT_TYPE" prompt="AKENEOPIM_AUTH_CONTENT_TYPE?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="application/x-www-form-urlencoded"/>
     <contextParameter comment="" internalId="_4nmQHGWlEe2sEoInmMPVqw" name="AKENEOPIM_AUTH_TOKEN_ACCESS" prompt="AKENEOPIM_AUTH_TOKEN_ACCESS?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="access_token"/>
     <contextParameter comment="" internalId="_4nmQHWWlEe2sEoInmMPVqw" name="AKENEOPIM_AUTH_CLIENT_ID" prompt="AKENEOPIM_AUTH_CLIENT_ID?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="2_2byflfgazckkwco4o4cs8s0okskkkkk4080cocw4k4scsosskg"/>
-    <contextParameter comment="" internalId="_4nmQHmWlEe2sEoInmMPVqw" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:xo1K68F7R8aRGrMEbESvMr+S2sT0XjcJ0ththm0pPXtaxGex1B7Y/MmT1DGFAZ+HBWAvU/XZN3FRf8U3uZFrt+oqzaMW2BYhmg6jDpzG"/>
+    <contextParameter comment="" internalId="_4nmQHmWlEe2sEoInmMPVqw" name="AKENEOPIM_AUTH_CLIENT_SECRET" prompt="AKENEOPIM_AUTH_CLIENT_SECRET?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:f2Bk41gf4DSCw5Nf2eOfUtMaRtV71WvgZ0y4tiPt1Pk+BbdHLMM+v8WaGVD6L3u3OsfGX889K26O4CPwMZocHboHw2UnwIfqH7rKP5xE"/>
     <contextParameter comment="" internalId="_4nmQH2WlEe2sEoInmMPVqw" name="AKENEOPIM_METHOD_PRODUCT_LIST" prompt="AKENEOPIM_METHOD_PRODUCT_LIST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino-dev.cloud.akeneo.com/api/rest/v1/products"/>
     <contextParameter comment="" internalId="_4nmQIGWlEe2sEoInmMPVqw" name="AKENEOPIM_QUERY_PARAM_FIRST_FIN" prompt="AKENEOPIM_QUERY_PARAM_FIRST_FIN?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="{'family':[{'operator':'IN','value':['veicoli_AUTO','veicoli_MOTO','veicoli_COMMERCIALI']}],'fin_finanziaria':[{'operator':'IN','value':['findomestic_retail','findomestic_retail_maxirata']}],'prezzo_vendita_manuale':[{'operator':'NOT EMPTY'}],'fin_url_preventivo':[{'operator':'EMPTY'}],'data_uscita_stock':[{'operator':'EMPTY'}]}"/>
     <contextParameter comment="" internalId="_4nmQIWWlEe2sEoInmMPVqw" name="TRUSTORE_PATH" prompt="TRUSTORE_PATH?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="C:/Talend/Talend-ConfConnections/Findomestic/jssecacerts_FIND"/>
@@ -224,7 +224,7 @@
     <contextParameter comment="" internalId="_4nmQOWWlEe2sEoInmMPVqw" name="DEALERK_FTP_HOST" prompt="DEALERK_FTP_HOST?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="upload.dealerk.it"/>
     <contextParameter comment="" internalId="_4nmQOmWlEe2sEoInmMPVqw" name="DEALERK_FTP_PORT" prompt="DEALERK_FTP_PORT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Integer" value="22"/>
     <contextParameter comment="" internalId="_4nmQO2WlEe2sEoInmMPVqw" name="DEALERK_FTP_USER" prompt="DEALERK_FTP_USER?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="autotorino_newftp"/>
-    <contextParameter comment="" internalId="_4nmQPGWlEe2sEoInmMPVqw" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:qeMOznsTWTR4c2sQDFarahRuP+MXwYBI9FqRFc/O/e5HoGNWpg6MtEZPrqM="/>
+    <contextParameter comment="" internalId="_4nmQPGWlEe2sEoInmMPVqw" name="DEALERK_FTP_PWD" prompt="DEALERK_FTP_PWD?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_Password" value="enc:system.encryption.key.v1:bxE/+8mhB9lLKiBVz6hX0G22AUDeu2RxIGAPm9q7mTkWod5tRjrWnz4MZMA="/>
     <contextParameter comment="" internalId="_4nmQPWWlEe2sEoInmMPVqw" name="AKENEOPIM_METHOD_ATTR_OPT" prompt="AKENEOPIM_METHOD_ATTR_OPT?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="https://autotorino-dev.cloud.akeneo.com/api/rest/v1/attributes/{code}/options"/>
     <contextParameter comment="" internalId="_4nmQPmWlEe2sEoInmMPVqw" name="NOME_FILEDATASOURCE60" prompt="NOME_FILEDATASOURCE60?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD60_PIM_VEHICLES_FOR_SANTANDER.csv"/>
     <contextParameter comment="" internalId="_4nmQP2WlEe2sEoInmMPVqw" name="NOME_FILEDATASOURCE61" prompt="NOME_FILEDATASOURCE61?" promptNeeded="false" repositoryContextId="_KL67QF0JEeyp-Nfllqv_Ag" type="id_String" value="DS_ESD61_SANTANDER_VEHICLES_FINANCED.csv"/>
@@ -284,7 +284,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:r3QLQczdVWBKHEz3vzFm1CHgpZPTTF0PxXeHNc+n"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:lgWopy+QOOF1HKN0+SPDLV8HpDb82b92HMnKSwzC"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -319,7 +319,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2F/VOj5mCTNm/NaElW3tgHcDbdUemwJ9CLL+FD6v"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:d/1J1TQl1cAMFjXwPuX4FVr0slsDXSRum0K6E2KP"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -338,15 +338,16 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
-    <routinesParameter id="_t4aHIgmqEeyQZsKJs-vLyQ" name="DataOperation"/>
-    <routinesParameter id="_t7-_kAmqEeyQZsKJs-vLyQ" name="Mathematical"/>
-    <routinesParameter id="_uCq2YAmqEeyQZsKJs-vLyQ" name="Numeric"/>
-    <routinesParameter id="_uFcdkAmqEeyQZsKJs-vLyQ" name="Relational"/>
-    <routinesParameter id="_uHgTFgmqEeyQZsKJs-vLyQ" name="StringHandling"/>
-    <routinesParameter id="_uHqEEAmqEeyQZsKJs-vLyQ" name="TalendDataGenerator"/>
-    <routinesParameter id="_uHqEGgmqEeyQZsKJs-vLyQ" name="TalendDate"/>
-    <routinesParameter id="_uHz1FgmqEeyQZsKJs-vLyQ" name="TalendString"/>
-    <routinesParameter id="_uHz1IAmqEeyQZsKJs-vLyQ" name="TalendStringUtil"/>
+    <routinesParameter id="_dj8UcTm2Ee2qSs7CyVreRA" name="DataOperation"/>
+    <routinesParameter id="_dkGFcDm2Ee2qSs7CyVreRA" name="Mathematical"/>
+    <routinesParameter id="_dkGFejm2Ee2qSs7CyVreRA" name="Numeric"/>
+    <routinesParameter id="_dkPPZjm2Ee2qSs7CyVreRA" name="Relational"/>
+    <routinesParameter id="_dk-2Rjm2Ee2qSs7CyVreRA" name="StringHandling"/>
+    <routinesParameter id="_dlInQDm2Ee2qSs7CyVreRA" name="TalendDataGenerator"/>
+    <routinesParameter id="_dlInSjm2Ee2qSs7CyVreRA" name="TalendDate"/>
+    <routinesParameter id="_dlSYQDm2Ee2qSs7CyVreRA" name="TalendString"/>
+    <routinesParameter id="_dlSYSjm2Ee2qSs7CyVreRA" name="TalendStringUtil"/>
+    <routinesParameter id="_djV3gjm2Ee2qSs7CyVreRA" name="SQLike"/>
     <routinesParameter id="_hyNsEM0wEeinYLN0gPSHMA" name="UtilDate"/>
     <routinesParameter id="_ssqmUOS8Eei-zI4dXOzMMQ" name="UtilCommonProcessFlow"/>
     <routinesParameter id="_ipgq8NBmEeiPNsA3U9Qwpw" name="UtilString"/>
@@ -376,7 +377,8 @@
     <routinesParameter id="_NGraIInVEeyyR7ItSkuz1g" name="EntitiesFotoExtraList"/>
     <routinesParameter id="_TLYHgInVEeyyR7ItSkuz1g" name="FotoExtra"/>
     <routinesParameter id="_VteQ0InVEeyyR7ItSkuz1g" name="ValuesFotoExtra"/>
-    <routinesParameter id="_djV3gjm2Ee2qSs7CyVreRA" name="SQLike"/>
+    <routinesParameter id="_HiZNsFrEEe2LnJMv2fqqdQ" name="EntitiesBrandListSF"/>
+    <routinesParameter id="__fp6wFrNEe2LnJMv2fqqdQ" name="EntitiesModelloListSF"/>
   </parameters>
   <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="864">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaFlex_1"/>
@@ -416,7 +418,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.ORACLE_CLOUD_Url"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:qVEGQk+wacEZNMQjoCdWPZC1it3OfSQg7kj25KtvkVH1J3Zry6YIN6oPDwWI5+NerQRVxhSNRl72"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:GpzeREu1ABxu9B8U36k4rn8m1elJPLUA3QStPuwxDLE1disXGgu8zStma1Bb/l4/dgFyf4YCZbXL"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -493,7 +495,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:CSJVDXQdBaB8GspMY5azNcVoo6xBwQwqQw64sBPx"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:3fAmF533BXtCEwarWXdmM3hQ3E28YouCFyOeG+BU"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;TAL_JOB_PROCESS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -590,7 +592,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:B4p0GRP4owBr+q0IlySWiSkH2yd4TBfUicOVL1yCAQxmiSN9+JEZWdu9VNAr9e3D+Lxj/jj4Fe+k"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2kLl4ok2nMvSe7zK9FgXZ1SrRF03zLw8ULYW2vi7L5tp5C1VYJu8efWT8TbkO2hCdb+PIy8VFSND"/>
     <elementParameter field="DBTABLE" name="TABLE" value=""/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -636,7 +638,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:4eNwkW7+k741oLQH8jihCfbKCl/abpBCCsHozOfM3a38xVZFAMAtI6g+Ded/SqRbi6awlOhj8S0y"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Dp4ahYA/e7rkA6jJokFgThlqr5C9vrYlDHpZKs5iB1oxAEl7Dk1P+2zCTkYyMGl9Mbn9a0A7FxNM"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -712,13 +714,13 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:21YLpXXUi8i7VSQHA/q2XYLJSkEx0T3wznX08ZshQjwhlQbuN31x0IIkV26LnDq7/Phc9bLvhiJD"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fSzp3Kq59becbNRPLllQ1xk3hKtYUQ5/g2hx1+RYlFgKpBmsiP9EE2Ose0XmM4WBWRA5jbQMXG0A"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false"/>
     <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:ZTq35jZn00O3j3f8stgizyk+sTriSNqISQEZ4Tl6"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:yN5L0NlRpUfUkFYaRVZ0Xg73F1uMToECjCFponCy"/>
     <elementParameter field="CHECK" name="NEED_CLIENT_AUTH" show="false" value="false"/>
     <elementParameter field="FILE" name="SSL_KEYSTORE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:XfbWjce9McFluVsvZjPs3njKxw3U+7YqvIAXcur2"/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:mx+C6VczAPdUBTFar0XHPX2fkskBwkV9iPJSZjzg"/>
     <elementParameter field="CHECK" name="DISABLE_CBC_PROTECTION" show="false" value="true"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -748,7 +750,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:AKO8Suykmw8Res8bQoNFB+MPC2cf6cwH+naLclVE"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+hsaJmZo1ck94mjLtoQWTUi9eEUyLMrwwcueBP7P"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value=""/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -830,7 +832,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.ORACLE_CLOUD_Url"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:/fx8k9CwBveHyZQv0v9KD08acSdTFt9QHj/XlB1Y4iePcMnmbe2WKzEH02LPIfW74Sm9XZcVWY6N"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:8ISER6ogvwdpvcY7kPh21rhr2/kVTg3iEs7qR1vaZsgs/3UEKdd2jrz10G6KIW3/M09USV7TMyaw"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value=""/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -906,7 +908,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_4"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="if (input_row.Body!= null){&#10;&#10;    String access_token = UtilJson.getValueStringFrom_Object_1Level(input_row.Body,&quot;access_token&quot;);&#10;    globalMap.put(&quot;access_token&quot;, access_token);&#10;    globalMap.put(&quot;access_token_ts&quot;,System.currentTimeMillis());       &#10;    org.apache.log4j.Logger.getRootLogger().info(&quot;[&quot;+jobName+&quot;]:&lt;Get Access_Token:&quot;+access_token+&quot;&gt;&quot;);&#10;    &#10;    globalMap.put(&quot;nextLoop&quot;, true);&#10;    globalMap.put(&quot;pageLoop&quot;, new Integer(1));&#10;    globalMap.put(&quot;search_after&quot;,&quot;A0000000&quot;);&#10;&#10;    globalMap.put(&quot;nextLoopCampagne&quot;, true);&#10;    globalMap.put(&quot;search_afterCampagne&quot;,&quot;aaaaaaaaaaaaa&quot;);&#10;    globalMap.put(&quot;pageLoopCampagne&quot;, new Integer(1));      &#10;}&#10;else {&#10;    org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Get Response Token Auth: NULL&gt;&quot;);&#10;    globalMap.put(&quot;nextLoop&quot;, false);&#10;}&#10;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="if (input_row.Body!= null){&#10;&#10;    String access_token = UtilJson.getValueStringFrom_Object_1Level(input_row.Body,&quot;access_token&quot;);&#10;    globalMap.put(&quot;access_token&quot;, access_token);&#10;    globalMap.put(&quot;access_token_ts&quot;,System.currentTimeMillis());       &#10;    org.apache.log4j.Logger.getRootLogger().info(&quot;[&quot;+jobName+&quot;]:&lt;Get Access_Token:&quot;+access_token+&quot;&gt;&quot;);&#10;    &#10;    globalMap.put(&quot;nextLoop&quot;, true);&#10;    globalMap.put(&quot;pageLoop&quot;, new Integer(1));&#10;    globalMap.put(&quot;search_after&quot;,&quot;A0000000&quot;);&#10;&#10;    globalMap.put(&quot;nextLoopCampagne&quot;, true);&#10;    globalMap.put(&quot;search_afterCampagne&quot;,&quot;0&quot;);&#10;    globalMap.put(&quot;pageLoopCampagne&quot;, new Integer(1)); &#10;    &#10;    globalMap.put(&quot;nextLoopBrand&quot;, true);&#10;    globalMap.put(&quot;search_afterBrand&quot;,&quot;0&quot;);&#10;    globalMap.put(&quot;pageLoopBrand&quot;, new Integer(1));   &#10;    &#10;    globalMap.put(&quot;nextLoopModello&quot;, true);&#10;    globalMap.put(&quot;search_afterModello&quot;,&quot;0&quot;);&#10;    globalMap.put(&quot;pageLoopModello&quot;, new Integer(1));   &#10;    &#10;    globalMap.put(&quot;nextLoopFiligrane&quot;, true);&#10;    globalMap.put(&quot;search_afterFiligrane&quot;,&quot;0&quot;);&#10;    globalMap.put(&quot;pageLoopFiligrane&quot;, new Integer(1));   &#10;}&#10;else {&#10;    org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Get Response Token Auth: NULL&gt;&quot;);&#10;    globalMap.put(&quot;nextLoop&quot;, false);&#10;}&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="PUT_XS_TOKEN_AUTH"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -926,14 +928,14 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.ORACLE_CLOUD_Url"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:VuigGm2QNPyHqli/IQd/qlYEcFl1rFHxIGFGg4qezHWSyUzd/qIi9HkjYq0cHeOVCywyoDLs/kbr"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Bc30bcFtvmJaUYy58UwprLAo+6UpkKLUhZlF/+3es1p6TJAJKqHOnf9Wm9V0JNffRlnJOtsw2Dm8"/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value=""/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT COD_PARAMETERS,VALUE_PARAMETERS FROM TAL_PARAMETERS_PROJECT &#13;&#10; WHERE COD_PROJECT = 'ESD_WKF_ETL4SE' AND COD_PARAMETERS &#13;&#10;   IN ('MAP_CATEGORY_DEALERK','MAP_VERNICE_DEALERK','MAP_FUEL_DEALERK','MAP_TRAZIONE_DEALERK',&#13;&#10;        'MAP_CLASSE_DEALERK','MAP_IVA_EXP_DEALERK','MAP_OPT_AUTO_DEALERK','MAP_COLORE_DEALERK','MAP_CAMBIO_DEALERK',&#13;&#10;        'MAP_PREMIUMS_DEALERK') &quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT COD_PARAMETERS,VALUE_PARAMETERS FROM TAL_PARAMETERS_PROJECT &#13;&#10; WHERE COD_PROJECT = 'ESD_WKF_ETL4SE' AND COD_PARAMETERS &#13;&#10;   IN ('MAP_CATEGORY_DEALERK','MAP_VERNICE_DEALERK','MAP_FUEL_DEALERK','MAP_TRAZIONE_DEALERK',&#13;&#10;        'MAP_CLASSE_DEALERK','MAP_IVA_EXP_DEALERK','MAP_OPT_AUTO_DEALERK','MAP_COLORE_DEALERK','MAP_CAMBIO_DEALERK',&#13;&#10;        'MAP_PREMIUMS_DEALERK','MAP_BRAND_DEALERK') &quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -973,7 +975,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
   </node>
-  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="928">
+  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLoop_1"/>
     <elementParameter field="RADIO" name="FORLOOP" value="false"/>
     <elementParameter field="RADIO" name="WHILELOOP" value="true"/>
@@ -987,7 +989,7 @@
     <elementParameter field="TEXT" name="LABEL" value="LOOP_PAGE"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="928">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="String page = ((Integer)globalMap.get(&quot;pageLoop&quot;)).toString();&#10;String skuStart = (String)globalMap.get(&quot;search_after&quot;);&#10;org.apache.log4j.Logger.getRootLogger().info(&quot;[&quot;+jobName+&quot;]:&lt;Read Page:&quot;+page+&quot; StartSku:&quot;+skuStart+&quot;&gt;&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -995,7 +997,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>
   </node>
-  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="928">
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_1"/>
     <elementParameter field="TEXT" name="URL" value="context.AKENEOPIM_METHOD_PRODUCT_LIST"/>
     <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
@@ -1010,11 +1012,11 @@
       <elementValue elementRef="NAME" value="&quot;pagination_type&quot;"/>
       <elementValue elementRef="VALUE" value="&quot;search_after&quot;"/>
       <elementValue elementRef="NAME" value="&quot;limit&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;50&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;100&quot;"/>
       <elementValue elementRef="NAME" value="&quot;search_after&quot;"/>
       <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;search_after&quot;)"/>
       <elementValue elementRef="NAME" value="&quot;attributes&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;prezzo_vendita_manuale,iva_esposta,km,porte,posti,kilowatt,precedenti_proprietari,tipo,categoria_dealerK,targa,cambio,telaio,des_marca,trazione,sede,des_modello,des_versione,rivestimento,alimentazione,codice_eurotax,garanzia,colore_esterno,colore_interni,vernice_esterno,classe_emissione,cilindrata,immatricolazione_data,prefisso_descrizione_estesa_dealerk,descrizione_estesa_dealerk,condizioni_validita_offerta,campagne_ml,cloudinary_image,filigrane_dealerk,optional_auto_select,id_youtube,filiale,filiale_infocar,seconda_foto,ultima_foto&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;prezzo_vendita_manuale,iva_esposta,km,porte,posti,kilowatt,precedenti_proprietari,tipo,categoria_dealerK,targa,cambio,telaio,marca_sito,trazione,sede,modello_sito,des_versione,rivestimento,alimentazione,codice_eurotax,garanzia,colore_esterno,colore_interni,vernice_esterno,classe_emissione,cilindrata,immatricolazione_data,prefisso_descrizione_estesa_dealerk,descrizione_estesa_dealerk,condizioni_validita_offerta,campagne_ml,cloudinary_image,filigrane_dealerk,optional_auto_select,id_youtube,filiale,filiale_infocar,seconda_foto,ultima_foto&quot;"/>
     </elementParameter>
     <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
     <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;&quot;"/>
@@ -1023,7 +1025,7 @@
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:e7tD2ch0Xt9aDXlmFoTAVf93Z1nn4zkZXvYT4El679Nh65/nrq0="/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:ZfbQyKdPW58W7qcT8zaU6X1AKN2J4cFGIoEtwSZNefbXGFbgPgw="/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
@@ -1055,7 +1057,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:dCf10t6qxfjstdtUO8QqrvNINBPN8L2SCsk+PzBB"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:FOjYUYA+XyTPrWfZSGNaPmvTylObVVeDuViN1fux"/>
     <elementParameter field="TEXT" name="ARRAY_KEYS" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="LABEL" value="CALL_PRODUCT_LIST"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1073,7 +1075,7 @@
       <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="928">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_3"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="if (input_row.statusCode!= null &amp;&amp; input_row.statusCode==200){&#10;&#10;    &#10;    ProductListDealerK productList = new ProductListDealerK(input_row.string);&#10;    //System.out.println(input_row.statusCode);&#10;    //System.out.println(input_row.string);&#10;    &#10;    if(productList.getNext()!=null){&#10;       int indexStart = productList.getNext().indexOf(&quot;search_after=&quot;);&#10;&#9;   int stop = productList.getNext().indexOf(&quot;&amp;&quot;,indexStart);&#10;&#9;   String skuAfter =  productList.getNext().substring(indexStart, stop&gt;0 ? stop : productList.getNext().length()); &#10;       globalMap.put(&quot;search_after&quot;,skuAfter.replace(&quot;search_after=&quot;,&quot;&quot;));&#9;  &#10;       Integer page = (Integer)globalMap.get(&quot;pageLoop&quot;) + 1;&#10;       globalMap.put(&quot;pageLoop&quot;,page);&#10;    }&#10;    else{&#10;       globalMap.put(&quot;nextLoop&quot;, false);&#10;    }&#10;    &#10;    globalMap.put(&quot;productList&quot;, productList);&#10;   &#10;}&#10;else {&#10;    org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Body NULL&gt;&quot;);&#10;    org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;&quot;+input_row.statusCode+&quot;&gt;&quot;);&#10;    org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;&quot;+input_row.string+&quot;&gt;&quot;);&#10;    &#10;    globalMap.put(&quot;nextLoop&quot;, false);&#10;    globalMap.put(&quot;productList&quot;, null);&#10;}&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -1095,7 +1097,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.ORACLE_CLOUD_Username"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:wsCiR7/BffFNaYC9FN8ge7zo5hqwCh0nRdstv63t36T2+wBkXUkYP62lTbxgtYfFXDL1kS+Igo0o"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:BJAcz0Yyk3F1bH+lasudNiTRcTpCPZQqr2/XR4emcUoFmRk23MYFNWwm2u8PoFftXggzKkwQdt88"/>
     <elementParameter field="DBTABLE" name="TABLE" value=""/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1153,15 +1155,15 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_6"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="928">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="Calendar cal = Calendar.getInstance(); &#10;cal.setTime(new Date());&#10;cal.set(Calendar.HOUR_OF_DAY,0);&#10;cal.set(Calendar.MINUTE,0);&#10;cal.set(Calendar.SECOND,0);&#10;cal.set(Calendar.MILLISECOND,0);&#10;&#10;EntitiesSediList entitiesSediList = (EntitiesSediList)globalMap.get(&quot;entitiesSediList&quot;);&#10;EntitiesColoreInterniList entitiesColoreInterniList = (EntitiesColoreInterniList)globalMap.get(&quot;entitiesColoreInterniList&quot;);&#10;EntitiesGaranziaList entitiesGaranziaList = (EntitiesGaranziaList)globalMap.get(&quot;entitiesGaranziaList&quot;);&#10;OptionsReference optionsReference = (OptionsReference)globalMap.get(&quot;optionsReferenceGaranziaDesPortali&quot;);&#10;EntitiesCampagneList entitiesCampagneList = (EntitiesCampagneList)globalMap.get(&quot;entitiesCampagneList&quot;);&#10;EntitiesFiligranaList entitiesFiligranaList = (EntitiesFiligranaList)globalMap.get(&quot;entitiesFiligranaList&quot;);&#10;EntitiesFotoExtraList entitiesFotoExtraList = (EntitiesFotoExtraList)globalMap.get(&quot;entitiesFotoExtraList&quot;);&#10;Map&lt;String,String&gt; mappaCategorie = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_CATEGORY_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaVernice = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_VERNICE_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaAlimentazione = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_FUEL_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaTrazione = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_TRAZIONE_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaClasseEmissioni = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_CLASSE_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaIvaExp = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_IVA_EXP_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaOptAuto = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_OPT_AUTO_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaColore = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_COLORE_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaCambio = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_CAMBIO_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaPremiumSelection = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_PREMIUMS_DEALERK&quot;);&#10;&#10;HashMap&lt;String,VehicleDataManager&gt;  mapInfocarVehicleData = null;&#10;List&lt;Product&gt;  listProductError = null;&#10;&#10;if (globalMap.get(&quot;mapInfocarVehicleData&quot;)== null){&#10;    mapInfocarVehicleData = new HashMap&lt;String,VehicleDataManager&gt;();&#10;    globalMap.put(&quot;mapInfocarVehicleData&quot;,mapInfocarVehicleData);&#10;}&#10;else{&#10;    mapInfocarVehicleData = (HashMap&lt;String,VehicleDataManager&gt;)globalMap.get(&quot;mapInfocarVehicleData&quot;);&#10;}&#10;&#10;if (globalMap.get(&quot;listProductError&quot;)== null){&#10;    listProductError = new ArrayList&lt;Product&gt;();&#10;    globalMap.put(&quot;listProductError&quot;,listProductError);&#10;}&#10;else{&#10;    listProductError = (List&lt;Product&gt;)globalMap.get(&quot;listProductError&quot;);&#10;}&#10;&#10;&#10;ProductListDealerK productList = (ProductListDealerK)globalMap.get(&quot;productList&quot;);&#10;&#10;EmbeddedDealerK embedded = productList != null ? productList.getEmbedded() : null;&#10;&#10;List&lt;Product&gt; products = embedded != null ? embedded.getItems():null;&#10;&#10;if (products!= null)&#10;{&#10;    for (Product product: products) {&#10;    &#10;      List&lt;String&gt; codiciFilialiInfocar = new ArrayList&lt;String&gt;();&#10;      &#10;      //String codDealerkFiliale = entitiesSediList.getFilialeDealerk(product.getSede());&#10;      &#10;      //if(!UtilString.isEmptyTrim(codDealerkFiliale))&#10;        //  codiciFilialiDealerk.add(codDealerkFiliale);&#10;          &#10;      if (product.getFilialeInfocar()!=null &amp;&amp; product.getFilialeInfocar().size()&gt;0){&#10;          for(String filialiInfocarAdd:product.getFilialeInfocar()){&#10;          &#10;              if(!UtilString.isEmpty(filialiInfocarAdd))&#10;                  codiciFilialiInfocar.add(filialiInfocarAdd);&#10;          }&#10;      }&#10;      &#10;      if(codiciFilialiInfocar.size()&gt;0) {&#10; &#10;          for(String filialeInfocar : codiciFilialiInfocar) &#10;          {&#10;                   System.out.println(&quot;Product:&quot;+product.getIdentifier()+&quot;  Sede:&quot;+product.getSede() + &quot; FilialeInfocar:&quot;+filialeInfocar);&#10;                   &#10;&#9;&#9;&#9;&#9;   VehicleDataManager vehicleDataManager = (VehicleDataManager)mapInfocarVehicleData.get(filialeInfocar);&#10;&#9;&#9;&#9;&#9;   &#10;&#9;&#9;&#9;&#9;   if (vehicleDataManager== null) {&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager = new VehicleDataManager();&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setCurrent(cal.getTime());  &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapCategory(mappaCategorie);&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapColoreInterni(entitiesColoreInterniList.getColoreInterni());&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapVernice(mappaVernice);&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapAlimentazione(mappaAlimentazione);&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapTrazione(mappaTrazione);&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapClasseEmissioni(mappaClasseEmissioni); &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapGaranzia(entitiesGaranziaList.getGaranzie()); &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapIvaExp(mappaIvaExp);&#9;&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapGarOptsDesPortali(optionsReference.getMapOptions());  &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setEntitiesCampagne(entitiesCampagneList);   &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapFiligrana(entitiesFiligranaList.getFiligrane());&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setCloudinaryStaticPath(context.CLOUDINARY_PATH_STATIC);&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setCloudinaryFolder(context.CLOUDINARY_FOLDER);&#9;&#9;&#9;&#9;&#9;   &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setCloudinaryDimension(context.DEALERK_DIMENSIONI_POSIZIONE_IMG);   &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapOptAuto(mappaOptAuto);  &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapFotoExtra(entitiesFotoExtraList.getFotoExtra());     &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapColore(mappaColore); &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapCambio(mappaCambio); &#9;&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapPremiumSelection(mappaPremiumSelection);   &#9;&#9;&#9;&#9;&#9;   &#9;&#9;&#9;&#9;    &#9;                    &#10;&#9;&#9;&#9;&#9;   }&#10;&#9;&#9;&#9;&#9;   &#10;&#9;&#9;&#9;&#9;   Vehicle vehicle = new Vehicle(filialeInfocar);&#10;&#9;&#9;&#9;&#9;   &#10;&#9;&#9;&#9;&#9;   vehicleDataManager.addVehicleFromProduct(vehicle,product);&#10;&#9;&#9;&#9;  &#10;&#9;&#9;&#9;&#9;   mapInfocarVehicleData.put(filialeInfocar, vehicleDataManager);&#10;&#9;&#9;&#9;  &#10;&#9;&#9;   } //for(String filialeDealerk : codDealerkFiliale) &#10;&#9;&#9;   &#10;      } //if(codiciFilialiDealerk.size()&gt;0)&#10;      else{&#10;         listProductError.add(product);&#10;      }&#10;      &#10;    } //for (Product : myItems) &#10;} //if (products!= null)&#9;&#10;&#10;globalMap.put(&quot;listProductError&quot;,listProductError);&#9;    &#10;&#9;&#9;&#9;  &#9;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="Calendar cal = Calendar.getInstance(); &#10;cal.setTime(new Date());&#10;cal.set(Calendar.HOUR_OF_DAY,0);&#10;cal.set(Calendar.MINUTE,0);&#10;cal.set(Calendar.SECOND,0);&#10;cal.set(Calendar.MILLISECOND,0);&#10;&#10;EntitiesSediList entitiesSediList = (EntitiesSediList)globalMap.get(&quot;entitiesSediList&quot;);&#10;EntitiesColoreInterniList entitiesColoreInterniList = (EntitiesColoreInterniList)globalMap.get(&quot;entitiesColoreInterniList&quot;);&#10;EntitiesGaranziaList entitiesGaranziaList = (EntitiesGaranziaList)globalMap.get(&quot;entitiesGaranziaList&quot;);&#10;OptionsReference optionsReference = (OptionsReference)globalMap.get(&quot;optionsReferenceGaranziaDesPortali&quot;);&#10;EntitiesCampagneList entitiesCampagneList = (EntitiesCampagneList)globalMap.get(&quot;entitiesCampagneList&quot;);&#10;EntitiesFiligranaList entitiesFiligranaList = (EntitiesFiligranaList)globalMap.get(&quot;entitiesFiligranaList&quot;);&#10;EntitiesBrandListSF entitiesBrandList = (EntitiesBrandListSF)globalMap.get(&quot;entitiesBrandList&quot;);&#10;EntitiesModelloListSF entitiesModelloList = (EntitiesModelloListSF)globalMap.get(&quot;entitiesModelloList&quot;);&#10;EntitiesFotoExtraList entitiesFotoExtraList = (EntitiesFotoExtraList)globalMap.get(&quot;entitiesFotoExtraList&quot;);&#10;Map&lt;String,String&gt; mappaCategorie = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_CATEGORY_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaVernice = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_VERNICE_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaAlimentazione = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_FUEL_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaTrazione = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_TRAZIONE_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaClasseEmissioni = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_CLASSE_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaIvaExp = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_IVA_EXP_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaOptAuto = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_OPT_AUTO_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaColore = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_COLORE_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaCambio = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_CAMBIO_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaPremiumSelection = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_PREMIUMS_DEALERK&quot;);&#10;Map&lt;String,String&gt; mappaBrandMain = (Map&lt;String,String&gt;)globalMap.get(&quot;MAP_BRAND_DEALERK&quot;);&#10;&#10;HashMap&lt;String,VehicleDataManager&gt;  mapInfocarVehicleData = null;&#10;List&lt;Product&gt;  listProductError = null;&#10;&#10;if (globalMap.get(&quot;mapInfocarVehicleData&quot;)== null){&#10;    mapInfocarVehicleData = new HashMap&lt;String,VehicleDataManager&gt;();&#10;    globalMap.put(&quot;mapInfocarVehicleData&quot;,mapInfocarVehicleData);&#10;}&#10;else{&#10;    mapInfocarVehicleData = (HashMap&lt;String,VehicleDataManager&gt;)globalMap.get(&quot;mapInfocarVehicleData&quot;);&#10;}&#10;&#10;if (globalMap.get(&quot;listProductError&quot;)== null){&#10;    listProductError = new ArrayList&lt;Product&gt;();&#10;    globalMap.put(&quot;listProductError&quot;,listProductError);&#10;}&#10;else{&#10;    listProductError = (List&lt;Product&gt;)globalMap.get(&quot;listProductError&quot;);&#10;}&#10;&#10;&#10;ProductListDealerK productList = (ProductListDealerK)globalMap.get(&quot;productList&quot;);&#10;&#10;EmbeddedDealerK embedded = productList != null ? productList.getEmbedded() : null;&#10;&#10;List&lt;Product&gt; products = embedded != null ? embedded.getItems():null;&#10;&#10;if (products!= null)&#10;{&#10;    for (Product product: products) {&#10;    &#10;      List&lt;String&gt; codiciFilialiInfocar = new ArrayList&lt;String&gt;();&#10;      &#10;      //String codDealerkFiliale = entitiesSediList.getFilialeDealerk(product.getSede());&#10;      &#10;      //if(!UtilString.isEmptyTrim(codDealerkFiliale))&#10;        //  codiciFilialiDealerk.add(codDealerkFiliale);&#10;          &#10;      if (product.getFilialeInfocar()!=null &amp;&amp; product.getFilialeInfocar().size()&gt;0){&#10;          for(String filialiInfocarAdd:product.getFilialeInfocar()){&#10;          &#10;              if(!UtilString.isEmpty(filialiInfocarAdd))&#10;                  codiciFilialiInfocar.add(filialiInfocarAdd);&#10;          }&#10;      }&#10;      &#10;      if(codiciFilialiInfocar.size()&gt;0) {&#10; &#10;          for(String filialeInfocar : codiciFilialiInfocar) &#10;          {&#10;                   //System.out.println(&quot;Product:&quot;+product.getIdentifier()+&quot;  Sede:&quot;+product.getSede() + &quot; FilialeInfocar:&quot;+filialeInfocar);&#10;                   &#10;&#9;&#9;&#9;&#9;   VehicleDataManager vehicleDataManager = (VehicleDataManager)mapInfocarVehicleData.get(filialeInfocar);&#10;&#9;&#9;&#9;&#9;   &#10;&#9;&#9;&#9;&#9;   if (vehicleDataManager== null) {&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager = new VehicleDataManager();&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setCurrent(cal.getTime());  &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapCategory(mappaCategorie);&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapColoreInterni(entitiesColoreInterniList.getColoreInterni());&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapVernice(mappaVernice);&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapAlimentazione(mappaAlimentazione);&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapTrazione(mappaTrazione);&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapClasseEmissioni(mappaClasseEmissioni); &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapGaranzia(entitiesGaranziaList.getGaranzie()); &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapIvaExp(mappaIvaExp);&#9;&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapGarOptsDesPortali(optionsReference.getMapOptions());  &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setEntitiesCampagne(entitiesCampagneList);   &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapFiligrana(entitiesFiligranaList.getFiligrane());&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapBrand(entitiesBrandList.getBrands());&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapBrandMain(mappaBrandMain);&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapModello(entitiesModelloList.getModelli());&#9;&#9;&#9;&#9;&#9;   &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setCloudinaryStaticPath(context.CLOUDINARY_PATH_STATIC);&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setCloudinaryFolder(context.CLOUDINARY_FOLDER);&#9;&#9;&#9;&#9;&#9;   &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setCloudinaryDimension(context.DEALERK_DIMENSIONI_POSIZIONE_IMG);   &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapOptAuto(mappaOptAuto);  &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapFotoExtra(entitiesFotoExtraList.getFotoExtra());     &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapColore(mappaColore); &#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapCambio(mappaCambio); &#9;&#10;&#9;&#9;&#9;&#9;&#9;   vehicleDataManager.setMapPremiumSelection(mappaPremiumSelection);   &#9;&#9;&#9;&#9;&#9;   &#9;&#9;&#9;&#9;    &#9;                    &#10;&#9;&#9;&#9;&#9;   }&#10;&#9;&#9;&#9;&#9;   &#10;&#9;&#9;&#9;&#9;   Vehicle vehicle = new Vehicle(filialeInfocar);&#10;&#9;&#9;&#9;&#9;   &#10;&#9;&#9;&#9;&#9;   vehicleDataManager.addVehicleFromProduct(vehicle,product);&#10;&#9;&#9;&#9;  &#10;&#9;&#9;&#9;&#9;   mapInfocarVehicleData.put(filialeInfocar, vehicleDataManager);&#10;&#9;&#9;&#9;  &#10;&#9;&#9;   } //for(String filialeDealerk : codDealerkFiliale) &#10;&#9;&#9;   &#10;      } //if(codiciFilialiDealerk.size()&gt;0)&#10;      else{&#10;         listProductError.add(product);&#10;      }&#10;      &#10;    } //for (Product : myItems) &#10;} //if (products!= null)&#9;&#10;&#10;globalMap.put(&quot;listProductError&quot;,listProductError);&#9;    &#10;&#9;&#9;&#9;  &#9;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.util.HashMap;&#10;import java.util.Map;&#10;import java.util.List;&#10;import java.util.ArrayList;&#10;import java.util.Calendar;"/>
     <elementParameter field="TEXT" name="LABEL" value="MANAGE_PRODUCT_LIST"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_3"/>
   </node>
-  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="1056">
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="1152">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaFlex_2"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_1wwcoGvEEeyMJN8LHg56Dg - VEHICLES_SEND_DEALERK"/>
@@ -1181,7 +1183,7 @@
       <column comment="" key="false" length="0" name="statusSend" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1056">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1152">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
@@ -1298,33 +1300,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_10"/>
   </node>
-  <node componentName="tREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="640">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tREST_7"/>
-    <elementParameter field="TEXT" name="URL" value="context.AKENEOPIM_METHOD_REFERENCE_ENTITIES.replace(&quot;$code$&quot;,&quot;filigrane&quot;)"/>
-    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
-    <elementParameter field="TABLE" name="HEADERS">
-      <elementValue elementRef="NAME" value="&quot;Authorization&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;Bearer &quot;+(String)globalMap.get(&quot;access_token&quot;)"/>
-      <elementValue elementRef="NAME" value="&quot;Accept&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;application/json&quot;"/>
-    </elementParameter>
-    <elementParameter field="MEMO" name="BODY" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="LABEL" value="GET_FILIGRANE"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tREST_7">
-      <column key="false" length="0" name="Body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="0" name="ERROR_CODE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="640">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_12"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="if (input_row.Body!= null &amp;&amp; input_row.ERROR_CODE==null){&#10;    EntitiesFiligranaList entitiesFiligranaList = new EntitiesFiligranaList(input_row.Body);&#10;    &#10;    if (entitiesFiligranaList.isValidEntities()){&#10;        org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Entities Filigrane valorizzata correttamente&gt;&quot;);&#10;        globalMap.put(&quot;entitiesFiligranaList&quot;,entitiesFiligranaList);&#10;    }&#10;    else&#10;    &#9;org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Entities Filigrane vuota&gt;&quot;);&#10;   &#10;}&#10;else {&#10;    org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Error Entities Filigrane :&quot;+input_row.ERROR_CODE+&quot;&gt;&quot;);&#10;}"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="PUT_IN_SESSION"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJavaRow_12"/>
-  </node>
-  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="1184">
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaFlex_3"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_1wwcoGvEEeyMJN8LHg56Dg - VEHICLES_SEND_DEALERK"/>
@@ -1344,7 +1320,7 @@
       <column comment="" key="false" length="0" name="statusSend" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="1184">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="1280">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_2"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
@@ -1428,7 +1404,7 @@
     <elementParameter field="CHECK" name="ENCRYPT_FILES" value="false"/>
     <elementParameter field="CLOSED_LIST" name="ENCRYPT_METHOD" show="false" value="ENC_METHOD_STANDARD"/>
     <elementParameter field="CLOSED_LIST" name="AES_KEY_STRENGTH" show="false" value="AES_STRENGTH_256"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:Ert/VySQVtYKFjzUFhuN2N/Eel0l+SjDf+v0tw9L"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:fneWActe5CNJG9ZCzf7FBsHbXL2I/k0DBxl7hHCf"/>
     <elementParameter field="CLOSED_LIST" name="ZIP64_MODE" value="ASNEEDED"/>
     <elementParameter field="CHECK" name="USE_SYNC_FLUSH" show="false" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="ARCHIVE_XML_PREC"/>
@@ -1441,14 +1417,14 @@
     <elementParameter field="TEXT" name="PORT" value="context.DEALERK_FTP_PORT"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USER" value="context.DEALERK_FTP_USER"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:BphS3TqKe6E2Xm5JjowySO2ytNZvKDu9mzpI7E4dH/CN+HgmZYGWT13mrvLlEGT+nXE7"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qduwqFXkp6F9Z/J+30SlizrdLpery1nBhekelty5EZfwbDhzrNB2kvGwFu/FkiUOyUX9"/>
     <elementParameter field="CHECK" name="SFTP" value="true"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:EoCVlXF0t9obpq1k6UrAodRmm1FbdKfu7sPHw7HOn7m3XENx"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:E6d0Dv1aCLrAKim9SbKwfg8wBq1XZpNj+rjPd3hvpbZqaDC4"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:IN7OhFl2I1PYdvXVPUT+mxscLoG/4xw3weCN7oCtKd/ITVto"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:ERuPALhibaXTAnl8Al+3synmgOvMaLqEB+6iYOgSE4f1yuWJ"/>
     <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="PASSIVE"/>
     <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
     <elementParameter field="CHECK" name="USE_ENCODING" value="false"/>
@@ -1458,7 +1434,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:+j4UJrITmC4Zthwx1pO0P3EP84qetp3Yu8rKEw8B"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:2h2iKT/gcWiZvBxaONFTBQNCkN0WU3Kc1nGZ5BQj"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
     <elementParameter field="CHECK" name="REMOTE_VERIFICATION" show="false" value="true"/>
@@ -1490,18 +1466,18 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="21"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;anonymous&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:wcx2ugcPvD6WStex/ESwr6HyShth16VFwNMrxZ4DnpQ6b5CeJqx0"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:9kxialpGBgaI1mMzFWkHT3aXeCBsDY+RxJDZEkHvRNMd6U6psNHP"/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="false"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:Nl2LAYVDtDzmuOC4flzfqN1SRJD1QEK1sQvZMq6Otwr2TCo5"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:qc5yOOcBcxs0nFDJDIvKCdBAW2yBQsCnMRtq/tT5UFFZkkN3"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.TALEND_PATH_FILE_CSV+&quot;/Tmp/Xml/Infocar/&quot;"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;.&quot;"/>
     <elementParameter field="CHECK" name="CREATE_DIR_IF_NOT_EXIST" value="false"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:ubXExLIOVgJZWkImSpq/RuGggJMmJsHCT83JYBQ4rvVRPtBl"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:iQACYWPTS/M9IDZqMzM3cSLFT9IXY+DkvbZwp9YWTl2Pz9eh"/>
     <elementParameter field="CLOSED_LIST" name="MODE" show="false" value="ascii"/>
     <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="never"/>
     <elementParameter field="CHECK" name="APPEND" show="false" value="false"/>
@@ -1522,7 +1498,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:RpCwIso2Q5bnVQ1w6ChKPRj4zEIos1AZNJFkB866"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:IoCOD/eTC/A+soiVvmQNiQxsQuilEJB3JP6j/MHU"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -1581,7 +1557,7 @@
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:cXMConY4tpkt7e5ILBBkKS8m51dmSyxqN47M3XnLValPL/ib7Mw="/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:UWNQvFpAPwBcFkRpGjoo1PsolglUZ1h5FnPINSIseZXst1CeN54="/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
@@ -1613,7 +1589,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:9hGXCd2g9Rb7lYxlgdj8zJbYD/puCaaSJTPRRTr4"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:FDxhKlOGQZtLeosB2dF52KrXgCa+RYMTz7HG8zTA"/>
     <elementParameter field="TEXT" name="ARRAY_KEYS" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="LABEL" value="CALL_CAMPAGNE_LIST"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1633,7 +1609,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1888" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_11"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="if (input_row.statusCode!= null &amp;&amp; input_row.statusCode==200){&#10;    &#10;    EntitiesCampagneList entitiesCampagneList = new EntitiesCampagneList(input_row.string);&#10;&#10;    if (entitiesCampagneList.isValidEntities()){&#10;        org.apache.log4j.Logger.getRootLogger()&#10;&#9;&#9; .error(&quot;[&quot;+jobName+&quot;]:&lt;Entities Campagne [&quot;+(Integer)globalMap.get(&quot;pageLoopCampagne&quot;)+&quot;] valorizzata correttamente&gt;&quot;);&#10;&#9;&#9; &#10;&#9;&#9;if (globalMap.get(&quot;entitiesCampagneList&quot;)==null){&#10;&#9;&#9;    globalMap.put(&quot;entitiesCampagneList&quot;,entitiesCampagneList);&#10;&#9;&#9;}&#10;&#9;&#9;else{&#10;&#9;&#9;&#9;EntitiesCampagneList entitiesCampagneListFull = (EntitiesCampagneList)globalMap.get(&quot;entitiesCampagneList&quot;);&#10;&#9;&#9;&#9;entitiesCampagneListFull.getEmbedded().addItems(entitiesCampagneList.getEmbedded().getItems());&#10;&#9;&#9;&#9;globalMap.put(&quot;entitiesCampagneList&quot;,entitiesCampagneListFull);&#10;&#9;&#9;}&#10;&#9;&#9; &#10;    }&#10;    else&#10;    &#9;org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Entities Campagne vuota&gt;&quot;);&#10;&#9;&#10;&#9;&#10;    if(entitiesCampagneList.getNext()!=null){&#10;       int indexStart = entitiesCampagneList.getNext().indexOf(&quot;search_after=&quot;);&#10;&#9;   int stop = entitiesCampagneList.getNext().indexOf(&quot;&amp;&quot;,indexStart);&#10;&#9;   String codeAfter =  entitiesCampagneList.getNext().substring(indexStart, stop&gt;0 ? stop : entitiesCampagneList.getNext().length());&#10;&#9;   globalMap.put(&quot;search_afterCampagne&quot;,codeAfter.replace(&quot;search_after=&quot;,&quot;&quot;));&#10;       Integer page = (Integer)globalMap.get(&quot;pageLoopCampagne&quot;) + 1;&#10;       globalMap.put(&quot;pageLoopCampagne&quot;,page);&#10;    }&#10;    else{&#10;       globalMap.put(&quot;nextLoopCampagne&quot;, false);&#10;    }&#9;&#10;   &#10;}&#10;else {&#10;    org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Body NULL&gt;&quot;);&#10;    org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;&quot;+input_row.statusCode+&quot;&gt;&quot;);&#10;    org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;&quot;+input_row.string+&quot;&gt;&quot;);&#10;    &#10;    globalMap.put(&quot;putCampagneError&quot;, &quot;true&quot;);&#10;    globalMap.put(&quot;nextLoopCampagne&quot;, false);&#10;}"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="if (input_row.statusCode!= null &amp;&amp; input_row.statusCode==200){&#10;    &#10;    EntitiesCampagneList entitiesCampagneList = new EntitiesCampagneList(input_row.string);&#10;&#10;    if (entitiesCampagneList.isValidEntities()){&#10;        org.apache.log4j.Logger.getRootLogger()&#10;&#9;&#9; .error(&quot;[&quot;+jobName+&quot;]:&lt;Entities Campagne [&quot;+(Integer)globalMap.get(&quot;pageLoopCampagne&quot;)+&quot;] valorizzata correttamente&gt;&quot;);&#10;&#9;&#9; &#10;&#9;&#9;if (globalMap.get(&quot;entitiesCampagneList&quot;)==null){&#10;&#9;&#9;    globalMap.put(&quot;entitiesCampagneList&quot;,entitiesCampagneList);&#10;&#9;&#9;}&#10;&#9;&#9;else{&#10;&#9;&#9;&#9;EntitiesCampagneList entitiesCampagneListFull = (EntitiesCampagneList)globalMap.get(&quot;entitiesCampagneList&quot;);&#10;&#9;&#9;&#9;entitiesCampagneListFull.getEmbedded().addItems(entitiesCampagneList.getEmbedded().getItems());&#10;&#9;&#9;&#9;globalMap.put(&quot;entitiesCampagneList&quot;,entitiesCampagneListFull);&#10;&#9;&#9;}&#10;&#9;&#9; &#10;    }&#10;    else&#10;    &#9;org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Entities Campagne vuota&gt;&quot;);&#10;&#9;&#10;&#9;&#10;    if(entitiesCampagneList.getNext()!=null){&#10;       int indexStart = entitiesCampagneList.getNext().indexOf(&quot;search_after=&quot;);&#10;&#9;   int stop = entitiesCampagneList.getNext().indexOf(&quot;&amp;&quot;,indexStart);&#10;&#9;   String codeAfter =  entitiesCampagneList.getNext().substring(indexStart, stop&gt;0 ? stop : entitiesCampagneList.getNext().length());&#10;&#9;   globalMap.put(&quot;search_afterCampagne&quot;,codeAfter.replace(&quot;search_after=&quot;,&quot;&quot;));&#10;       Integer page = (Integer)globalMap.get(&quot;pageLoopCampagne&quot;) + 1;&#10;       globalMap.put(&quot;pageLoopCampagne&quot;,page);&#10;    }&#10;    else{&#10;       globalMap.put(&quot;nextLoopCampagne&quot;, false);&#10;    }&#9;&#10;   &#10;}&#10;else {&#10;    org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Error Entities Campagne:&quot;+input_row.statusCode+&quot;\\&quot;+input_row.string+&quot;&gt;&quot;);&#10;    &#10;    globalMap.put(&quot;putCampagneError&quot;, &quot;true&quot;);&#10;    globalMap.put(&quot;nextLoopCampagne&quot;, false);&#10;}"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="PUT_IN_SESSION"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1674,6 +1650,318 @@
     <elementParameter field="TEXT" name="LABEL" value="DELETE_FILE_XML"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileDelete_1"/>
+  </node>
+  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLoop_3"/>
+    <elementParameter field="RADIO" name="FORLOOP" value="false"/>
+    <elementParameter field="RADIO" name="WHILELOOP" value="true"/>
+    <elementParameter field="TEXT" name="FROM" show="false" value="1"/>
+    <elementParameter field="TEXT" name="TO" show="false" value="10"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="CHECK" name="INCREASE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="DECLARATION" value=""/>
+    <elementParameter field="TEXT" name="CONDITION" value="((boolean)globalMap.get(&quot;nextLoopFiligrane&quot;))"/>
+    <elementParameter field="TEXT" name="ITERATION" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="LOOP_SEARCH_FILIGRANE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1376" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_5"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String page = ((Integer)globalMap.get(&quot;pageLoopFiligrane&quot;)).toString();&#10;String codStart = (String)globalMap.get(&quot;search_afterFiligrane&quot;);&#10;org.apache.log4j.Logger.getRootLogger().info(&quot;[&quot;+jobName+&quot;]:&lt;[FILIGRANE]Read Page:&quot;+page+&quot; Start Filigrane:&quot;+codStart+&quot;&gt;&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="LOG_PAGE_READED"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_5"/>
+  </node>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1632" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_3"/>
+    <elementParameter field="TEXT" name="URL" value="context.AKENEOPIM_METHOD_REFERENCE_ENTITIES.replace(&quot;$code$&quot;,&quot;filigrane&quot;)"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" show="false" value="application/xml"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/json"/>
+    <elementParameter field="TABLE" name="QUERY">
+      <elementValue elementRef="NAME" value="&quot;with_count&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;false&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;pagination_type&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;search_after&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;limit&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;100&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;search_after&quot;"/>
+      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;search_afterFiligrane&quot;)"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:yapFHGrRSk9t40QU8Z0m/AWqzXolfy7V8Dj7NwQzNi9tEDvCixk="/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="false"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" show="false" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Authorization&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;Bearer &quot;+(String)globalMap.get(&quot;access_token&quot;)"/>
+      <elementValue elementRef="NAME" value="&quot;Accept&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;application/json&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" show="false" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(See tRESTClient doc. to configure timeouts for Talend Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:VPdq/udlDk2qR9HEYrEJ3EgiAB0J36ZUcdXyyDDo"/>
+    <elementParameter field="TEXT" name="ARRAY_KEYS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="CALL_FILIGRANE_LIST"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTClient_3">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1888" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_12"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="if (input_row.statusCode!= null &amp;&amp; input_row.statusCode==200){&#10;    &#10;    EntitiesFiligranaList entitiesFiligranaList = new EntitiesFiligranaList(input_row.string);&#10;&#10;    if (entitiesFiligranaList.isValidEntities()){&#10;        org.apache.log4j.Logger.getRootLogger()&#10;&#9;&#9; .error(&quot;[&quot;+jobName+&quot;]:&lt;Entities Filigrane [&quot;+(Integer)globalMap.get(&quot;pageLoopFiligrane&quot;)+&quot;] valorizzata correttamente&gt;&quot;);&#10;&#9;&#9; &#10;&#9;&#9;if (globalMap.get(&quot;entitiesFiligranaList&quot;)==null){&#10;&#9;&#9;    globalMap.put(&quot;entitiesFiligranaList&quot;,entitiesFiligranaList);&#10;&#9;&#9;}&#10;&#9;&#9;else{&#10;&#9;&#9;&#9;EntitiesFiligranaList entitiesFiligranaListFull = (EntitiesFiligranaList)globalMap.get(&quot;entitiesFiligranaList&quot;);&#10;&#9;&#9;&#9;entitiesFiligranaListFull.getEmbedded().addItems(entitiesFiligranaList.getEmbedded().getItems());&#10;&#9;&#9;&#9;globalMap.put(&quot;entitiesFiligranaList&quot;,entitiesFiligranaListFull);&#10;&#9;&#9;}&#10;&#9;&#9; &#10;    }&#10;    else&#10;    &#9;org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Entities Filigrane vuota&gt;&quot;);&#10;&#9;&#10;&#9;&#10;    if(entitiesFiligranaList.getNext()!=null){&#10;       int indexStart = entitiesFiligranaList.getNext().indexOf(&quot;search_after=&quot;);&#10;&#9;   int stop = entitiesFiligranaList.getNext().indexOf(&quot;&amp;&quot;,indexStart);&#10;&#9;   String codeAfter =  entitiesFiligranaList.getNext().substring(indexStart, stop&gt;0 ? stop : entitiesFiligranaList.getNext().length());&#10;&#9;   globalMap.put(&quot;search_afterFiligrane&quot;,codeAfter.replace(&quot;search_after=&quot;,&quot;&quot;));&#10;       Integer page = (Integer)globalMap.get(&quot;pageLoopFiligrane&quot;) + 1;&#10;       globalMap.put(&quot;pageLoopFiligrane&quot;,page);&#10;    }&#10;    else{&#10;       globalMap.put(&quot;nextLoopFiligrane&quot;, false);&#10;    }&#9;&#10;   &#10;}&#10;else {&#10;    org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Error Entities Filigrane:&quot;+input_row.statusCode+&quot;\\&quot;+input_row.string+&quot;&gt;&quot;);&#10;    &#10;    globalMap.put(&quot;putFiligraneError&quot;, &quot;true&quot;);&#10;    globalMap.put(&quot;nextLoopFiligrane&quot;, false);&#10;}&#10;&#10;&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="PUT_IN_SESSION"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_12"/>
+  </node>
+  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLoop_4"/>
+    <elementParameter field="RADIO" name="FORLOOP" value="false"/>
+    <elementParameter field="RADIO" name="WHILELOOP" value="true"/>
+    <elementParameter field="TEXT" name="FROM" show="false" value="1"/>
+    <elementParameter field="TEXT" name="TO" show="false" value="10"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="CHECK" name="INCREASE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="DECLARATION" value=""/>
+    <elementParameter field="TEXT" name="CONDITION" value="((boolean)globalMap.get(&quot;nextLoopBrand&quot;))"/>
+    <elementParameter field="TEXT" name="ITERATION" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="LOOP_SEARCH_BRAND"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_6"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String page = ((Integer)globalMap.get(&quot;pageLoopBrand&quot;)).toString();&#10;String codStart = (String)globalMap.get(&quot;search_afterBrand&quot;);&#10;org.apache.log4j.Logger.getRootLogger().info(&quot;[&quot;+jobName+&quot;]:&lt;[BRAND]Read Page:&quot;+page+&quot; Start Brand:&quot;+codStart+&quot;&gt;&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="LOG_PAGE_READED"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_6"/>
+  </node>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1632" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_4"/>
+    <elementParameter field="TEXT" name="URL" value="context.AKENEOPIM_METHOD_REFERENCE_ENTITIES.replace(&quot;$code$&quot;,&quot;brand&quot;)"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" show="false" value="application/xml"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/json"/>
+    <elementParameter field="TABLE" name="QUERY">
+      <elementValue elementRef="NAME" value="&quot;with_count&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;false&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;pagination_type&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;search_after&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;limit&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;100&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;search_after&quot;"/>
+      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;search_afterBrand&quot;)"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:jyk59vZsKPLKViHrjyNIwN2RdcgFCO/l5W0j+yePaN4eHRGc5AY="/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="false"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" show="false" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Authorization&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;Bearer &quot;+(String)globalMap.get(&quot;access_token&quot;)"/>
+      <elementValue elementRef="NAME" value="&quot;Accept&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;application/json&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" show="false" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(See tRESTClient doc. to configure timeouts for Talend Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:1S5XwlLGrDJ4RoGt0T0q57CYRrMUjFEbCTSAAERi"/>
+    <elementParameter field="TEXT" name="ARRAY_KEYS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="CALL_BRAND_LIST"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTClient_4">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1888" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_14"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="if (input_row.statusCode!= null &amp;&amp; input_row.statusCode==200){&#10;    &#10;    EntitiesBrandListSF entitiesBrandList = new EntitiesBrandListSF(input_row.string);&#10;&#10;    if (entitiesBrandList.isValidEntities()){&#10;        org.apache.log4j.Logger.getRootLogger()&#10;&#9;&#9; .error(&quot;[&quot;+jobName+&quot;]:&lt;Entities Brand [&quot;+(Integer)globalMap.get(&quot;pageLoopBrand&quot;)+&quot;] valorizzata correttamente&gt;&quot;);&#10;&#9;&#9; &#10;&#9;&#9;if (globalMap.get(&quot;entitiesBrandList&quot;)==null){&#10;&#9;&#9;    globalMap.put(&quot;entitiesBrandList&quot;,entitiesBrandList);&#10;&#9;&#9;}&#10;&#9;&#9;else{&#10;&#9;&#9;&#9;EntitiesBrandListSF entitiesBrandListFull = (EntitiesBrandListSF)globalMap.get(&quot;entitiesBrandList&quot;);&#10;&#9;&#9;&#9;entitiesBrandListFull.getEmbedded().addItems(entitiesBrandList.getEmbedded().getItems());&#10;&#9;&#9;&#9;globalMap.put(&quot;entitiesBrandList&quot;,entitiesBrandListFull);&#10;&#9;&#9;}&#10;&#9;&#9; &#10;    }&#10;    else&#10;    &#9;org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Entities Brand vuota&gt;&quot;);&#10;&#9;&#10;&#9;&#10;    if(entitiesBrandList.getNext()!=null){&#10;       int indexStart = entitiesBrandList.getNext().indexOf(&quot;search_after=&quot;);&#10;&#9;   int stop = entitiesBrandList.getNext().indexOf(&quot;&amp;&quot;,indexStart);&#10;&#9;   String codeAfter =  entitiesBrandList.getNext().substring(indexStart, stop&gt;0 ? stop : entitiesBrandList.getNext().length());&#10;&#9;   globalMap.put(&quot;search_afterBrand&quot;,codeAfter.replace(&quot;search_after=&quot;,&quot;&quot;));&#10;       Integer page = (Integer)globalMap.get(&quot;pageLoopBrand&quot;) + 1;&#10;       globalMap.put(&quot;pageLoopBrand&quot;,page);&#10;    }&#10;    else{&#10;       globalMap.put(&quot;nextLoopBrand&quot;, false);&#10;    }&#9;&#10;   &#10;}&#10;else {&#10;    org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Error Entities Brand:&quot;+input_row.statusCode+&quot;\\&quot;+input_row.string+&quot;&gt;&quot;);&#10;    &#10;    globalMap.put(&quot;putBrandError&quot;, &quot;true&quot;);&#10;    globalMap.put(&quot;nextLoopBrand&quot;, false);&#10;}&#10;&#10;&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="PUT_IN_SESSION"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_14"/>
+  </node>
+  <node componentName="tLoop" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="896">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLoop_5"/>
+    <elementParameter field="RADIO" name="FORLOOP" value="false"/>
+    <elementParameter field="RADIO" name="WHILELOOP" value="true"/>
+    <elementParameter field="TEXT" name="FROM" show="false" value="1"/>
+    <elementParameter field="TEXT" name="TO" show="false" value="10"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="CHECK" name="INCREASE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="DECLARATION" value=""/>
+    <elementParameter field="TEXT" name="CONDITION" value="((boolean)globalMap.get(&quot;nextLoopModello&quot;))"/>
+    <elementParameter field="TEXT" name="ITERATION" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="LOOP_SEARCH_MODELLO"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1376" posY="896">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_7"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String page = ((Integer)globalMap.get(&quot;pageLoopModello&quot;)).toString();&#10;String codStart = (String)globalMap.get(&quot;search_afterModello&quot;);&#10;org.apache.log4j.Logger.getRootLogger().info(&quot;[&quot;+jobName+&quot;]:&lt;[MODELLO]Read Page:&quot;+page+&quot; Start Modello:&quot;+codStart+&quot;&gt;&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="LOG_PAGE_READED"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_7"/>
+  </node>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1632" posY="896">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_5"/>
+    <elementParameter field="TEXT" name="URL" value="context.AKENEOPIM_METHOD_REFERENCE_ENTITIES.replace(&quot;$code$&quot;,&quot;modello&quot;)"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+    <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" show="false" value="application/xml"/>
+    <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/json"/>
+    <elementParameter field="TABLE" name="QUERY">
+      <elementValue elementRef="NAME" value="&quot;with_count&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;false&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;pagination_type&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;search_after&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;limit&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;100&quot;"/>
+      <elementValue elementRef="NAME" value="&quot;search_after&quot;"/>
+      <elementValue elementRef="VALUE" value="(String)globalMap.get(&quot;search_afterModello&quot;)"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:kjPW9KHPG1rHH6MT8a2KaQomfainwzP6fLHo31UZnQ6V6Nmc+2k="/>
+    <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="TEXT" name="CORRELATION_VALUE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CHECK_SERVER_IDENTITY" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="FOLLOW_REDIRECTS" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_NON_SAME_HOST" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_WEBCLIENT_OPERATION_REPORTING" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_RESPONSE_TO_DOM" value="false"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_REQUEST" show="false" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_RESPONSE" value="true"/>
+    <elementParameter field="CHECK" name="CONVERT_TYPES_TO_STRINGS" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS">
+      <elementValue elementRef="NAME" value="&quot;Authorization&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;Bearer &quot;+(String)globalMap.get(&quot;access_token&quot;)"/>
+      <elementValue elementRef="NAME" value="&quot;Accept&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;application/json&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_CHUNKED_ENCODING" show="false" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="30"/>
+    <elementParameter field="TEXT" name="RECEIVE_TIMEOUT" value="60"/>
+    <elementParameter field="LABEL" name="RECEIVE_TIMEOUT_DESC" value="(See tRESTClient doc. to configure timeouts for Talend Runtime)"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:bFyAdnp1UTr9LLBDzna+8GSbxHChZ8YHre6OUo8u"/>
+    <elementParameter field="TEXT" name="ARRAY_KEYS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="CALL_MODELLO_LIST"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTClient_5">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="RESPONSE" name="RESPONSE">
+      <column defaultValue="" key="false" length="0" name="statusCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FAULT" name="FAULT">
+      <column defaultValue="" key="false" length="0" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1888" posY="896">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_15"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="if (input_row.statusCode!= null &amp;&amp; input_row.statusCode==200){&#10;    &#10;    EntitiesModelloListSF entitiesModelloList = new EntitiesModelloListSF(input_row.string);&#10;&#10;    if (entitiesModelloList.isValidEntities()){&#10;        org.apache.log4j.Logger.getRootLogger()&#10;&#9;&#9; .error(&quot;[&quot;+jobName+&quot;]:&lt;Entities Modello [&quot;+(Integer)globalMap.get(&quot;pageLoopModello&quot;)+&quot;] valorizzata correttamente&gt;&quot;);&#10;&#9;&#9; &#10;&#9;&#9;if (globalMap.get(&quot;entitiesModelloList&quot;)==null){&#10;&#9;&#9;    globalMap.put(&quot;entitiesModelloList&quot;,entitiesModelloList);&#10;&#9;&#9;}&#10;&#9;&#9;else{&#10;&#9;&#9;&#9;EntitiesModelloListSF entitiesModelloListFull = (EntitiesModelloListSF)globalMap.get(&quot;entitiesModelloList&quot;);&#10;&#9;&#9;&#9;entitiesModelloListFull.getEmbedded().addItems(entitiesModelloList.getEmbedded().getItems());&#10;&#9;&#9;&#9;globalMap.put(&quot;entitiesModelloList&quot;,entitiesModelloListFull);&#10;&#9;&#9;}&#10;&#9;&#9; &#10;    }&#10;    else&#10;    &#9;org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Entities Modello vuota&gt;&quot;);&#10;&#9;&#10;&#9;&#10;    if(entitiesModelloList.getNext()!=null){&#10;       int indexStart = entitiesModelloList.getNext().indexOf(&quot;search_after=&quot;);&#10;&#9;   int stop = entitiesModelloList.getNext().indexOf(&quot;&amp;&quot;,indexStart);&#10;&#9;   String codeAfter =  entitiesModelloList.getNext().substring(indexStart, stop&gt;0 ? stop : entitiesModelloList.getNext().length());&#10;&#9;   globalMap.put(&quot;search_afterModello&quot;,codeAfter.replace(&quot;search_after=&quot;,&quot;&quot;));&#10;       Integer page = (Integer)globalMap.get(&quot;pageLoopModello&quot;) + 1;&#10;       globalMap.put(&quot;pageLoopModello&quot;,page);&#10;    }&#10;    else{&#10;       globalMap.put(&quot;nextLoopModello&quot;, false);&#10;    }&#9;&#10;   &#10;}&#10;else {&#10;    org.apache.log4j.Logger.getRootLogger().error(&quot;[&quot;+jobName+&quot;]:&lt;Error Entities Modello:&quot;+input_row.statusCode+&quot;\\&quot;+input_row.string+&quot;&gt;&quot;);&#10;    &#10;    globalMap.put(&quot;putModelloError&quot;, &quot;true&quot;);&#10;    globalMap.put(&quot;nextLoopModello&quot;, false);&#10;}&#10;&#10;&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="PUT_IN_SESSION"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_15"/>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaFlex_1" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_1" target="tFTPPut_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk24"/>
@@ -1857,13 +2145,6 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_10" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_10" target="tLoop_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk32"/>
   </connection>
-  <connection connectorName="FLOW" label="entitiesFiligrane" lineStyle="0" metaname="tREST_7" offsetLabelX="0" offsetLabelY="0" source="tREST_7" target="tJavaRow_12">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="entitiesFiligrane"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_12" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_12" target="tREST_8">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk34"/>
-  </connection>
   <connection connectorName="FLOW" label="productErr" lineStyle="0" metaname="tJavaFlex_3" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_3" target="tFileOutputDelimited_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="productErr"/>
@@ -1876,11 +2157,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="entitiesFotoExtra"/>
   </connection>
   <connection connectorName="RUN_IF" label="RECUPERO_ENTITIES_KO" lineStyle="6" metaname="tREST_8" offsetLabelX="-50" offsetLabelY="26" outputId="1" source="tREST_8" target="tJavaFlex_1">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="globalMap.get(&quot;entitiesSediList&quot;)==null ||&#10;globalMap.get(&quot;entitiesColoreInterniList&quot;)==null ||&#10;globalMap.get(&quot;entitiesGaranziaList&quot;)==null ||&#10;globalMap.get(&quot;optionsReferenceGaranziaDesPortali&quot;)==null ||&#10;globalMap.get(&quot;entitiesCampagneList&quot;)==null ||&#10;globalMap.get(&quot;entitiesFiligranaList&quot;)==null"/>
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="globalMap.get(&quot;entitiesSediList&quot;)==null ||&#10;globalMap.get(&quot;entitiesColoreInterniList&quot;)==null ||&#10;globalMap.get(&quot;entitiesGaranziaList&quot;)==null ||&#10;globalMap.get(&quot;optionsReferenceGaranziaDesPortali&quot;)==null ||&#10;globalMap.get(&quot;entitiesCampagneList&quot;)==null ||&#10;globalMap.get(&quot;entitiesFiligranaList&quot;)==null ||&#10;globalMap.get(&quot;entitiesBrandList&quot;)==null ||&#10;globalMap.get(&quot;entitiesModelloList&quot;)==null ||&#10;globalMap.get(&quot;putCampagneError&quot;) != null ||&#10;globalMap.get(&quot;putFiligraneError&quot;) != null ||&#10;globalMap.get(&quot;putBrandError&quot;) != null ||&#10;globalMap.get(&quot;putModelloError&quot;) != null "/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="RECUPERO_ENTITIES_KO"/>
   </connection>
   <connection connectorName="RUN_IF" label="RECUPERO_ENTITIES_OK" lineStyle="6" metaname="tREST_8" offsetLabelX="9" offsetLabelY="-12" outputId="2" source="tREST_8" target="tLoop_1">
-    <elementParameter field="MEMO_JAVA" name="CONDITION" value="globalMap.get(&quot;entitiesSediList&quot;)!=null &amp;&amp;&#10;globalMap.get(&quot;entitiesColoreInterniList&quot;)!=null &amp;&amp;&#10;globalMap.get(&quot;entitiesGaranziaList&quot;)!=null &amp;&amp;&#10;globalMap.get(&quot;optionsReferenceGaranziaDesPortali&quot;)!=null &amp;&amp;&#10;globalMap.get(&quot;entitiesCampagneList&quot;)!=null &amp;&amp;&#10;globalMap.get(&quot;entitiesFiligranaList&quot;)!=null "/>
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="globalMap.get(&quot;entitiesSediList&quot;)!=null &amp;&amp;&#10;globalMap.get(&quot;entitiesColoreInterniList&quot;)!=null &amp;&amp;&#10;globalMap.get(&quot;entitiesGaranziaList&quot;)!=null &amp;&amp;&#10;globalMap.get(&quot;optionsReferenceGaranziaDesPortali&quot;)!=null &amp;&amp;&#10;globalMap.get(&quot;entitiesCampagneList&quot;)!=null &amp;&amp;&#10;globalMap.get(&quot;entitiesFiligranaList&quot;)!=null &amp;&amp;&#10;globalMap.get(&quot;entitiesBrandList&quot;)!=null &amp;&amp;&#10;globalMap.get(&quot;entitiesModelloList&quot;)!=null &amp;&amp;&#10;globalMap.get(&quot;putCampagneError&quot;) == null &amp;&amp;&#10;globalMap.get(&quot;putFiligraneError&quot;) == null &amp;&amp;&#10;globalMap.get(&quot;putBrandError&quot;) == null &amp;&amp;&#10;globalMap.get(&quot;putModelloError&quot;) == null "/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="RECUPERO_ENTITIES_OK"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileArchive_1" offsetLabelX="0" offsetLabelY="0" source="tFileArchive_1" target="tFileList_1">
@@ -1897,8 +2178,8 @@
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate2"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLoop_2" offsetLabelX="0" offsetLabelY="0" source="tLoop_2" target="tREST_7">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLoop_2" offsetLabelX="0" offsetLabelY="0" source="tLoop_2" target="tLoop_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk8"/>
   </connection>
   <connection connectorName="RUN_IF" label="NEXT_PAGE2" lineStyle="6" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tRESTClient_2">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="((boolean)globalMap.get(&quot;nextLoopCampagne&quot;))"/>
@@ -1915,6 +2196,54 @@
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tDBInput_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tLoop_3" offsetLabelX="0" offsetLabelY="0" source="tLoop_3" target="tJava_5">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate4"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLoop_3" offsetLabelX="0" offsetLabelY="0" source="tLoop_3" target="tLoop_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="NEXT_PAGE3" lineStyle="6" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" source="tJava_5" target="tRESTClient_3">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((boolean)globalMap.get(&quot;nextLoopFiligrane&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="NEXT_PAGE3"/>
+  </connection>
+  <connection connectorName="RESPONSE" label="entitiesFiligrane" lineStyle="0" metaname="tRESTClient_3" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_3" target="tJavaRow_12">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="entitiesFiligrane"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tLoop_4" offsetLabelX="0" offsetLabelY="0" source="tLoop_4" target="tJava_6">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate5"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLoop_4" offsetLabelX="0" offsetLabelY="0" source="tLoop_4" target="tLoop_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk7"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="NEXT_PAGE4" lineStyle="6" metaname="tJava_6" offsetLabelX="0" offsetLabelY="0" source="tJava_6" target="tRESTClient_4">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((boolean)globalMap.get(&quot;nextLoopBrand&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="NEXT_PAGE4"/>
+  </connection>
+  <connection connectorName="RESPONSE" label="entitiesBrand" lineStyle="0" metaname="tRESTClient_4" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_4" target="tJavaRow_14">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="entitiesBrand"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tLoop_5" offsetLabelX="0" offsetLabelY="0" source="tLoop_5" target="tJava_7">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate6"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLoop_5" offsetLabelX="0" offsetLabelY="0" source="tLoop_5" target="tREST_8">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk9"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="NEXT_PAGE5" lineStyle="6" metaname="tJava_7" offsetLabelX="0" offsetLabelY="0" source="tJava_7" target="tRESTClient_5">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((boolean)globalMap.get(&quot;nextLoopModello&quot;))"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="NEXT_PAGE5"/>
+  </connection>
+  <connection connectorName="RESPONSE" label="entitiesModello" lineStyle="0" metaname="tRESTClient_5" offsetLabelX="0" offsetLabelY="0" source="tRESTClient_5" target="tJavaRow_15">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="entitiesModello"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
@@ -2108,13 +2437,6 @@
   </subjob>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tREST_7"/>
-    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="RETRIEVE ENTITIES FILIGRANE"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaFlex_3"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="MANAGE PRODUCT ERROR"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;128;128"/>
@@ -2169,13 +2491,55 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3b34afdc-da2c-4dfe-9650-e65d16dc47fc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mRWO1dd2QAWnYOzFEETWrqhOZXCw7o29uBXRcPuPSjFWJc6e9cFoUTofgZH1LSkjGk511ewYquwJ&#13;
-5zAInb03/w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_304bfa4d-7f1a-4f97-80e0-23fc58af5ef1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>u/KS62ABfQ41QP8x44UVZaS9gnCZGoEu5tEk36+I5BDwGqJIE64Ew0q6d5g38E2v80idkOxrupRB&#13;
-f4aZUOtytQ==</DigestValue></Reference></SignedInfo><SignatureValue>ExabRfhYLnh6Y1S+UjHpWRXRcVf3PldY1BZdjX7+STPrc5lCeIaHvsYdyiDZgppgmfrt3I/yVDpg&#13;
-Afe1o8Tch7gft/kZVRGonKehHY1zt1QsSZsknadIvWNOEW62Dm2HVZjz6zcPkl3SbdU17F8hOndF&#13;
-ANZQ4kd9SQF8yxh7EEVUHpT2IzeldFbrQDS6QmkTWsH+BHeQYzgNBrQ0SmdepRLObAutzdDtQOL7&#13;
-BcgygtfxshDRE0MDlK2NtD+TCCa85sJKHOdHzL4fm1C0a1YQVNcvD4hDrnrk+cUhvCzPL8t9A3cJ&#13;
-lEeo5yRMsegCe/8MrnDoaQjwUr0MI8DuwLRqKg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLoop_3"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="LOOP PAGE FILIGRANE ENTITIES LIST"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_3"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="GET FILIGRANE PAGE"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLoop_4"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="LOOP PAGE BRAND ENTITIES LIST"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_4"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="GET BRAND PAGE"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLoop_5"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="LOOP PAGE MODELLO ENTITIES LIST"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_5"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="GET MODELLO PAGE"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_31540370-18f5-4316-a1aa-5392e24a3440"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uiptLJhTtNGlnd7IYI3GEjQ6W0GppRzjz7GAPLsDfVOVQDbWy0pdf7fhXTWJf9GBxODttwUeVVXc&#13;
+PPkk9gaFnA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_02847ccd-a6f6-4b87-8e96-4f564fc3c10d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JW3si35mkQNrfoVfk/8+X2JLRTtyU6OeKpIzUk4Y4T6srYKUfeGKptcFr+gMshmjXDv3LEyDOPW4&#13;
+MlMVTxI2UQ==</DigestValue></Reference></SignedInfo><SignatureValue>WedXF/DfYcb3mX7vWA0deAPCFO4TEQDiTb5qnPrnj7qb/HEMC98x1WDJL00eFH/24rspMgF4P2PC&#13;
+c9ulT/v3d+9KUTA9HiCOZb3HHvfSk2C7zAsCre4Qm0IoFuhZmKXefxi57Ld94sMQRcctulpmwAMa&#13;
+JXAaQaPnvVOC5It/YXYKhJc+0+kF+2vqAOiLGMwlej+zTLPmcVDwo4Y2MyEcU2a7CSxGKO5ML9CD&#13;
+0DeJN4x19dzOz1NxzGXEEj84Rea7NxwRByuCSkLc4WgSbwIeWf8D8ZHbv0E1D3AYloL34lQrbOEB&#13;
+rSi6FxdX1raWt4CWAyfYT0GrZvARGFDthah3mQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2197,4 +2561,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_304bfa4d-7f1a-4f97-80e0-23fc58af5ef1" Target="#_3b34afdc-da2c-4dfe-9650-e65d16dc47fc"><Timestamp>2022-11-22 12:47:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_02847ccd-a6f6-4b87-8e96-4f564fc3c10d" Target="#_31540370-18f5-4316-a1aa-5392e24a3440"><Timestamp>2022-12-12 17:23:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

@@ -49,10 +49,12 @@ public class Values {
 	    	setTarga(jsonObjValues); //Usato
 	    	setCambio(jsonObjValues); //Usato
 	    	setTelaio(jsonObjValues); //Usato	    	
-	    	setDes_marca(jsonObjValues); //Usato
+	    	//setDes_marca(jsonObjValues); 
+	    	setMarca_sito(jsonObjValues);//Usato
 	    	setTrazione(jsonObjValues); //Usato
 	    	setSede(jsonObjValues); //Usato
-	    	setDes_modello(jsonObjValues); //Usato
+	    	//setDes_modello(jsonObjValues); 
+	    	setModello_sito(jsonObjValues);
 	    	setDes_versione(jsonObjValues); //Usato
 	    	setRivestimento(jsonObjValues); //Usato
 	    	setAlimentazione(jsonObjValues); //Usato
@@ -146,12 +148,16 @@ public class Values {
 	    private List<DataValue> telaio;
 	    
 	    private List<DataValue> des_marca;
+	    
+	    private List<DataValue> marca_sito;		    
 
 	    private List<DataValue> trazione;
 
 	    private List<DataValue> sede;
 
 	    private List<DataValue> des_modello;
+	    
+	    private List<DataValue> modello_sito;	    
 
 	    private List<DataValue> des_versione;
 
@@ -1004,6 +1010,38 @@ public class Values {
 	        return this.des_marca;
 	    }
 	    
+	    public void setMarca_sito(List<DataValue> marca_sito){
+	        this.marca_sito = marca_sito;
+	    }
+	    
+	    public void setMarca_sito(String marca_sito){
+	        this.marca_sito = new ArrayList<DataValue>(Arrays.asList(new DataValue(null,null,marca_sito)));
+	    }
+	    
+	    public void setMarca_sito(JSONObject jsonObjValues){
+	    	
+	    	this.marca_sito = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("marca_sito");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.marca_sito = arrayList;
+	    		}
+	    	}
+	    }	    
+	    
+	    public List<DataValue> getMarca_sito(){
+	        return this.marca_sito;
+	    }
+	    
 	    public void setTrazione(List<DataValue> trazione){
 	        this.trazione = trazione;
 	    }
@@ -1099,6 +1137,38 @@ public class Values {
 	    public List<DataValue> getDes_modello(){
 	        return this.des_modello;
 	    }
+	    
+	    public void setModello_sito(List<DataValue> modello_sito){
+	        this.modello_sito = modello_sito;
+	    }
+	    
+	    public void setModello_sito(String modello_sito){
+	        this.modello_sito = new ArrayList<DataValue>(Arrays.asList(new DataValue(null,null,modello_sito)));
+	    }	    
+	    
+	    public void setModello_sito(JSONObject jsonObjValues){
+	    	
+	    	this.modello_sito = null;
+	    	
+	    	if(jsonObjValues!= null) {
+		    	
+	    		JSONArray jsonArray = (JSONArray)jsonObjValues.get("modello_sito");
+		    	
+	    		if(jsonArray!= null && jsonArray.length()>0){
+		    	
+	    			ArrayList<DataValue> arrayList = new ArrayList<DataValue>();
+	    			
+	    			for (int i=0;i<jsonArray.length();i++)
+	    				arrayList.add(new DataValue((JSONObject)jsonArray.getJSONObject(i)));
+	    			
+			        this.modello_sito = arrayList;
+	    		}
+	    	}
+	    }	    
+	    	    	    
+	    public List<DataValue> getModello_sito(){
+	        return this.modello_sito;
+	    }	    
 	    
 	    public void setDes_versione(List<DataValue> des_versione){
 	        this.des_versione = des_versione;

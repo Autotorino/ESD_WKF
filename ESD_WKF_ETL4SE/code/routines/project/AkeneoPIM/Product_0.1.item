@@ -322,6 +322,17 @@ public class Product {
     }
     
     @JsonIgnore
+    public String getMarcaSito(){
+    	
+    	try {
+    		return this.getValues().getMarca_sito().get(0).getData();
+    	}
+    	catch (Exception e){
+	    	return null;
+    	}
+    }    
+    
+    @JsonIgnore
     public String getDesModello(){
     	
     	try {
@@ -331,6 +342,17 @@ public class Product {
 	    	return null;
     	}
     }    
+    
+    @JsonIgnore
+    public String getModelloSito(){
+    	
+    	try {
+    		return this.getValues().getModello_sito().get(0).getData();
+    	}
+    	catch (Exception e){
+	    	return null;
+    	}
+    }        
     
     @JsonIgnore
     public String getDesVersione(){

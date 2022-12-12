@@ -199,6 +199,18 @@ public class Vehicle {
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
+	public void setBrandFromMap(String brand,Map<String,BrandSF> mapBrand,Map<String,String> mapBrandMain) {
+		
+		if(!UtilString.isEmptyTrim(brand) && mapBrandMain!=null && mapBrandMain.get(brand)!=null){
+			   this.brand = mapBrandMain.get(brand);
+		}
+		else if(!UtilString.isEmptyTrim(brand) && mapBrand!=null && mapBrand.get(brand)!=null){
+		   this.brand = mapBrand.get(brand).getLabel();
+		}
+		else{
+			this.brand = null;
+		}
+	}	
 	public String getBrandXML() {
 		if (UtilString.isEmptyTrim(this.brand))
 			return "        <brand/>";				
@@ -211,6 +223,14 @@ public class Vehicle {
 	public void setModel(String model) {
 		this.model = model;
 	}
+	public void setModelFromMap(String model,Map<String,ModelloSF> mapModel) {
+		if(!UtilString.isEmptyTrim(model) && mapModel!=null && mapModel.get(model)!=null){
+		   this.model = mapModel.get(model).getLabel();
+		}
+		else{
+			this.model = null;
+		}
+	}		
 	public String getModelXML() {
 		if (UtilString.isEmptyTrim(this.model))
 			return "        <model/>";			
@@ -782,9 +802,9 @@ public class Vehicle {
 					media = new Media();
 					media.setImages(imagesNoAsset);
 				}
-		   }	
-			
-		}			
+			}
+	
+		}
 		
 		if(!UtilString.isEmptyTrim(product.getIdYoutube())){
 			

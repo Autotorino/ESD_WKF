@@ -198,6 +198,25 @@ public class EntitiesBrandListSF {
         return mapBrands;
     }
     
+    public HashMap<String,BrandSF> getBrands(){
+    	
+    	HashMap<String,BrandSF> mapBrands = new HashMap<String,BrandSF>();
+    	
+   	    if (this._embedded!=null) {
+    	    
+    		List<BrandSF> brands = this._embedded.getItems();
+    	    
+    		if (brands!= null && brands.size()>0){
+    			for(BrandSF brand:brands){
+        			mapBrands.put(brand.getCode(),brand);
+    			}
+    		}
+    	}
+
+
+        return mapBrands;
+    }
+    
     public boolean isValidEntities(){
         if (this._embedded!=null) {
      	    
