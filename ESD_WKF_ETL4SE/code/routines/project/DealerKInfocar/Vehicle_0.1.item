@@ -143,7 +143,7 @@ public class Vehicle {
 	public void setTypeFromCategory(String category) {
 		try{
 			if (category.equals(Product.category_moto))
-				this.type = "byke";
+				this.type = "bike";
 			else
 				this.type = "car";
 		}  
