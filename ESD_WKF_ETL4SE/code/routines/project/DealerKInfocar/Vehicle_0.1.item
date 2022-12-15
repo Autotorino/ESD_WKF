@@ -806,7 +806,7 @@ public class Vehicle {
 	
 		}
 		
-		if(!UtilString.isEmptyTrim(product.getIdYoutube())){
+		/*if(!UtilString.isEmptyTrim(product.getIdYoutube())){
 			
 			List<Video> videos = new ArrayList<Video>();
 			Video video = new Video();
@@ -818,7 +818,7 @@ public class Vehicle {
 			
 			media.setVideos(videos);
 			
-		}
+		}*/
 		
 		this.media = media;
 	}
